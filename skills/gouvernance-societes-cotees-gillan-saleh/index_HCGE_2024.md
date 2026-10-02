@@ -8,9 +8,9 @@
 
 **Président** : **Thierry de La Tour d'Artaise** (depuis 2023).
 
-**Échantillon Partie 2** : **100 sociétés du SBF 120, dont 35 sociétés du CAC 40** au 15 mars 2024, se référant au code Afep-Medef. **Exclusion** : sociétés françaises ne se référant pas au Code, sociétés étrangères, et **une société dont les données 2023 ne sont pas représentatives** en raison d'une restructuration financière. Liste en annexe 1 (p. 94).
+**Échantillon Partie 2** (Méthodologie, p. 24) : **100 sociétés du SBF 120, dont 35 sociétés du CAC 40** au 15 mars 2024, se référant au code Afep-Medef. **Exclusion** : sociétés françaises ne se référant pas au Code, sociétés étrangères, et **une société dont les données 2023 ne sont pas représentatives** en raison d'une restructuration financière. Liste en annexe 1 (p. 94).
 
-**Méthodologie** : statistiques établies sur la base des DEU 2023 et des brochures de convocation aux AG 2024, complétées par des informations figurant sur les sites des sociétés. **82 % des sociétés** ont répondu à la consultation directe.
+**Méthodologie** : p. 24. Statistiques établies sur la base des DEU 2023 et des brochures de convocation aux AG 2024, complétées par des informations figurant sur les sites des sociétés. **82 % des sociétés** ont répondu à la consultation directe.
 
 **Vérification pagination** : pagination physique = pagination logique confirmée. **98 pages** au total.
 
@@ -58,7 +58,7 @@
 
 #### Réunions hors la présence des dirigeants mandataires sociaux exécutifs (§ 12.3)
 
-- **Cadre** : p. 48. *« Le code Afep-Medef recommande d'organiser chaque année au moins une réunion hors la présence des dirigeants mandataires sociaux exécutifs. »*
+- **Cadre** : p. 48. *« Le code Afep-Medef recommande "d'organiser chaque année au moins une réunion hors la présence des dirigeants mandataires sociaux exécutifs" »* (§ 12.3)
 - **Position HCGE** : p. 48. *« Le Haut Comité rappelle que la tenue de réunions hors la présence des dirigeants mandataires sociaux exécutifs est un moyen puissant pour améliorer la gouvernance des sociétés. »*
 - **Précisions** : p. 49 (reprises du rapport 2021).
   - Champ d'application : sociétés dont les dirigeants mandataires sociaux exécutifs sont membres ou assistent aux conseils.
@@ -73,7 +73,7 @@
   - **34,6 %** : société anonyme à conseil d'administration avec unicité (vs 30,7 % SBF 120).
   - **7,7 %** : société duale (vs 9,6 % SBF 120).
   - **15,4 %** : société en commandite par actions (vs 3,8 % SBF 120).
-- **Constat HCGE** : p. 19. *« Elles restent donc plus nombreuses à choisir l'unicité de fonctions et la forme de société en commandite par actions que les sociétés à capital dispersé (raisons capitalistiques, ancrage et contrôle familial, enjeux de transmission…). »*
+- **Constat HCGE** : p. 19. *« Elles restent donc plus nombreuses à choisir l'unicité de fonctions et la forme de société en commandite par actions que les sociétés à capital dispersé (raisons capitalistiques, ancrage et contrôle familial, enjeux de transmission...). »*
 - **Administrateur référent (unicité)** : p. 19. **Seulement 18,7 %** ont mis en place un administrateur référent (vs 71,9 % pour l'ensemble de l'échantillon). 100 % d'indépendants.
 - **Liens d'affaires** : p. 19. **57,7 %** précisent les critères de significativité (vs 71,1 % SBF 120).
 - **Recommandations les moins suivies par les sociétés familiales en 2022** : p. 20.
@@ -89,7 +89,7 @@
 
 #### Étude HCGE — Sociétés en commandite par actions (p. 20-21)
 
-- **Cadre** : p. 20. Application des recommandations du code Afep-Medef par les SCA cotées du SBF 120, au vu du principe : *« [les recommandations] ont, pour la plupart, été écrites par référence aux sociétés anonymes à conseil d'administration. Il convient donc que les sociétés anonymes à directoire et conseil de surveillance, ainsi que les sociétés en commandite par actions, procèdent aux adaptations nécessaires. »*
+- **Cadre** : p. 20. Application des recommandations du code Afep-Medef par les SCA cotées du SBF 120, au vu du principe : *« […] [les recommandations] ont, pour la plupart, été écrites par référence aux sociétés anonymes à conseil d'administration. Il convient donc que les sociétés anonymes à directoire et conseil de surveillance, ainsi que les sociétés en commandite par actions, procèdent aux adaptations nécessaires »*
 - **Principaux domaines d'incompatibilités relevés** : p. 21.
   - Le statut du gérant.
   - La rémunération du gérant (relève du ou des commandités).
@@ -108,7 +108,7 @@
 
 #### Étude HCGE — Sociétés familiales contrôlées (section 3.7, p. 19-20)
 
-- **Échantillon (faits non protégeables)** : p. 19. Étude sur l'application du Code par les **sociétés familiales contrôlées** (au sens de l'article L. 233-3 C. com.) : **26 sociétés du SBF 120**, exercice 2022. *« L'étude […] a fait ressortir assez peu de divergences par rapport au SBF 120. »*
+- **Échantillon (faits non protégeables)** : p. 19. Étude sur l'application du Code par les **sociétés familiales contrôlées** (au sens de l'article L. 233-3 C. com.) : **26 sociétés du SBF 120**, exercice 2022. *« […] L'étude […] a fait ressortir assez peu de divergences par rapport au SBF 120. »*
 - **Mode de direction (faits non protégeables)** : p. 19. SA à conseil d'administration avec dissociation : **42,3 %** (55,7 % pour le SBF 120) ; avec unicité : **34,6 %** (30,7 %) ; société duale : **7,7 %** (9,6 %) ; **SCA : 15,4 %** (3,8 %). Plus grande propension à l'unicité des fonctions et à la SCA.
 - **Administrateur référent** : p. 19. Parmi les familiales en unicité de fonctions, **seules 18,7 %** ont mis en place un administrateur référent (contre 71,9 % pour l'ensemble de l'échantillon).
 - **Indépendance / liens d'affaires** : p. 19. Précision des critères du caractère significatif des liens d'affaires : **57,7 %** (71,1 % pour le SBF 120). Critères les plus écartés : absence de mandats croisés et mandat < 12 ans.
@@ -125,9 +125,9 @@
 
 #### Comité en charge de la RSE (§ 16) — première année de suivi
 
-- **Cadre Code AFEP-MEDEF** : p. 14. *« Il est recommandé que la rémunération, ainsi que les nominations des administrateurs et des dirigeants mandataires sociaux ainsi que les sujets relatifs à la responsabilité sociale et environnementale fassent l'objet d'un travail préparatoire réalisé par un comité spécialisé du conseil d'administration. »*
+- **Cadre Code AFEP-MEDEF** : p. 11. *« […] il est recommandé que la rémunération, ainsi que les nominations des administrateurs et des dirigeants mandataires sociaux ainsi que les sujets relatifs à la responsabilité sociale et environnementale fassent l'objet d'un travail préparatoire réalisé par un comité spécialisé du conseil d'administration. »*
 - **Position HCGE** : p. 14. *« Pour le Haut Comité, il peut s'agir d'un comité dédié ou d'un ou plusieurs comité(s) en charge d'autres missions que la RSE. Les conseils sont les mieux placés pour apprécier la gouvernance la plus adaptée à leur société et décider de la répartition des compétences entre les comités sur ces questions. »*
-- **Articulation comité d'audit** : p. 14-15. *« Si une société fait le choix de ne pas appliquer cette recommandation et de confier la revue des risques RSE à un autre comité que le comité d'audit, le Haut Comité est d'avis que le comité désigné doit échanger avec le comité d'audit sur les risques identifiés et les dispositifs de gestion de ces risques. »*
+- **Articulation comité d'audit** : p. 14-15. *« Si une société fait le choix de ne pas appliquer cette recommandation et de confier la revue des risques RSE à un autre comité que le comité d'audit, le Haut Comité est d'avis que le comité désigné doit échanger avec le comité d'audit sur les risques identifiés et les dispositifs de gestion de ces risques. »* (p. 15)
 - **Extension CSRD** : p. 15. *« Avec la transposition de la Directive CSRD (Corporate Sustainability Reporting Directive) sur le reporting de durabilité des sociétés, les attributions légales du Comité d'audit ont été étendues au processus d'élaboration de l'information en matière de durabilité. »*
 - **Référence CSRD** : p. 15. Ordonnance n° 2023-1142 du 6 décembre 2023 + décret n° 2023-1394. Entrée en vigueur le **1er janvier 2024**.
 
@@ -150,40 +150,40 @@
   - **SBF 120 : 88,9 %** (77,9 % en 2022).
   - **CAC 40 : 85,3 %** (79,4 % en 2022).
 - **Cadre** : p. 16. *« Parmi les sociétés soumises à l'obligation légale de nommer des représentants des salariés au sein du conseil. »*
-- **Explications observées** : p. 16. *« Forme sociale de la société, historique d'actionnariat salarié fort avec des structures de gouvernance particulières, dérogation temporaire liée à un nouveau mandat d'administrateur salarié. »*
+- **Explications observées** : p. 16. *« […] de la forme sociale de la société, d’un historique d’actionnariat salarié fort avec des structures de gouvernance particulières, d’une dérogation temporaire liée à un nouveau mandat d’administrateur salarié. »*
 - **Position HCGE** : p. 16. *« Le Haut Comité continue de dialoguer avec les sociétés concernées et poursuit son action pour s'assurer de la mise en œuvre effective de cette recommandation. »*
 
 ### Bloc E — Rémunérations des dirigeants
 
 #### Critères RSE et climatiques dans la rémunération variable (§ 26.1.1)
 
-- **Cadre Code AFEP-MEDEF** : p. 16. *« La rémunération de ces dirigeants doit être compétitive, adaptée à la stratégie et au contexte de l'entreprise et doit avoir notamment pour objectif de promouvoir la performance et la compétitivité de celle-ci sur le moyen et long terme, en intégrant un ou plusieurs critères liés à la responsabilité sociale et environnementale, dont au moins un critère en lien avec les objectifs climatiques de l'entreprise. Ces critères, définis de manière précise, doivent refléter les enjeux sociaux et environnementaux les plus importants pour l'entreprise. Les critères quantifiables doivent être privilégiés. »*
+- **Cadre Code AFEP-MEDEF** : p. 12. *« La rémunération de ces dirigeants (dirigeants mandataires sociaux) doit être compétitive, adaptée à la stratégie et au contexte de l'entreprise et doit avoir notamment pour objectif de promouvoir la performance et la compétitivité de celle-ci sur le moyen et long terme en intégrant un ou plusieurs critères liés à la responsabilité sociale et environnementale, dont au moins un critère en lien avec les objectifs climatiques de l'entreprise. Ces critères, définis de manière précise, doivent refléter les enjeux sociaux et environnementaux les plus importants pour l'entreprise. Les critères quantifiables doivent être privilégiés. »*
 - **Position HCGE intégrée au guide en mars 2024** : p. 12. *« Une simple référence à l'application de la politique RSE, le renvoi à un programme interne RSE ou à des enjeux généraux non définis ne sont pas suffisants. »*
 - **Bonnes pratiques attendues** : p. 12.
-  - *« Le fait de privilégier la présence de critères RSE mesurables et vérifiables (qu'ils soient qualitatifs ou quantitatifs). »*
-  - *« La présentation par la direction générale au conseil de la méthodologie utilisée pour mesurer les critères RSE. »*
-  - *« L'examen annuel par le conseil de la trajectoire fixée pour atteindre les objectifs RSE. »*
+  - *« le fait de privilégier la présence de critères RSE mesurables et vérifiables (qu'ils soient qualitatifs ou quantitatifs) […] »*
+  - *« la présentation par la direction générale au conseil de la méthodologie utilisée pour mesurer les critères RSE ; […] »* (p. 12)
+  - *« l'examen annuel par le conseil de la trajectoire fixée pour atteindre les objectifs RSE. »* (p. 12)
 - **Statistiques 2023** : p. 16.
-  - *« En 2023 toutes les sociétés ayant attribué une rémunération variable annuelle à leur dirigeant ont intégré un ou plusieurs critères RSE. »*
+  - *« […] en 2023 toutes les sociétés ayant attribué une rémunération variable annuelle à leur dirigeant ont intégré un ou plusieurs critères RSE. »*
   - **88,7 % des sociétés** ont intégré un critère climatique, soit dans la rémunération variable annuelle de leur dirigeant, soit dans les rémunérations de long terme.
 
 #### Plans d'actions de performance (§ 26.3.3) — focus 2024
 
-- **Cadre Code AFEP-MEDEF** : p. 17. *« Les mécanismes de rémunération de long terme ont non seulement pour objectif d'inciter les dirigeants à inscrire leur action dans le long terme mais aussi de les fidéliser et de favoriser l'alignement de leurs intérêts avec l'intérêt social de l'entreprise et l'intérêt des actionnaires. »*
+- **Cadre Code AFEP-MEDEF** : p. 17. *« les mécanismes de rémunération de long terme ont non seulement pour objectif d'inciter les dirigeants à inscrire leur action dans le long terme mais aussi de les fidéliser et de favoriser l'alignement de leurs intérêts avec l'intérêt social de l'entreprise et l'intérêt des actionnaires. »*
 - **Rappel HCGE — exigences** : p. 17.
-  - *« Les attributions d'actions doivent être proportionnées à la partie fixe et variable annuelle de la rémunération. »*
-  - *« Les conditions de performance doivent être exigeantes et prévues sur plusieurs années consécutives (une seule année de performance ne satisfait pas à la recommandation du Code). »*
-  - *« Ces conditions peuvent être des conditions de performance internes à l'entreprise ou relatives ; s'il est retenu, le cours de bourse doit être apprécié de manière relative (comparaison avec des pairs ou des indices). »*
-  - *« Le dirigeant bénéficiaire de l'attribution doit prendre l'engagement formel de ne pas recourir à des opérations de couverture du risque sur les actions de performance jusqu'à la fin de la période de conservation des actions fixée par le conseil d'administration. »*
-- **Position HCGE — guide d'application** : p. 17. *« Les conditions de performance arrêtées par le conseil pour l'acquisition des actions de performance doivent être mentionnées dans les rapports annuels. Les rapports indiquent la pondération des critères de performance conditionnant les actions de performance et la manière dont les critères ont été appliqués par rapport à ce qui était prévu au cours de l'exercice (sous réserve de confidentialité de certains éléments). »*
+  - *« les attributions d'actions doivent être proportionnées à la partie fixe et variable annuelle de la rémunération ; […] »*
+  - *« les conditions de performance doivent être exigeantes et prévues sur plusieurs années consécutives (une seule année de performance ne satisfait pas à la recommandation du Code) […] »* (p. 17)
+  - *« ces conditions peuvent être des conditions de performance internes à l'entreprise ou relatives ; s'il est retenu, le cours de bourse doit être apprécié de manière relative (comparaison avec des pairs ou des indices) […] »* (p. 17)
+  - *« le dirigeant bénéficiaire de l'attribution doit prendre l'engagement formel de ne pas recourir à des opérations de couverture du risque sur les actions de performance jusqu'à la fin de la période de conservation des actions fixée par le conseil d'administration. »* (p. 17)
+- **Position HCGE — guide d'application** : p. 17. *« Les conditions de performance arrêtées par le conseil pour l'acquisition des actions de performance doivent être mentionnées dans les rapports annuels selon le Guide d'application du Haut Comité. Les rapports indiquent la pondération des critères de performance conditionnant les actions de performance et la manière dont les critères ont été appliqués par rapport à ce qui était prévu au cours de l'exercice (sous réserve de confidentialité de certains éléments). »*
 
 ### Bloc F — Assemblée générale et droits actifs des actionnaires
 
 #### Présentation de la stratégie climatique à l'AG (§ 5.4)
 
-- **Cadre Code AFEP-MEDEF** : p. 11. *« La stratégie climatique [...] ainsi que les principales actions engagées à cet effet sont présentées à l'assemblée générale ordinaire au moins tous les trois ans ou en cas de modification significative de la stratégie. »*
-- **Position HCGE intégrée au guide en mars 2024** : p. 11. *« Le code Afep-Medef n'impose pas de soumettre aux actionnaires une résolution climatique ("Say on Climate"). Il prévoit une présentation aux actionnaires de la stratégie climatique, ainsi que les principales actions engagées. »*
-- **Statistique 2024** : p. 14. *« Sur les 100 sociétés du panel faisant référence au code Afep-Medef, 74 sociétés ont présenté, lors de leur Assemblée générale 2024, leur stratégie climatique ou un point sur la mise en œuvre de cette dernière. Parmi celles-ci, 9 ont inscrit un point à l'ordre du jour de leur Assemblée et 5 ont consulté leurs actionnaires sur leur stratégie climatique (« Say on climate »). »*
+- **Cadre Code AFEP-MEDEF** : p. 11. *« La stratégie climatique […] ainsi que les principales actions engagées à cet effet sont présentées à l'assemblée générale ordinaire au moins tous les trois ans ou en cas de modification significative de la stratégie. »*
+- **Position HCGE intégrée au guide en mars 2024** : p. 11. *« […] le code Afep-Medef n'impose pas de soumettre aux actionnaires une résolution climatique ("Say on Climate"). Il prévoit une présentation aux actionnaires de la stratégie climatique, ainsi que les principales actions engagées. »*
+- **Statistique 2024** : p. 14. *« Sur les 100 sociétés du panel faisant référence au code Afep-Medef, 74 sociétés ont présenté, lors de leur Assemblée générale 2024, leur stratégie climatique ou un point sur la mise en œuvre de cette dernière. Parmi celles-ci, 9 ont inscrit un point à l'ordre du jour de leur Assemblée et 5 ont consulté leurs actionnaires sur leur stratégie climatique (" Say on climate "). »*
 - **Référent climat/RSE** : p. 14. *« Le Haut Comité a constaté une pratique suivant laquelle un administrateur ou un censeur est chargé spécifiquement des sujets RSE ou climat. »*
 - **Position HCGE** : p. 14. *« Le Haut Comité estime que la désignation de ces référents ou experts ne doit pas conduire à déresponsabiliser les autres administrateurs sur ces questions, le conseil ayant une responsabilité collégiale. »*
 
@@ -195,23 +195,23 @@
 
 #### Articulation gouvernance/RSE — préface 2024
 
-- **Position HCGE (préface)** : p. 6-7. *« En matière de responsabilité sociale et environnementale (RSE), les progrès se poursuivent et se concrétisent. Les sociétés ont mis en œuvre les nouvelles recommandations du Code et ont renforcé les missions de leur conseil d'administration. »*
+- **Position HCGE (préface)** : p. 6-7. *« En matière de responsabilité sociale et environnementale (RSE), les progrès se poursuivent et se concrétisent. Les sociétés ont mis en œuvre les nouvelles recommandations du Code et ont renforcé les missions de leur conseil d'administration. »* (p. 7)
 
 #### Politique de mixité — instances dirigeantes
 
 - **Statistique 2023** : p. 15. *« Que ce soit au niveau du SBF 120 ou du CAC 40, la part des femmes au sein des comités exécutifs des sociétés augmente chaque année. Entre 2020 et 2023, elle est passée, pour les deux indices, de 22 % à 30 %. »*
-- **Position HCGE — guide d'application** : p. 15. *« La notion d'instances dirigeantes vise les comités exécutifs, les comités de direction et plus largement l'encadrement supérieur. Il appartient à chaque conseil de déterminer le périmètre pertinent. Ce périmètre intègre a minima le comité exécutif ou de direction ou tout comité similaire. »*
+- **Position HCGE — guide d'application** : p. 15. *« […] la "notion d'instances dirigeantes vise les comités exécutifs, les comités de direction et plus largement l'encadrement supérieur. Il appartient à chaque conseil de déterminer le périmètre pertinent. Ce périmètre intègre a minima le comité exécutif ou de direction ou tout comité similaire. »*
 - **Position HCGE** : p. 16. *« Le Haut Comité rappelle que des objectifs spécifiques doivent viser le comité exécutif ou le comité de direction. Le Haut Comité continue de promouvoir la mixité au sein des directoires pour les sociétés à directoire et conseil de surveillance. »*
 
 #### Cybersécurité — focus 2024
 
 - **Cadre** : p. 18. *« La cybercriminalité figure ainsi parmi les risques majeurs dans la cartographie des risques des entreprises et la mise en œuvre d'une politique de cybersécurité robuste est devenue cruciale. »*
 - **Position HCGE — éléments de présentation au conseil** : p. 18.
-  - *« L'organisation mise en place par la direction générale pour prévenir les cyberattaques et pouvoir être en mesure de réagir de manière appropriée en cas d'incident (plan de crise, plan de remédiation, identification des responsabilités respectives). »*
-  - *« Les mesures mises en place et les investissements envisagés et leur couverture financière. »*
-  - *« L'évolution des dispositifs en fonction des nouvelles technologies. »*
-  - *« La couverture du risque cyber et son assurabilité. »*
-  - *« Un bilan régulier des attaques recensées et des plans d'actions correctifs. »*
+  - *« l'organisation mise en place par la direction générale pour prévenir les cyberattaques et pouvoir être en mesure de réagir de manière appropriée en cas d'incident (plan de crise, plan de remédiation, identification des responsabilités respectives) […] »*
+  - *« les mesures mises en place et les investissements envisagés et leur couverture financière ; »* (p. 18)
+  - *« l'évolution des dispositifs en fonction des nouvelles technologies ; […] »* (p. 18)
+  - *« la couverture du risque cyber et son assurabilité ; […] »* (p. 18)
+  - *« un bilan régulier des attaques recensées et des plans d'actions correctifs. »* (p. 18)
 - **Position HCGE — formation des administrateurs** : p. 18. *« Là encore, le Haut Comité ne préconise pas nécessairement l'identification d'un administrateur "référent cyber" qui aurait à lui seul les compétences au sein du conseil. Dans ce contexte de risque accru, le Haut Comité invite les sociétés à renforcer la formation de l'ensemble des administrateurs dans ce domaine. »*
 
 #### Intelligence artificielle — focus 2024
@@ -221,21 +221,21 @@
 
 #### Relations entre les entreprises et les fournisseurs de données RSE
 
-- **Cadre** : p. 18-19. *« L'absence d'un cadre règlementaire international, européen et national standardisé en matière de notation extra-financière conduit à l'absence de convergence des notations, et de comparabilité entre elles. »*
+- **Cadre** : p. 18-19. *« L'absence d'un cadre règlementaire international, européen et national standardisé en matière de notation extra-financière conduit à l'absence de convergence des notations, et de comparabilité entre elles. »* (p. 18)
 - **Évolution réglementaire** : p. 19. *« Depuis 2024, les agences de notation extra-financière sont agréées et supervisées par l'Autorité européenne des marchés financiers (ESMA). »*
-- **Référence au règlement européen** : p. 19. Règlement sur la transparence et l'intégrité en matière de RSE — *« vise à améliorer la transparence quant aux méthodologies et aux sources des agences, apporter davantage de fiabilité des notations et permettre une meilleure comparabilité de celles-ci pour les investisseurs et les sociétés. »*
-- **Position HCGE** : p. 19. *« Afin de parer aux risques de conflits d'intérêts, le règlement européen prévoit que certaines activités devraient être proposées par des entités juridiques distinctes. [...] Cette dérogation ne devrait pas s'appliquer aux activités de notation de crédit ni aux activités d'audit et de conseil (y inclus la mise au point de stratégies de durabilité et de stratégies de gestion des risques ou des incidences en matière de durabilité). Le Haut Comité suivra la mise en œuvre des mesures visant à prévenir les conflits d'intérêts. »*
+- **Référence au règlement européen** : p. 19. Règlement sur la transparence et l'intégrité en matière de RSE — *« […] vise à améliorer la transparence quant aux méthodologies et aux sources des agences, apporter davantage de fiabilité des notations et permettre une meilleure comparabilité de celles-ci pour les investisseurs et les sociétés. »*
+- **Position HCGE** : p. 19. *« Afin de parer aux risques de conflits d'intérêts, le règlement européen prévoit que certaines activités devraient être proposées par des entités juridiques distinctes. […] Cette dérogation ne devrait pas s'appliquer aux activités de notation de crédit ni aux activités d'audit et de conseil (y inclus la mise au point de stratégies de durabilité et de stratégies de gestion des risques ou des incidences en matière de durabilité). Le Haut Comité suivra la mise en œuvre des mesures visant à prévenir les conflits d'intérêts. »*
 
 ### Thèmes 2025 annoncés
 
 - **4.1** : L'intelligence artificielle (suivi) (p. 22). *« Le Haut Comité poursuivra ses travaux (§ 3.5.) sur l'intelligence artificielle et les enjeux qu'ils représentent pour les conseils d'administration. Les échanges à venir dans le cadre du Chairs Group permettront au Haut Comité de comparer son approche en la matière avec celles de ses homologues européens. »*
-- **4.2** : La gouvernance, outil de prévention et de pilotage des crises (p. 22). *« Le Haut Comité mènera une réflexion sur la façon dont la mise en œuvre du Code peut prévenir la défaillance des entreprises. »*
-- **4.3** : Les relations entre les entreprises et les agences de conseil de vote (p. 22). *« Compte tenu de l'influence croissante des agences de conseil sur le résultat des votes des assemblées générales des sociétés cotées européennes. »*
+- **4.2** : La gouvernance, outil de prévention et de pilotage des crises (p. 22). *« […] le Haut Comité mènera une réflexion sur la façon dont la mise en œuvre du Code peut prévenir la défaillance des entreprises. »*
+- **4.3** : Les relations entre les entreprises et les agences de conseil de vote (p. 22). *« Compte tenu de l'influence croissante des agences de conseil sur le résultat des votes des assemblées générales des sociétés cotées européennes […] »*
 - **4.4** : L'articulation de la gouvernance et de la RSE (p. 22). *« Le Haut Comité suivra la mise en œuvre des recommandations du Code relatives à la RSE et à leur traduction dans la gouvernance des sociétés. À ce jour, il s'agit d'un terrain d'expérimentation pour les sociétés et les pratiques devraient significativement évoluer dans ce domaine dans les années à venir. »*
 
 ### Dialogue européen « Chairs Group »
 
-- **Cadre** : p. 13. *« En 2024, ce dialogue a été élargi à l'Espagne qui a ainsi rejoint le « Chairs Group » (anciennement dénommé « Seven Chairs Group »). »* Pays membres : Allemagne, Belgique, Espagne, France, Italie, Pays-Bas, Royaume-Uni, Suède.
+- **Cadre** : p. 13. *« En 2024, ce dialogue a été élargi à l'Espagne qui a ainsi rejoint le " Chairs Group " (anciennement dénommé " Seven Chairs Group "). »* Pays membres : Allemagne, Belgique, Espagne, France, Italie, Pays-Bas, Royaume-Uni, Suède.
 
 ---
 
@@ -250,9 +250,9 @@
   - **CAC 40** : unicité **34,3 %** (28,6 % en 2022) ; dissociation **51,4 %** (57,1 % en 2022). Société duale **8,6 %**. SCA **5,7 %**.
 - **Changement de mode de direction** : p. 26. **8 changements** au sein du SBF 120 dont 2 au sein du CAC 40 :
   - **5 sociétés** (dont 1 CAC 40) ont choisi de dissocier les fonctions de président et de directeur général.
-  - **3 sociétés du SBF 120** ont décidé de confier la direction de la société et la présidence à un président directeur général. *« Pour ces sociétés, l'unicité des fonctions est annoncée comme temporaire. »*
+  - **3 sociétés du SBF 120** ont décidé de confier la direction de la société et la présidence à un président directeur général. *« Pour ces sociétés, l'unicité des fonctions est annoncée comme temporaire. »* (p. 26)
 - **Sociétés expliquant le choix** : p. 26. **SBF 120 : 97 %** (95,2 % en 2022) ; **CAC 40 : 97,1 %** (100 % en 2022).
-- **Position HCGE** : p. 26. *« Le Haut Comité a rappelé aux sociétés concernées qu'elles doivent veiller à mentionner de manière systématique les motivations de leur choix de gouvernance. »*
+- **Position HCGE** : p. 27. *« Le Haut Comité a rappelé aux sociétés concernées qu'elles doivent veiller à mentionner de manière systématique les motivations de leur choix de gouvernance. »*
 
 #### 1.2. Missions confiées au président du conseil d'administration
 
@@ -263,9 +263,9 @@
 - **Statistiques exercice 2023** : p. 27.
   - Sociétés ayant choisi l'unicité et ayant mis en place un administrateur référent : **SBF 120 : 87,1 %** (71,9 % en 2022) ; **CAC 40 : 91,7 %** (90 % en 2022).
   - Sociétés ayant indiqué les missions et prérogatives : **100 %** dans les deux indices.
-- **Statistique globale** : p. 27. *« Quel que soit le mode de gouvernance, au cours de l'exercice 2023, 49 sociétés du SBF 120 (contre 46 en 2022), dont 22 sociétés du CAC 40 (contre 23 en 2022), ont fait le choix de nommer un administrateur référent. »*
+- **Statistique globale** : p. 27. *« […] Quel que soit le mode de gouvernance, au cours de l'exercice 2023, 49 sociétés du SBF 120 (contre 46 en 2022), dont 22 sociétés du CAC 40 (contre 23 en 2022), ont fait le choix de nommer un administrateur référent […] »*
 - **Indépendance** : p. 27. **100 %** des sociétés ayant mis en place un administrateur référent ont choisi un indépendant.
-- **Constat** : p. 27. *« Certaines sociétés (22 sociétés dont 11 du CAC 40) ayant une gouvernance dissociée ou duale (présidence de conseil d'administration dissociée, conseil de surveillance) ont néanmoins désigné un administrateur (ou un membre du conseil de surveillance) référent. »*
+- **Constat** : p. 28. *« […] certaines sociétés (22 sociétés dont 11 du CAC 40) ayant une gouvernance dissociée ou duale (présidence de conseil d'administration dissociée, conseil de surveillance) ont néanmoins désigné un administrateur (ou un membre du conseil de surveillance) référent. »*
 
 ### Section 3 — Conseil d'administration ou de surveillance (p. 28-49)
 
@@ -286,7 +286,7 @@
 - **Critère 7 — statut du dirigeant social non-exécutif** : p. 29. SBF 120 : 1 société (1 %) ; CAC 40 : 0.
 - **Critère 8 — statut de l'actionnaire important** : p. 29. SBF 120 : 3 sociétés (3 %) ; CAC 40 : 1 société (2,8 %).
 - **Statistique globale** : p. 29. **16 sociétés** écartent un ou plusieurs critères d'indépendance, **15 ont fourni une explication**.
-- **Position HCGE — critère 1** : p. 29. *« Comme pour les 3 dernières années, le Haut Comité considère que l'exclusion de ce critère est difficile à justifier, en raison d'un risque "structurel" de conflits d'intérêts entre sociétés au sein d'un même groupe, sauf circonstances particulières. »*
+- **Position HCGE — critère 1** : p. 29. *« […] comme pour les 3 dernières années, le Haut Comité considère que l'exclusion de ce critère est difficile à justifier, en raison d'un risque "structurel" de conflits d'intérêts entre sociétés au sein d'un même groupe, sauf circonstances particulières. »*
 
 ##### Citation nominative — AIR LIQUIDE
 
@@ -390,7 +390,7 @@
 - **Taux moyen d'administrateurs indépendants** : p. 50. SBF 120 : **78,1 %** ; CAC 40 : **82,7 %**.
 - **Nombre moyen de séances** : p. 50. SBF 120 : **5,8** (5,7 en 2022) ; CAC 40 : **5,5**. Entre 2 et 20 fois.
 - **Compétence financière/comptable** : p. 51. **SBF 120 : 99 %** (100 % CAC 40). 1 société SBF 120 ne satisfait pas cette recommandation.
-- **Présence d'une présentation par la direction sur les risques sociaux et environnementaux** : p. 50 (et déjà couverte en bloc D). **SBF 120 : 90 %** ; **CAC 40 : 97,14 %**.
+- **Présence d'une présentation par la direction sur les risques sociaux et environnementaux** (§ 17.2) : p. 14 et 50 (et déjà couverte en bloc D). **SBF 120 : 90 %** ; **CAC 40 : 97,14 %**.
 
 #### 4.2. Comité des rémunérations (p. 52-53)
 
@@ -409,7 +409,7 @@
 ##### Indépendance
 
 - **Majorité d'administrateurs indépendants au comité des nominations distinct** : p. 54. **SBF 120 : 78,4 %** (85,3 % en 2022) ; **CAC 40 : 81,2 %**.
-- **Constat HCGE** : p. 54. *« 8 sociétés du SBF 120 (dont 3 sociétés du CAC 40) ne se conforment pas à la recommandation (contre 5 et 4 en 2022). 2 sociétés ont un taux d'indépendance moyen strictement égal à 33,33 %, 1 société à 40 % et 5 sociétés à 50 %. »*
+- **Constat HCGE** : p. 54. *« […] 8 sociétés du SBF 120 (dont 3 sociétés du CAC 40) ne se conforment pas à la recommandation (contre 5 et 4 en 2022). 2 sociétés ont un taux d'indépendance moyen strictement égal à 33,33 % (comme en 2022), 1 société a un taux d'indépendance moyen égal à 40 % et 5 sociétés ont un taux d'indépendance moyen strictement égal à 50 % (contre 3 en 2022). »*
 
 ##### Plan de succession des dirigeants mandataires sociaux
 
@@ -451,7 +451,7 @@
 - **Proportion de femmes au sein des conseils** : p. 64.
   - **SBF 120** : Assemblée 2024 : **46,7 %**.
   - **CAC 40** : Assemblée 2024 : **47,5 %** (46,5 % à l'AG 2023).
-- **Constat** : p. 64. *« 5 sociétés atteignent ou dépassent les 60 % de femmes (dont 1 faisant partie du CAC 40). »*
+- **Constat** : p. 64. *« […] 5 sociétés atteignent ou dépassent les 60 % de femmes (dont 1 faisant partie du CAC 40) »*
 
 #### 5.2. Objectifs liés à la diversité au sein du conseil et de ses comités (p. 64)
 
@@ -508,7 +508,7 @@
 ##### Citations nominatives — sociétés appliquant la recommandation sur l'engagement de conservation des actions en la rattachant à l'attribution d'options d'actions ou d'actions de performance
 
 - **COVIVIO** (DEU 2023, p. 73) : *« Le Conseil d'Administration de Covivio a fixé une obligation de détention de 50 % des actions de performance pendant toute la durée du mandat, jusqu'à ce qu'ils détiennent en actions l'équivalent de deux ans de rémunération fixe. »*
-- **KLÉPIERRE** (DEU 2023, p. 73) : *« Le Conseil de surveillance a fixé comme suit l'obligation de conservation imposée au Président et aux membres du Directoire : ces derniers doivent conserver au nominatif l'équivalent en actions de 50 % du gain d'acquisition net d'impôts et de charges calculé lors de la livraison des actions jusqu'à la cessation de leurs fonctions. »*
+- **KLÉPIERRE** (DEU 2023, p. 73) : *« […] le Conseil de surveillance a fixé comme suit l'obligation de conservation imposée au Président et aux membres du Directoire : ces derniers doivent conserver au nominatif l'équivalent en actions de 50 % du gain d'acquisition net d'impôts et de charges calculé lors de la livraison des actions jusqu'à la cessation de leurs fonctions. »*
 - **SAFRAN** (DEU 2023, p. 73) : société citée comme exemple appliquant la recommandation en la rattachant à l'attribution d'options d'actions ou d'actions de performance.
 
 ### Section 9 — Rémunération des principaux dirigeants mandataires sociaux (p. 74-88)
@@ -521,8 +521,8 @@
 
 ##### Citations nominatives — règle d'évolution de la rémunération fixe des dirigeants mandataires sociaux
 
-- **COMPAGNIE DE SAINT-GOBAIN** (DEU 2023, p. 75) : *« La rémunération fixe de M. Benoit Bazin a été fixée à 1 000 000 euros pour 2023, sans augmentation depuis 2021, date de sa prise de fonction en tant que Directeur général. »*
-- **NEXANS** (DEU 2023, p. 75) : *« La rémunération fixe des dirigeants mandataires sociaux exécutifs [...] n'est revue qu'à intervalle de trois ans. Toutefois, une révision anticipée pourrait intervenir en cas d'évolution significative du périmètre de responsabilités ou de fort décalage de son positionnement par rapport au panel de référence. »*
+- **COMPAGNIE DE SAINT-GOBAIN** (DEU 2023, p. 75) : *« […] la rémunération fixe de M. Benoit Bazin a été fixée à 1 000 000 euros pour 2023, sans augmentation depuis 2021, date de sa prise de fonction en tant que Directeur général […] »*
+- **NEXANS** (DEU 2023, p. 75) : *« La rémunération fixe des dirigeants mandataires sociaux exécutifs […] n'est revue qu'à intervalle de trois ans. Toutefois, une révision anticipée pourrait intervenir en cas d'évolution significative du périmètre de responsabilités ou de fort décalage de son positionnement par rapport au panel de référence. »*
 - **SODEXO** (DEU 2023, p. 75) : société citée comme exemple ayant indiqué une règle d'évolution de la rémunération fixe.
 
 ##### Partie variable annuelle
@@ -547,7 +547,7 @@
 
 - **Sociétés ayant attribué des options** : p. 81. **6 sociétés du SBF 120** (vs 9 en 2022). Taux d'attribution : **6 %**.
 - **Mention des conditions de performance** : p. 83. **100 %** SBF 120 et CAC 40.
-- **Présence d'un ou plusieurs critères RSE** : p. 83. **SBF 120 : 100 %** (71 % en 2022) ; **CAC 40 : 100 %**. *« Parmi les 6 sociétés du SBF 120 attribuant des options d'actions, toutes ont intégré de tels critères. »*
+- **Présence d'un ou plusieurs critères RSE** : p. 83. **SBF 120 : 100 %** (71 % en 2022) ; **CAC 40 : 100 %**. *« […] parmi les 6 sociétés du SBF 120 attribuant des options d'actions, toutes ont intégré de tels critères. »*
 - **Sous-plafond d'attribution** : p. 83. **SBF 120 : 83,3 %** (100 % en 2022) ; **CAC 40 : 50 %** (100 % en 2022).
 
 #### 9.3. Actions de performance (p. 84-85)
@@ -601,7 +601,7 @@
 ### Section 10 — Ratio sur les écarts de rémunérations (p. 89-90)
 
 - **Cadre** : p. 89. Article L. 22-10-9 du Code de commerce.
-- **Position HCGE — guide d'application** : p. 89. *« Il appartient aux sociétés de mentionner clairement le périmètre de la ou des entités prises en compte, ce qui implique de préciser le pourcentage de l'effectif du groupe en France qu'il représente, d'expliquer les raisons du choix opéré et de s'assurer de la cohérence dans le temps du périmètre. »*
+- **Position HCGE — guide d'application** : p. 89. *« […] il appartient aux sociétés de mentionner clairement le périmètre de la ou des entités prises en compte, ce qui implique de préciser le pourcentage de l'effectif du groupe en France qu'il représente, d'expliquer les raisons du choix opéré et de s'assurer de la cohérence dans le temps du périmètre. »*
 - **Sociétés ayant publié sur un périmètre élargi** : p. 89. **SBF 120 : 84 %** (86,5 % en 2022) ; **CAC 40 : 83,3 %** (85,7 % en 2022). 84 sociétés du SBF 120 dont 30 du CAC 40 sur 100 sociétés concernées.
 - **Sociétés n'ayant pas justifié le choix du périmètre élargi** : p. 89. **12 sociétés (dont 5 du CAC 40)**.
 - **Sociétés n'ayant pas justifié le choix d'un périmètre légal** : p. 89. **5 sociétés (dont 2 du CAC 40)**.

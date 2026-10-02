@@ -33,7 +33,7 @@
 
 #### Révision du Code AFEP-MEDEF (décembre 2022) — renforcement RSE/climat
 
-- **Cadre** : p. 16. *« Le code Afep-Medef révisé en décembre 2022 a renforcé les missions du conseil pour qu'il soit le garant de la mise en œuvre de la stratégie RSE de l'entreprise. »*
+- **Cadre** : p. 15. *« Le Code révisé en décembre 2022 a renforcé les missions du conseil pour qu'il soit le garant de la mise en œuvre de la stratégie RSE de l'entreprise. »*
 - **Calendrier d'application** : p. 16. Nouvelles recommandations applicables pour les AG statuant sur les exercices ouverts à compter du 1er janvier 2023. **Pour la présentation de la stratégie climatique à l'AG et les critères de rémunérations variables : sociétés invitées à les appliquer dès l'exercice 2022**.
 
 #### Auto-saisines — courriers envoyés par le HCGE
@@ -53,7 +53,7 @@
 
 #### Indépendance — critère 12 ans (§ 10.5.6)
 
-- **Cadre** : p. 20. *« Un administrateur perd sa qualité d'indépendant lorsqu'il siège au conseil depuis plus de douze ans. »*
+- **Cadre** : p. 20. *« […] un administrateur perd sa qualité d'indépendant lorsqu'il siège au conseil depuis plus de douze ans […] »*
 - **Évolution majeure** : p. 20. *« La quasi-totalité des sociétés du SBF 120 respectent cette recommandation en 2022. Seules cinq sociétés, dont trois du CAC 40, écartent ce critère d'indépendance, ce qui représente 4,81 % des sociétés du SBF 120 en 2022 contre 29 % en 2013. »*
 - **Position HCGE** : p. 20. *« En 2023, le Haut Comité a rappelé aux sociétés qui écartent un critère d'indépendance du Code, la nécessité de fournir une explication pertinente et circonstanciée au vu de la situation particulière de la société et de l'administrateur concerné et de porter celle-ci à la connaissance des actionnaires. »*
 
@@ -63,17 +63,17 @@
 
 #### Indépendance — règle de proportion (§ 10.3)
 
-- **Cadre** : p. 21. *« La part des administrateurs indépendants doit être de la moitié des membres du conseil dans les sociétés au capital dispersé et dépourvues d'actionnaires de contrôle. Dans les sociétés contrôlées, la part des administrateurs indépendants doit être d'au moins un tiers. »*
+- **Cadre** : p. 21. *« la part des administrateurs indépendants doit être de la moitié des membres du conseil dans les sociétés au capital dispersé et dépourvues d'actionnaires de contrôle. Dans les sociétés contrôlées, la part des administrateurs indépendants doit être d'au moins un tiers »*
 - **Constat HCGE sur les sociétés contrôlées du CAC 40** : p. 21. *« Le Haut Comité note que certaines sociétés contrôlées du CAC 40 semblent rencontrer plus de difficultés à respecter les pourcentages d'administrateurs indépendants prévus par le Code, alors même que ceux-ci sont inférieurs à ceux des sociétés non contrôlées. »*
-- **Référence Rapport HCGE 2014** : p. 21. *« La règle a pour but non seulement d'éviter que le sens critique des administrateurs à l'égard de la direction exécutive ne s'émousse avec le temps, mais aussi de prendre en compte la difficulté plus grande qu'ont naturellement les individus à remettre en question des positions prises par le conseil lui-même au fil des années. Compétence et indépendance sont deux choses distinctes. »*
+- **Référence Rapport HCGE 2014** : p. 21. *« […] la règle a pour but non seulement d'éviter que le sens critique des administrateurs à l'égard de la direction exécutive ne s'émousse avec le temps, mais aussi de prendre en compte la difficulté plus grande qu'ont naturellement les individus à remettre en question des positions prises par le conseil lui-même au fil des années. Compétence et indépendance sont deux choses distinctes […] »*
 
 #### Étendue de l'obligation de discrétion de l'administrateur personne morale — divergence HCGE / HCJP
 
 - **Saisine HCJP** : p. 22. Saisi par l'Autorité des marchés financiers, le Haut Comité Juridique de la place financière de Paris (HCJP) a publié le **17 janvier 2023** son rapport portant sur l'étendue de l'obligation de discrétion de l'administrateur personne morale.
 - **Position HCJP** : p. 22. Le HCJP estime que la transmission d'informations est **de droit**, et qu'il revient uniquement à la personne morale actionnaire de s'assurer de la préservation de la confidentialité en son sein, sans que le règlement intérieur du conseil d'administration de l'émetteur puisse encadrer la transmission d'information. Le HCJP semble étendre ce régime aux administrateurs personnes physiques étroitement liées à un actionnaire (mais relève qu'une telle extension nécessiterait une modification législative). **Le HCJP a précisé que les questions de conflits d'intérêts et d'abus de marché n'ont pas été prises en considération dans l'élaboration de cette position.**
-- **Position HCGE** : p. 22. *« L'obligation de discrétion s'impose à chaque administrateur sans distinction et il revient dès lors à l'émetteur, via le règlement intérieur de son conseil d'administration, dans le respect des règles régissant la communication et l'exploitation des informations privilégiées, d'encadrer la transmission des informations confidentielles communiquées par le représentant permanent à la personne morale l'ayant désignée. »*
-- **Réitération de la position du Guide d'application** : p. 22. *« Le Haut Comité réitère la position présentée dans son Guide d'application. »*
-- **Échange Seven Chairs** : p. 14. Le HCGE a sollicité les membres du Seven Chairs : *« Dans la plupart des pays, il n'existe pas – ou très peu - d'exception(s) à l'obligation de confidentialité des administrateurs, notamment au regard de la réglementation des abus de marché et des risques de conflits d'intérêts. Cet échange a conforté le Haut Comité dans sa position. »*
+- **Position HCGE** : p. 22. *« […] l'obligation de discrétion s'impose à chaque administrateur sans distinction et qu'il revient dès lors à l'émetteur, via le règlement intérieur de son conseil d'administration, dans le respect des règles régissant la communication et l'exploitation des informations privilégiées, d'encadrer la transmission des informations confidentielles communiquées par le représentant permanent à la personne morale l'ayant désignée […] »*
+- **Réitération de la position du Guide d'application** : p. 22. *« […] le Haut Comité réitère la position présentée dans son Guide d'application. »*
+- **Échange Seven Chairs** : p. 14. Le HCGE a sollicité les membres du Seven Chairs : *« […] dans la plupart des pays, il n'existe pas – ou très peu - d'exception(s) à l'obligation de confidentialité des administrateurs, notamment au regard de la réglementation des abus de marché et des risques de conflits d'intérêts. Cet échange a conforté le Haut Comité dans sa position […] »*
 
 ### Bloc D — Comités du conseil
 
@@ -85,11 +85,11 @@
 
 #### Rôle du comité d'audit en matière de risques RSE (§ 17.2)
 
-- **Cadre** : p. 17. *« L'examen des comptes par le comité d'audit doit être accompagné d'une présentation par la direction décrivant l'exposition aux risques, y compris ceux de nature sociale et environnementale. »*
+- **Cadre** : p. 17. *« […] l'examen des comptes par le comité d'audit "doit être accompagné d'une présentation par la direction décrivant l'exposition aux risques, y compris ceux de nature sociale et environnementale […]" […] »*
 - **Progression majeure** : p. 17. Application de cette recommandation :
   - **SBF 120 : de 67,96 % en 2021 à 93,27 % en 2022**.
   - **CAC 40 : de 74,29 % à 97,14 %**.
-- **Préparation CSRD** : p. 17. *« La Directive CSRD prévoit en effet que le comité d'audit ou un autre comité du conseil devra s'assurer de la pertinence et de l'intégrité de l'information en matière de durabilité. »*
+- **Préparation CSRD** : p. 17. *« La Directive CSRD […] prévoit en effet que le comité d'audit ou un autre comité du conseil devra s'assurer de la pertinence et de l'intégrité de l'information en matière de durabilité. »*
 - **Position HCGE** : p. 17. *« Les sociétés doivent définir clairement les missions du comité en charge de la RSE et les articuler avec celles du comité d'audit, si celui-ci est distinct. »*
 
 #### Administrateur salarié au comité des rémunérations
@@ -101,7 +101,7 @@
 
 #### Critères RSE/climat dans la rémunération variable (article 26.1.1 révisé décembre 2022)
 
-- **Cadre nouveau** : p. 18. *« La rémunération des dirigeants mandataires sociaux exécutifs doit avoir notamment pour objectif de promouvoir la performance et la compétitivité de celle-ci sur le moyen et long terme, en intégrant plusieurs critères liés à la responsabilité sociale et environnementale, dont au moins un critère en lien avec les objectifs climatiques de l'entreprise. Ces critères, définis de manière précise, doivent refléter les enjeux sociaux et environnementaux les plus importants pour l'entreprise. Les critères quantifiables doivent être privilégiés. »*
+- **Cadre nouveau** : p. 18. *« […] la rémunération des dirigeants mandataires sociaux exécutifs "doit avoir notamment pour objectif de promouvoir la performance et la compétitivité de celle-ci sur le moyen et long terme, en intégrant plusieurs critères liés à la responsabilité sociale et environnementale, dont au moins un critère en lien avec les objectifs climatiques de l'entreprise. Ces critères, définis de manière précise, doivent refléter les enjeux sociaux et environnementaux les plus importants pour l'entreprise. Les critères quantifiables doivent être privilégiés." »*
 - **Statistique 2023** : p. 19. **Toutes les sociétés du SBF 120 ont intégré un ou plusieurs critères RSE** dans la rémunération variable annuelle de leurs dirigeants mandataires sociaux exécutifs (sauf une société nouvellement entrée).
 - **Critère climatique** : p. 19. **87,3 % des sociétés du SBF 120** intègrent un critère climatique dans la rémunération (annuelle ou long terme). **98,14 % pour les sociétés du CAC 40**.
 
@@ -112,12 +112,12 @@
 
 #### Conditions de performance de l'indemnité de départ (§ 26.5.1 alinéa 3)
 
-- **Cadre** : p. 23. *« Les conditions de performance fixées par les conseils pour ces indemnités doivent être appréciées sur deux exercices au moins. »*
+- **Cadre** : p. 23. *« les conditions de performance fixées par les conseils pour ces indemnités doivent être appréciées sur deux exercices au moins »*
 - **Position HCGE** : p. 23. *« Le Haut Comité considère que l'appréciation doit au moins porter sur les deux exercices précédant le départ du dirigeant. »*
 
 #### Exclusion d'une indemnité de départ en cas de départ en retraite (§ 26.5.1 alinéa 1)
 
-- **Cadre** : p. 23-24. *« Le versement d'indemnités de départ à un dirigeant mandataire social doit être exclu s'il quitte à son initiative la société pour exercer de nouvelles fonctions, ou change de fonctions à l'intérieur d'un groupe, ou encore s'il a la possibilité de faire valoir ses droits à la retraite. »*
+- **Cadre** : p. 23-24. *« le versement d'indemnités de départ à un dirigeant mandataire social doit être exclu s'il quitte à son initiative la société pour exercer de nouvelles fonctions, ou change de fonctions à l'intérieur d'un groupe, ou encore s'il a la possibilité de faire valoir ses droits à la retraite. »* (p. 23)
 - **Position HCGE — précision** : p. 24. *« Afin d'éviter le versement d'indemnités de départ alors même que le dirigeant fait valoir ses droits à la retraite concomitamment au départ contraint, le Haut Comité invite les sociétés à préciser dans leur politique de rémunération l'exclusion du versement d'une indemnité de départ en cas de départ à la retraite. »*
 
 #### Maintien des rémunérations de long terme en cas de départ
@@ -138,7 +138,7 @@
 
 - **Constat HCGE** : p. 25. *« La forte concentration des agences de conseil en vote accroît le risque de conflits d'intérêts, notamment lorsqu'elles assurent des prestations de conseil en parallèle des recommandations de vote. »*
 - **Recommandation HCGE — dialogue préalable** : p. 25. *« La direction générale est le principal interlocuteur des agences de conseils en vote. Ces dernières devraient initier un dialogue avec l'émetteur en amont de l'assemblée générale des actionnaires avant toute recommandation de vote négative. Les commentaires de la société devraient être communiqués aux actionnaires concernés en même temps que la communication de la recommandation de vote. »*
-- **Cas 2023 (société non nommée du SBF 120)** : p. 25. *« Lors de l'assemblée générale 2023 d'une société du SBF 120, une agence de conseil en vote a appelé à voter contre le renouvellement de deux administrateurs, l'un vice-président du conseil, l'autre président du comité des rémunérations, au motif de désaccords sur les pratiques de rémunération et le processus de succession du directeur général. »*
+- **Cas 2023 (société non nommée du SBF 120)** : p. 25. *« […] lors de l'assemblée générale 2023 d'une société du SBF 120, une agence de conseil en vote a appelé à voter contre le renouvellement de deux administrateurs, l'un vice-président du conseil, l'autre président du comité des rémunérations, au motif de désaccords sur les pratiques de rémunération et le processus de succession du directeur général. »*
 - **Position HCGE** : p. 25. *« Le Haut Comité considère que cet appel à voter contre le renouvellement d'administrateurs sans lien direct avec l'objet de la résolution est contestable. »*
 
 #### Politique de vote sur les droits de vote multiples (agence non nommée) — 2024
@@ -149,13 +149,13 @@
 
 #### Dialogue actionnarial (article 4.4 du Code)
 
-- **Cadre** : p. 26. *« Les relations des actionnaires avec le conseil d'administration notamment sur les sujets de gouvernement d'entreprise peuvent être confiées au président du conseil d'administration ou, le cas échéant, à l'administrateur référent. Celui-ci rend compte au conseil d'administration de cette mission. »*
+- **Cadre** : p. 26. *« les relations des actionnaires avec le conseil d'administration notamment sur les sujets de gouvernement d'entreprise peuvent être confiées au président du conseil d'administration ou, le cas échéant, à l'administrateur référent. Celui-ci rend compte au conseil d'administration de cette mission. »*
 
 ### Bloc J — Information sur la durabilité
 
 #### Transposition CSRD — préparation 2024-2025
 
-- **Position HCGE (préface)** : p. 7. *« Avec la transposition de la directive CSRD, l'année 2024 constituera une année charnière pour les sociétés cotées qui devront suivre les normes européennes de reporting récemment adoptées, en vue de publier en 2025 un rapport de durabilité. »*
+- **Position HCGE (préface)** : p. 7. *« Avec la transposition de la directive CSRD […], l'année 2024 constituera une année charnière pour les sociétés cotées qui devront suivre les normes européennes de reporting récemment adoptées, en vue de publier en 2025 un rapport de durabilité. »*
 - **Vigilance HCGE** : p. 7. *« Il est important d'éviter que ce processus, potentiellement très lourd, n'entraîne une dérive : il constitue un véritable défi pour les entreprises européennes alors même qu'elles ont eu peu de temps pour s'y préparer. »*
 
 #### Mixité — politique et résultats
@@ -165,16 +165,16 @@
 
 #### Formation et compétence des administrateurs en matière de RSE (article 14.1 révisé décembre 2022)
 
-- **Cadre** : p. 17-18. *« Chaque administrateur bénéficie, s'il le juge nécessaire, d'une formation complémentaire sur les spécificités de l'entreprise, ses métiers, son secteur d'activité et ses enjeux en matière de RSE, en particulier sur les sujets climatiques. »*
+- **Cadre** : p. 17-18. *« […] chaque administrateur bénéficie, s'il le juge nécessaire, d'une formation complémentaire sur les spécificités de l'entreprise, ses métiers, son secteur d'activité et ses enjeux en matière de RSE, en particulier sur les sujets climatiques. »* (p. 17)
 - **Position HCGE** : p. 17. *« Le Haut Comité invite les sociétés qui ne sont pas encore dotées de comité RSE à faire en sorte que ces sujets soient préparés par un comité spécialisé du conseil compte tenu de l'entrée en vigueur prochaine de la normalisation européenne et internationale qui accroît le rôle du conseil sur ces questions. »*
-- **Bonne pratique mentionnée** : p. 17. *« Des sociétés organisent des formations externes ou internes communes à l'ensemble du conseil sur les thématiques majeures RSE spécifiques à l'entreprise, ce qui constitue une bonne pratique. »*
+- **Bonne pratique mentionnée** : p. 17. *« […] des sociétés organisent des formations externes ou internes communes à l'ensemble du conseil sur les thématiques majeures RSE spécifiques à l'entreprise, ce qui constitue une bonne pratique. »*
 
 ### Thèmes 2024 annoncés
 
 - **4.1** : Présentation de la stratégie climatique à l'AG (suivi nouvelle recommandation) (p. 26). À l'issue des AG 2023, 85 sociétés ont présenté leur stratégie climatique, soit 81,7 % du SBF 120 (dont 34 du CAC 40) ; 9 sociétés prévoient une telle présentation à l'AG 2024 statuant sur l'exercice 2023. *« Le Haut Comité veillera à l'application effective de cette nouvelle recommandation du Code. »*
-- **4.2** : Présence de critères RSE, dont climatiques, dans la rémunération variable (suivi) (p. 26). *« La pratique de l'intégration des critères RSE, dont climatiques, dans la rémunération des dirigeants mandataires sociaux exécutifs devra nécessairement se développer en 2024. Le Haut Comité sera attentif à la précision des critères retenus en lien avec la stratégie. »*
+- **4.2** : Présence de critères RSE, dont climatiques, dans la rémunération variable (suivi) (p. 26). *« […] La pratique de l'intégration des critères RSE, dont climatiques, dans la rémunération des dirigeants mandataires sociaux exécutifs devra nécessairement se développer en 2024. Le Haut Comité sera attentif à la précision des critères retenus en lien avec la stratégie. »*
 - **4.3** : Cybersécurité — *« On assiste à une montée en puissance de cyberattaques avec un fort impact, pouvant même compromettre la survie d'entreprises. »* (p. 26).
-- **4.4** : Dialogue actionnarial (p. 26-27). *« Pour le Haut Comité, le dialogue actionnarial est primordial. »* Renvoi à l'art. 4.4 du Code AFEP-MEDEF (relations des actionnaires avec le conseil confiées au président ou à l'administrateur référent) et participation au groupe de travail Paris Europlace présidé par Michel Prada.
+- **4.4** : Dialogue actionnarial (p. 26). *« Pour le Haut Comité, le dialogue actionnarial est primordial. »* (p. 26) Renvoi à l'art. 4.4 du Code AFEP-MEDEF (relations des actionnaires avec le conseil confiées au président ou à l'administrateur référent) et participation au groupe de travail Paris Europlace présidé par Michel Prada.
 - **4.5** : Relations entre les entreprises et les fournisseurs de données RSE (p. 27). *« En 2024, le Haut Comité mènera des travaux concernant les relations entre les entreprises et les fournisseurs de données RSE, ainsi que les éventuels conflits d'intérêts qui en résultent. »* Suivi de la proposition de règlement sur la transparence et l'intégrité des notations RSE.
 
 ---
@@ -223,8 +223,8 @@ Le HCGE, en 2023, exprime :
   - **SBF 120** : **71,88 %** (72,98 % en 2021).
   - **CAC 40** : **90 %** (92,31 % en 2021).
 - **Indication missions et prérogatives** : p. 33. **100 %** (96,30 % en 2021).
-- **Statistique globale** : p. 33. *« Quel que soit le mode de gouvernance, au cours de l'exercice 2022, 46 sociétés du SBF 120 (contre 42 en 2021), dont 23 sociétés du CAC 40 (contre 22 en 2021), ont fait le choix de se doter d'un administrateur référent. »*
-- **Constat** : p. 33-34. *« Parmi les 32 sociétés du SBF 120 (dont 10 du CAC 40) ayant opté pour l'unicité des fonctions, 23 sociétés (dont 9 du CAC 40) ont nommé un administrateur référent. 1 société du CAC 40 ayant fait le choix de l'unicité des fonctions n'a pas nommé d'administrateur référent. »*
+- **Statistique globale** : p. 33. *« Quel que soit le mode de gouvernance, au cours de l'exercice 2022, 46 sociétés du SBF 120 (contre 42 en 2021), dont 23 sociétés du CAC 40 (contre 22 en 2021), ont fait le choix de se doter d'un administrateur référent […] »*
+- **Constat** : p. 33-34. *« […] parmi les 32 sociétés du SBF 120 (dont 10 du CAC 40) ayant opté pour l'unicité des fonctions, 23 sociétés (dont 9 du CAC 40) ont nommé un administrateur référent. 1 société du CAC 40 ayant fait le choix de l'unicité des fonctions n'a pas nommé d'administrateur référent. »* (p. 33)
 - **Élargissement** : p. 34. **23 sociétés (dont 14 CAC 40)** ayant une gouvernance dissociée ou duale ont également désigné un administrateur référent.
 - **Indépendance** : p. 34. **100 % d'administrateurs référents indépendants** (stable).
 
@@ -247,15 +247,15 @@ Le HCGE, en 2023, exprime :
 - **Critère 7 — statut du dirigeant social non-exécutif** : p. 35. SBF 120 : 5 sociétés (4,81 %) ; CAC 40 : 2 sociétés (5,71 %).
 - **Critère 8 — statut de l'actionnaire important** : p. 35. SBF 120 : 5 sociétés (4,81 %) ; CAC 40 : 3 sociétés (8,57 %).
 - **Statistique globale** : p. 36. *« Sur les 21 sociétés qui écartent un ou plusieurs critères d'indépendance, 16 ont fourni une explication. 5 sociétés ne fournissent pas d'explication et/ou omettent de mentionner certains critères dans le rapport sur le gouvernement d'entreprise. »*
-- **Position HCGE — critère 1** : p. 36. *« Comme pour les 3 dernières années, le Haut Comité considère que l'exclusion de ce critère est difficile à justifier, en raison d'un risque "structurel" de conflits d'intérêts entre sociétés au sein d'un même groupe, sauf circonstances particulières. »*
+- **Position HCGE — critère 1** : p. 36. *« […] comme pour les 3 dernières années, le Haut Comité considère que l'exclusion de ce critère est difficile à justifier, en raison d'un risque "structurel" de conflits d'intérêts entre sociétés au sein d'un même groupe, sauf circonstances particulières. »*
 
 ##### Sociétés ayant renforcé volontairement les critères d'indépendance — exemples cités (p. 36-37)
 
-- **Type 1 — liens croisés et remplacement temporaire** : exemple cité (société non nommée explicitement). *« n'a pas la qualité d'administrateur d'une société au sein de laquelle un membre du Directoire de la Société occupe des fonctions d'administrateur »* et *« n'a pas remplacé à titre temporaire un membre du Directoire de la Société absent ou incapable d'exercer ses fonctions au cours des 12 mois précédents »*.
-- **Type 2 — banques (SAFRAN)** : p. 36-37. *« S'agissant des administrateurs exerçant des fonctions dans une ou plusieurs banques, ne pas avoir participé (i) à la préparation ou à la sollicitation d'offres de services d'une de ces banques auprès de Safran ou d'une société du Groupe »*.
-- **Type 3 — seuil 5 % capital** : p. 37. *« Au-delà du seuil de 5 % du capital ou des droits de vote, ces administrateurs sont présumés non-indépendants sauf appréciation contraire du conseil d'administration sur recommandation du Comité d'Éthique et de la Gouvernance. »*
-- **Type 4 — rémunération > 100 000 €** : p. 37. *« Ne [doit] pas avoir perçu de [la société], sous quelque forme que ce soit, à l'exception de la rémunération perçue en tant qu'administrateur, une rémunération d'un montant supérieur à 100 000 euros au cours des cinq dernières années. »*
-- **Type 5 — anciens salariés** : p. 37. *« Les anciens salariés ou dirigeants de la société ne peuvent être considérés comme indépendants même si la cessation de leurs fonctions remonte à plus de cinq ans. »*
+- **Type 1 — liens croisés et remplacement temporaire** : exemple cité (société non nommée explicitement, p. 36). *« n'a pas la qualité d'administrateur d'une société au sein de laquelle un membre du Directoire de la Société occupe des fonctions d'administrateur […] »* et *« n'a pas remplacé à titre temporaire un membre du Directoire de la Société absent ou incapable d'exercer ses fonctions au cours des 12 mois précédents »*.
+- **Type 2 — banques (SAFRAN)** : p. 36-37. *« s'agissant des administrateurs exerçant des fonctions dans une ou plusieurs banques, ne pas avoir participé (i) à la préparation ou à la sollicitation d'offres de services d'une de ces banques auprès de Safran ou d'une société du Groupe […] »* (p. 36).
+- **Type 3 — seuil 5 % capital** : p. 37. *« au-delà du seuil de 5 % du capital ou des droits de vote, ces administrateurs sont présumés non-indépendants sauf appréciation contraire du conseil d'administration sur recommandation du Comité d'Éthique et de la Gouvernance. »*
+- **Type 4 — rémunération > 100 000 €** : p. 37. *« Ne [doit] pas avoir perçu de [la société], sous quelque forme que ce soit, à l'exception de la rémunération perçue en tant qu'administrateur, une rémunération d'un montant supérieur à 100 000 euros au cours des cinq dernières années »*
+- **Type 5 — anciens salariés** : p. 37. *« les anciens salariés ou dirigeants de la société ne peuvent être considérés comme indépendants même si la cessation de leurs fonctions remonte à plus de cinq ans »*
 - **Type 6 — SCA** : p. 37. Un membre du conseil de surveillance ne peut être considéré comme indépendant s'il est *« associé ou membre du Conseil de gérance [d'une société qui est elle-même associée commanditée de la société] »*.
 
 ##### Proportion des sociétés contrôlées et non contrôlées (exercice 2022)
@@ -268,7 +268,7 @@ Le HCGE, en 2023, exprime :
 - **Statistiques 2022** : p. 38.
   - **SBF 120 : 96,97 %** (93,94 % en 2021).
   - **CAC 40 : 83,33 %** (stable).
-- **Constat** : p. 38. *« Comme l'année précédente, 1 société du CAC 40 n'applique pas la recommandation du Code... et fournit une explication circonstanciée. Quant au SBF 120, 33 sociétés parmi les sociétés contrôlées appliquent cette recommandation. »*
+- **Constat** : p. 38. *« Comme l'année précédente, 1 société du CAC 40 n'applique pas la recommandation du Code […] et fournit une explication circonstanciée. Quant au SBF 120, 33 sociétés parmi les sociétés contrôlées appliquent cette recommandation. »*
 
 ##### Respect proportion administrateurs indépendants — sociétés non contrôlées
 
@@ -280,7 +280,7 @@ Le HCGE, en 2023, exprime :
 
 - **Mention des liens d'affaires** : p. 39, exercice 2022. **SBF 120 : 100 %** (87,38 % en 2021) ; **CAC 40 : 100 %** (97,14 % en 2021).
 - **Mention des critères de significativité des liens d'affaires** : p. 39, exercice 2022. **SBF 120 : 71,15 %** (84,44 % en 2021) ; **CAC 40 : 82,86 %** (85,29 % en 2021).
-- **Constat HCGE** : p. 40. *« Parmi celles faisant mention de liens d'affaires, 74 sociétés du SBF 120 dont 29 sociétés du CAC 40, précisent les critères ayant conduit à l'appréciation de la significativité ou non de ces liens. 30 sociétés ne font pas mention de ces critères. »*
+- **Constat HCGE** : p. 40. *« Parmi celles faisant mention de liens d'affaires, 74 sociétés du SBF 120 dont 29 sociétés du CAC 40, précisent les critères ayant conduit à l'appréciation de la significativité ou non de ces liens (contre respectivement 76 et 29 en 2021). 30 sociétés ne font pas mention de ces critères. »*
 
 ##### Citations nominatives — sociétés renseignant les critères ayant conduit à l'appréciation des liens d'affaires significatifs
 
@@ -305,14 +305,14 @@ Le HCGE, en 2023, exprime :
 - **Indication montant global et individuel** : p. 47. **100 %** SBF 120 et CAC 40.
 - **Présentation des règles de répartition** : p. 47. **SBF 120 : 99,04 %** (97,09 % en 2021) ; **CAC 40 : 100 %** (stable).
 - **Mise en place d'une part variable prépondérante** : p. 47. **SBF 120 : 94,23 %** (88,35 % en 2021) ; **CAC 40 : 100 %** (94,29 % en 2021).
-- **Constat HCGE** : p. 48. *« Toutes les sociétés du CAC 40 intègrent une part variable prépondérante dans la rémunération de leurs administrateurs. »*
+- **Constat HCGE** : p. 47. *« […] toutes les sociétés du CAC 40 intègrent une part variable prépondérante dans la rémunération de leurs administrateurs. »*
 
 #### 3.7. Durée et échelonnement des mandats (p. 48-49)
 
 - **Durée moyenne du mandat** : p. 48. **SBF 120 : 3,69 ans** (3,72 en 2021) ; **CAC 40 : 3,63 ans** (stable).
 - **Durée ≤ 4 ans** : p. 48. **SBF 120 : 98,08 %** (98,06 % en 2021) ; **CAC 40 : 100 %** (stable).
 - **Sociétés ayant mis en place un processus d'échelonnement** : p. 48. **SBF 120 : 75 %** (75,73 % en 2021) ; **CAC 40 : 80 %** (stable).
-- **Constat HCGE** : p. 49. *« Pour 26 sociétés du SBF 120 dont 7 du CAC 40 (contre respectivement 25 et 7 en 2021), plus de la majorité des mandats des membres du conseil arrive à échéance en même temps. »*
+- **Constat HCGE** : p. 49. *« […] pour 26 sociétés du SBF 120 dont 7 du CAC 40 (contre respectivement 25 et 7 en 2021), plus de la majorité des mandats des membres du conseil arrive à échéance en même temps. »*
 - **Répartition SBF 120 — 2022** : p. 49. 3 ans : 33,65 % ; 4 ans : 64,42 % ; 5 ans : 0,96 % ; 6 ans : 0,96 %.
 - **Répartition CAC 40 — 2022** : p. 49. 3 ans : 37,14 % ; 4 ans : 62,86 %.
 
@@ -371,7 +371,7 @@ Le HCGE, en 2023, exprime :
 - **Majorité d'administrateurs indépendants** : p. 68. **SBF 120 : 90,38 %** (87,38 % en 2021) ; **CAC 40 : 94,29 %** (stable).
 - **Taux moyen d'administrateurs indépendants** : p. 68. SBF 120 : **78,69 %** ; CAC 40 : **82,80 %**.
 - **Président indépendant** : p. 68. **SBF 120 : 98,08 %** (98,06 % en 2021) ; **CAC 40 : 100 %** (stable).
-- **Constat HCGE** : p. 68. *« 10 sociétés du SBF 120 ne l'appliquent pas (contre 13 en 2021). Néanmoins, on note que sur ces 10 sociétés, 9 sociétés (dont 1 du CAC 40) ont une proportion d'administrateurs indépendants strictement égale à 50 %, très légèrement inférieure à la majorité recommandée par le Code et ont nommé un président de comité qualifié d'indépendant. »*
+- **Constat HCGE** : p. 68. *« […] […] 10 ne l'appliquent pas (contre 13 en 2021). Néanmoins, on note que sur ces 10 sociétés, 9 sociétés (dont 1 du CAC 40) ont une proportion d'administrateurs indépendants strictement égale à 50 %, très légèrement inférieure à la majorité recommandée par le Code et ont nommé un président de comité qualifié d'indépendant. »*
 - **Nombre moyen de séances** : p. 69. SBF 120 : **4,75** (4,87 en 2021) ; CAC 40 : **4,94** (5,20 en 2021).
 - **Taux de participation moyen** : p. 69. SBF 120 : **97,98 %** ; CAC 40 : **97,78 %**.
 
@@ -384,7 +384,7 @@ Le HCGE, en 2023, exprime :
 
 - **Majorité d'administrateurs indépendants au comité distinct** : p. 71. **SBF 120 : 85,29 %** (76,47 % en 2021) ; **CAC 40 : 81,25 %** (75 % en 2021).
 - **Taux moyen d'administrateurs indépendants** : p. 71. SBF 120 : **72 %** (67 % en 2021) ; CAC 40 : **71,77 %** (stable).
-- **Constat HCGE** : p. 71. *« 5 sociétés du SBF 120 (dont 3 sociétés du CAC 40) ne s'y conforment pas (contre 8 et 4 en 2021). »*
+- **Constat HCGE** : p. 71. *« […] 5 sociétés du SBF 120 (dont 3 sociétés du CAC 40) ne s'y conforment pas (contre 8 et 4 en 2021). »*
 
 ##### Activité
 
@@ -401,7 +401,7 @@ Le HCGE, en 2023, exprime :
   - **SBF 120 : 97,12 %** (96,08 % en 2021).
   - **CAC 40 : 97,14 %** (94,29 % en 2021).
 - **Constat** : p. 73. **101 sociétés SBF 120** (98 en 2021), **34 CAC 40** (33 en 2021). **3 sociétés (dont 1 CAC 40) ne mentionnent pas de plan de succession**.
-- **Position HCGE** : p. 73. *« Il doit être fait état de la mise en œuvre effective de cette mission chaque année dans le rapport d'activité du comité. »*
+- **Position HCGE** : p. 73. *« […] il doit être fait état de la mise en œuvre effective de cette mission chaque année dans le rapport d'activité du comité. »*
 
 ##### Sélection des futurs administrateurs
 
@@ -432,7 +432,7 @@ Le HCGE, en 2023, exprime :
 - **Statistiques 2022** : p. 80.
   - **SBF 120 : 99,04 %** (97,09 % en 2021).
   - **CAC 40 : 100 %** (97,14 % en 2021).
-- **Constat** : p. 80. *« Seule 1 société du SBF 120 ne respecte pas cette recommandation (contre 3 en 2021). Toutes les sociétés du CAC 40 ont communiqué des objectifs liés à la diversité. »*
+- **Constat** : p. 80. *« Seule 1 société du SBF 120 ne respecte pas cette recommandation (contre 3 en 2021). Toutes les sociétés du CAC 40 ont communiqué des objectifs liés à la diversité […] »*
 
 #### 5.3. Proportion de femmes au sein des comités exécutifs (p. 81-86)
 
@@ -481,7 +481,7 @@ Le HCGE, en 2023, exprime :
   - **31 sans contrat de travail**.
   - **4 avec contrat de travail maintenu** — explications fournies dans 3 cas.
 - **Taux de renoncement** : p. 90. **CAC 40 : 88,6 %** (stable).
-- **Référence AMF (Recommandation 2012-02)** : p. 89. *« L'ancienneté du dirigeant en tant que salarié au sein de la société et sa situation personnelle peuvent justifier le maintien du contrat de travail d'un dirigeant. »*
+- **Référence AMF (Recommandation 2012-02)** : p. 89. *« l'ancienneté du dirigeant en tant que salarié au sein de la société et sa situation personnelle peuvent justifier le maintien du contrat de travail d'un dirigeant. »*
 
 ### Section 8 — Obligation de conservation d'actions (p. 91-93)
 
@@ -491,9 +491,9 @@ Le HCGE, en 2023, exprime :
 
 ##### Citations nominatives — engagement de conservation des actions des dirigeants mandataires sociaux rattaché à l'attribution d'options d'actions ou d'actions de performance (p. 93)
 
-- **BUREAU VERITAS** (DEU 2022, p. 93) : *« Le Conseil d'administration a décidé, sur recommandation du Comité des nominations et des rémunérations, pour les actions de performance et les options de souscription ou d'achat d'actions attribuées le 14 juin 2022, que le Directeur Général était tenu de conserver au nominatif au moins 5 % des actions issues des levées d'options et au moins 20 % des actions de performance acquises jusqu'à l'expiration de son mandat social au sein du Groupe. L'obligation de conservation représente 0,69 x le salaire de base du Directeur Général pour l'année 2022. »*
-- **CARMILA** (DEU 2022, p. 93) : *« Le Conseil d'administration a décidé de fixer les obligations de conservation du Président-Directeur Général, à 50 % du nombre total d'actions gratuites attribuées dans la limite de 1,5 année de rémunération fixe brute. »*
-- **ENGIE** (DEU 2022, p. 93) : *« Objectif fixé : constituer un portefeuille d'actions équivalent à deux années de rémunération fixe pour la Directrice Générale et à 1,5 année pour les autres membres du Comité Exécutif. »* Conservation de 2/3 des Actions de Performance acquises.
+- **BUREAU VERITAS** (DEU 2022, p. 93) : *« […] le Conseil d'administration a décidé, sur recommandation du Comité des nominations et des rémunérations, pour les actions de performance et les options de souscription ou d'achat d'actions attribuées le 14 juin 2022, que le Directeur Général était tenu de conserver au nominatif au moins 5 % des actions issues des levées d'options et au moins 20 % des actions de performance acquises jusqu'à l'expiration de son mandat social au sein du Groupe. L'obligation de conservation représente 0,69 x le salaire de base du Directeur Général pour l'année 2022. »*
+- **CARMILA** (DEU 2022, p. 93) : *« Le Conseil d'administration a décidé de fixer les obligations de conservation du Président-Directeur Général, à 50% du nombre total d'actions gratuites attribuées dans la limite de 1,5 année de rémunération fixe brute. »*
+- **ENGIE** (DEU 2022, p. 93) : *« objectif fixé : constituer un portefeuille d'actions équivalent à deux années de rémunération fixe pour la Directrice Générale et à 1,5 année pour les autres membres du Comité Exécutif. »* Conservation de 2/3 des Actions de Performance acquises.
 
 ### Section 9 — Rémunération des dirigeants mandataires sociaux (p. 94-117)
 
@@ -518,12 +518,12 @@ Le HCGE, en 2023, exprime :
 - **Indication des critères quantifiables et qualitatifs** : p. 98. **SBF 120 : 100 %** (99 % en 2021) ; **CAC 40 : 100 %** (97,1 % en 2021).
 - **Présence d'un ou plusieurs critères RSE** : p. 98. **SBF 120 : 99 %** (93 % en 2021) ; **CAC 40 : 100 %** (94,3 % en 2021).
 - **Présence d'un ou plusieurs critères climatiques** : p. 98. **SBF 120 : 75,5 %** ; **CAC 40 : 85,7 %**.
-- **Référence guide d'application HCGE (juin 2022)** : p. 98. *« La détermination de la rémunération variable d'un dirigeant doit intégrer au moins un critère environnemental. Une simple référence à l'application de la politique RSE, le renvoi à un programme interne RSE ou à des enjeux généraux définis ne sont pas suffisants. »*
+- **Référence guide d'application HCGE (juin 2022)** : p. 98. *« […] la détermination de la rémunération variable d'un dirigeant doit intégrer au moins un critère environnemental. […] Une simple référence à l'application de la politique RSE, le renvoi à un programme interne RSE ou à des enjeux généraux définis ne sont pas suffisants. »*
 
 ##### Citations nominatives — détail des critères, notamment RSE dont climatiques, et niveau de réalisation requis (p. 100-102)
 
-- **ACCOR** (DEU 2022, p. 100) : société citée comme exemple de critères variables détaillés. Détail M. Sébastien Bazin : *« Le montant de la rémunération variable de M. Sébastien Bazin pouvait représenter de 0 % à 150 % du montant de référence brut de 1 250 000 euros, soit de 0 % à 197 % de sa rémunération fixe annuelle. »* Objectifs quantitatifs (80 %) : Free Cash-Flow, économies RESET, croissance organique, critères ESG (15 %). Atteinte : 127,2 % objectifs quantitatifs, 115 % objectifs qualitatifs.
-- **SCOR** (DEU 2022, p. 101) : société citée comme exemple. *« Le directeur général pourrait percevoir une rémunération annuelle variable cible de 800 000 euros, soit 100 % de la rémunération fixe. »* Part 70 % objectifs financiers + 30 % non financiers. Atteinte 66 %.
+- **ACCOR** (DEU 2022, p. 100) : société citée comme exemple de critères variables détaillés. Détail M. Sébastien Bazin : *« […] le montant de la rémunération variable de M. Sébastien Bazin pouvait représenter de 0 % à 150 % du montant de référence brut de 1 250 000 euros, soit de 0 % à 197 % de sa rémunération fixe annuelle […] »* Objectifs quantitatifs (80 %) : Free Cash-Flow, économies RESET, croissance organique, critères ESG (15 %). Atteinte : 127,2 % objectifs quantitatifs, 115 % objectifs qualitatifs.
+- **SCOR** (DEU 2022, p. 101) : société citée comme exemple. *« […] le directeur général pourrait percevoir une rémunération annuelle variable cible de 800 000 euros, soit 100 % de la rémunération fixe. »* Part 70 % objectifs financiers + 30 % non financiers. Atteinte 66 %.
 - **TOTALENERGIES** (DEU 2022, p. 102) : société citée comme exemple.
 
 ##### Indication du pourcentage maximum
@@ -594,15 +594,15 @@ Le HCGE, en 2023, exprime :
 ### Section 10 — Ratio sur les écarts de rémunérations (p. 118-120)
 
 - **Cadre légal** : p. 118. Article L. 22-10-9 du Code de commerce.
-- **Position HCGE — guide d'application** : p. 118. *« Il appartient aux sociétés de mentionner clairement le périmètre de la ou des entités prises en compte, ce qui implique de préciser le pourcentage de l'effectif du groupe en France qu'il représente, d'expliquer les raisons du choix opéré et de s'assurer de la cohérence dans le temps du périmètre. »*
+- **Position HCGE — guide d'application** : p. 118. *« […] il appartient aux sociétés de mentionner clairement le périmètre de la ou des entités prises en compte, ce qui implique de préciser le pourcentage de l'effectif du groupe en France qu'il représente, d'expliquer les raisons du choix opéré et de s'assurer de la cohérence dans le temps du périmètre. »*
 - **Sociétés ayant publié sur un périmètre élargi** : p. 118. **SBF 120 : 86,5 %** (83,5 % en 2021) — 90 sociétés sur 104. **CAC 40 : 85,7 %** (80 % en 2021) — 30 sociétés.
 - **Sociétés n'ayant pas justifié le périmètre élargi** : p. 118. **13 sociétés (dont 6 CAC 40)**.
 - **Sociétés n'ayant pas justifié le périmètre légal** : p. 118. **5 sociétés (dont 2 CAC 40)**.
 
 ##### Citations nominatives — ratio d'équité (p. 119-120)
 
-- **L'OREAL** (DEU 2022, p. 119) : société citée comme exemple. *« Pour le calcul de la rémunération moyenne et médiane, le périmètre retenu est celui de la société L'Oréal qui comprend 9 703 salariés au 31 décembre 2022 (soit 64 % de l'effectif de L'Oréal en France). »* Périmètre France élargi : 15 123 salariés.
-- **EDENRED** (DEU 2022, p. 120) : société citée comme exemple. *« Le périmètre de cette information repose sur la société Edenred qui compte 268 employés à fin 2022, soit 19,7 % de l'effectif d'Edenred en France. »* Second périmètre élargi : 1 295 employés, 95,4 %.
+- **L'OREAL** (DEU 2022, p. 119) : société citée comme exemple. *« […] pour le calcul de la rémunération moyenne et médiane, le périmètre retenu est celui de la société L'Oréal qui comprend 9 703 salariés au 31 décembre 2022 (soit 64 % de l'effectif de L'Oréal en France) »* Périmètre France élargi : 15 123 salariés.
+- **EDENRED** (DEU 2022, p. 120) : société citée comme exemple. *« Le périmètre de cette information repose sur la société Edenred qui compte 268 employés à fin 2022, soit 19,7% de l'effectif d'Edenred en France. »* Second périmètre élargi : 1 295 employés, 95,4 %.
 
 ### Section 11 — Mise en œuvre de la règle « appliquer ou expliquer » (p. 121)
 
@@ -632,7 +632,7 @@ Liste des sociétés citées nominativement, par ordre alphabétique. Pour chaqu
 - **ENGIE** (DEU 2022, p. 93) : société citée comme exemple en Section 8 — objectif 2 années de rémunération fixe pour la Directrice Générale, 1,5 année pour les autres membres du Comex.
 - **EssilorLuxottica** : p. 12 (1re partie, observations du Haut Comité). *« Pourtant sollicitée à plusieurs reprises, la société Essilor Luxottica n'a pas souhaité faire une réponse circonstanciée aux observations du Haut Comité relatives à l'absence de mention d'objectifs de mixité et au manque de communication sur les critères d'appréciation du caractère significatif des éventuels liens d'affaires entretenus entre les administrateurs et la société. »*
 - **HERMÈS INTERNATIONAL** (DEU 2022, p. 56) : société citée comme exemple en sous-section 3.9 Évaluation du conseil — entretiens individuels.
-- **KERING** (DEU 2022, p. 96) : société citée comme exemple en sous-section 9.1 — règle d'évolution de la rémunération fixe. *« La rémunération fixe, qui, conformément à la recommandation 26.3.1 du Code AFEP-MEDEF, ne fait pas l'objet d'une révision annuelle systématique, sert de base de référence pour le calcul de la rémunération variable annuelle et la valorisation de la rémunération long terme. Il est en conséquence proposé de maintenir la rémunération fixe annuelle du Président-Directeur général et du Directeur général délégué à 1 200 000 euros pour chacun d'eux, soit un niveau inchangé depuis six ans. »* Note de bas de page : *« compte tenu du contexte de la pandémie de Covid-19 [...] décidé de diminuer, à titre exceptionnel, le montant de la rémunération fixe proposé pour le Président-Directeur général pour le porter à un montant de 960 000 euros pour l'année 2020. »*
+- **KERING** (DEU 2022, p. 96) : société citée comme exemple en sous-section 9.1 — règle d'évolution de la rémunération fixe. *« La rémunération fixe, qui, conformément à la recommandation 26.3.1 du Code AFEP-MEDEF, ne fait pas l'objet d'une révision annuelle systématique, sert de base de référence pour le calcul de la rémunération variable annuelle et la valorisation de la rémunération long terme. Il est en conséquence proposé de maintenir la rémunération fixe annuelle du Président-Directeur général et du Directeur général délégué à 1 200 000 euros pour chacun d'eux, soit un niveau inchangé depuis six ans […] »* Note de bas de page : *« […] compte tenu du contexte de la pandémie de Covid-19 […] décidé de diminuer, à titre exceptionnel, le montant de la rémunération fixe proposé pour le Président-Directeur général pour le porter à un montant de 960 000 euros pour l'année 2020. »*
 - **KLÉPIERRE** (DEU 2022, p. 86) : société citée comme exemple en sous-section 5.3 — politique de mixité des instances dirigeantes.
 - **LEGRAND** (DEU 2022, p. 41) : société citée comme exemple en sous-section 3.3 Liens d'affaires significatifs — sociétés renseignant les critères ayant conduit à l'appréciation des liens d'affaires significatifs.
 - **L'OREAL** (DEU 2022, p. 119) : société citée comme exemple en Section 10 Ratio sur les écarts de rémunérations — ratio avec périmètre 64 % effectif France (9 703 salariés) + périmètre France élargi (15 123 salariés).

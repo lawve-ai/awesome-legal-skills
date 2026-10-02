@@ -12,9 +12,9 @@
 
 **Vérification pagination** : pagination physique = pagination logique confirmée (sondages p. 1, 40, 78). Numérotation en bas de page.
 
-**Référence Code AFEP-MEDEF utilisée** : version **janvier 2020** (« contexte de stabilisation normative » selon la préface).
+**Référence Code AFEP-MEDEF utilisée** : version **janvier 2020** (« […] contexte de stabilisation normative […] » selon la préface, p. 5).
 
-**Pratique du « name and shame »** : p. 8. *« La pratique, qui demeure mesurée, du "name and shame" a un effet incitatif. Conformément à la politique maintenant établie du Haut Comité, elle s\'applique aux sociétés qui, malgré ses invitations, ont persisté à s\'écarter des recommandations significatives du Code. »* Le rapport précise ensuite les trois cas de figure visés et les modalités de publication des avis (détail au rapport, p. 8).
+**Pratique du « name and shame »** : p. 8. *« […] la pratique, qui demeure mesurée, du "name and shame" a un effet incitatif. Conformément à la politique maintenant établie du Haut Comité, elle s'applique aux sociétés qui, malgré ses invitations, ont persisté à s'écarter des recommandations significatives du Code. »* Le rapport précise ensuite les trois cas de figure visés et les modalités de publication des avis (détail au rapport, p. 8).
 
 **Thèmes saillants 2021** :
 - Crise sanitaire — deuxième saison d'AG à huis clos
@@ -73,31 +73,31 @@
 - **Saisine HCGE** : p. 14-15. Saisine par le Comité des nominations sur l'indépendance de plusieurs personnes pressenties pour être nommées ou renouvelées au Conseil de la société **EssilorLuxottica**.
 - **Cadre article 9.5.1 du Code** : p. 14. Un administrateur indépendant ne doit pas être ou avoir été au cours des 5 dernières années administrateur d'une société consolidée par la société mère ou administrateur d'une société que la société consolide.
 - **Faits** : p. 14-15. Les administrateurs pressentis avaient été administrateurs de **Luxottica**, désormais filiale à 100 % d'EssilorLuxottica, antérieurement à la création d'EssilorLuxottica et **pendant moins d'un an, après sa création**.
-- **Position HCGE** : p. 15. *« Les anciens administrateurs de Luxottica avaient été administrateurs d'une société consolidée par EssilorLuxottica au cours des 5 dernières années. »* Le HCGE a en outre souligné *« qu'en qualité d'administrateur de la société EssilorLuxottica, ils pourraient être amenés à se pencher sur des décisions prises alors qu'ils étaient administrateurs de la société Luxottica, ce qui pourrait influencer leur jugement »*. Le HCGE a considéré que les administrateurs pressentis *« ne remplissaient pas, à la lettre, les critères fixés à l'article 9.5.1 du Code Afep-Medef »*.
-- **Justification opposée par EssilorLuxottica** (DEU) : p. 15. *« Compte tenu de la structure du Groupe EssilorLuxottica, le fait qu'un administrateur de la Société siège ou ait siégé au sein du Conseil d'administration de l'une de ses deux filiales opérationnelles Essilor International ou Luxottica, n'affecte pas son indépendance. »*
+- **Position HCGE** : p. 15. *« […] les anciens administrateurs de Luxottica avaient été administrateurs d'une société consolidée par EssilorLuxottica au cours des 5 dernières années. »* Le HCGE a en outre souligné *« […] qu'en qualité d'administrateur de la société EssilorLuxottica, ils pourraient être amenés à se pencher sur des décisions prises alors qu'ils étaient administrateurs de la société Luxottica, ce qui pourrait influencer leur jugement. »*. Le HCGE a considéré que les administrateurs pressentis *« […] ne remplissaient pas, à la lettre, les critères fixés à l'article 9.5.1 du Code Afep-Medef. »*.
+- **Justification opposée par EssilorLuxottica** (DEU) : p. 15. *« compte tenu de la structure du Groupe EssilorLuxottica, le fait qu'un administrateur de la Société siège ou ait siégé au sein du Conseil d'administration de l'une de ses deux filiales opérationnelles Essilor International ou Luxottica, n'affecte pas son indépendance »*
 - **Position HCGE finale** : p. 15. *« Le Haut Comité considère que ces affirmations ne constituent pas des explications conformes aux exigences du Code. »*
 
 #### Conflit d'intérêts avéré, général et durable — administrateurs liés à une société actionnaire (cas non nommé)
 
 - **Saisine HCGE** : p. 14. Avis sur la qualification et les conséquences d'un conflit d'intérêts concernant des administrateurs d'une société A, salariés d'une société B actionnaire, dans le cadre d'une opération lancée par une société C qui rencontrait l'opposition des dirigeants de la société A.
-- **Cadre article 20 du Code AFEP-MEDEF** : p. 14. *« L'administrateur a l'obligation de faire part au conseil de toute situation de conflit d'intérêts même potentiel et s'abstient d'assister au débat et de participer au vote de la délibération correspondante. »* L'article ajoute que *« l'administrateur est assidu et participe à toutes les séances du conseil et réunions des comités auxquels il appartient le cas échéant »*.
-- **Référence à la position HCGE antérieure** : p. 14. *« Le Haut Comité a déjà eu l'occasion de préciser que l'administrateur qui, en raison d'une situation de conflit d'intérêts général et durable, n'est plus en mesure de respecter simultanément les obligations d'abstention et d'assiduité mentionnées à l'article 20 s'expose à un manquement grave aux règles du Code Afep-Medef, et doit en tirer les conséquences en renonçant à son mandat »* (référence : rapport annuel HCGE 2019, p. 15).
+- **Cadre article 20 du Code AFEP-MEDEF** : p. 14. *« l'administrateur a l'obligation de faire part au conseil de toute situation de conflit d'intérêts même potentiel et s'abstient d'assister au débat et de participer au vote de la délibération correspondante »* L'article ajoute que *« l'administrateur est assidu et participe à toutes les séances du conseil et réunions des comités auxquels il appartient le cas échéant »*.
+- **Référence à la position HCGE antérieure** : p. 14. *« […] Le Haut Comité a déjà eu l'occasion de préciser que l'administrateur qui, en raison d'une situation de conflit d'intérêts général et durable, n'est plus en mesure de respecter simultanément les obligations d'abstention et d'assiduité mentionnées à l'article 20 s'expose à un manquement grave aux règles du Code Afep-Medef, et doit en tirer les conséquences en renonçant à son mandat […] »* (référence : rapport annuel HCGE 2019, p. 15).
 - **Précision sur la qualité d'administrateur** : p. 14. *« Dans le cas soumis, les administrateurs ne siégeaient pas au Conseil de A en qualité de représentants permanents de la société B mais à titre personnel. »*
-- **Position HCGE sur le lien de subordination** : p. 14. *« Le Haut Comité a toutefois considéré qu'il n'en demeure pas moins que les fonctions exercées par les administrateurs au sein de la société B et le lien de subordination qui les lient à leur employeur conduisent à considérer que l'existence d'un conflit entre les intérêts de la société B et la société A les placerait eux-mêmes nécessairement en situation de conflit d'intérêts. »*
+- **Position HCGE sur le lien de subordination** : p. 14. *« Le Haut comité a toutefois considéré qu'il n'en demeure pas moins que les fonctions exercées par les administrateurs au sein de la société B et le lien de subordination qui les lient à leur employeur conduisent à considérer que l'existence d'un conflit entre les intérêts de la société B et la société A les placerait eux-mêmes nécessairement en situation de conflit d'intérêts. »*
 - **Position HCGE sur l'intérêt de la société B** : p. 14. *« Il a retenu que la société B avait un intérêt au succès de l'opération structurante pour la société A susceptible de placer les administrateurs en situation de conflit d'intérêts. »*
-- **Conséquences pratiques tirées par le HCGE** : p. 14. Pendant toute la durée de l'opération, les administrateurs concernés *« ne pourraient recevoir d'information et devraient s'abstenir de participer aux réunions du Conseil de la société A portant sur l'ensemble de ces sujets »*.
-- **Conclusion HCGE** : p. 14. *« Au regard des règles du Code Afep-Medef, il existait un conflit d'intérêts avéré, général et durable et qu'il appartenait aux différents intéressés d'en tirer les conséquences »* — c'est-à-dire renoncer à leur mandat.
+- **Conséquences pratiques tirées par le HCGE** : p. 14. Pendant toute la durée de l'opération, les administrateurs concernés *« […] ne pourraient recevoir d'information et devraient s'abstenir de participer aux réunions du Conseil de la société A portant sur l'ensemble de ces sujets. »*.
+- **Conclusion HCGE** : p. 14. *« […] au regard des règles du Code Afep-Medef, il existait un conflit d'intérêts avéré, général et durable et qu'il appartenait aux différents intéressés d'en tirer les conséquences. »* — c'est-à-dire renoncer à leur mandat.
 
 #### Examen de l'indépendance et liens d'affaires significatifs
 
 - **Saisine HCGE** : p. 15-16. Cas d'une société ayant investi dans de nombreux fonds pour soutenir l'innovation, dont certains fonds gérés par des sociétés dirigées par des administrateurs de la société.
-- **Position HCGE** : p. 15. *« Il revient à chaque société d'apprécier le caractère significatif ou non de ces liens et de présenter les critères qu'elle estime pertinents en fonction de ses caractéristiques propres et de celles de la relation considérée. La question doit être examinée au cas par cas et les critères retenus mentionnés. Ce caractère significatif s'apprécie du point de vue de la société et du point de vue de l'administrateur lui-même. »*
+- **Position HCGE** : p. 16. *« […] il revient à chaque société d'apprécier le caractère significatif ou non de ces liens et de présenter les critères qu'elle estime pertinents en fonction de ses caractéristiques propres et de celles de la relation considérée. La question doit être examinée au cas par cas et les critères retenus mentionnés. Ce caractère significatif s'apprécie du point de vue de la société et du point de vue de l'administrateur lui-même. »*
 - **Transparence requise** : p. 16. Le document d'enregistrement universel doit rendre compte de la procédure d'appréciation suivie, préciser les relations d'affaires existantes, expliciter les données qualitatives et quantitatives. En l'absence de relations d'affaires, il doit en être fait mention.
 
 #### Cas Danone — actionnaires demandant l'expression individuelle des administrateurs
 
 - **Faits** : p. 13. Des actionnaires de **Danone** ont appelé les administrateurs à donner individuellement et publiquement leur point de vue sur la future gestion du groupe et demandé l'inscription d'un point à l'ordre du jour d'une assemblée permettant à chaque administrateur de s'exprimer individuellement sur sa vision stratégique pour le groupe.
-- **Position HCGE** : p. 13. *« Le Haut Comité rappelle son attachement à la confidentialité des travaux du Conseil et au principe de collégialité qui font obstacle à toute prise de position individuelle publique des administrateurs, lesquels sont solidaires de l'ensemble des décisions du Conseil. »*
+- **Position HCGE** : p. 13. *« […] Le Haut Comité rappelle son attachement à la confidentialité des travaux du Conseil et au principe de collégialité qui font obstacle à toute prise de position individuelle publique des administrateurs, lesquels sont solidaires de l'ensemble des décisions du Conseil. »*
 
 ### Bloc D — Comités du conseil
 
@@ -111,45 +111,45 @@
 - **Distinction juridique fondamentale** : p. 17. Le HCGE distingue rigoureusement deux catégories d'administrateurs :
   - **Administrateur représentant les salariés** (article L. 225-27-1 du Code de commerce) — désigné par les instances représentatives du personnel ;
   - **Administrateur représentant les actionnaires salariés** (article L. 225-23 du Code de commerce) — nommé par l'AG, représente les salariés actionnaires.
-- **Position HCGE sur la satisfaction de la recommandation** : p. 17. *« Le mode de nomination de l'administrateur représentant les actionnaires salariés et souvent son profil étant différents de celui du salarié, sa présence au sein du comité des rémunérations ne satisfait pas à la recommandation de la nomination d'un administrateur salarié au comité des rémunérations. »*
+- **Position HCGE sur la satisfaction de la recommandation** : p. 17. *« […] Le mode de nomination de l'administrateur représentant les actionnaires salariés et souvent son profil étant différents de celui du salarié, sa présence au sein du comité des rémunérations ne satisfait pas à la recommandation de la nomination d'un administrateur salarié au comité des rémunérations. »*
 - **Constat HCGE** : p. 16. *« Même si la présence des administrateurs représentant les salariés dans ce comité progresse, notamment en 2020/2021, cette recommandation du Code n'est pas assez suivie. »*
 - **Statistique** : p. 16. **Moins de 10 sociétés** ne donnent aucune explication ; parmi elles, certaines ont un administrateur représentant les actionnaires salariés au comité des rémunérations.
 
 ##### Explications avancées par les sociétés (10 motifs recensés) — formulation littérale du HCGE
 
 - **Liste** : p. 16. *« Les explications avancées par les sociétés sont diverses : »*
-  1. *« Le comité des rémunérations et des nominations traitant de sujets plus larges que celui des rémunérations, un salarié n'en est pas membre. »*
-  2. *« Le secrétaire du conseil assure les fonctions de secrétaire du comité des rémunérations. »*
-  3. *« Le salarié participe aux travaux du conseil et a donc toute l'information nécessaire. »*
-  4. *« L'administrateur salarié siège dans un autre comité. »*
-  5. *« L'administrateur a manifesté un intérêt pour participer à un autre comité ou a indiqué souhaiter être membre uniquement d'un autre comité. »*
-  6. *« La société ne souhaite pas augmenter le nombre des membres du comité. »*
-  7. *« Le règlement intérieur, reflet de la structure de l'actionnariat ne prévoit pas, à ce stade, la nomination d'un salarié au comité des rémunérations. »*
-  8. *« Le conseil poursuit ses réflexions à la suite de la nomination d'un second administrateur représentant les salariés. »*
-  9. *« Le salarié vient d'être nommé au conseil et il convient de lui laisser une période d'adaptation et de formation avant de proposer sa nomination dans un comité. »*
-  10. *« La présence d'un salarié au conseil résulte d'une démarche volontaire de la société qui en conséquence n'est pas tenue par les dispositions du Code relative à la présence du salarié au comité des rémunérations. »*
+  1. *« Le comité des rémunérations et des nominations traitant de sujets plus larges que celui des rémunérations, un salarié n'en est pas membre ; »*
+  2. *« Le secrétaire du conseil assure les fonctions de secrétaire du comité des rémunérations ; […] »*
+  3. *« Le salarié participe aux travaux du conseil et a donc toute l'information nécessaire ; […] »*
+  4. *« L'administrateur salarié siège dans un autre comité ; […] »*
+  5. *« L'administrateur a manifesté un intérêt pour participer à un autre comité ou a indiqué souhaiter être membre uniquement d'un autre comité ; »*
+  6. *« La société ne souhaite pas augmenter le nombre des membres du comité ; […] »*
+  7. *« Le règlement intérieur, reflet de la structure de l'actionnariat ne prévoit pas, à ce stade, la nomination d'un salarié au comité des rémunérations ; […] »*
+  8. *« Le conseil poursuit ses réflexions à la suite de la nomination d'un second administrateur représentant les salariés ; […] »*
+  9. *« Le salarié vient d'être nommé au conseil et il convient de lui laisser une période d'adaptation et de formation avant de proposer sa nomination dans un comité ; […] »*
+  10. *« La présence d'un salarié au conseil résulte d'une démarche volontaire de la société qui en conséquence n'est pas tenue par les dispositions du Code relative à la présence du salarié au comité des rémunérations ; […] »*
   11. *« La politique de rémunération des gérants ne relève pas juridiquement du conseil mais de l'associé commandité. »*
 
 ##### Position HCGE — réponse aux motifs
 
 - **Diligence d'application** : p. 17. *« Le Haut Comité rappelle que les conseils doivent être diligents dans l'application des recommandations du Code et qu'il est de leur responsabilité de les mettre en œuvre. »*
-- **Sur la confusion administrateur représentant les actionnaires salariés / administrateur représentant les salariés** : p. 17. *« Le mode de nomination de l'administrateur représentant les actionnaires salariés et souvent son profil étant différents de celui du salarié, sa présence au sein du comité des rémunérations ne satisfait pas à la recommandation de la nomination d'un administrateur salarié au comité des rémunérations. »*
+- **Sur la confusion administrateur représentant les actionnaires salariés / administrateur représentant les salariés** : p. 17. *« […] Le mode de nomination de l'administrateur représentant les actionnaires salariés et souvent son profil étant différents de celui du salarié, sa présence au sein du comité des rémunérations ne satisfait pas à la recommandation de la nomination d'un administrateur salarié au comité des rémunérations. »*
 - **Sur les comités mixtes rémunérations/nominations** : p. 17. *« Lorsque les missions des comités des rémunérations et des nominations sont exercées au sein d'un comité unique une simple organisation des travaux de ce comité permet le respect de la recommandation, comme le pratique déjà plusieurs sociétés. »*
-- **Sur la nomination récente** : p. 17. *« Parmi les explications relevées, seule l'explication liée à une nomination récente d'un administrateur représentant des salariés au conseil peut justifier un court délai de mise en œuvre de la recommandation. Le Haut Comité, dans son guide d'application du Code, précise que cette recommandation est applicable dans l'année de l'entrée en fonction du ou des administrateurs salariés. »*
+- **Sur la nomination récente** : p. 17. *« […] Parmi les explications relevées, seule l'explication liée à une nomination récente d'un administrateur représentant des salariés au conseil peut justifier un court délai de mise en œuvre de la recommandation. Le Haut Comité, dans son guide d'application du Code, précise que cette recommandation est applicable dans l'année de l'entrée en fonction du ou des administrateurs salariés. »*
 
 #### Réunions hors la présence des dirigeants mandataires sociaux exécutifs (article 11.3)
 
-- **Cadre article 11.3 du Code AFEP-MEDEF** : p. 18-19. *« Organiser chaque année au moins une réunion hors la présence des dirigeants mandataires sociaux exécutifs. »*
+- **Cadre article 11.3 du Code AFEP-MEDEF** : p. 18-19. *« […] organiser chaque année au moins une réunion hors la présence des dirigeants mandataires sociaux exécutifs »* (p. 18)
 - **Position HCGE — précisions** : p. 18-19.
-  - **Champ d'application** : p. 18. *« Cette recommandation s'applique aux sociétés dont les dirigeants mandataires sociaux exécutifs sont membres ou, sans être membres, assistent aux conseils d'administration. Pour les sociétés de forme duale, la même règle s'applique lorsque les membres du Directoire assistent aux réunions du Conseil de surveillance. »*
-  - **Participants autorisés** : p. 19. *« Seuls les membres non exécutifs du conseil peuvent participer à ces réunions. Les dirigeants mandataires sociaux exécutifs (président-directeur général, directeur général et directeurs généraux délégués des sociétés anonymes à conseil d'administration, président et membres du directoire des sociétés anonymes à directoire et conseil de surveillance) ne peuvent pas être présents. »*
-  - **Présence obligatoire en cas d'évaluation de performance** : p. 19. *« Il appartient à chaque conseil de définir qui participe à ces réunions. Il est précisé que la présence de tous les membres du conseil, hors les dirigeants mandataires sociaux exécutifs, sera obligatoire s'il est procédé, lors de cette réunion, à l'évaluation de la performance des dirigeants mandataires sociaux exécutifs visée à l'article 25.1.1 du Code. »*
-  - **Modes d'organisation** : p. 19. *« Les sociétés choisissent le mode d'organisation de ces réunions : elles peuvent y consacrer une ou des séances dédiées ou les organiser, par exemple, avant ou à l'issue de la réunion d'un conseil. »*
-  - **Sujets et garantie de libre expression** : p. 19. *« Les sujets abordés lors de ces réunions sont librement définis par les conseils et dépendent de l'actualité et du fonctionnement propre à chaque conseil. La libre expression des participants doit y être garantie. »*
+  - **Champ d'application** : p. 18. *« […] Cette recommandation s'applique aux sociétés dont les dirigeants mandataires sociaux exécutifs sont membres ou, sans être membres, assistent aux conseils d'administration. Pour les sociétés de forme duale, la même règle s'applique lorsque les membres du Directoire assistent aux réunions du conseil de surveillance. »*
+  - **Participants autorisés** : p. 19. *« […] Seuls les membres non exécutifs du conseil peuvent participer à ces réunions. Les dirigeants mandataires sociaux exécutifs (président-directeur général, directeur général et directeurs généraux délégués des sociétés anonymes à conseil d'administration, président et membres du directoire des sociétés anonymes à directoire et conseil de surveillance) ne peuvent pas être présents. »*
+  - **Présence obligatoire en cas d'évaluation de performance** : p. 19. *« […] Il appartient à chaque conseil de définir qui participe à ces réunions. Il est précisé que la présence de tous les membres du conseil, hors les dirigeants mandataires sociaux exécutifs, sera obligatoire s'il est procédé, lors de cette réunion, à l'évaluation de la performance des dirigeants mandataires sociaux exécutifs visée à l'article 25.1.1 du Code. »*
+  - **Modes d'organisation** : p. 19. *« […] Les sociétés choisissent le mode d'organisation de ces réunions : elles peuvent y consacrer une ou des séances dédiées ou les organiser, par exemple, avant ou à l'issue de la réunion d'un conseil. »*
+  - **Sujets et garantie de libre expression** : p. 19. *« […] Les sujets abordés lors de ces réunions sont librement définis par les conseils et dépendent de l'actualité et du fonctionnement propre à chaque conseil. La libre expression des participants doit y être garantie. »*
 
 #### Composition des comités — taux d'indépendance
 
-- **Position HCGE** : p. 11. *« Pour les comités des rémunérations ou des nominations, il a admis que la présence de 50 % d'administrateurs indépendants (aux lieu et place d'une majorité) répond à la recommandation du Code lorsque le Président du comité est indépendant. »*
+- **Position HCGE** : p. 11. *« […] Pour les comités des rémunérations ou des nominations, il a admis que la présence de 50 % d'administrateurs indépendants (aux lieu et place d'une majorité) répond à la recommandation du Code lorsque le Président du comité est indépendant. »*
 
 ### Bloc E — Rémunérations des dirigeants
 
@@ -158,7 +158,7 @@
 - **Constat** : p. 12. **Plus de 50 % des directeurs généraux du CAC 40** ont renoncé à une partie de leur rémunération pour l'exercice 2020.
 - **Modifications des schémas de bonus** : p. 12-13. La plupart les ont ajustés, soit en abaissant les objectifs (en cohérence avec un budget révisé), soit en ajoutant des critères extra-financiers (gestion de la crise sanitaire).
 - **Vote des actionnaires** : p. 13. **Moins de 10 sociétés** ont soumis ces modifications au vote des actionnaires. Les autres ont fait usage du droit discrétionnaire ou se sont prévalues de « circonstances exceptionnelles ».
-- **Position HCGE** : p. 13. *« Le Haut Comité souligne que les sociétés qui procèdent à la modification des politiques de rémunération doivent, au-delà du respect des textes légaux, appliquer ou fournir une explication lorsqu'elles écartent les recommandations des articles 25.3.2 ou 25.3.3 du Code. »*
+- **Position HCGE** : p. 13. *« […] Le Haut Comité souligne que les sociétés qui procèdent à la modification des politiques de rémunération doivent, au-delà du respect des textes légaux, appliquer ou fournir une explication lorsqu'elles écartent les recommandations des articles 25.3.2 ou 25.3.3 du Code. »*
 - **Cadres rappelés** : p. 13.
   - **Article 25.3.2** : critères de la rémunération variable annuelle et objectifs à atteindre doivent être **précis et préétablis**.
   - **Article 25.3.3** : le conseil ne peut modifier les conditions de performance des rémunérations long terme qu'en cas de **circonstances exceptionnelles** et à condition de **maintenir l'alignement des intérêts** des actionnaires et des bénéficiaires.
@@ -168,13 +168,13 @@
 - **Cadre** : p. 18. Depuis 2020, sociétés cotées doivent publier un ratio (article L. 22-10-9 du Code de commerce). Le Code Afep-Medef recommande dans son article 26.2 la publication d'un ratio prenant en compte un périmètre représentatif (**80 % des effectifs en France** considéré comme significatif).
 - **Référence** : p. 18. Lignes directrices Afep de février 2021 sur les multiples de rémunérations.
 - **Constat HCGE** : p. 18. *« Le Haut Comité relève que, pour les sociétés qui communiquent sur un ratio élargi, il est difficile d'apprécier la pertinence du périmètre retenu, faute de mention claire du périmètre des entités prises en compte et du pourcentage de l'effectif du groupe en France qu'il représente. »*
-- **Position HCGE** : p. 18. *« Le Haut Comité rappelle aux sociétés la nécessité de mentionner clairement le périmètre de la ou des entités prises en compte, ce qui implique de préciser le pourcentage de l'effectif du groupe en France qu'il représente, d'expliquer les raisons du choix opéré et de s'assurer de la cohérence dans le temps du périmètre adopté. »*
+- **Position HCGE** : p. 18. *« […] Le Haut Comité rappelle aux sociétés la nécessité de mentionner clairement le périmètre de la ou des entités prises en compte, ce qui implique de préciser le pourcentage de l'effectif du groupe en France qu'il représente, d'expliquer les raisons du choix opéré et de s'assurer de la cohérence dans le temps du périmètre adopté. »*
 - **Statistique des courriers HCGE** : p. 10. **12 sociétés** sur les 31 destinataires d'un courrier en 2021 l'ont été pour le sujet du ratio sur les multiples de rémunérations.
 
 #### Critères RSE et environnementaux dans la rémunération variable
 
 - **Position HCGE** : p. 11. *« La présence d'un critère environnemental parmi les critères extra-financiers est en net progrès entre 2020 et 2021 même si les politiques de rémunération ne sont pas toujours suffisamment détaillées sur les critères RSE en général et le critère environnemental en particulier. »*
-- **Bonnes pratiques attendues** : p. 11. *« Le Haut Comité rappelle qu'il attend que les critères RSE soient définis de manière précise, soient lisibles, pertinents et intègrent les enjeux propres à l'entreprise. Il considère comme une bonne pratique le fait de privilégier la présence de critères quantifiables. »*
+- **Bonnes pratiques attendues** : p. 11. *« […] Le Haut Comité rappelle qu'il attend que les critères RSE soient définis de manière précise, soient lisibles, pertinents et intègrent les enjeux propres à l'entreprise. Il considère comme une bonne pratique le fait de privilégier la présence de critères quantifiables. »*
 
 #### Cas de PDG quittant la direction générale et devenant président non indépendant
 
@@ -192,12 +192,12 @@
   - Possibilité de poser des questions avant mais aussi en direct durant la séance.
   - **Une société** a proposé le vote électronique à distance et en direct.
   - Présentations et débats en séance plus longs.
-- **Quorums** : p. 12. *« La moyenne des quorums, déjà supérieure à 70 %, est en légère progression. »*
+- **Quorums** : p. 12. *« […] la moyenne des quorums, déjà supérieure à 70 %, est en légère progression. »*
 
 #### Apparition du say on climate par les conseils
 
-- **Constat** : p. 12. *« De nouvelles pratiques ont vu le jour : dans 3 sociétés, les conseils ont présenté des résolutions sur la stratégie climat. »*
-- **Demandes d'inscription à l'ordre du jour** : p. 12. *« Dans 2 sociétés les actionnaires ont demandé l'inscription de points à l'ordre du jour. »*
+- **Constat** : p. 12. *« De nouvelles pratiques ont vu le jour : dans 3 sociétés, les conseils ont présenté des résolutions sur la stratégie climat ; […] »*
+- **Demandes d'inscription à l'ordre du jour** : p. 12. *« […] dans 2 sociétés les actionnaires ont demandé l'inscription de points à l'ordre du jour. »*
 
 ### Bloc H — Comply or explain — méthode HCGE
 
@@ -224,11 +224,11 @@
   - **Autres objectifs (managers, cadres dirigeants)** : 18,4 % du SBF 120.
 - **Sociétés sans objectif mais avec taux > 45 %** : p. 17. Parmi les 9 sociétés qui n'ont pas mis en place d'objectif, **3 ont atteint un taux de féminisation supérieur à 45 %**.
 - **Horizon de temps** : p. 17. **4 sociétés** n'ont pas précisé d'horizon de temps. À **horizon 2024-2025, le taux de féminisation moyen** des comités exécutifs ou comité de direction s'établit à **34,7 %**.
-- **Position HCGE** : p. 17. *« Le Haut Comité rappelle que les plans d'actions de féminisation des instances dirigeantes doivent être ambitieux et chiffrés et que l'horizon de temps dans lequel les actions doivent être menées doit être justifié. La mise en œuvre des plans devra être suivie et les résultats publiés, y inclus les raisons pour lesquelles les objectifs n'auraient pas été atteints ainsi que les mesures prises pour y remédier. »*
+- **Position HCGE** : p. 17. *« […] Le Haut Comité rappelle que les plans d'actions de féminisation des instances dirigeantes doivent être ambitieux et chiffrés et que l'horizon de temps dans lequel les actions doivent être menées doit être justifié. La mise en œuvre des plans devra être suivie et les résultats publiés, y inclus les raisons pour lesquelles les objectifs n'auraient pas été atteints ainsi que les mesures prises pour y remédier. »*
 
 #### Gouvernance durable — thème 2022
 
-- **Position HCGE** : p. 19. *« Le Haut Comité est attentif aux réflexions sur la gouvernance durable et entend défendre la place de la soft law, plus particulièrement au niveau de la composition et des missions des organes de gouvernance mais aussi du contrôle des pratiques des entreprises. »*
+- **Position HCGE** : p. 19. *« […] le Haut Comité est attentif aux réflexions sur la gouvernance durable et entend défendre la place de la soft law, plus particulièrement au niveau de la composition et des missions des organes de gouvernance mais aussi du contrôle des pratiques des entreprises. »*
 
 #### RSE — vérification de l'accomplissement des objectifs
 
@@ -265,7 +265,7 @@ Le HCGE, en 2021, exprime :
 
 #### 3.1. Nombre d'administrateurs (p. 24-25)
 
-- **Statistiques exercice 2020** : p. 24. *« Légère hausse du nombre moyen d'administrateurs qui s'explique par l'augmentation du nombre d'administrateurs représentant les salariés (loi PACTE). »*
+- **Statistiques exercice 2020** : p. 25. *« […] [L]égère hausse du nombre moyen d'administrateurs qui s'expliquent [sic] par l'augmentation du nombre d'administrateurs représentant les salariés (loi PACTE). »*
 - **Étendue** : p. 24. Conseils du SBF 120 comptent de 7 à 21 membres (une seule société, en raison d'un statut dérogatoire, a un conseil d'administration de 21 membres).
 
 #### 3.2. Indépendance des administrateurs (p. 25-26)
@@ -274,7 +274,7 @@ Le HCGE, en 2021, exprime :
 
 - **Critère 12 ans (ancienneté)** : p. 25. Écarté en 2020 par **9 sociétés (8,7 %) du SBF 120** (contre 12 sociétés en 2019), dont **4 sociétés (11,1 %) du CAC 40** (contre 5 sociétés en 2019).
 - **Critère du mandat dans une autre société du groupe** : p. 25. Écarté en 2020 par **5 sociétés du SBF 120** (contre 7 en 2019).
-- **Position HCGE** : p. 25. *« Le Haut Comité considère que cette qualification est difficile à justifier, en raison d'un risque "structurel" de conflits d'intérêts entre sociétés au sein d'un même groupe. A minima, il faut préciser que l'intéressé s'abstiendra de participer aux délibérations du conseil de la maison-mère qui pourraient affecter les intérêts de la filiale, comme certaines sociétés l'ont indiqué. »*
+- **Position HCGE** : p. 25. *« […] le Haut Comité considère que cette qualification est difficile à justifier, en raison d'un risque "structurel" de conflits d'intérêts entre sociétés au sein d'un même groupe. A minima, il faut préciser que l'intéressé s'abstiendra de participer aux délibérations du conseil de la maison-mère qui pourraient affecter les intérêts de la filiale, comme certaines sociétés l'ont indiqué. »*
 
 ##### Citation nominative — L'AIR LIQUIDE
 
@@ -294,7 +294,7 @@ Le HCGE, en 2021, exprime :
 - **Statistiques 2020** : p. 26.
   - **SBF 120 : 89,2 %** (91,9 % en 2019).
   - **CAC 40 : 95,7 %** (85,7 % en 2019).
-- **Constat HCGE** : p. 26. *« Une société du CAC 40 n'applique pas la recommandation du Code. »* SBF 120 : 33 sociétés appliquent la recommandation sur 37 sociétés concernées (contre 34 en 2019).
+- **Constat HCGE** : p. 26. *« […] une société du CAC 40 n'applique pas la recommandation du Code […] »* SBF 120 : 33 sociétés appliquent la recommandation sur 37 sociétés concernées (contre 34 en 2019).
 
 ##### Respect proportion administrateurs indépendants — sociétés non contrôlées
 
@@ -306,7 +306,7 @@ Le HCGE, en 2021, exprime :
 
 - **Examen de l'existence de liens d'affaires** : p. 27. **100 % SBF 120 et CAC 40** (stable).
 - **Mention des critères de significativité** : p. 27. **SBF 120 : 87,8 %** (91,6 % en 2019). **CAC 40 : 93,9 %** (94,3 % en 2019).
-- **Constat HCGE** : p. 27. *« 72 des sociétés du SBF 120 dont 31 sociétés du CAC 40 précisent les critères ayant conduit à l'appréciation de la significativité ou non de ces liens (contre respectivement 75 et 33 en 2019). »*
+- **Constat HCGE** : p. 27. *« […] 72 des sociétés du SBF 120 dont 31 sociétés du CAC 40 précisent les critères ayant conduit à l'appréciation de la significativité ou non de ces liens (contre respectivement 75 et 33 en 2019). »*
 - **Position HCGE** : p. 27. *« Le Haut Comité réitère sa position et rappelle qu'il s'agit d'une problématique essentielle. »*
 
 ##### Citation nominative — DANONE
@@ -338,17 +338,17 @@ Le HCGE, en 2021, exprime :
 
 #### 3.6. Rémunération des membres du conseil (p. 30-31)
 
-- **Cadre Code AFEP-MEDEF** : p. 30. *« Les règles de répartition de ces rémunérations et les montants individuels des versements effectués à ce titre aux administrateurs sont exposés dans le rapport sur le gouvernement d'entreprise. »* (§ 21.4).
+- **Cadre Code AFEP-MEDEF** : p. 30. *« les règles de répartition de ces rémunérations et les montants individuels des versements effectués à ce titre aux administrateurs sont exposés dans le rapport sur le gouvernement d'entreprise. »* (§ 21.4).
 - **Statistique 2020 — Indiquant le montant global** : p. 30. **SBF 120 : 100 %** (100 % en 2019) ; **CAC 40 : 100 %** (100 % en 2019).
 - **Statistique 2020 — Indiquant les montants individuels** : p. 30. **SBF 120 : 100 %** ; **CAC 40 : 100 %**.
-- **Cadre Code AFEP-MEDEF (§ 21.1)** : p. 31. *« Le mode de répartition de cette rémunération, dont le montant global est décidé par l'assemblée générale, est arrêté par le conseil d'administration. Il tient compte, selon les modalités qu'il définit, de la participation effective des administrateurs au conseil et dans les comités, et comporte donc une part variable prépondérante. »*
+- **Cadre Code AFEP-MEDEF (§ 21.1)** : p. 31. *« le mode de répartition de cette rémunération, dont le montant global est décidé par l'assemblée générale, est arrêté par le conseil d'administration. Il tient compte, selon les modalités qu'il définit, de la participation effective des administrateurs au conseil et dans les comités, et comporte donc une part variable prépondérante »*
 - **Statistique 2020 — Règles de répartition présentées** : p. 31. **SBF 120 : 98,1 %** (96,2 % en 2019) ; **CAC 40 : 100 %** (100 % en 2019).
 - **Statistique 2020 — Part variable prépondérante** : p. 31. **SBF 120 : 92,2 %** (90,4 % en 2019) ; **CAC 40 : 97,2 %** (97,3 % en 2019).
-- **Précisions HCGE** : p. 31. *« Pour l'exercice 2020, deux sociétés n'ont pas précisé les règles de répartition des rémunérations des administrateurs (contre 4 en 2019). »* *« 95 sociétés du SBF 120 (contre 94 en 2019) l'appliquent. Quant au CAC 40, comme lors de l'exercice précédent, une société a fait le choix d'écarter cette recommandation, en accordant autant d'importance à la part fixe qu'à la part variable. »*
+- **Précisions HCGE** : p. 31. *« Pour l'exercice 2020, deux sociétés n'ont pas précisé les règles de répartition des rémunérations des administrateurs (contre 4 en 2019). »* *« […] 95 sociétés du SBF 120 (contre 94 en 2019) l'appliquent. Quant au CAC 40, comme lors de l'exercice précédent, une société a fait le choix d'écarter cette recommandation, en accordant autant d'importance à la part fixe qu'à la part variable. »*
 
 #### 3.7. Durée et échelonnement des mandats des administrateurs (p. 31)
 
-- **Cadre Code AFEP-MEDEF** : p. 31. *« La durée du mandat des administrateurs, fixée par les statuts, ne doit pas excéder quatre ans de sorte que les actionnaires soient amenés à se prononcer avec une fréquence suffisante sur leur mandat »* (§ 14.1). *« L'échelonnement des mandats est organisé de façon à éviter un renouvellement en bloc et à favoriser un renouvellement harmonieux des administrateurs »* (§ 14.2).
+- **Cadre Code AFEP-MEDEF** : p. 31. *« la durée du mandat des administrateurs, fixée par les statuts, ne doit pas excéder quatre ans de sorte que les actionnaires soient amenés à se prononcer avec une fréquence suffisante sur leur mandat »* (§ 14.1). *« l'échelonnement des mandats est organisé de façon à éviter un renouvellement en bloc et à favoriser un renouvellement harmonieux des administrateurs »* (§ 14.2).
 - **Note de bas de page** : p. 31, note 6. *« En droit français, la durée des fonctions des administrateurs est fixée par les statuts sans pouvoir excéder six ans. »*
 - **Statistique 2020 — Durée moyenne du mandat** : p. 31. **SBF 120 : 3,7 ans** (3,7 en 2019) ; **CAC 40 : 3,6 ans** (3,6 en 2019).
 - **Statistique 2020 — Durée du mandat ≤ 4 ans** : p. 31. **SBF 120 : 99 %** (98,1 % en 2019) ; **CAC 40 : 100 %** (100 % en 2019).
@@ -372,7 +372,7 @@ Le HCGE, en 2021, exprime :
 
 #### 3.10. Réunion hors la présence des dirigeants mandataires sociaux non exécutifs (p. 37)
 
-- **Cadre Code AFEP-MEDEF** : p. 37. *« Organiser chaque année au moins une réunion hors la présence des dirigeants mandataires sociaux exécutifs »* (§ 11.3).
+- **Cadre Code AFEP-MEDEF** : p. 37. *« […] organiser chaque année au moins une réunion hors la présence des dirigeants mandataires sociaux exécutifs. »* (§ 11.3).
 - **Statistique 2020 — Sociétés mentionnant la tenue d'au moins une réunion hors DMS exécutifs** : p. 37. **SBF 120 : 76 %** (72,1 % en 2019) ; **CAC 40 : 86,1 %** (81,1 % en 2019).
 - **Décompte HCGE** : p. 37. *« Pour le SBF 120, 79 sociétés (contre 75 sociétés en 2019) ont indiqué avoir tenu une réunion hors la présence de dirigeants mandataires sociaux exécutifs, dont 31 sociétés du CAC 40 (comme en 2019). »*
 - **Précisions HCGE** : p. 37. *« Nous constatons que cette réunion est dans la plupart des cas prévue dans le règlement intérieur, mais il n'est pas fait état de sa mise en place effective (voir partie 1, § 3.8). »*
@@ -383,7 +383,7 @@ Le HCGE, en 2021, exprime :
 - **Statistique 2020 — Sociétés ayant doté leur conseil d'un règlement intérieur** : p. 37. **SBF 120 : 100 %** (100 % en 2019) ; **CAC 40 : 100 %** (100 % en 2019).
 - **Mode de publication — Intégralement** : p. 37, exercice 2020. **SBF 120 : 92,2 %** (83,5 % en 2019) ; **CAC 40 : 91,7 %** (83,8 % en 2019).
 - **Mode de publication — Synthèse** : p. 37, exercice 2020. **SBF 120 : 7,8 %** (16,5 % en 2019) ; **CAC 40 : 8,3 %** (16,2 % en 2019).
-- **Précisions HCGE** : p. 37. *« 95 sociétés du SBF 120 ont choisi de publier leur règlement intérieur en intégralité, soit 9 de plus que l'année passée. S'agissant du CAC 40, 33 des 36 sociétés du CAC 40 ont suivi la recommandation (contre 31 sur 37 l'an passé). »*
+- **Précisions HCGE** : p. 37. *« […] 95 sociétés du SBF 120 ont choisi de publier leur règlement intérieur en intégralité, soit 9 de plus que l'année passée. S'agissant du CAC 40, 33 des 36 sociétés du CAC 40 ont suivi la recommandation (contre 31 sur 37 l'an passé). »*
 
 ### Section 4 — Comités du conseil (p. 38-48)
 
@@ -417,7 +417,7 @@ Le HCGE, en 2021, exprime :
 - **Majorité d'administrateurs indépendants** : p. 42. SBF 120 : **86,4 %** ; CAC 40 : **94,4 %** (97,3 % en 2019).
 - **Taux moyen d'administrateurs indépendants** : p. 42. SBF 120 : **76,3 %** ; CAC 40 : **81,2 %**.
 - **Président indépendant** : p. 42. SBF 120 : **95,1 %** ; CAC 40 : **97,2 %**.
-- **Constat HCGE** : p. 42-43. *« 14 sociétés du SBF 120 ne l'appliquent pas, comme en 2019. Néanmoins, 11 ont une proportion d'administrateurs indépendants de 50 %, très légèrement inférieure à la majorité recommandée. »*
+- **Constat HCGE** : p. 42-43. *« […] [Q]uant aux sociétés du SBF 120, 14 ne l'appliquent pas, comme en 2019. Néanmoins, on note que sur ces 14 sociétés, 11 ont une proportion d'administrateurs indépendants de 50 %, très légèrement inférieure à la majorité recommandée. »* (p. 43)
 
 ##### Activité du comité des rémunérations
 
@@ -438,7 +438,7 @@ Le HCGE, en 2021, exprime :
 #### 5.1. Représentation équilibrée hommes/femmes au conseil (p. 49)
 
 - **Cadre légal** : p. 49. **Loi n° 2011-103 du 27 janvier 2011, dite loi Copé-Zimmermann** — proportion d'administrateurs de chaque sexe ne peut être inférieure à **40 %** (objectif applicable depuis les assemblées générales 2016/2017). Exception : conseils composés au plus de huit membres, écart maximal de deux. Le rapport ne cite pas d'article du Code de commerce sur ce point.
-- **Constat** : p. 49. *« Pour l'exercice 2020, 36 sociétés du SBF 120 ont atteint ou dépassent les 50 % de femmes administrateurs. »*
+- **Constat** : p. 49. *« […] pour l'exercice 2020, 36 sociétés du SBF 120 ont atteint ou dépassent les 50 % de femmes administrateurs. »*
 - **Nombre moyen de femmes au conseil SBF 120** : p. 49. 5,3 en 2020 → **6 en 2021**.
 
 #### 5.2. Objectifs liés à la diversité au sein du conseil et de ses comités (p. 50)
@@ -475,7 +475,7 @@ Le HCGE, en 2021, exprime :
 - **Nombre moyen de mandats extérieurs au groupe** : p. 53. SBF 120 : **0,49** (0,71 en 2019) ; CAC 40 : **0,49** (0,81 en 2019).
 - **Répartition SBF 120 — 2020** : p. 53. 0 mandat : **58,8 %** (45,2 % en 2019) ; 1 mandat : 33,3 % ; 2 mandats : 7,8 %.
 - **Répartition CAC 40 — 2020** : p. 54. 0 mandat : **60 %** (35,1 % en 2019) ; 1 mandat : 31,4 % ; 2 mandats : 8,6 %.
-- **Constat HCGE** : p. 53. *« Dans 60 des sociétés du SBF 120 (contre 47 en 2019), le ou les dirigeants mandataires sociaux exécutifs n'exercent pas de mandat à l'extérieur du groupe dans des sociétés cotées. S'agissant du CAC 40, cela concerne 21 des sociétés, contre 13 en 2019. »*
+- **Constat HCGE** : p. 54. *« Dans 60 des sociétés du SBF 120 (contre 47 en 2019), le ou les dirigeants mandataires sociaux exécutifs n'exercent pas de mandat à l'extérieur du groupe dans des sociétés cotées. S'agissant du CAC 40, cela concerne 21 des sociétés, contre 13 en 2019. »*
 
 ### Section 7 — Contrat de travail et mandat social (p. 54-55)
 
@@ -484,7 +484,7 @@ Le HCGE, en 2021, exprime :
   - **87 sans contrat de travail** (39 PDG, 35 DG, 9 Pdt du Directoire, 4 Gérants).
   - **15 avec contrat de travail maintenu** (2 PDG, 10 DG, 3 Pdt du Directoire), **tous expliqués**.
 - **Taux de renoncement** : p. 55. **85,4 % en 2020** (84,6 % en 2019, 83,8 % en 2018).
-- **Référence à la position AMF (Recommandation 2012-02)** : p. 54. *« L'ancienneté du dirigeant en tant que salarié au sein de la société et sa situation personnelle peuvent justifier le maintien du contrat de travail d'un dirigeant. »* L'AMF demande des explications circonstanciées.
+- **Référence à la position AMF (Recommandation 2012-02)** : p. 54. *« l'ancienneté du dirigeant en tant que salarié au sein de la société et sa situation personnelle peuvent justifier le maintien du contrat de travail d'un dirigeant. »* L'AMF demande des explications circonstanciées.
 
 ### Section 8 — Obligation de conservation d'actions (p. 56-57)
 
@@ -497,13 +497,13 @@ Le HCGE, en 2021, exprime :
 
 ### Section 9 — Rémunération des principaux dirigeants mandataires sociaux (p. 58-72)
 
-- **Cadre Code AFEP-MEDEF** : p. 58. *« Dans la détermination des rémunérations des dirigeants mandataires sociaux exécutifs, les conseils et comités prennent en compte et appliquent avec rigueur les principes suivants : exhaustivité, équilibre entre les éléments de la rémunération, comparabilité, cohérence, intelligibilité des règles, mesure »* (§ 25.1.2).
+- **Cadre Code AFEP-MEDEF** : p. 58. *« Dans la détermination des rémunérations des dirigeants mandataires sociaux exécutifs, les conseils et comités prennent en compte et appliquent avec rigueur les principes suivants : […] »* (§ 25.1.2). Principes énumérés par le Code (p. 58) : exhaustivité, équilibre entre les éléments de la rémunération, comparabilité, cohérence, intelligibilité des règles, mesure.
 
 #### 9.1. Information sur la rémunération fixe et variable des principaux dirigeants mandataires sociaux (p. 58-64)
 
 ##### Rémunération fixe (p. 58-59)
 
-- **Cadre Code AFEP-MEDEF** : p. 58. *« La rémunération fixe ne doit en principe être revue qu'à intervalle de temps relativement long. Si toutefois l'entreprise fait le choix d'une évolution annuelle de la rémunération fixe, cette évolution doit être modérée et respecter le principe de cohérence mentionné au § 25.1.2. En cas d'augmentation significative de la rémunération, les raisons de cette augmentation sont explicitées. »* (§ 25.3.1).
+- **Cadre Code AFEP-MEDEF** : p. 58. *« […] la rémunération fixe "ne doit en principe être revue qu'à intervalle de temps relativement long. Si toutefois l'entreprise fait le choix d'une évolution annuelle de la rémunération fixe, cette évolution doit être modérée et respecter le principe de cohérence mentionné au § 25.1.2. En cas d'augmentation significative de la rémunération, les raisons de cette augmentation sont explicitées." »* (§ 25.3.1).
 - **Statistique 2020 — Indication de la règle d'évolution** : p. 58. **SBF 120 : 99 %** (97,1 % en 2019) ; **CAC 40 : 97,2 %** (97,3 % en 2019).
 - **Constat HCGE** : p. 58. *« Les règles d'évolution de la rémunération fixe sont explicitées par la quasi-totalité des sociétés. »*
 
@@ -532,7 +532,7 @@ Le HCGE, en 2021, exprime :
 
 - **Constat HCGE** : p. 64. *« La proportion des sociétés qui procède à des attributions d'options d'actions est en nette diminution. L'information sur l'indication explicite de la part rapportée au capital attribuée à chaque dirigeant mandataire social des actions sous-jacentes doit être améliorée. »*
 - **Statistique 2020 — Attribution d'options** : p. 64. **SBF 120 : 8,7 %** (9,6 % en 2019) ; **CAC 40 : 8,3 %** (10,8 % en 2019).
-- **Décompte HCGE** : p. 64. *« 9 sociétés du SBF 120 dont 3 sociétés du CAC 40 ont attribué des options d'actions à leur principal dirigeant mandataire social. Le nombre de sociétés ayant attribué des options de souscription ou d'achat d'actions est en réduction par rapport à l'exercice 2019 (10 sociétés). »*
+- **Décompte HCGE** : p. 64. *« […] 9 sociétés du SBF 120 dont 3 sociétés du CAC 40 ont attribué des options d'actions à leur principal dirigeant mandataire social. Le nombre de sociétés ayant attribué des options de souscription ou d'achat d'actions est en réduction par rapport à l'exercice 2019 (10 sociétés). »*
 - **Politique d'attribution** : p. 64. **SBF 120 : 100 %** ; **CAC 40 : 100 %**.
 - **Valorisation des options** : p. 64. **SBF 120 : 100 %** ; **CAC 40 : 100 %**.
 - **Sous-plafond d'attribution** : p. 67. **SBF 120 : 100 %** (100 % en 2019) ; **CAC 40 : 100 %** (100 % en 2019).
@@ -548,7 +548,7 @@ Le HCGE, en 2021, exprime :
 
 ##### Indemnité de prise de fonctions (p. 70)
 
-- **Cadre Code AFEP-MEDEF** : p. 70. *« Une indemnité de prise de fonctions ne peut être accordée qu'à un nouveau dirigeant mandataire social exécutif venant d'une société extérieure au groupe. »* (§ 25.4).
+- **Cadre Code AFEP-MEDEF** : p. 70. *« une indemnité de prise de fonctions ne peut être accordée qu'à un nouveau dirigeant mandataire social exécutif venant d'une société extérieure au groupe. »* (§ 25.4).
 - **Statistique 2020** : p. 70. **SBF 120 : 2,9 %** (0 % en 2019) ; **CAC 40 : 2,8 %** (0 % en 2019).
 - **Décompte HCGE** : p. 70. *« Pour l'exercice 2020, 3 sociétés du SBF 120 (dont 1 société du CAC 40) ont versé une indemnité de prise de fonctions à leur nouveau mandataire social. »*
 
@@ -576,7 +576,7 @@ Le HCGE, en 2021, exprime :
 ##### Retraites supplémentaires à prestations définies (p. 73)
 
 - **Existence d'un dispositif** : p. 73. **SBF 120 : 29,1 %** (34,6 % en 2019) ; **CAC 40 : 38,9 %** (51,4 % en 2019).
-- **Constat HCGE** : p. 72. *« Les régimes de retraite à prestations définies relevant de l'article L. 132-11 du code de la sécurité sociale sont voués à disparaître. »*
+- **Constat HCGE** : p. 73. *« Les régimes de retraite à prestations définies relevant de l'article L.132- 11 du code de la sécurité sociale sont voués à disparaître. »*
 - **Plafond 45 % du revenu de référence** : p. 73. 24 sociétés du SBF 120 (dont 11 sociétés du CAC 40) prévoyant un dispositif respectent la recommandation.
 
 ### Section 10 — Ratio sur les écarts de rémunérations (p. 73-74)
@@ -605,7 +605,7 @@ Sociétés nominativement citées dans la 2e partie comme illustrations de bonne
 - **DANONE** (DEU 2020, p. 28) : critères d'appréciation des liens d'affaires significatifs.
 - **GETLINK** (DEU 2020, p. 29) : critères d'appréciation des liens d'affaires significatifs.
 - **GTT** (DEU 2020, p. 52) : politique de mixité avec objectifs chiffrés (30 % au Comex d'ici 2023, 40 % d'ici 2026).
-- **BOUYGUES** (DEU 2020, p. 74) : ratio sur les écarts de rémunérations avec distinction des périmètres : *« le périmètre retenu couvre plus de 80 % des effectifs du Groupe en France »* (article 26.2 du Code) ; périmètre retenu : BOUYGUES France comptabilisant près de 92 % des effectifs.
+- **BOUYGUES** (DEU 2020, p. 74) : ratio sur les écarts de rémunérations avec distinction des périmètres : *« […] le périmètre retenu couvre plus de 80 % des effectifs du Groupe en France. »* (article 26.2 du Code) ; périmètre retenu : BOUYGUES France comptabilisant près de 92 % des effectifs.
 
 ---
 

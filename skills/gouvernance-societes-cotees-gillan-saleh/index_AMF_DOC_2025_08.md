@@ -25,13 +25,13 @@
 
 #### Implication des organes de gouvernance dans les hypothèses clés
 
-- **Position AMF** : p. 7. *« En période d'incertitudes élevées, ces hypothèses doivent (i) reposer sur des informations spécifiques à l'entité selon son secteur et la localisation de ses activités et (ii) résulter d'une démarche impliquant les organes de gouvernance. »*
+- **Position AMF** : p. 7. *« […] en période d'incertitudes élevées, ces hypothèses doivent (i) reposer sur des informations spécifiques à l'entité selon son secteur et la localisation de ses activités et (ii) résulter d'une démarche impliquant les organes de gouvernance. »*
 
 ### Bloc E — Rémunérations des dirigeants
 
 #### IFRS 18 — Impacts potentiels sur les rémunérations variables
 
-- **Position AMF** : p. 3. L'application d'IFRS 18 *« pourrait également impacter les accords et politiques de rémunération variable des dirigeants, ainsi que les clauses restrictives bancaires et covenants adossés à certains ratios de performance. »*
+- **Position AMF** : p. 3. L'application d'IFRS 18 *« […] pourrait également impacter les accords et politiques de rémunération variable des dirigeants, ainsi que les clauses restrictives bancaires et covenants adossés à certains ratios de performance. »*
 - **Cause** : p. 3. La refonte du compte de résultat avec trois nouvelles catégories (Exploitation, Investissement, Financement) et l'obligation pour les entreprises de présenter des sous-totaux normalisés (notamment le résultat d'exploitation).
 
 ### Bloc H — Comply or explain (supervision)
@@ -96,20 +96,20 @@
   - Clarification des modalités d'application de l'exemption pour usage propre pour les contrats d'achat d'électricité de type Power Purchase Agreement (PPA).
   - Facilitation de l'application de la comptabilité de couverture, en introduisant la possibilité de couvrir une valeur nominale variable, pour les contrats Virtual Power Purchase Agreement (VPPA) et les PPA comptabilisés comme dérivés.
   - Nouvelles informations pour les contrats qui répondent à la définition de own-use.
-- **Position AMF (application anticipée)** : p. 5. *« L'AMF souligne, pour les émetteurs appliquant cet amendement par anticipation, la nécessité de fournir les informations requises par IFRS 7.5B & C et 30A & B »* afin de permettre aux lecteurs des états financiers de comprendre l'effet de ces contrats sur les flux de trésorerie ainsi que sur la performance du groupe.
+- **Position AMF (application anticipée)** : p. 5. *« L'AMF souligne, pour les émetteurs appliquant cet amendement par anticipation, la nécessité de fournir les informations requises par IFRS 7.5B & C et 30A & B […] »* afin de permettre aux lecteurs des états financiers de comprendre l'effet de ces contrats sur les flux de trésorerie ainsi que sur la performance du groupe.
 
 #### J.6 — Articulation avec l'information financière (taxonomie, connectivité)
 
 ##### Cohérence entre états financiers et états de durabilité
 
-- **Position AMF** : p. 4. *« L'AMF rappelle l'importance de s'assurer de la cohérence entre les informations figurant dans les états financiers et celles présentées dans d'autres documents (état de durabilité, rapport de gestion, analyse des risques, etc.). »*
+- **Position AMF** : p. 4. *« […] l'AMF rappelle l'importance de s'assurer de la cohérence entre les informations figurant dans les états financiers et celles présentées dans d'autres documents (état de durabilité, rapport de gestion, analyse des risques, etc. »*
 - **Justification** : p. 4. *« Cette transparence est essentielle pour limiter le risque de "greenwashing" et maintenir la confiance des utilisateurs dans les états financiers. »*
 
 ##### Exemples illustratifs IASB sur les incertitudes climatiques
 
 - **Cadre** : p. 4. L'IASB publie d'ici la fin de l'année 2025 des **exemples illustratifs à portée pédagogique** destinés à aider les sociétés à mieux intégrer dans leurs états financiers les incertitudes significatives liées aux changements climatiques.
 - **Référence** : p. 4, note 6. Un « near-final staff draft » publié en juillet 2025 — https://www.ifrs.org/content/dam/ifrs/project/climate-related-other-uncertainties-fs/climate-related-examples-ie-july-2025.pdf
-- **Extension recommandée** : p. 4. *« Même si ces exemples sont orientés sur les incertitudes liées au climat, il peut être utile de s'en inspirer, dès à présent, afin de renforcer la qualité de l'information communiquée au titre des jugements significatifs et des principales hypothèses retenues dans le contexte macroéconomique actuel »* (incertitudes géopolitiques, réglementaires, conflits internationaux).
+- **Extension recommandée** : p. 4. *« […] même si ces exemples sont orientés sur les incertitudes liées au climat, il peut être utile de s'en inspirer, dès à présent, afin de renforcer la qualité de l'information communiquée au titre des jugements significatifs et des principales hypothèses retenues dans le contexte macroéconomique actuel […] »* (incertitudes géopolitiques, réglementaires, conflits internationaux).
 
 ##### Contribution ANC sur le lien climat / états financiers
 
@@ -119,7 +119,7 @@
 
 ##### Cohérence intra-rapport sur les hypothèses
 
-- **Position AMF** : p. 7. *« L'AMF rappelle aux émetteurs d'être vigilants quant à la cohérence entre les informations communiquées dans le rapport de gestion (y compris le rapport de durabilité et les facteurs de risque), la communication financière et les états financiers. En particulier, l'AMF recommande aux émetteurs de s'assurer que les hypothèses et sources retenues dans les évaluations sont cohérentes dans l'ensemble des communications effectuées. »*
+- **Position AMF** : p. 8. *« […] l'AMF rappelle aux émetteurs d'être vigilants quant à la cohérence entre les informations communiquées dans le rapport de gestion (y compris le rapport de durabilité et les facteurs de risque), la communication financière et les états financiers. En particulier, l'AMF recommande aux émetteurs de s'assurer que les hypothèses et sources retenues dans les évaluations sont cohérentes dans l'ensemble des communications effectuées. »*
 
 #### J.7 — Confrontation des positions AMF / ESMA
 
@@ -146,7 +146,7 @@
   - Définition de principes encadrant l'agrégation et la désagrégation de l'information financière, applicables aux états financiers primaires et aux notes annexes.
   - Refonte du compte de résultat avec trois nouvelles catégories (Exploitation, Investissement, Financement) et présentation de sous-totaux normalisés (notamment le résultat d'exploitation).
   - Renforcement de la transparence sur les **management-defined performance measures (MPM)**, avec exigences nouvelles de présentation, justification et rapprochement avec les totaux IFRS.
-- **Position AMF — anticipation** : p. 3. *« L'AMF souligne l'importance d'anticiper les travaux à venir afin de s'assurer de la conformité de l'information financière fournie dans les états primaires et l'annexe aux nouvelles exigences de la norme. »*
+- **Position AMF — anticipation** : p. 3. *« […] l'AMF souligne l'importance d'anticiper les travaux à venir afin de s'assurer de la conformité de l'information financière fournie dans les états primaires et l'annexe aux nouvelles exigences de la norme. »*
 - **Impact étendu** : p. 3. Répercussions sur les systèmes d'information et la construction des budgets ; pourrait impacter les accords et politiques de rémunération variable des dirigeants, ainsi que les clauses restrictives bancaires et covenants.
 - **Note annexe MPM (IFRS 18.122 et 123)** : p. 3. À présenter :
   - Les raisons pour lesquelles ces indicateurs ont été choisis.
@@ -156,7 +156,7 @@
 ##### Échantillon AMF sur sous-totaux
 
 - **Statistique** : p. 3. Sur un échantillon de **60 émetteurs (CAC 40 et NEXT 20)**, **une quarantaine d'émetteurs** présentent au sein de leur compte de résultat un sous-total de performance financière (par exemple un Résultat Opérationnel Courant ou EBITDA correspondant en général à un EBITDA ajusté).
-- **Position AMF** : p. 3-4. *« L'AMF souhaite sensibiliser les sociétés concernées au fait que la présentation de tels sous-totaux au compte de résultat sera possible à l'avenir, qu'à la condition qu'ils soient nécessaires à la présentation d'un résumé structuré de la performance utile aux utilisateurs des états financiers et sous réserve du respect des principes d'IFRS 18 en matière d'agrégation/désagrégation de l'information financière, et de libellés. A défaut de pouvoir être présentés au compte de résultat, ce type de sous-total pourra être présenté au sein des notes annexes en tant que MPM. »*
+- **Position AMF** : p. 3. *« L'AMF souhaite sensibiliser les sociétés concernées au fait que la présentation de tels sous-totaux au compte de résultat sera possible à l'avenir, qu'à la condition [sic] d'être nécessaire à la présentation d'un résumé structuré de la performance qui soit utile aux utilisateurs […] »*
 
 ##### Communication anticipée (IAS 8.30 et 31)
 
@@ -284,7 +284,7 @@
 
 - **Constats AMF** : p. 22. Confusion entre la notion de transaction entre parties liées et celle de flux intragroupe. Présentations trop agrégées limitant la compréhension.
 - **Rappel AMF** : p. 22. Recommandations sur le sujet pour l'arrêté des comptes 2007 toujours applicables.
-- **Position AMF** : p. 22. *« Une transaction ne peut être présentée comme étant conclue à des conditions normales de marché que si cela peut être démontré (IAS 24.23). »*
+- **Position AMF** : p. 22. *« […] une transaction ne peut être présentée comme étant conclue à des conditions normales de marché que si cela peut être démontré (IAS 24.23). »*
 
 #### 3.1.2. Secteurs opérationnels – IFRS 8 (p. 22-23)
 
@@ -302,12 +302,12 @@
 #### 3.1.6. Informations à fournir dans les états financiers et incorporation par référence – IFRS 7 (p. 24)
 
 - **Constats AMF** : p. 24. Informations sur les risques attachés aux instruments financiers présentées soit en annexe, soit dans la section risques du rapport de gestion, **sans référence croisée entre les deux documents**.
-- **Position AMF** : p. 24. *« Les normes IFRS ne permettent pas d'incorporer les informations demandées par les normes par le renvoi des notes annexes des états financiers vers des éléments présentés en dehors des états financiers », sauf cas IFRS 7.B6.*
+- **Position AMF** : p. 24. *« […] les normes IFRS ne permettent pas d'incorporer les informations demandées par les normes par le renvoi des notes annexes des états financiers vers des éléments présentés en dehors des états financiers. », sauf cas IFRS 7.B6.*
 
 #### 3.1.7. Information non matérielle – IAS 1 (p. 25)
 
 - **Constats AMF** : p. 25. Émetteurs faisant état d'informations non matérielles dans leurs annexes.
-- **Position AMF** : p. 25. *« IAS 1.30 & 31 limite l'obligation de présenter une information requise par les normes IFRS aux éléments significatifs et indique explicitement qu'il convient de ne pas obscurcir la lisibilité des notes annexes avec des informations non matérielles. »*
+- **Position AMF** : p. 25. *« […] (IAS 1.30 & 31) limite l'obligation de présenter une information requise par les normes IFRS aux éléments significatifs et indique explicitement qu'il convient de ne pas obscurcir la lisibilité des notes annexes avec des informations non matérielles. »*
 
 ---
 
@@ -324,7 +324,7 @@
 
 **Aucun émetteur n'est nommément cité dans ce document.** L'AMF présente des constats statistiques sur des échantillons CAC 40 et NEXT 20 (60 émetteurs) ainsi que des bonnes et mauvaises pratiques anonymisées.
 
-**Exemple non nominatif** : p. 16. *« L'AMF a noté que certains émetteurs présentaient une répartition géographique du chiffre d'affaires par zone de production et par zone de commercialisation. Cette double lecture constitue une bonne pratique particulièrement utile pour mieux comprendre les risques relatifs à la chaîne d'approvisionnement. »*
+**Exemple non nominatif** : p. 17. *« […] l'AMF a noté que certains émetteurs présentaient une répartition géographique du chiffre d'affaires par zone de production et par zone de commercialisation. Cette double lecture constitue une bonne pratique particulièrement utile pour mieux comprendre les risques relatifs à la chaîne d'approvisionnement. »*
 
 ---
 

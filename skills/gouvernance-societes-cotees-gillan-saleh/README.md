@@ -119,6 +119,57 @@ web / source secondaire), liens vers les sources secondaires, et une présentati
 adaptée à la lecture mobile. Chaque production porte en pied de page la mention :
 *« Fiche élaborée avec le skill gouvernance-emetteurs-cotes — © Gillan Saleh ».*
 
+## Vérifier le corpus vous-même
+
+Les citations de ce skill portent chacune leur document et leur page. Vous n'avez pas
+à me croire sur parole : les programmes qui les vérifient sont livrés avec le corpus,
+et vous pouvez les lancer.
+
+**Ce qu'il vous faut.** Les documents sources au format PDF. Ils sont tous publics et
+téléchargeables gratuitement (liens dans `references/sources.md`). Ils ne sont pas
+inclus dans le skill — poids, et politique de rediffusion du HCGE.
+
+**Comment faire.** Déposez les PDF dans la conversation, puis demandez simplement :
+
+> « Lance les contrôles du corpus. »
+
+Claude reconstruit le texte des rapports page par page, puis rapproche chaque citation
+de l'index de la page dont elle se réclame. Il rend un rapport : nombre de citations
+vérifiées, écarts éventuels, avec la page de chacun.
+
+**Les cinq contrôles, et ce que chacun cherche :**
+
+| Script | Question posée |
+|---|---|
+| `extraire_corpus.py` | reconstruit le texte des PDF, page par page |
+| `controle_citations_v2.py` | la citation figure-t-elle dans le document, à la page annoncée ? |
+| `controle_bornes_v3.py` | est-elle complète — rien coupé sans marque, casse et ponctuation de la source ? |
+| `controle_invention.py` | chaque mot entre guillemets figure-t-il dans la source ? |
+| `controle_recurrences.py` | chaque société citée figure-t-elle bien à la page indiquée ? |
+
+**Documents attendus, et nom de fichier.** Le script les reconnaît à leur nom ; s'il
+manque un document, il le signale et poursuit avec les autres.
+
+| Document | Nom de fichier attendu |
+|---|---|
+| Rapports AMF sur le gouvernement d'entreprise 2020-2025 | `AMF_2020.pdf`, `AMF_2021_compressed.pdf`, `AMF_2022.pdf`, `AMF_2023.pdf`, `AMF_2024.pdf`, `AMF_2025.pdf` |
+| Rapports annuels HCGE 2020-2025 | `Rapport_HCGE_2020_compressed.pdf`, `Rapport_HCGE_2021_compressed.pdf`, `Rapport_HCGE_2022_compressed.pdf`, `15661-hcge-2024-rapport-hcge-2023-fr-0212.pdf`, `16213hcgerapport2024frhd_compressed.pdf`, `17165hcgerapport2025frvfinale_compressed.pdf` |
+| Guides d'application HCGE | `2024_Guide_Mars.pdf` (mars 2024), `17072-2025-guide-decembre-2025.pdf` (décembre 2025) |
+| Code AFEP-MEDEF (décembre 2022) | `Code_AFEP_MEDEF_decembre_2022.pdf` |
+| AMF — DOC-2021-02, DOC-2025-08, durabilité 2024, CSRD way forward | `2021-02-decembre-2024.pdf`, `amfrecommandationdoc202508arretedescomptes2025.pdf`, `AMF_DURABILITE__2024.pdf`, `amf_study_csrd_reporting_the_way_forward_2025_2.pdf` |
+| ESMA — priorités de supervision 2025 | `ESMA_PRIORITE__2025.pdf` |
+| Sénat — rapport n° 808 (Rietmann/Gay) | `r24-808-11.pdf` |
+| Paris Europlace — dialogue actionnarial 2024 | `link_php.pdf` |
+
+Attention à ne pas confondre les deux guides HCGE : celui de **mars 2024** et celui de
+**décembre 2025** sont deux documents distincts, et cinq entrées de l'index portent sur
+le premier.
+
+**Ce que ces contrôles ne font pas.** Ils vérifient qu'un texte est là, à sa page, en
+entier. Ils ne jugent pas le *sens* : qu'un passage soit correctement attribué — l'AMF
+citant le Code, ou un émetteur — se vérifie en lisant la page. C'est l'objet du
+protocole d'audit décrit plus bas.
+
 ## Outils — vérifier ou enrichir le corpus
 
 Le skill inclut un détecteur de complétude et de cohérence des index,
@@ -164,6 +215,8 @@ L'indépendance ne se décrète pas : elle tient au fait que le vérificateur es
 instance distincte. Un skill ne peut pas, seul, invoquer un vérificateur vraiment
 indépendant ; c'est l'utilisateur qui crée la séparation en lançant la seconde
 requête. Le critère de validation tient en une phrase : **« montre-moi la page ».**
+
+Depuis la **v2.0.0**, ce protocole est formalisé dans **`VERIFICATION.md`** (conditions de neutralité, périmètre intégral/sondage, ordre des contrôles, format du verdict, journal d'audit) ; le prompt ci-dessous en reste la forme opératoire rapide. La règle est inscrite au §8.4 du `SKILL.md` : **la checklist interne ne vaut pas vérification**, et une production sans verdict archivé est réputée non vérifiée. À chaque modification du skill, du corpus ou du modèle sous-jacent, rejouer en outre le **jeu de tests de non-régression** (19 tests à réponse-étalon). **Ce jeu est volontairement conservé hors de l'archive du skill** : tant qu'il y figurait, l'instance testée avait accès aux réponses attendues, et le rejeu du 28 août 2026 a effectivement été contaminé de cette façon. Il est distribué séparément (`jeu-de-tests/`, plus une version Word imprimable) et ne doit jamais être replacé dans l'archive ni chargé dans la conversation de rejeu.
 
 ### Protocole d'audit de fidélité (à coller dans une nouvelle conversation)
 

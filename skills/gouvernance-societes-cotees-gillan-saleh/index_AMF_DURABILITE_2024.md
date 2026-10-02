@@ -15,7 +15,7 @@
 
 **Nature du document** : bilan de supervision (revue des DPEF 2023-2024) associé à des illustrations de bonnes pratiques par sociétés nommées et à des encadrés « QUE DEMANDE LA CSRD ? » sur la transition DPEF → CSRD.
 
-**Spécificité** : **385 commentaires de l'AMF** transmis aux émetteurs en fin de contrôle sur la période (septembre 2023 à août 2024). Environ 4/5 liés à NFRD, 1/5 à la taxonomie.
+**Spécificité** : **385 commentaires de l'AMF** (p. 15) transmis aux émetteurs en fin de contrôle sur la période (septembre 2023 à août 2024). Environ 4/5 liés à NFRD, 1/5 à la taxonomie.
 
 **Thèmes saillants 2024** :
 - Transition DPEF → CSRD
@@ -34,8 +34,8 @@
 #### Compétences RSE des administrateurs — confirmation et exigences ESRS
 
 - **Statistique reprise du rapport AMF gouvernement d'entreprise 2022** : p. 40. **87 % des entreprises** d'un échantillon SBF 120 communiquent sur les compétences de leurs administrateurs en matière de RSE (référence : Rapport AMF 2022, p. 4-5).
-- **Doctrine AMF DOC-2012-02 (section 14) rappelée** : p. 40. *« Constituent de bonnes pratiques le fait de prévoir une formation régulière sur des sujets pertinents pour la société, en particulier en matière de RSE, et le fait de détailler la formation des administrateurs, notamment en matière de RSE. Cette formation n'est pas seulement théorique : elle peut se révéler très pratique, par exemple au travers de visites de sites industriels. »*
-- **Exigence ESRS 2 — GOV-1** : p. 39 et 40. *« Composition des organes d'administration, de direction et de surveillance, leurs rôles et responsabilités, leur expertise et des compétences ou possibilité d'y accéder. »*
+- **Doctrine AMF DOC-2012-02 (section 14) rappelée** : p. 40. *« constituent de bonnes pratiques le fait de prévoir une formation régulière sur des sujets pertinents pour la société, en particulier en matière de RSE, et le fait de détailler la formation des administrateurs, notamment en matière de RSE. Cette formation n'est pas seulement théorique : elle peut se révéler très pratique, par exemple au travers de visites de sites industriels »*
+- **Exigence ESRS 2 — GOV-1** : p. 39 et 40. *« composition des organes d'administration, de direction et de surveillance, leurs rôles et responsabilités, leur expertise et des compétences ou possibilité d'y accéder ; »*
 - **Niveau d'expertise attendu** : p. 40. ESRS 2 demande aux entreprises d'expliquer si les compétences et expertises disponibles sont appropriées ou seront développées pour permettre aux organes d'administration, de direction et de surveillance de superviser les enjeux de durabilité. Lien à faire entre les enjeux ESG identifiés comme matériels et le niveau d'expertise des organes de gouvernance.
 
 #### Bonne pratique AIR LIQUIDE — formation RSE détaillée
@@ -46,7 +46,7 @@
 
 #### Articulation des comités sur les enjeux de durabilité
 
-- **Constat AMF (rappel du rapport gouvernement d'entreprise 2022)** : p. 41. *« Une bonne pratique consiste à s'interroger sur l'articulation entre les missions des différents comités en matière de RSE et à en rendre compte dans le DEU. »*
+- **Constat AMF (rappel du rapport gouvernement d'entreprise 2022)** : p. 41. *« […] une bonne pratique consiste à s'interroger sur l'articulation entre les missions des différents comités en matière de RSE et à en rendre compte dans le DEU […] »*
 - **Exigence ESRS 2 — recommandation diagramme** : p. 41. La norme ESRS 2 recommande aux entreprises de compléter par un diagramme la description des structures de gouvernance complexes en ce qui concerne les enjeux de durabilité (réf. GOV-1, §AR.4).
 
 #### Bonne pratique URW (Unibail-Rodamco-Westfield) — description du comité d'audit
@@ -57,7 +57,7 @@
 
 #### Intégration des résultats de durabilité dans les rémunérations — ESRS 2 GOV-3
 
-- **Exigence ESRS 2 — GOV-3** : p. 39 et 42. *« Intégration des performances en matière de durabilité dans les systèmes de rémunération. »* Précisions spécifiques au climat dans ESRS E1 GOV-3.
+- **Exigence ESRS 2 — GOV-3** : p. 39 et 42. *« intégration des performances en matière de durabilité dans les systèmes de rémunération. »* Précisions spécifiques au climat dans ESRS E1 GOV-3.
 - **Information requise** : p. 42. La section GOV-3 d'ESRS 2 et d'ESRS E1 demande des informations précises sur la politique de rémunération, par exemple, la proportion de rémunération variable qui dépend de cibles ou d'impacts en matière de durabilité ou, plus précisément, si le climat est matériel, la part de la rémunération totale associée au climat et si les cibles de réductions des émissions de GES fixées liées sont prises en compte dans la rémunération.
 - **Référence à la doctrine AMF gouvernement d'entreprise** : p. 42. Les émetteurs peuvent se référer au guide AMF sur le DEU et au rapport AMF 2022 sur le gouvernement d'entreprise.
 
@@ -92,7 +92,7 @@
 
 - **Cadre légal** : p. 6. Directive NFRD (Non-Financial Reporting Directive) transposée en droit français en 2017. **Articles L. 225-102-1, L. 225-100, R. 225-104 à R. 225-105-2 du Code de commerce.**
 - **Champ d'application** : p. 6. Entités d'intérêt public (sociétés cotées) > 500 salariés et > 40 M€ de CA ou > 20 M€ de total de bilan. Autres grandes entreprises > 500 salariés franchissant les seuils 100 M€ de CA ou de total de bilan.
-- **Contenu requis** : p. 6. Informations « dans la mesure nécessaire à la compréhension de l'évolution des affaires », **modèle d'affaires** (bref), **principaux risques**, **politiques** ou justification en cas d'absence, **résultats** des politiques avec ICP.
+- **Contenu requis** : p. 6. Informations « dans la mesure nécessaire à la compréhension de l'évolution des affaires […] », **modèle d'affaires** (bref), **principaux risques**, **politiques** ou justification en cas d'absence, **résultats** des politiques avec ICP.
 - **Exigences françaises supplémentaires** : p. 7. Article L. 225-102-1 (évasion fiscale, économie circulaire, lutte contre le gaspillage alimentaire, bien-être animal) ; article R. 225-105 (informations sociales — effectif, absentéisme, accidents du travail, etc.).
 - **Loi Climat (22 août 2021)** : p. 7. Loi n° 2021-1104 imposant la publication des émissions de GES directes et indirectes.
 - **Vérification** : p. 7. Obligation de faire auditer les informations publiées dans la DPEF par un **organisme tiers indépendant (OTI)**.
@@ -134,20 +134,20 @@
 
 ##### Principe NFRD — matérialité simple (avant CSRD)
 
-- **Cadre** : p. 19. La directive NFRD se fonde sur le principe de matérialité : informations sur les principaux risques et leur gestion « dans la mesure nécessaire à la compréhension ».
+- **Cadre** : p. 19. La directive NFRD se fonde sur le principe de matérialité : informations sur les principaux risques et leur gestion « dans la mesure nécessaire à la compréhension […] ».
 - **Notion centrale** : p. 19. Les principaux risques peuvent être liés aux activités, produits ou services de l'entreprise mais également à sa **chaîne d'approvisionnement** et à ses **relations commerciales**.
 
 ##### Double matérialité (CSRD)
 
-- **Critères ESRS** : p. 19. *« Un enjeu est matériel s'il remplit les critères de la matérialité d'impact, de la matérialité financière ou les deux. »*
-- **Étendue de l'évaluation** : p. 19. *« Il faut étudier les impacts négatifs et positifs (réels et potentiels), les risques et les opportunités bruts (avant gestion), et ce, selon différents horizons de temps. »*
-- **Position AMF importante** : p. 19. *« Il est important de ne pas présenter la réduction d'un impact négatif de l'entreprise comme un impact positif (par exemple, les efforts de réduction des émissions de GES par une entreprise n'attestent pas un impact positif). »* (référence : guide EFRAG IG 1).
+- **Critères ESRS** : p. 19. *« un enjeu est matériel s'il remplit les critères de la matérialité d'impact, de la matérialité financière ou les deux ; »*
+- **Étendue de l'évaluation** : p. 19. *« il faut étudier les impacts négatifs et positifs (réels et potentiels), les risques et les opportunités bruts (avant gestion), et ce, selon différents horizons de temps. »*
+- **Position AMF importante** : p. 19. *« Il est important de ne pas présenter la réduction d'un impact négatif de l'entreprise comme un impact positif (par exemple, les efforts de réduction des émissions de GES par une entreprise n'attestent pas un impact positif […]) »* (référence : guide EFRAG IG 1).
 
 ##### Critères de matérialité — quantitatifs ou qualitatifs
 
 - **Cadre ESRS** : p. 19. Critères pouvant être quantitatifs ou qualitatifs.
 - **Critères pour les impacts** : p. 19. **Ampleur**, **étendue**, **caractère irrémédiable** de l'impact.
-- **Position AMF sur les scores quantitatifs** : p. 19. *« Les ESRS n'imposent pas aux entreprises de définir des "scores" quantitatifs de matérialité applicables à l'ensemble des enjeux : cette méthode, bien qu'utile pour hiérarchiser les enjeux, peut s'avérer limitée compte tenu de l'hétérogénéité et de la complexité des problématiques de durabilité. »*
+- **Position AMF sur les scores quantitatifs** : p. 19. *« Les ESRS n'imposent pas aux entreprises de définir des "scores" quantitatifs de matérialité applicables à l'ensemble des enjeux : cette méthode, bien qu'utile pour hiérarchiser les enjeux, peut s'avérer limitée compte tenu de l'hétérogénéité et de la complexité des problématiques de durabilité ; »*
 
 ##### Rôle des parties prenantes
 
@@ -319,7 +319,7 @@
 
 ##### Bonne pratique RUBIS — mesures individuelles éligibles à la taxonomie
 
-- **Citation nominative** : p. 44. Le groupe **RUBIS** décrit les investissements liés à des « mesures individuelles » et achats de produits issus d'activités éligibles. *« Il n'est pas nécessaire d'avoir du chiffre d'affaires éligible (ou aligné) pour identifier des dépenses d'investissement (CapEx) éligibles (ou alignés). »* (DEU 2023).
+- **Citation nominative** : p. 44. Le groupe **RUBIS** décrit les investissements liés à des « mesures individuelles » et achats de produits issus d'activités éligibles. *« […] il n'est pas nécessaire d'avoir du chiffre d'affaires éligible (ou aligné) pour identifier des dépenses d'investissement (CapEx) éligibles (ou alignés). »* (DEU 2023).
 
 ##### Focus taxonomie — complétude de l'analyse d'alignement et contribution substantielle multiple
 
@@ -343,7 +343,7 @@
 
 ##### Périmètre incomplet — rappel
 
-- **Position AMF** : p. 43. *« Le reporting taxonomie doit couvrir l'ensemble du périmètre consolidé. Aussi, l'ensemble des activités économiques et investissements doivent être étudiés sans seuil de matérialité (à l'exception des OpEx, sous certaines conditions). »*
+- **Position AMF** : p. 43. *« […] le reporting taxonomie doit couvrir l'ensemble du périmètre consolidé. Aussi, l'ensemble des activités économiques et investissements doivent être étudiés sans seuil de matérialité (à l'exception des OpEx, sous certaines conditions). »*
 - **Référence FAQ Commission** : p. 43. FAQ n° 13 de décembre 2022 — possibilité de déclarer non alignées par défaut les activités peu significatives.
 
 #### J.7 — Confrontation des positions AMF et ESMA

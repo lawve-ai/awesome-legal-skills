@@ -1,0 +1,39 @@
+Jev Question Translator
+Copyright 2026 Seth J. Chandler (https://legaled.ai)
+
+Licensed under the Apache License, Version 2.0. A copy of the License is included
+in the file LICENSE and is also available at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+---
+
+ORIGIN
+
+This skill is original work. It was developed in September 2026 while building Jev
+question batteries for legal classification tasks, including a classifier for felony
+murder under the Texas Penal Code and a battery on federal standing and justiciability,
+and was revised after running those batteries against case vignettes on jev-1.13.
+
+The skill summarizes Jev's documented behavior and known weaknesses from TypeSafe's
+public documentation (https://docs.typesafe.ai). That summary is a paraphrase as of
+September 2026. Jev and TypeSafe are products of TypeSafe AI.
+
+This skill is not affiliated with, or endorsed by, TypeSafe AI or Lawve.
+
+---
+
+BUNDLED CODE
+
+None. This skill contains no executable code.
+
+---
+
+DISCLAIMER
+
+The questions this skill produces, and the answers Jev returns to them, are aids to legal
+analysis, not legal advice. Legal rules the skill writes from its own knowledge are marked
+as paraphrases and must be verified against current authority. Users are responsible for
+testing any question set on documents with known answers before relying on it, and for
+complying with their confidentiality obligations before sending client material to any
+third-party model provider.

@@ -30,10 +30,10 @@
 
 ### Doctrine du « name and shame »
 
-- **Conditions de mise en œuvre** : p. 3. *« Pour les sociétés qui, malgré les demandes du Haut Comité, ont persisté à s'écarter des recommandations significatives du Code, le Haut Comité peut faire usage du "name and shame". »*
+- **Conditions de mise en œuvre** : p. 3. *« Pour les sociétés qui, malgré les demandes du Haut Comité, ont persisté à s'écarter des recommandations significatives du Code, le Haut Comité peut faire usage du "name and shame" »*
 - **Trois cas de figure** : p. 3.
-  - Sociétés *« n'ont pas répondu à une lettre d'auto-saisine du Haut Comité dans le délai de 2 mois »*.
-  - Sociétés qui *« sur saisine ou auto-saisine du Haut Comité, n'ont ni suivi l'avis du Haut Comité écartant les justifications fournies par la société, ni signalé dans leur rapport sur le gouvernement d'entreprise l'avis reçu du Haut Comité et les raisons pour lesquelles elles auraient décidé de ne pas s'y conformer, ni pris l'engagement de rectifier cette situation »*.
+  - Sociétés *« […] n'ont pas répondu à une lettre d'auto-saisine du Haut Comité dans le délai de 2 mois. »*.
+  - Sociétés qui *« […] sur saisine ou auto-saisine du Haut Comité, n'ont ni suivi l'avis du Haut Comité écartant les justifications fournies par la société, ni signalé dans leur rapport sur le gouvernement d'entreprise l'avis reçu du Haut Comité et les raisons pour lesquelles elles auraient décidé de ne pas s'y conformer, ni pris l'engagement de rectifier cette situation. »* (p. 0).
 - **Modalités de publication** : p. 3. *« Selon la situation, le Haut Comité rend public ses avis sur son site ou dans son rapport annuel. »*
 
 ### Champ d'application — administrateurs et membres de conseils de surveillance
@@ -67,20 +67,20 @@ Le guide se compose de deux parties :
 
 - **Rappel du Code (§ 4.4)** : p. 4. *« Les relations des actionnaires avec le conseil d'administration notamment sur les sujets de gouvernement d'entreprise peuvent être confiées au président du conseil d'administration ou, le cas échéant, à l'administrateur référent. Celui-ci rend compte au conseil d'administration de cette mission. »*
 - **Recommandations HCGE (six points)** : p. 4.
-  - *« les modalités et l'étendue des missions de l'administrateur chargé de participer directement au dialogue de la société avec ses actionnaires et/ou les investisseurs potentiels soient précisées dans le règlement intérieur et que le rapport annuel en fasse état »*.
-  - *« si le mode de gouvernance de la société est une forme de présidence dissociée (ou conseil de surveillance), la mission revienne naturellement au président du conseil : dans ce cas, elle fait partie des "missions confiées en sus de celles conférées par la loi" qui doivent être décrites conformément au § 3.2 du code Afep-Medef ; à défaut, elle peut être confiée à un administrateur référent. Il est en effet souhaitable de ne pas disperser les responsabilités en multipliant les interlocuteurs représentant le conseil »*.
-  - *« la personne ainsi choisie ait de préférence une expérience de la communication institutionnelle, et reçoive le cas échéant une formation adéquate »*.
-  - *« la mission soit en premier lieu d'expliciter les positions prises par le conseil dans ses domaines de compétence (notamment en matière de stratégie, de gouvernance et de rémunération des dirigeants), et qui ont fait préalablement l'objet d'une communication »*.
-  - *« cette mission implique une coordination étroite avec le directeur général ou ses collaborateurs chargés de la relation avec les actionnaires, et que les réunions ou contacts téléphoniques, sauf exigence explicite des interlocuteurs, soient conduits en leur présence »*.
-  - *« l'administrateur rende compte au conseil de l'exécution de sa mission »*.
+  - *« les modalités et l'étendue des missions de l'administrateur chargé de participer directement au dialogue de la société avec ses actionnaires et/ou les investisseurs potentiels soient précisées dans le règlement intérieur et que le rapport annuel en fasse état ; »*.
+  - *« si le mode de gouvernance de la société est une forme de présidence dissociée (ou conseil de surveillance), la mission revienne naturellement au président du conseil : dans ce cas, elle fait partie des "missions confiées en sus de celles conférées par la loi" qui doivent être décrites conformément au § 3.2 du code Afep-Medef ; à défaut, elle peut être confiée à un administrateur référent. Il est en effet souhaitable de ne pas disperser les responsabilités en multipliant les interlocuteurs représentant le conseil ; »* (p. 4).
+  - *« la personne ainsi choisie ait de préférence une expérience de la communication institutionnelle, et reçoive le cas échéant une formation adéquate ; »* (p. 4).
+  - *« la mission soit en premier lieu d'expliciter les positions prises par le conseil dans ses domaines de compétence (notamment en matière de stratégie, de gouvernance et de rémunération des dirigeants), et qui ont fait préalablement l'objet d'une communication ; »* (p. 4).
+  - *« cette mission implique une coordination étroite avec le directeur général ou ses collaborateurs chargés de la relation avec les actionnaires, et que les réunions ou contacts téléphoniques, sauf exigence explicite des interlocuteurs, soient conduits en leur présence ; »* (p. 4).
+  - *« l'administrateur rende compte au conseil de l'exécution de sa mission. »* (p. 4).
 
 ### Article 5 — Le conseil d'administration et la responsabilité sociale et environnementale (p. 4-5)
 
 - **Rappel du Code (§ 5.1 à 5.4)** : p. 4-5.
-  - **§ 5.1** : *« Sur proposition de la direction générale, le conseil d'administration détermine des orientations stratégiques pluriannuelles en matière de responsabilité sociale et environnementale. »*
-  - **§ 5.2** : *« La direction générale présente au conseil d'administration les modalités de mise en œuvre de cette stratégie avec un plan d'action et les horizons de temps dans lesquels ces actions seront menées. La direction générale informe annuellement le conseil des résultats obtenus. »*
-  - **§ 5.3** : *« En matière climatique, cette stratégie est assortie d'objectifs précis définis pour différents horizons de temps. Le conseil examine annuellement les résultats obtenus et l'opportunité, le cas échéant, d'adapter le plan d'action ou de modifier les objectifs au vu notamment de l'évolution de la stratégie de l'entreprise, des technologies, des attentes des actionnaires et de la capacité économique à les mettre en œuvre. »*
-  - **§ 5.4** : *« La stratégie climatique mentionnée au § 5.3 ainsi que les principales actions engagées à cet effet sont présentées à l'assemblée générale ordinaire au moins tous les trois ans ou en cas de modification significative de la stratégie. »*
+  - **§ 5.1** : *« Sur proposition de la direction générale, le conseil d'administration détermine des orientations stratégiques pluriannuelles en matière de responsabilité sociale et environnementale. »* (p. 4)
+  - **§ 5.2** : *« La direction générale présente au conseil d'administration les modalités de mise en oeuvre de cette stratégie avec un plan d'action et les horizons de temps dans lesquels ces actions seront menées. La direction générale informe annuellement le conseil des résultats obtenus. »* (p. 4)
+  - **§ 5.3** : *« En matière climatique, cette stratégie est assortie d'objectifs précis définis pour différents horizons de temps. Le conseil examine annuellement les résultats obtenus et l'opportunité, le cas échéant, d'adapter le plan d'action ou de modifier les objectifs au vu notamment de l'évolution de la stratégie de l'entreprise, des technologies, des attentes des actionnaires et de la capacité économique à les mettre en oeuvre. »* (p. 5)
+  - **§ 5.4** : *« La stratégie climatique mentionnée au § 5.3 ainsi que les principales actions engagées à cet effet sont présentées à l'assemblée générale ordinaire au moins tous les trois ans ou en cas de modification significative de la stratégie. »* (p. 5)
 - **Position HCGE — Say on Climate** : p. 5. *« Le code n'impose pas de soumettre aux actionnaires une résolution climatique ("Say on Climate"). Il prévoit une présentation aux actionnaires de la stratégie climatique, ainsi que les principales actions engagées. »*
 - **Liberté des sociétés** : p. 5. *« Les sociétés sont toutefois libres d'inscrire un point (sans vote) à l'ordre du jour de l'assemblée générale sur leur stratégie climatique, voire de soumettre une résolution climatique au vote consultatif de leurs actionnaires. »*
 - **Modalités** : p. 5. *« La décision sur les modalités de la présentation aux actionnaires préconisée par le Code doit revenir à chaque société en fonction de sa situation propre et des réponses qu'elle entend donner aux attentes des actionnaires au vu du dialogue entretenu avec ces derniers, notamment en amont de l'assemblée générale. »*
@@ -89,16 +89,16 @@ Le guide se compose de deux parties :
 
 - **Rappel du Code** : p. 5. *« Lorsqu'est envisagée une cession, en une ou plusieurs opérations, portant sur la moitié au moins des actifs de la société sur les deux derniers exercices, le conseil d'administration et la direction générale qui apprécient l'intérêt stratégique de l'opération, s'assurent que le processus se déroule dans le respect de l'intérêt social, en particulier en mettant en place des moyens et des procédures permettant d'identifier et d'encadrer d'éventuels conflits d'intérêts. À ce titre, ils peuvent solliciter des avis externes notamment sur l'intérêt de l'opération, sa valorisation et les modalités envisagées. Il est également recommandé que le conseil institue un comité ad hoc composé d'au moins deux tiers d'administrateurs indépendants, la participation de dirigeants mandataires sociaux exécutifs étant exclue. »*
 - **Suite du Code (vote consultatif)** : p. 5. *« Préalablement à la réalisation de cette cession, le conseil présente à l'assemblée générale un rapport sur le contexte et le déroulement des opérations. Cette présentation est suivie d'un vote consultatif des actionnaires aux conditions de quorum et de majorité de l'assemblée générale ordinaire. Si l'assemblée émet un avis négatif, le conseil se réunit dans les meilleurs délais et publie immédiatement sur le site de la société un communiqué sur les suites qu'il entend donner à l'opération. »*
-- **Position HCGE — Référence position-recommandation AMF DOC n° 2015-05 (15 juin 2015)** : p. 5-6. *« Conformément à la recommandation de l'AMF (position-recommandation DOC n° 2015-05 du 15 juin 2015), ce seuil est réputé atteint dès lors que deux ratios parmi les cinq suivants atteignent ou dépassent la moitié du montant consolidé calculé pour la société cédante sur les deux exercices précédents »*.
+- **Position HCGE — Référence position-recommandation AMF DOC n° 2015-05 (15 juin 2015)** : p. 5-6. *« Conformément à la recommandation de l'AMF (position-recommandation DOC n° 2015-05 du 15 juin 2015), ce seuil est réputé atteint dès lors que deux ratios parmi les cinq suivants atteignent ou dépassent la moitié du montant consolidé calculé pour la société cédante sur les deux exercices précédents […] »* (p. 5).
 - **Liste des cinq ratios** : p. 6.
-  - *« le chiffre d'affaires réalisé par le ou les actifs ou activités cédés rapporté au chiffre d'affaires consolidé »*.
-  - *« le prix de cession du ou des actifs rapporté à la capitalisation boursière totale »*.
-  - *« la valeur nette du ou des actifs cédés rapportée au total de bilan consolidé »*.
-  - *« le résultat courant avant impôt généré par les actifs ou activités cédés rapporté au résultat courant consolidé avant impôt »*.
-  - *« les effectifs salariés de l'activité cédée rapportés aux effectifs mondiaux du groupe »*.
+  - *« le chiffre d'affaires réalisé par le ou les actifs ou activités cédés rapporté au chiffre d'affaires consolidé ; »*.
+  - *« le prix de cession du ou des actifs rapporté à la capitalisation boursière totale ; »* (p. 6).
+  - *« la valeur nette du ou des actifs cédés rapportée au total de bilan consolidé ; »* (p. 6).
+  - *« le résultat courant avant impôt généré par les actifs ou activités cédés rapporté au résultat courant consolidé avant impôt ; »* (p. 6).
+  - *« les effectifs salariés de l'activité cédée rapportés aux effectifs mondiaux du groupe. »* (p. 6).
 - **Position HCGE — En cas de non-application** : p. 6. *« Si la société ne suit pas cette recommandation, elle doit fournir, conformément au principe "appliquer ou expliquer", une explication compréhensible, pertinente et circonstanciée précisant notamment pourquoi ces ratios n'apparaissent pas pertinents au regard de sa situation et de l'opération envisagée. La société doit indiquer les ratios alternatifs qu'elle a retenus et justifier leur pertinence au regard de sa situation. »*
 - **Position HCGE — Sociétés réglementées** : p. 6. *« Les sociétés soumises à des dispositions légales ou réglementaires particulières appliqueront les recommandations du § 6.3 du code sous réserve de ces spécificités. »*
-- **Position HCGE — Sociétés de portefeuille** : p. 6. Référence au Rapport AMF *« sur les cessions et acquisitions d'actifs significatifs par des sociétés cotées (30 avril 2015, § 2.1.4) »*. Citation reprise par le HCGE : *« S'agissant de sociétés ayant pour activité principale l'acquisition et la gestion de participations, comme indiqué par l'AMF [...] "une telle cession, même si elle est importante, entre clairement dans le cycle normal de l'activité et est donc prévisible par le marché et ses actionnaires. Une société qui estime devoir renoncer à consulter l'assemblée générale devrait expliquer de manière étayée et adaptée à sa situation particulière les raisons pour lesquelles elle estime conforme à l'intérêt social d'écarter cette consultation". »*
+- **Position HCGE — Sociétés de portefeuille** : p. 6. Référence au Rapport AMF *« […] sur les cessions et acquisitions d'actifs significatifs par des sociétés cotées (30 avril 2015, § 2.1.4) »*. Citation reprise par le HCGE : *« S'agissant de sociétés ayant pour activité principale l'acquisition et la gestion de participations, comme indiqué par l'AMF […] "une telle cession, même si elle est importante, entre clairement dans le cycle normal de l'activité et est donc prévisible par le marché et ses actionnaires. Une société qui estime devoir renoncer à consulter l'assemblée générale devrait expliquer de manière étayée et adaptée à sa situation particulière les raisons pour lesquelles elle estime conforme à l'intérêt social d'écarter cette consultation" »*
 
 ### Article 8.1 — Politique de mixité femmes/hommes au sein des instances dirigeantes (p. 7)
 
@@ -124,15 +124,15 @@ Quatre sous-sections (proportion, mandats intragroupes, liens d'affaires, durée
 
 #### Article 10.5.1 — Indépendance des administrateurs exerçant des fonctions dans une société consolidée (p. 8-9)
 
-- **Rappel du Code — Critères examinés par le conseil** : p. 8. *« ne pas être ou ne pas avoir été au cours des cinq années précédentes : salarié ou dirigeant mandataire social exécutif de la société ; salarié, dirigeant mandataire social exécutif ou administrateur d'une société que la société consolide ; salarié, dirigeant mandataire social exécutif ou administrateur de la société mère de la société ou d'une société consolidée par cette société mère. »*
-- **Position HCGE — Interprétation de « société consolide »** : p. 8. *« L'expression "que la société consolide" s'entend des diverses hypothèses de consolidation visées par l'article L. 233-16 du code de commerce. »*
+- **Rappel du Code — Critères examinés par le conseil** : p. 8. *« ne pas être ou ne pas avoir été au cours des cinq années précédentes : salarié ou dirigeant mandataire social exécutif de la société ; salarié, dirigeant mandataire social exécutif ou administrateur d'une société que la société consolide ; salarié, dirigeant mandataire social exécutif ou administrateur de la société mère de la société ou d'une société consolidée par cette société mère »*
+- **Position HCGE — Interprétation de « société consolide »** : p. 8. *« L'expression "que la société consolide" s'entend des diverses hypothèses de consolidation visées par l'article L.233-16 du code de commerce. »*
 - **Position HCGE — Devoir de loyauté et conflits d'intérêts** : p. 8. *« En effet, le devoir de loyauté que le mandataire social d'une filiale a à l'égard de celle-ci peut créer des situations de conflit d'intérêts lors de certaines délibérations du conseil de la maison-mère où il siège aussi. Cela doit être pris en compte dans l'appréciation de son indépendance. »*
 - **Position HCGE — Participation non majoritaire significative et sociétés-sœurs** : p. 9. *« Ces recommandations s'appliquent quand l'administrateur d'une société exerce aussi un mandat dans une société dans laquelle la première détient une participation non majoritaire mais significative, ou dans une société-sœur. »*
 - **Position HCGE — Modalités si maintien de l'indépendance** : p. 9. *« A minima, si le conseil souhaite maintenir la qualification d'indépendance, il pourrait être précisé que l'intéressé s'abstiendra de participer aux décisions du conseil de la maison-mère en cas de conflit d'intérêts entre celle-ci et la filiale. »*
 
 #### Article 10.5.3 — Liens d'affaires (client, fournisseur, banquier d'affaires, banquier de financement, conseil) (p. 9)
 
-- **Rappel du Code (§ 10.5.3)** : p. 9. *« ne pas être client, fournisseur, banquier d'affaires, banquier de financement, conseil : significatif de la société ou de son groupe ; ou pour lequel la société ou son groupe représente une part significative de l'activité. L'appréciation du caractère significatif ou non de la relation entretenue avec la société ou son groupe est débattue par le conseil et les critères quantitatifs et qualitatifs ayant conduit à cette appréciation (continuité, dépendance économique, exclusivité, etc.) explicités dans le rapport sur le gouvernement d'entreprise. »* Note du Code : *« ou être lié directement ou indirectement à ces personnes »*.
+- **Rappel du Code (§ 10.5.3)** : p. 9. *« ne pas être client, fournisseur, banquier d'affaires, banquier de financement, conseil : significatif de la société ou de son groupe ; ou pour lequel la société ou son groupe représente une part significative de l'activité. L'appréciation du caractère significatif ou non de la relation entretenue avec la société ou son groupe est débattue par le conseil et les critères quantitatifs et qualitatifs ayant conduit à cette appréciation (continuité, dépendance économique, exclusivité, etc.) explicités dans le rapport sur le gouvernement d'entreprise »* Note du Code : *« […] ou être lié directement ou indirectement à ces personnes. »*.
 - **Position HCGE — Appréciation au cas par cas** : p. 9. *« Il revient à chaque société d'apprécier le caractère significatif ou non de ces liens et de présenter les critères qu'elle estime pertinents en fonction de ses caractéristiques propres et de celles de la relation considérée. La question doit être examinée au cas par cas et les critères retenus mentionnés. Ce caractère significatif s'apprécie du point de vue de la société et du point de vue de l'administrateur lui-même. »*
 - **Position HCGE — Contenu du rapport sur le gouvernement d'entreprise** : p. 9. *« Le rapport sur le gouvernement d'entreprise doit rendre compte en toute transparence de la procédure d'appréciation de l'indépendance suivie, préciser les relations d'affaires existantes entre la société et l'administrateur et expliciter les données qualitatives et quantitatives ayant conduit le conseil d'administration à retenir la qualification d'administrateur indépendant. »*
 - **Position HCGE — Mention en absence de relations** : p. 9. *« Enfin, en l'absence de relations d'affaires, il doit en être fait mention dans ledit rapport. »*
@@ -163,14 +163,14 @@ Quatre sous-sections (proportion, mandats intragroupes, liens d'affaires, durée
 
 ### Article 16 — Comité en charge de la RSE (p. 11)
 
-- **Rappel du Code (§ 16)** : p. 11. *« outre les missions dévolues par la loi au comité d'audit, il est recommandé que la rémunération, ainsi que les nominations des administrateurs et des dirigeants mandataires sociaux ainsi que les sujets relatifs à la responsabilité sociale et environnementale fassent l'objet d'un travail préparatoire réalisé par un comité spécialisé du conseil d'administration. »*
+- **Rappel du Code (§ 16)** : p. 11. *« […] outre les missions dévolues par la loi au comité d'audit, il est recommandé que la rémunération, ainsi que les nominations des administrateurs et des dirigeants mandataires sociaux ainsi que les sujets relatifs à la responsabilité sociale et environnementale fassent l'objet d'un travail préparatoire réalisé par un comité spécialisé du conseil d'administration. »*
 - **Position HCGE** : p. 11. *« Il est recommandé que les sujets relatifs à la RSE fassent l'objet d'un travail préparatoire réalisé par un comité spécialisé du conseil d'administration. Il peut s'agir d'un comité dédié ou d'un comité également en charge d'autres missions que la RSE. Les sociétés doivent définir clairement les missions du comité en charge de la RSE et les articuler avec celles des autres comités qui peuvent également préparer des sujets RSE. »*
 
 ### Articles 18.1 et 19.1 — Taux d'administrateurs indépendants dans les comités nominations et rémunérations (p. 11-12)
 
 - **Rappel du Code (§ 18.1)** : p. 11. *« Il (le comité en charge des nominations) ne doit comporter aucun dirigeant mandataire social exécutif et être composé majoritairement d'administrateurs indépendants. »*
 - **Rappel du Code (§ 19.1)** : p. 11. *« Il (le comité en charge des rémunérations) ne doit comporter aucun dirigeant mandataire social exécutif et être composé majoritairement d'administrateurs indépendants. Il est recommandé que le président du comité soit indépendant et qu'un administrateur salarié en soit membre. »*
-- **Position HCGE — Dérogation à 50 % avec président indépendant** : p. 12. *« Lorsque le président du comité est indépendant, la présence de 50 % d'administrateurs indépendants aux lieu et place d'une majorité est une explication pertinente permettant d'écarter l'application de la recommandation du code. »*
+- **Position HCGE — Dérogation à 50 % avec président indépendant** : p. 12. *« Lorsque le président du comité est indépendant, la présence de 50% d'administrateurs indépendants aux lieu et place d'une majorité est une explication pertinente permettant d'écarter l'application de la recommandation du code. »*
 - **Position HCGE — Modalités de la dérogation** : p. 12. *« Il est alors impératif de faire figurer la recommandation non appliquée, ainsi que les explications afférentes dans la rubrique ou le tableau spécifique prévu par le code, étant précisé que cette dérogation ne peut être que temporaire. »*
 
 ### Article 18.2.1 — Procédure de sélection des futurs administrateurs (p. 12)
@@ -187,7 +187,7 @@ Quatre sous-sections (proportion, mandats intragroupes, liens d'affaires, durée
 
 - **Rappel du Code (§ 18.3)** : p. 13. *« Le dirigeant mandataire social exécutif est associé aux travaux du comité des nominations. En cas de dissociation des fonctions de président et de directeur général, le président non exécutif peut être membre de ce comité. »*
 - **Rappel du Code (§ 19.2)** : p. 13. *« Le comité des rémunérations a la charge d'étudier et de proposer au conseil l'ensemble des éléments de rémunération et avantages des dirigeants mandataires sociaux, l'ensemble du conseil d'administration ayant la responsabilité de la décision. Il émet également une recommandation sur l'enveloppe et les modalités de répartition des rémunérations allouées aux administrateurs. Par ailleurs, le comité est informé de la politique de rémunération des principaux dirigeants non mandataires sociaux. À cette occasion, le comité associe à ses travaux les dirigeants mandataires sociaux exécutifs. »*
-- **Position HCGE — Association vs. appartenance** : p. 13. *« Le § 18.3 prévoit que "le dirigeant mandataire social exécutif est associé aux travaux du comité des nominations". Cela signifie que le dirigeant mandataire social exécutif est consulté par le comité des nominations, sans pour autant en être membre, surtout quand il s'agit d'un comité chargé à la fois des rémunérations et des nominations. Il en est de même en ce qui concerne le comité des rémunérations [...]. »*
+- **Position HCGE — Association vs. appartenance** : p. 13. *« Le § 18.3 prévoit que "le dirigeant mandataire social exécutif est associé aux travaux du comité des nominations". Cela signifie que le dirigeant mandataire social exécutif est consulté par le comité des nominations, sans pour autant en être membre, surtout quand il s'agit d'un comité chargé à la fois des rémunérations et des nominations. Il en est de même en ce qui concerne le comité des rémunérations […] »*
 - **Position HCGE — Président non exécutif** : p. 13. *« Par ailleurs, le § 18.3 précise qu'"en cas de dissociation des fonctions de président et de directeur général, le président non exécutif peut être membre de ce comité" : sa participation aux travaux du comité est souhaitable, même s'il n'en est pas membre. »*
 
 ### Article 19.1 — Présence d'un administrateur salarié au comité des rémunérations (p. 13-14)
@@ -200,12 +200,12 @@ Quatre sous-sections (proportion, mandats intragroupes, liens d'affaires, durée
 
 - **Rappel du Code (§ 20.2)** : p. 14. *« Un dirigeant mandataire social exécutif ne doit pas exercer plus de deux autres mandats d'administrateur dans des sociétés cotées extérieures à son groupe, y compris étrangères. Il doit en outre recueillir l'avis du conseil avant d'accepter un nouveau mandat social dans une société cotée. »*
 - **Rappel du Code (§ 20.4)** : p. 14. *« Un administrateur ne doit pas exercer plus de quatre autres mandats dans des sociétés cotées extérieures au groupe, y compris étrangères. Cette recommandation s'applique lors de la nomination ou du prochain renouvellement du mandat de l'administrateur. »*
-- **Note du Code (sous § 20.2)** : p. 14. *« La limite ci-dessus n'est pas applicable aux mandats exercés par un dirigeant mandataire social exécutif dans les filiales et participations, détenues seules ou de concert, des sociétés dont l'activité principale est d'acquérir et de gérer de telles participations. »*
-- **Note de bas de page 2 du Guide** : p. 14. *« Cette règle peut avoir une portée différente de celle résultant de la rédaction de l'article L. 225-94-1 du code de commerce, qui s'applique également aux dirigeants mandataires sociaux exécutifs dans les sociétés cotées de grande taille, mais qui ne prend en compte que les sociétés anonymes françaises. »*
+- **Note du Code (sous § 20.2)** : p. 14. *« […] La limite ci-dessus n'est pas applicable aux mandats exercés par un dirigeant mandataire social exécutif dans les filiales et participations, détenues seules ou de concert, des sociétés dont l'activité principale est d'acquérir et de gérer de telles participations. »*
+- **Note de bas de page 2 du Guide** : p. 14. *« Cette règle peut avoir une portée différente de celle résultant de la rédaction de l'article L.225-94-1 du code de commerce, qui s'applique également aux dirigeants mandataires sociaux exécutifs dans les sociétés cotées de grande taille, mais qui ne prend en compte que les sociétés anonymes françaises. »*
 - **Position HCGE — Présentation des mandats** : p. 14. *« Dans la présentation des mandats sociaux détenus par les administrateurs, la société doit faire clairement apparaître si les mandats concernés sont ou non exercés à l'extérieur de son groupe et si les sociétés dans lesquelles ces mandats sont exercés sont ou non cotées. »*
 - **Position HCGE — Interprétation du § 20.4 (mandataires « contrevenants »)** : p. 14. *« Cette précision doit être interprétée comme signifiant que les mandataires sociaux "contrevenants" ne sont pas obligés de démissionner en cours de mandat, mais qu'ils doivent s'abstenir d'accepter le renouvellement d'un mandat extérieur qui les maintiendrait en excès de la limite. La précision vaut aussi pour la limitation à deux mandats des dirigeants mandataires sociaux exécutifs. »*
-- **Position HCGE — Dérogation sociétés de portefeuille** : p. 14-15. *« Cette dérogation s'entend de la manière suivante : Dès lors qu'elle est motivée par la situation particulière de ces dirigeants mandataires sociaux au regard du temps qu'ils sont en mesure de consacrer à l'exercice de leurs mandats, cette dérogation est attachée à leur personne. Elle ne vise que les personnes qui exercent un mandat de dirigeant mandataire social dans une société cotée dont l'activité principale est d'acquérir ou de gérer des participations »*.
-- **Note de bas de page 3 du Guide** : p. 15. *« Ainsi, si un dirigeant mandataire social exécutif d'une société X dont l'activité principale est d'acquérir et de gérer des participations dans d'autres sociétés détient des mandats d'administrateur dans de telles filiales ou participations de la société X, elles-mêmes cotées, ces derniers mandats bénéficient de la dérogation. A noter que cette dérogation est désormais prévue également par l'article L. 225-94-1 du code de commerce. »*
+- **Position HCGE — Dérogation sociétés de portefeuille** : p. 14-15. *« Cette dérogation s'entend de la manière suivante : Dès lors qu'elle est motivée par la situation particulière de ces dirigeants mandataires sociaux au regard du temps qu'ils sont en mesure de consacrer à l'exercice de leurs mandats, cette dérogation est attachée à leur personne. Elle ne vise que les personnes qui exercent un mandat de dirigeant mandataire social dans une société cotée dont l'activité principale est d'acquérir ou de gérer des participations […] »* (p. 15).
+- **Note de bas de page 3 du Guide** : p. 15. *« Ainsi, si un dirigeant mandataire social exécutif d'une société X dont l'activité principale est d'acquérir et de gérer des participations dans d'autres sociétés détient des mandats d'administrateur dans de telles filiales ou participations de la société X, elles-mêmes cotées, ces derniers mandats bénéficient de la dérogation. A noter que cette dérogation est désormais prévue également par l'article L.225-94-1 du code de commerce. »*
 
 ### Article 21 — Déontologie de l'administrateur (p. 16-18)
 
@@ -219,32 +219,32 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 #### Article 21 — Confidentialité et représentant permanent (p. 16-17)
 
-- **Rappel du Code (§ 21 — extrait confidentialité)** : p. 16. *« S'agissant des informations non publiques acquises dans le cadre de ses fonctions, l'administrateur est astreint à une véritable obligation de confidentialité qui dépasse la simple obligation de discrétion prévue par les textes. »*
-- **Position HCGE — Article L. 225-37 du Code de commerce** : p. 16. *« L'article L. 225-37 du Code de commerce dispose que "les administrateurs, ainsi que toute personne appelée à assister aux réunions du conseil d'administration, sont tenus à la discrétion à l'égard des informations présentant un caractère confidentiel et données comme telles par le président du conseil d'administration". »*
+- **Rappel du Code (§ 21 — extrait confidentialité)** : p. 16. *« S'agissant des informations non publiques acquises dans le cadre de ses fonctions, l'administrateur est astreint à une véritable obligation de confidentialité qui dépasse la simple obligation de discrétion prévue par les textes »*
+- **Position HCGE — Article L.225-37 du Code de commerce** : p. 16. *« L'article L.225-37 du Code de commerce dispose que "les administrateurs, ainsi que toute personne appelée à assister aux réunions du conseil d'administration, sont tenus à la discrétion à l'égard des informations présentant un caractère confidentiel et données comme telles par le président du conseil d'administration" »*
 - **Position HCGE — Représentant permanent personne morale** : p. 16. *« Bien que le représentant permanent, qui joue un rôle personnel au sein du conseil d'administration soit en même temps mandataire de l'actionnaire, et souhaite à ce titre transmettre certaines des informations communiquées aux administrateurs dans le cadre de l'exécution de son mandat, l'obligation de discrétion et de confidentialité doit s'imposer à chaque administrateur, sans distinction. »*
-- **Position HCGE — Article L. 225-20 du Code de commerce** : p. 16-17. *« Il n'y a pas lieu d'appliquer par principe différemment cette obligation au représentant permanent d'une personne morale dans la mesure où la loi a pris soin de préciser que le représentant permanent est "soumis aux mêmes conditions et obligations et encourt les mêmes responsabilités civile et pénale que s'il était administrateur en son nom propre, sans préjudice de la responsabilité solidaire de la personne morale qu'il représente" (article L. 225-20 du Code de commerce). »*
+- **Position HCGE — Article L. 225-20 du Code de commerce** : p. 16-17. *« Il n'y a pas lieu d'appliquer par principe différemment cette obligation au représentant permanent d'une personne morale dans la mesure où la loi a pris soin de préciser que le représentant permanent est "soumis aux mêmes conditions et obligations et encourt les mêmes responsabilités civile et pénale que s'il était administrateur en son nom propre, sans préjudice de la responsabilité solidaire de la personne morale qu'il représente" (article L.225-20 du Code de commerce). »*
 - **Note de bas de page 4 du Guide** : p. 16. *« L'obligation de discrétion vise tant les informations communiquées que les débats au sein du conseil d'administration, la collégialité des décisions s'imposant à tous. »*
 - **Position HCGE — Règlement intérieur (article 13.1 du Code)** : p. 17. *« Ainsi, dans le respect des règles régissant la communication et l'exploitation des informations privilégiées, il appartient à chaque conseil d'administration de préciser les modalités pratiques de l'obligation de confidentialité attendue de ses membres, dans le règlement intérieur du conseil, comme le prévoit l'article 13.1 du Code Afep-Medef. »*
 - **Position HCGE — Précisions à apporter par le règlement intérieur** : p. 17. Quatre conditions cumulatives possibles :
-  - *« Prévoir la possibilité de communiquer les informations recueillies par le représentant permanent à la personne morale l'ayant désignée »*.
-  - *« Limiter cette communication aux fins de l'accomplissement de sa mission d'administrateur, dans l'intérêt de la Société »*.
-  - *« Limiter le contenu aux informations strictement nécessaires à cet effet »*.
-  - *« Autoriser la communication de ces informations au dirigeant mandataire social exécutif de la personne morale administrateur et, permettre à la Société de conditionner la communication à d'autres personnes au sein de la personne morale administrateur à ce que celle-ci prenne toutes mesures utiles afin s'assurer du respect d'une stricte confidentialité, en ce compris par la limitation du nombre des personnes en son sein recevant cette information, la tenue d'une liste de ces personnes et le respect par ces personnes des règles régissant la communication et l'utilisation d'informations privilégiées et, le cas échéant, de la charte de déontologie boursière de la Société »*.
+  - *« Prévoir la possibilité de communiquer les informations recueillies par le représentant permanent à la personne morale l'ayant désignée […] »*.
+  - *« […] Limiter cette communication aux fins de l'accomplissement de sa mission d'administrateur, dans l'intérêt de la Société ; »* (p. 17).
+  - *« […] Limiter le contenu aux informations strictement nécessaires à cet effet […] »* (p. 17).
+  - *« […] Autoriser la communication de ces informations au dirigeant mandataire social exécutif de la personne morale administrateur et, permettre à la Société de conditionner la communication à d'autres personnes au sein de la personne morale administrateur à ce que celle-ci prenne toutes mesures utiles afin s'assurer du respect d'une stricte confidentialité, en ce compris par la limitation du nombre des personnes en son sein recevant cette information, la tenue d'une liste de ces personnes et le respect par ces personnes des règles régissant la communication et l'utilisation d'informations privilégiées et, le cas échéant, de la charte de déontologie boursière de la Société. »* (p. 17).
 - **Position HCGE — Extension aux pactes d'actionnaires** : p. 17. *« Le Haut Comité considère que le règlement intérieur peut également prévoir que le conseil d'administration a la faculté d'appliquer les mêmes principes, mutatis mutandis, à la communication d'informations entre un administrateur et la personne morale ayant proposé sa nomination, notamment en vertu d'un pacte d'actionnaires. »*
-- **Position HCGE — Règlement européen sur les abus de marché** : p. 17. Référence à *« l'article 10.1 du Règlement européen relatif aux abus de marché »*.
+- **Position HCGE — Règlement européen sur les abus de marché** : p. 17. Référence à *« […] l'article 10.1 du Règlement européen relatif aux abus de marché. »*.
 
 #### Article 21 — Conflits d'intérêts structurels (p. 18)
 
-- **Rappel du Code (§ 21 — extrait intérêt social)** : p. 18. *« l'administrateur est mandaté par l'ensemble des actionnaires et doit agir en toute circonstance dans l'intérêt social de l'entreprise »* ; *« l'administrateur a l'obligation de faire part au conseil de toute situation de conflit d'intérêts même potentiel et s'abstient d'assister au débat et de participer au vote de la délibération correspondante »*.
+- **Rappel du Code (§ 21 — extrait intérêt social)** : p. 18. *« l'administrateur est mandaté par l'ensemble des actionnaires et doit agir en toute circonstance dans l'intérêt social de l'entreprise […] »* ; *« l'administrateur a l'obligation de faire part au conseil de toute situation de conflit d'intérêts même potentiel et s'abstient d'assister au débat et de participer au vote de la délibération correspondante. »*.
 - **Position HCGE — Conventions de prestation de services par dirigeants non exécutifs** : p. 18. *« Concernant la compatibilité d'une convention de prestation de services portant sur la fourniture par un dirigeant non exécutif de conseils stratégiques et de partenariat, le Haut Comité estime que la situation de cumul est constitutive d'une situation de conflit d'intérêts structurel obérant de facto l'exercice effectif des fonctions de dirigeant non exécutif ainsi que le respect de l'article 21. Cette convention expose structurellement le dirigeant à un conflit d'intérêts ne lui permettant pas d'assurer dans des conditions satisfaisantes ses fonctions de dirigeant. Le Haut Comité considère que la conclusion d'une telle convention est incompatible avec les recommandations du code. »*
 - **Position HCGE — Censeurs / conseil au directoire** : p. 18. *« De même, le Haut Comité considère que l'exercice par une même personne de la fonction de censeur au sein du conseil de surveillance et d'une mission de conseil auprès du directoire créé à l'évidence une confusion entre les fonctions de gestion de gestion et de surveillance au sein de la société et crée une situation de conflit d'intérêts structurel. »*
 
 ### Articles 23.1 et 23.2 — Cumul du mandat social et du contrat de travail (p. 18-19)
 
-- **Rappel du Code (§ 23.1)** : p. 18. *« Il est recommandé, lorsqu'un salarié devient dirigeant mandataire social de l'entreprise, de mettre fin au contrat de travail qui le lie à la société ou à une société du groupe, soit par rupture conventionnelle, soit par démission. »* Note de bas de page : *« Lorsque le contrat de travail est maintenu, celui-ci est suspendu conformément à la jurisprudence »*.
+- **Rappel du Code (§ 23.1)** : p. 18. *« Il est recommandé, lorsqu'un salarié devient dirigeant mandataire social de l'entreprise, de mettre fin au contrat de travail qui le lie à la société ou à une société du groupe, soit par rupture conventionnelle, soit par démission […] »* Note de bas de page : *« […] Lorsque le contrat de travail est maintenu, celui-ci est suspendu conformément à la jurisprudence […] »*.
 - **Rappel du Code (§ 23.2)** : p. 18. *« Cette recommandation s'applique aux président, président directeur général, directeur général dans les sociétés à conseil d'administration, au président du directoire, au directeur général unique dans les sociétés à directoire et conseil de surveillance, aux gérants dans les sociétés en commandite par actions. »*
-- **Position HCGE — Résiliation et non suspension** : p. 18. *« Au § 23.1 du code, il s'agit d'une résiliation du contrat de travail et non de sa simple suspension, telle que la jurisprudence l'applique automatiquement. Au § 23.2, l'énumération étant limitative, cette recommandation ne concerne donc pas les directeurs généraux délégués et les membres du directoire. »*
-- **Position HCGE — Si maintien du contrat** : p. 19. *« Si la société considère que le contrat de travail peut néanmoins être maintenu (et suspendu), les explications fournies doivent faire apparaître clairement non seulement les justifications de ce choix, mais encore les conséquences de celui-ci en matière d'indemnités liées à la rupture du contrat de travail. En effet, le maintien du contrat de travail ne saurait avoir pour effet de déroger aux prescriptions du code sur ces points, sauf à appliquer avec clarté et précision le principe "appliquer ou expliquer". »*
+- **Position HCGE — Résiliation et non suspension** : p. 18. *« […] Au § 23.1 du code, il s'agit d'une résiliation du contrat de travail et non de sa simple suspension, telle que la jurisprudence l'applique automatiquement. Au § 23.2, l'énumération étant limitative, cette recommandation ne concerne donc pas les directeurs généraux délégués et les membres du directoire. »*
+- **Position HCGE — Si maintien du contrat** : p. 19. *« Si la société considère que le contrat de travail peut néanmoins être maintenu (et suspendu), les explications fournies doivent faire apparaître clairement non seulement les justifications de ce choix, mais encore les conséquences de celui-ci en matière d'indemnités liées à la rupture du contrat de travail. En effet, le maintien du contrat de travail ne saurait avoir pour effet de déroger aux prescriptions du code sur ces points, sauf à appliquer avec clarté et précision le principe "appliquer ou expliquer" »*
 - **Position HCGE — Plafond des indemnités de rupture** : p. 19. *« Les indemnités résultant de la rupture du contrat de travail d'un dirigeant mandataire social ne doivent pas excéder un montant correspondant à deux ans de rémunération fixe et variable annuelle. Si le respect des conditions du code n'est pas possible en raison d'engagements pris à l'égard du dirigeant dans le cadre du contrat de travail, ce point doit être porté à la connaissance des actionnaires. »*
 
 ### Articles 25.3 et 25.4 — Indemnités de non-concurrence (p. 19)
@@ -259,9 +259,9 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 - **Position HCGE — Plusieurs critères RSE dont un critère climatique** : p. 19. *« La détermination de la rémunération variable d'un dirigeant doit intégrer plusieurs critères liés à la responsabilité sociale et environnementale, dont au moins un critère en lien avec les objectifs climatiques de l'entreprise. »*
 - **Position HCGE — Critères précis et pertinents** : p. 20. *« Le Haut Comité attend que les critères RSE soient définis de manière précise, soient lisibles, pertinents et intègrent les enjeux sociaux et environnementaux propres à l'entreprise. Une simple référence à l'application de politique RSE, le renvoi à un programme interne RSE ou à des enjeux généraux non définis ne sont pas suffisants. »*
 - **Position HCGE — Bonnes pratiques (trois)** : p. 20.
-  - *« le fait de privilégier la présence de critères RSE mesurables et vérifiables (qu'ils soient qualitatifs ou quantitatifs) »*.
-  - *« la présentation par la direction générale au conseil de la méthodologie utilisée pour mesurer les critères RSE »*.
-  - *« l'examen annuel par le Conseil de la trajectoire fixée pour atteindre les objectifs RSE »*.
+  - *« le fait de privilégier la présence de critères RSE mesurables et vérifiables (qu'ils soient qualitatifs ou quantitatifs) […] »*.
+  - *« […] la présentation par la direction générale au conseil de la méthodologie utilisée pour mesurer les critères RSE […] »* (p. 20).
+  - *« […] l'examen annuel par le Conseil de la trajectoire fixée pour atteindre les objectifs RSE. »* (p. 20).
 
 ### Article 26.3.1 — Rémunération fixe des dirigeants mandataires sociaux (p. 20)
 
@@ -270,7 +270,7 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 ### Article 26.3.2 — Rémunération variable annuelle des dirigeants mandataires sociaux (p. 20-21)
 
-- **Rappel du Code (§ 26.3.2 — extraits)** : p. 20-21. *« Le conseil peut décider d'attribuer une rémunération variable annuelle dont le paiement peut, le cas échéant, être différé. Les règles de fixation de cette rémunération doivent être cohérentes avec l'évaluation faite annuellement des performances des dirigeants mandataires sociaux exécutifs et avec la stratégie de l'entreprise. Elles dépendent de la performance du dirigeant et du progrès réalisé par l'entreprise. Les modalités de la rémunération variable annuelle doivent être intelligibles pour l'actionnaire et donner lieu chaque année à une information claire et exhaustive dans le rapport sur le gouvernement d'entreprise. »*
+- **Rappel du Code (§ 26.3.2 — extraits)** : p. 20-21. *« Le conseil peut décider d'attribuer une rémunération variable annuelle dont le paiement peut, le cas échéant, être différé. Les règles de fixation de cette rémunération doivent être cohérentes avec l'évaluation faite annuellement des performances des dirigeants mandataires sociaux exécutifs et avec la stratégie de l'entreprise. Elles dépendent de la performance du dirigeant et du progrès réalisé par l'entreprise. Les modalités de la rémunération variable annuelle doivent être intelligibles pour l'actionnaire et donner lieu chaque année à une information claire et exhaustive dans le rapport sur le gouvernement d'entreprise. »* (p. 20)
 - **Suite du Code (critères, périodicité, cours de bourse, qualitatif, maximum)** : p. 21. *« Le conseil définit les critères permettant de déterminer la rémunération variable annuelle ainsi que les objectifs à atteindre. Ceux-ci doivent être précis et bien entendu préétablis. Il doit être procédé à un réexamen régulier de ces critères dont il faut éviter les révisions trop fréquentes. Les critères quantifiables, qui ne sont pas nécessairement financiers, doivent être simples, pertinents et adaptés à la stratégie de l'entreprise. Ils doivent être prépondérants. S'il est retenu, le cours de bourse ne doit pas constituer le seul critère quantifiable et peut être apprécié de manière relative (comparaison avec des pairs ou des indices). Les critères qualitatifs doivent être définis de manière précise. Au sein de la rémunération variable annuelle, lorsque des critères qualitatifs sont utilisés, une limite doit être fixée à la part qualitative. Le maximum de la rémunération variable annuelle doit être déterminé sous forme d'un pourcentage de la rémunération fixe et être d'un ordre de grandeur proportionné à cette partie fixe. Sauf exception motivée, l'attribution d'une rémunération variable annuelle ne doit pas être réservée aux seuls dirigeants mandataires sociaux exécutifs. »*
 - **Position HCGE — Confidentialité (renvoi § 27.2)** : p. 21. *« Toutefois, le code mentionne que la présentation des critères utilisés ne doit pas "remettre en cause la confidentialité pouvant s'attacher à certains éléments de détermination de la rémunération variable" (§ 27.2), de façon à ne pas donner des indications sur la stratégie de la société qui peuvent être exploitées par les concurrents ou, le cas échéant, à créer une confusion auprès des investisseurs avec les prévisions que la société leur communique dans le cadre de la "guidance" de marché. »*
 - **Position HCGE — Information minimale** : p. 21. *« Sans obligation de communiquer le détail des objectifs, chiffrés ou non, fixés pour chaque critère, il est nécessaire d'indiquer a minima la nature des critères quantifiables (qui peuvent être financiers ou extra-financiers), ainsi que la proportion qu'occupent les critères qualitatifs par rapport à ces derniers. »*
@@ -278,7 +278,7 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 ### Articles 26.3.2 et 26.3.3 — Rémunération des dirigeants en cas de crise (p. 21-22)
 
-- **Rappel du Code (§ 26.3.2 extrait + § 26.3.3 extrait)** : p. 21-22. *« Seules des circonstances exceptionnelles (modification substantielle du périmètre, évolution imprévue du contexte concurrentiel, perte de la pertinence d'un indice de référence ou d'un groupe de comparaison...) justifient que les conditions de performance puissent être modifiées au cours de la période considérée. Dans ce cas, ces modifications sont rendues publiques après la réunion du conseil les ayant arrêtées. La modification des conditions de performance doit maintenir l'alignement des intérêts des actionnaires et des bénéficiaires. »*
+- **Rappel du Code (§ 26.3.2 extrait + § 26.3.3 extrait)** : p. 21-22. *« Seules des circonstances exceptionnelles (modification substantielle du périmètre, évolution imprévue du contexte concurrentiel, perte de la pertinence d'un indice de référence ou d'un groupe de comparaison…) justifient que les conditions de performance puissent être modifiées au cours de la période considérée. Dans ce cas, ces modifications sont rendues publiques après la réunion du conseil les ayant arrêtées. La modification des conditions de performance doit maintenir l'alignement des intérêts des actionnaires et des bénéficiaires »*
 - **Position HCGE** : p. 22. *« En toutes situations, même en période de crise (ex : crise sanitaire), les règles du code relatives aux rémunérations doivent être appliquées. Si, à titre exceptionnel, des modifications des politiques de rémunération sont opérées, elles doivent l'être dans le respect des recommandations du code. A défaut de pouvoir respecter les recommandations du code, les sociétés doivent, en application de la règle "appliquer ou expliquer" explicitée au § 28.1 du code, fournir une explication et indiquer les déviations opérées ainsi que les explications afférentes dans la rubrique ou le tableau spécifique prévu par ce même paragraphe. »*
 
 ### Article 26.3.3 — Options d'actions et actions de performance (p. 22)
@@ -308,8 +308,8 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 ### Article 27.2 — Information annuelle — Ratios sur les multiples de rémunérations (p. 24-25)
 
-- **Rappel du Code (§ 27.2)** : p. 24. *« Ce chapitre (du rapport sur le gouvernement d'entreprise consacré aux rémunérations des mandataires sociaux) prévoit également : des informations sur les ratios permettant de mesurer les écarts entre la rémunération des dirigeants mandataires sociaux et celle des salariés de la société. Les sociétés qui n'ont pas ou peu de salariés par rapport à l'effectif global en France, prennent en compte un périmètre plus significatif par rapport à la masse salariale ou les effectifs en France des sociétés dont elles ont le contrôle exclusif au sens de l'article L. 233-16 II du code de commerce. »*
-- **Note de bas de page 5** : p. 24. *« L'article L. 22-10-9 du code de commerce vise les salariés de la société qui établit le rapport sur le gouvernement d'entreprise. »*
+- **Rappel du Code (§ 27.2)** : p. 24. *« Ce chapitre (du rapport sur le gouvernement d'entreprise consacré aux rémunérations des mandataires sociaux) prévoit également : des informations sur les ratios permettant de mesurer les écarts entre la rémunération des dirigeants mandataires sociaux et celle des salariés de la société. Les sociétés qui n'ont pas ou peu de salariés par rapport à l'effectif global en France, prennent en compte un périmètre plus significatif par rapport à la masse salariale ou les effectifs en France des sociétés dont elles ont le contrôle exclusif au sens de l'article L.233-16 II du code de commerce. »*
+- **Note de bas de page 5** : p. 24. *« L'article L.22-10-9 du code de commerce vise les salariés de la société qui établit le rapport sur le gouvernement d'entreprise. »*
 - **Note de bas de page 6** : p. 24. *« 80 % des effectifs en France peut être considéré comme un périmètre significatif. »*
 - **Position HCGE — Périmètre clair** : p. 24. *« Il appartient aux sociétés de mentionner clairement le périmètre de la ou des entités prises en compte, ce qui implique de préciser le pourcentage de l'effectif du groupe en France qu'il représente, d'expliquer les raisons du choix opéré et de s'assurer de la cohérence dans le temps du périmètre adopté. »*
 - **Position HCGE — Méthodologie de calcul** : p. 25. *« En outre, le Haut Comité recommande aux sociétés de publier dans leur rapport sur le gouvernement d'entreprise, au-delà du ratio dont seule la publication est requise par la loi, la méthodologie de calcul retenue (éléments pris en compte au numérateur et au dénominateur). Pour ce faire, il recommande aux sociétés d'appliquer les lignes directrices publiées par l'Afep, afin de fournir une lecture commune des éléments de rémunération à prendre en compte et ainsi faciliter les comparaisons. »*
@@ -328,8 +328,8 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 #### Rubrique 1 — Mise en œuvre de « appliquer ou expliquer »
 
-- **Indication** : p. 26. *« Indication si la société se réfère au code Afep-Medef ; indication dans une rubrique ou un tableau spécifique des recommandations du code que la société n'applique pas, avec les explications afférentes. »*
-- **Suite si recommandation HCGE** : p. 26. *« Si une société, ayant fait l'objet d'une recommandation du Haut Comité, décide de ne pas la suivre, elle doit mentionner dans son rapport sur le gouvernement d'entreprise l'avis de ce dernier et les raisons pour lesquelles elle aurait décidé de ne pas y donner suite. »*
+- **Indication** : p. 26. *« Indication si la société se réfère au code Afep-Medef ; indication dans une rubrique ou un tableau spécifique des recommandations du code que la société n'applique pas, avec les explications afférentes »*
+- **Suite si recommandation HCGE** : p. 26. *« Si une société, ayant fait l'objet d'une recommandation du Haut Comité, décide de ne pas la suivre, elle doit mentionner dans son rapport sur le gouvernement d'entreprise l'avis de ce dernier et les raisons pour lesquelles elle aurait décidé de ne pas y donner suite »*
 
 ### Thème 2 — La structure de gouvernance (p. 26)
 
@@ -337,8 +337,8 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 - **Indication** : p. 26.
   - *« Mode de direction choisi : société à conseil d'administration (dissociation ou unicité des fonctions) ou à directoire et conseil de surveillance, puis exposé des motivations et justifications du choix, en particulier en cas de changement de gouvernance »*.
-  - *« En cas de dissociation des fonctions de président et de directeur général, description des missions confiées, le cas échéant, au président du conseil en sus de celles conférées par la loi »*.
-  - *« En cas de missions particulières confiées à un administrateur, notamment avec le titre d'administrateur référent ou de vice-président, description des missions ainsi que des moyens et prérogatives dont il dispose »*.
+  - *« En cas de dissociation des fonctions de président et de directeur général, description des missions confiées, le cas échéant, au président du conseil en sus de celles conférées par la loi »* (p. 26).
+  - *« En cas de missions particulières confiées à un administrateur, notamment avec le titre d'administrateur référent ou de vice-président, description des missions ainsi que des moyens et prérogatives dont il dispose […] »* (p. 26).
 
 ### Thème 3 — Le conseil d'administration (p. 27)
 
@@ -347,86 +347,86 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 - **Indication** : p. 27.
   - *« Nombre et nom des administrateurs indépendants »*.
   - *« Critères d'indépendance retenus »*.
-  - *« Appréciation du caractère significatif des relations d'affaires et explicitation des critères ayant conduit à cette appréciation »*.
-  - *« Conclusion de l'examen relatif à l'indépendance »*.
+  - *« Appréciation du caractère significatif des relations d'affaires et explicitation des critères ayant conduit à cette appréciation »* (p. 27).
+  - *« Conclusion de l'examen relatif à l'indépendance […] »* (p. 27).
 
 #### Rubrique 4 — Membres du conseil d'administration
 
 - **Indication** : p. 27.
   - *« Date de début du mandat (mandat en cours ou premier mandat) et d'expiration du mandat »*.
-  - *« Durée du mandat et, le cas échéant, règles d'échelonnement »*.
-  - *« Age, sexe et nationalité de l'administrateur »*.
+  - *« Durée du mandat et, le cas échéant, règles d'échelonnement »* (p. 27).
+  - *« Age, sexe et nationalité de l'administrateur »* (p. 27).
   - *« Fonction principale »*.
-  - *« Liste des mandats et fonctions exercées dans d'autres sociétés françaises ou étrangères, faisant apparaître clairement celles qui sont cotées et celles qui appartiennent au même groupe »*.
-  - *« Nombre d'actions de la société détenues »*.
-  - *« Politique de diversité appliquée aux membres du conseil (représentation femmes/hommes, nationalités, âge, qualifications, expériences professionnelles et internationales) et description de cette politique, de ses modalités de mise en œuvre et des résultats obtenus »*.
-  - *« Origine de l'élection ou de la désignation : L. 225-17, L. 225-23, L. 225-27, L. 225-27-1 ou autre (sociétés privatisées, etc.) »*.
-  - *« Utilisation de tableaux standardisés pour une présentation synthétique du conseil »*.
+  - *« Liste des mandats et fonctions exercées dans d'autres sociétés françaises ou étrangères, faisant apparaître clairement celles qui sont cotées et celles qui appartiennent au même groupe »* (p. 27).
+  - *« Nombre d'actions de la société détenues »* (p. 27).
+  - *« Politique de diversité appliquée aux membres du conseil (représentation femmes/hommes, nationalités, âge, qualifications, expériences professionnelles et internationales) et description de cette politique, de ses modalités de mise en œuvre et des résultats obtenus »* (p. 27).
+  - *« Origine de l'élection ou de la désignation : L.225-17, L.225-23, L.225-27, L.225-27-1 ou autre (sociétés privatisées, etc.) »* (p. 27).
+  - *« Utilisation de tableaux standardisés pour une présentation synthétique du conseil »* (p. 27).
 
 #### Rubrique 5 — Information sur les séances du conseil d'administration
 
 - **Indication** : p. 27.
   - *« Nombre de séances »*.
-  - *« Taux de participation individuel des membres »*.
-  - *« Pratique des réunions hors la présence des exécutifs »*.
+  - *« Taux de participation individuel des membres »* (p. 27).
+  - *« Pratique des réunions hors la présence des exécutifs […] »* (p. 27).
 
 #### Rubrique 6 — Évaluation du conseil d'administration
 
 - **Indication** : p. 27.
   - *« Réalisation des évaluations (débat lors d'une réunion du conseil ou évaluation formalisée) et, le cas échéant, suites données »*.
-  - *« Existence d'une appréciation de la contribution effective de chaque administrateur aux travaux du conseil, tenue d'entretiens individuels »*.
+  - *« Existence d'une appréciation de la contribution effective de chaque administrateur aux travaux du conseil, tenue d'entretiens individuels »* (p. 27).
 
 #### Rubrique 7 — Règlement intérieur du conseil d'administration
 
 - **Indication** : p. 28.
   - *« Existence »*.
-  - *« les limitations que le conseil d'administration apporte aux pouvoirs du directeur général »*.
-  - *« le principe selon lequel toute opération significative hors stratégie annoncée fait l'objet d'une approbation préalable du conseil »*.
-  - *« les règles d'information du conseil en particulier sur la situation financière, la situation de trésorerie ainsi que les engagements de la société »*.
+  - *« les limitations que le conseil d'administration apporte aux pouvoirs du directeur général ; »* (p. 28).
+  - *« le principe selon lequel toute opération significative hors stratégie annoncée fait l'objet d'une approbation préalable du conseil ; »* (p. 28).
+  - *« les règles d'information du conseil en particulier sur la situation financière, la situation de trésorerie ainsi que les engagements de la société »* (p. 28).
 
 ### Thème 4 — Le conseil et la communication avec les actionnaires et les marchés (p. 28)
 
 #### Rubrique 8 — Notation financière
 
-- **Indication** : p. 28. *« Notations de la société par les agences de notation financière et changements intervenus au cours de l'exercice ou absence de changement. »*
+- **Indication** : p. 28. *« Notations de la société par les agences de notation financière et changements intervenus au cours de l'exercice ou absence de changement […] »*
 
 #### Rubrique 9 — Relations des actionnaires avec le conseil
 
-- **Indication** : p. 28. *« Existence de relations entre des actionnaires et le président du conseil ou le cas échéant, l'administrateur référent notamment sur les sujets de gouvernement d'entreprise. »*
+- **Indication** : p. 28. *« Existence de relations entre des actionnaires et le président du conseil ou le cas échéant, l'administrateur référent notamment sur les sujets de gouvernement d'entreprise […] »*
 
 ### Thème 5 — Politique de mixité femmes/hommes au sein des instances dirigeantes (p. 28)
 
 #### Rubrique 10 — Politique de mixité
 
 - **Indication** : p. 28.
-  - *« de la politique de mixité appliquée aux instances dirigeantes »*.
-  - *« des objectifs de cette politique, de leurs modalités de mise en œuvre et des résultats obtenus au cours de l'exercice écoulé »*.
-  - *« Le cas échéant, en cas de non atteinte de ces objectifs, les mesures prises pour y remédier »*.
+  - *« de la politique de mixité appliquée aux instances dirigeantes […] »*.
+  - *« des objectifs de cette politique, de leurs modalités de mise en œuvre et des résultats obtenus au cours de l'exercice écoulé. »* (p. 28).
+  - *« Le cas échéant, en cas de non atteinte de ces objectifs, les mesures prises pour y remédier. »* (p. 28).
 
 ### Thème 6 — Les comités du conseil (p. 28-30)
 
-**Note de bas de page 8** : p. 28. *« S'il existe d'autres comités du conseil, la même présentation doit être retenue mutatis mutandis. »*
+**Note de bas de page 8** : p. 28. *« […] S'il existe d'autres comités du conseil, la même présentation doit être retenue mutatis mutandis. »*
 
 #### Rubrique 11 — Comité d'audit
 
 - **Indication** : p. 28-29.
   - *« Existence »*.
-  - *« Précisions concernant ses attributions et ses modalités de fonctionnement »*.
-  - *« composition nominative et nombre d'administrateurs indépendants »*.
-  - *« Indication sur la compétence financière ou comptable des membres »*.
+  - *« Précisions concernant ses attributions et ses modalités de fonctionnement […] »*.
+  - *« composition nominative et nombre d'administrateurs indépendants »* (p. 29).
+  - *« Indication sur la compétence financière ou comptable des membres […] »* (p. 29).
   - *« nombre de réunions »*.
   - *« taux de participation »*.
-  - *« compte rendu de l'activité du comité au cours de l'exercice écoulé (examen des méthodes comptables retenues, de l'efficacité des systèmes de contrôle interne, des risques et les engagements hors-bilan significatifs de la société, des opérations significatives, etc.) »*.
-  - *« information sur la procédure de sélection pour le renouvellement des commissaires aux comptes »*.
-  - **Méthodes de travail** : *« délai minimum d'examen des comptes avant l'examen par le conseil »* ; *« audition des commissaires aux comptes, des directeurs financier, comptable, de la trésorerie »* ; *« audition des responsables de l'audit interne et du contrôle des risques »* ; *« existence d'une possibilité de recours à des experts extérieurs »*.
+  - *« compte rendu de l'activité du comité au cours de l'exercice écoulé (examen des méthodes comptables retenues, de l'efficacité des systèmes de contrôle interne, des risques et les engagements hors-bilan significatifs de la société, des opérations significatives, etc.) »* (p. 29).
+  - *« information sur la procédure de sélection pour le renouvellement des commissaires aux comptes […] »* (p. 29).
+  - **Méthodes de travail** : *« délai minimum d'examen des comptes avant l'examen par le conseil »* (p. 29) ; *« audition des commissaires aux comptes, des directeurs financier, comptable, de la trésorerie »* (p. 29) ; *« audition des responsables de l'audit interne et du contrôle des risques »* (p. 29) ; *« existence d'une possibilité de recours à des experts extérieurs »* (p. 29).
 
 #### Rubrique 12 — Comité en charge des nominations
 
 - **Indication** : p. 29.
   - *« Existence »*.
-  - *« Précisions concernant ses attributions et ses modalités de fonctionnement »*.
-  - *« composition nominative et nombre d'administrateurs indépendants »*.
-  - *« modalités de l'association des dirigeants mandataires sociaux aux travaux du comité des nominations »*.
+  - *« Précisions concernant ses attributions et ses modalités de fonctionnement […] »*.
+  - *« composition nominative et nombre d'administrateurs indépendants »* (p. 29).
+  - *« modalités de l'association des dirigeants mandataires sociaux aux travaux du comité des nominations […] »* (p. 29).
   - *« nombre de réunions »*.
   - *« taux de participation »*.
   - *« compte rendu de l'activité au cours de l'exercice écoulé »*.
@@ -435,11 +435,11 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 - **Indication** : p. 29-30.
   - *« Existence »*.
-  - *« Précisions concernant ses attributions et ses modalités de fonctionnement »*.
-  - *« composition nominative et nombre d'administrateurs indépendants »*.
-  - *« information sur la présidence du comité par un administrateur indépendant »*.
-  - *« information sur la présence d'un administrateur représentant les salariés au sein du comité »*.
-  - *« modalités de l'association des dirigeants mandataires sociaux exécutifs à la présentation au comité de l'information sur la politique de rémunération des principaux dirigeants non mandataires sociaux »*.
+  - *« Précisions concernant ses attributions et ses modalités de fonctionnement »* (p. 29).
+  - *« composition nominative et nombre d'administrateurs indépendants »* (p. 29).
+  - *« information sur la présidence du comité par un administrateur indépendant »* (p. 30).
+  - *« information sur la présence d'un administrateur représentant les salariés au sein du comité »* (p. 30).
+  - *« modalités de l'association des dirigeants mandataires sociaux exécutifs à la présentation au comité de l'information sur la politique de rémunération des principaux dirigeants non mandataires sociaux […] »* (p. 30).
   - *« nombre de réunions »*.
   - *« taux de participation »*.
   - *« compte rendu de l'activité au cours de l'exercice écoulé »*.
@@ -450,13 +450,13 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 - **Indication** : p. 30.
   - *« Cessation du contrat de travail (tableau 11 annexé au code) »*.
-  - *« En cas de maintien du contrat de travail (suspendu), indication des justifications de la décision du conseil »*.
+  - *« En cas de maintien du contrat de travail (suspendu), indication des justifications de la décision du conseil […] »* (p. 30).
 
 ### Thème 8 — L'obligation de détention d'actions des dirigeants mandataires sociaux (p. 30)
 
 #### Rubrique 15 — Règles de conservation au nominatif
 
-- **Indication** : p. 30. *« Règles fixées par le conseil de conservation au nominatif d'un certain nombre d'actions de la société. »*
+- **Indication** : p. 30. *« Règles fixées par le conseil de conservation au nominatif d'un certain nombre d'actions de la société […] »*
 
 ### Thème 9 — Les rémunérations des mandataires sociaux (p. 30-33)
 
@@ -464,87 +464,87 @@ Trois sous-sections : conflits d'intérêts, confidentialité, conflits structur
 
 - **Indication** : p. 30.
   - *« Montant global et individuel des rémunérations (tableau 3 annexé au code) »*.
-  - *« Règles de répartition de ces rémunérations »*.
-  - *« Mention que la part variable liée à l'assiduité ou à la participation à un comité est prépondérante par rapport à la part fixe »*.
-  - *« Information sur les rémunérations exceptionnelles éventuellement allouées à un administrateur »*.
+  - *« Règles de répartition de ces rémunérations »* (p. 30).
+  - *« Mention que la part variable liée à l'assiduité ou à la participation à un comité est prépondérante par rapport à la part fixe »* (p. 30).
+  - *« Information sur les rémunérations exceptionnelles éventuellement allouées à un administrateur »* (p. 30).
 
 #### Rubrique 17 — Rémunération fixe et variable annuelle des DMS
 
-- **Indication** : p. 30-31.
-  - *« Politique de détermination de la rémunération des dirigeants mandataires sociaux »*.
+- **Indication** : p. 31 (rubrique ouverte p. 30).
+  - *« Politique de détermination de la rémunération des dirigeants mandataires sociaux »* (p. 30).
   - *« Règles d'évolution de la part fixe »*.
-  - *« Règles d'attribution de la part variable annuelle, indication des critères de détermination de cette part variable : critères qualitatifs et quantifiables (sous réserve de confidentialité de certains éléments) »*.
-  - *« limites fixées à la part qualitative quand elle est utilisée »*.
-  - *« relation de la part variable annuelle à la part fixe (pourcentage maximum de la part fixe) »*.
-  - *« indication de l'application des critères par rapport à ce qui avait été prévu au cours de l'exercice et mention de l'atteinte des objectifs personnels »*.
-  - *« rémunération individuelle détaillée de chaque dirigeant mandataire social selon les tableaux de présentation standardisés des dirigeants figurant en annexe du code (tableaux 1 et 2) »*.
+  - *« Règles d'attribution de la part variable annuelle, indication des critères de détermination de cette part variable : critères qualitatifs et quantifiables (sous réserve de confidentialité de certains éléments) »* (p. 31).
+  - *« limites fixées à la part qualitative quand elle est utilisée »* (p. 31).
+  - *« relation de la part variable annuelle à la part fixe (pourcentage maximum de la part fixe) »* (p. 31).
+  - *« indication de l'application des critères par rapport à ce qui avait été prévu au cours de l'exercice et mention de l'atteinte des objectifs personnels »* (p. 31).
+  - *« rémunération individuelle détaillée de chaque dirigeant mandataire social selon les tableaux de présentation standardisés des dirigeants figurant en annexe du code (tableaux 1 et 2) »* (p. 31).
 
 #### Rubrique 18 — Rémunération variable pluriannuelle des DMS
 
 - **Indication** : p. 31.
   - *« indication des critères de détermination de cette part variable : critères qualitatifs et quantifiables (sous réserve de confidentialité de certains éléments) et leurs poids respectifs »*.
-  - *« indication du groupe de bénéficiaires du mécanisme de rémunération variable pluriannuelle »*.
-  - *« lors du versement de la part variable pluriannuelle, indication de l'application des critères »*.
-  - *« rémunération individuelle détaillée de chaque dirigeant mandataire social selon le tableau de présentation standardisé des dirigeants figurant en annexe du code (tableau 10) »*.
+  - *« indication du groupe de bénéficiaires du mécanisme de rémunération variable pluriannuelle »* (p. 31).
+  - *« lors du versement de la part variable pluriannuelle, indication de l'application des critères »* (p. 31).
+  - *« rémunération individuelle détaillée de chaque dirigeant mandataire social selon le tableau de présentation standardisé des dirigeants figurant en annexe du code (tableau 10) »* (p. 31).
 
 #### Rubrique 19 — Options d'actions
 
 - **Indication** : p. 31-32.
   - *« Politique d'attribution »*.
-  - *« Nature des options (options d'achat ou de souscription) »*.
+  - *« Nature des options (options d'achat ou de souscription) »* (p. 31).
   - *« Absence de décote »*.
-  - *« Indication du groupe de bénéficiaires des plans d'options »*.
+  - *« Indication du groupe de bénéficiaires des plans d'options »* (p. 31).
   - *« Périodicité des plans »*.
   - *« Part rapportée au capital attribuée à chaque dirigeant mandataire social »*.
-  - *« Conditions de performance arrêtées par le conseil pour l'exercice des options (conditions internes à l'entreprise ou relatives [...]) »*.
-  - *« Présentation standardisée selon les tableaux figurant en annexe du code (tableaux 4 et 5) en mentionnant la valorisation des options attribuées au cours de l'exercice selon la méthode retenue pour les comptes consolidés (tableau 4) »*.
-  - *« Tableau récapitulatif des plans d'options en vigueur selon le tableau 8 figurant en annexe du code »*.
-  - *« Mention de l'engagement formel du dirigeant de ne pas recourir à des opérations de couverture »*.
-  - *« Période d'interdiction d'exercice précédant la publication des comptes annuels et intermédiaires »*.
+  - *« Conditions de performance arrêtées par le conseil pour l'exercice des options (conditions internes à l'entreprise ou relatives […]) […] »* (p. 31).
+  - *« Présentation standardisée selon les tableaux figurant en annexe du code (tableaux 4 et 5) en mentionnant la valorisation des options attribuées au cours de l'exercice selon la méthode retenue pour les comptes consolidés (tableau 4) »* (p. 32).
+  - *« Tableau récapitulatif des plans d'options en vigueur selon le tableau 8 figurant en annexe du code »* (p. 32).
+  - *« Mention de l'engagement formel du dirigeant de ne pas recourir à des opérations de couverture »* (p. 32).
+  - *« Période d'interdiction d'exercice précédant la publication des comptes annuels et intermédiaires »* (p. 32).
 
 #### Rubrique 20 — Actions de performance
 
 - **Indication** : p. 32.
   - *« Politique d'attribution »*.
-  - *« Indication du groupe de bénéficiaires des plans d'actions de performance »*.
+  - *« Indication du groupe de bénéficiaires des plans d'actions de performance »* (p. 32).
   - *« Périodicité des plans »*.
   - *« Part rapportée au capital attribuée à chaque dirigeant mandataire social »*.
-  - *« Conditions de performance arrêtées par le conseil pour l'acquisition des actions [...] »*.
-  - *« Présentation standardisée selon les tableaux figurant en annexe du code (tableaux 6 et 7) en mentionnant la valorisation des actions attribuées au cours de l'exercice selon la méthode retenue pour les comptes consolidés (tableau 6) »*.
-  - *« Tableau récapitulatif des attributions d'actions en vigueur selon le tableau 9 figurant en annexe du code »*.
-  - *« Mention de l'engagement formel du dirigeant de ne pas recourir à des opérations de couverture »*.
-  - *« Période d'interdiction d'exercice précédant la publication des comptes annuels et intermédiaires »*.
+  - *« Conditions de performance arrêtées par le conseil pour l'acquisition des actions […] »* (p. 32).
+  - *« Présentation standardisée selon les tableaux figurant en annexe du code (tableaux 6 et 7) en mentionnant la valorisation des actions attribuées au cours de l'exercice selon la méthode retenue pour les comptes consolidés (tableau 6) »* (p. 32).
+  - *« Tableau récapitulatif des attributions d'actions en vigueur selon le tableau 9 figurant en annexe du code »* (p. 32).
+  - *« Mention de l'engagement formel du dirigeant de ne pas recourir à des opérations de couverture »* (p. 32).
+  - *« Période d'interdiction d'exercice précédant la publication des comptes annuels et intermédiaires »* (p. 32).
 
 #### Rubrique 21 — Indemnité de prise de fonctions
 
-- **Indication** : p. 32. *« Mention d'une indemnité de prise de fonctions accordée à un nouveau dirigeant mandataire social et explications afférentes. »*
+- **Indication** : p. 32. *« Mention d'une indemnité de prise de fonctions accordée à un nouveau dirigeant mandataire social et explications afférentes »*
 
 #### Rubrique 22 — Indemnité de départ
 
 - **Indication** : p. 32-33.
-  - *« Indication des conditions de performance applicables »*.
-  - *« Mention que les conditions de performance sont appréciées sur deux exercices au moins »*.
-  - *« Indication que l'indemnisation du dirigeant n'est autorisée qu'en cas de départ contraint »*.
-  - *« Plafond de deux ans (rémunération fixe et variable annuelle) et inclusion dans ce plafond, le cas échéant, de l'indemnité de non-concurrence ou des indemnités liées à la rupture du contrat de travail »*.
+  - *« Indication des conditions de performance applicables »* (p. 32).
+  - *« Mention que les conditions de performance sont appréciées sur deux exercices au moins »* (p. 32).
+  - *« Indication que l'indemnisation du dirigeant n'est autorisée qu'en cas de départ contraint »* (p. 32).
+  - *« Plafond de deux ans (rémunération fixe et variable annuelle) et inclusion dans ce plafond, le cas échéant, de l'indemnité de non-concurrence ou des indemnités liées à la rupture du contrat de travail »* (p. 33).
 
 #### Rubrique 23 — Indemnité de non-concurrence
 
 - **Indication** : p. 33.
   - *« Mention de la stipulation prévue, lors de tout nouvel accord, autorisant le conseil à renoncer à la mise en œuvre de l'accord lors du départ du dirigeant »*.
-  - *« Mention que la clause de non-concurrence s'inscrit dans les recommandations du code Afep-Medef. Plafond de deux ans (rémunération fixe et variable annuelle), inclusion dans ce plafond, le cas échéant, de l'indemnité de départ et mention de l'échelonnement du paiement pendant sa durée »*.
+  - *« Mention que la clause de non-concurrence s'inscrit dans les recommandations du code Afep-Medef. Plafond de deux ans (rémunération fixe et variable annuelle), inclusion dans ce plafond, le cas échéant, de l'indemnité de départ et mention de l'échelonnement du paiement pendant sa durée »* (p. 33).
 
 #### Rubrique 24 — Retraites supplémentaires
 
 - **Indication** : p. 33.
   - *« Systèmes de retraite ou engagements provisionnés : existence ou non d'un dispositif de retraite spécifique pour les dirigeants mandataires sociaux »*.
-  - *« Principales caractéristiques du régime et mention de conditions de performance »*.
-  - **Régimes à prestations définies** : *« le groupe de bénéficiaires plus large que les seuls mandataires sociaux ; la condition minimum d'ancienneté de deux ans pour en bénéficier ; le cas échéant, les conditions de performance permettant de définir annuellement l'acquisition de droits conditionnels ; la période de référence prise en compte pour le calcul des prestations qui doit être de plusieurs années ; l'existence d'un plafonnement à 45 % de la rémunération fixe et variable annuelle du revenu auquel donnerait droit le régime de retraite supplémentaire »*.
+  - *« Principales caractéristiques du régime et mention de conditions de performance »* (p. 33).
+  - **Régimes à prestations définies** : *« […] le groupe de bénéficiaires plus large que les seuls mandataires sociaux ; la condition minimum d'ancienneté de deux ans pour en bénéficier ; le cas échéant, les conditions de performance permettant de définir annuellement l'acquisition de droits conditionnels ; la période de référence prise en compte pour le calcul des prestations qui doit être de plusieurs années ; l'existence d'un plafonnement à 45 % de la rémunération fixe et variable annuelle du revenu auquel donnerait droit le régime de retraite supplémentaire. »* (p. 33).
 
 #### Rubrique 25 — Ratios sur les multiples de rémunérations
 
 - **Indication** : p. 33.
-  - *« Informations sur les ratios permettant de mesurer les écarts entre la rémunération des dirigeants mandataires sociaux et celle des salariés de la société »*.
-  - *« Pour les sociétés qui n'ont pas ou peu de salariés par rapport à l'effectif global en France, indication du périmètre pris en compte pour établir les ratios »*.
+  - *« […] informations sur les ratios permettant de mesurer les écarts entre la rémunération des dirigeants mandataires sociaux et celle des salariés de la société. »*.
+  - *« Pour les sociétés qui n'ont pas ou peu de salariés par rapport à l'effectif global en France, indication du périmètre pris en compte pour établir les ratios »* (p. 33).
 
 ---
 

@@ -8,7 +8,7 @@
 
 **Nature juridique** : position-recommandation de l'AMF — doctrine régulateur boursier (Code monétaire et financier L. 621-1, pouvoir réglementaire RGAMF). Régroupe positions et recommandations AMF et orientations ESMA.
 
-**Avertissement officiel (couverture)** : *« Cette position-recommandation n'est pas à jour des impacts de l'entrée en vigueur du Règlement (UE) 2024/2809 du Parlement européen et du Conseil du 23 octobre 2024 ("Règlement Listing Act"), et de la transposition de la Directive (UE) 2022/2464 du Parlement européen et du Conseil du 14 décembre 2022 ("Directive CSRD"). »*
+**Avertissement officiel (couverture)** : (p. 1, bandeau de couverture non paginé) *« Cette position-recommandation n'est pas à jour des impacts de l'entrée en vigueur du Règlement (UE) 2024/2809 du Parlement européen et du Conseil du 23 octobre 2024 ("Règlement Listing Act"), et de la transposition de la Directive (UE) 2022/2464 du Parlement européen et du Conseil du 14 décembre 2022 ("Directive CSRD") »* (p. 1)
 
 **Périmètre du guide** : émetteurs dont les valeurs mobilières sont admises à la négociation sur un marché réglementé (Euronext Paris) ou un système multilatéral de négociation (Euronext Growth, Euronext Access). Le guide s'applique aux DEU et aux documents d'enregistrement établis conformément à l'annexe 1 du Règlement Délégué n°2019/980 dans le cadre d'une introduction en bourse ou autre opération.
 
@@ -74,7 +74,7 @@
 - **Référence aux codes de gouvernement d'entreprise** : p. 48.
   - Sociétés se référant au **Code AFEP-MEDEF révisé en décembre 2022** : annexe 3 du Code = tableaux de présentation synthétique du conseil d'administration (âge, sexe, nationalité, nombre d'actions détenues, nombre de mandats dans des sociétés cotées, indépendance, année de première nomination, échéance du mandat, ancienneté au conseil, participation aux comités, résumé des principaux domaines d'expertise et d'expérience, principales activités exercées hors de la société, mandats en cours et expirés).
   - Sociétés se référant au **Code MIDDLENEXT** : modèle de tableau à remplir pour la composition du conseil et de ses comités.
-- **Bonne pratique** : p. 49. *« Constitue une bonne pratique le fait de publier une présentation individualisée des compétences des administrateurs ainsi que le calcul du pourcentage d'administrateurs concernés pour chaque compétence. »*
+- **Bonne pratique** : p. 49. *« […] Constitue une bonne pratique le fait de publier une présentation individualisée des compétences des administrateurs ainsi que le calcul du pourcentage d'administrateurs concernés pour chaque compétence. »*
 
 ##### Renvoi à d'autres recommandations AMF
 
@@ -113,9 +113,9 @@
 - **Position AMF — sociétés se référant à un code de gouvernement d'entreprise** : p. 60.
   - Si elles n'appliquent pas une partie des recommandations, expliquer les raisons selon le principe « appliquer ou expliquer » (*comply or explain*) développé par les codes de gouvernement d'entreprise.
   - Afin d'éviter toute ambiguïté, faire un choix précis s'agissant du code de gouvernement d'entreprise auquel elles ont décidé de se référer et l'indiquer clairement.
-- **Recommandation AMF — vocabulaire** : p. 60. *« Pour indiquer qu'elles se réfèrent à un code de gouvernement d'entreprise, les sociétés utilisent les termes de l'article L. 22-10-10 du code de commerce et notamment l'expression "se référer" ou, le cas échéant, d'autres termes tels que "appliquer" ou "être conforme", qui ne sont pas ambigus, à l'inverse de l'expression "s'attache à respecter" dont l'AMF estime qu'elle est à éviter. »*
-- **Recommandation AMF — rubrique ou tableau spécifique** : p. 60. *« L'AMF recommande que les sociétés indiquent dans une rubrique ou un tableau spécifique toutes les recommandations qu'elles n'appliquent pas et les explications y afférentes. »*
-- **Recommandation AMF — mise en conformité progressive** : p. 60. *« Lorsque les sociétés font mention d'une mise en conformité progressive, l'AMF leur recommande de donner une explication détaillée sur les différentes étapes envisagées. »*
+- **Recommandation AMF — vocabulaire** : p. 62. *« Pour indiquer qu'elles se réfèrent à un code de gouvernement d'entreprise, les sociétés utilisent les termes de l'article L. 22-10-10 du code de commerce et notamment l'expression "se référer" ou, le cas échéant, d'autres termes tels que "appliquer" ou "être conforme", qui ne sont pas ambigüs [sic], à l'inverse de l'expression "s'attache à respecter" dont l'AMF estime qu'elle est à éviter. »*
+- **Recommandation AMF — rubrique ou tableau spécifique** : p. 62. *« L'AMF recommande que les sociétés indiquent dans une rubrique ou un tableau spécifique toutes les recommandations qu'elles n'appliquent pas et les explications y afférentes. »*
+- **Recommandation AMF — mise en conformité progressive** : p. 62. *« Lorsque les sociétés font mention d'une mise en conformité progressive, l'AMF leur recommande de donner une explication détaillée sur les différentes étapes envisagées. »*
 - **Position AMF — sociétés ne se référant à aucun code** : p. 61.
   - Indiquer expressément qu'elles ne se réfèrent à aucun code et expliquer pourquoi.
   - Indiquer les règles retenues en complément des exigences requises par la loi, dans un paragraphe spécifique permettant d'identifier clairement leur nature (règles d'organisation, fonctionnement et composition du conseil, indépendance, évaluation des travaux).
@@ -162,21 +162,21 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 
 ##### Notion de mandataire social (p. 51)
 
-- **Définition fonctionnelle** : *« cette notion doit être entendue ici comme englobant, outre le gérant, le président, le directeur général et les directeurs généraux délégués, les administrateurs, les membres du conseil de surveillance et du directoire »*.
+- **Définition fonctionnelle** : *« […] cette notion […] doit être entendue ici comme englobant, outre le gérant, le président, le directeur général et les directeurs généraux délégués, les administrateurs, les membres du conseil de surveillance et du directoire. »*.
 - **Inclus** : mandataires sociaux dont le mandat a pris fin et nouvellement nommés au cours de l'exercice écoulé.
 - **Recommandation AMF — personne morale mandataire** : p. 51. *« L'AMF précise que dans l'hypothèse où le mandat social est exercé par une personne morale, la personne physique qui a la qualité de représentant permanent désigné à cet effet ou de représentant légal de la personne morale, fournit également toutes les informations exigées concernant les mandataires sociaux comme s'il était mandataire social en son nom propre, notamment les informations relatives à toutes les formes de rémunérations qui lui sont directement accordées. »*
-- **Notion de « dirigeants mandataires sociaux »** : p. 51. Définis pour les besoins de la recommandation comme : *« le président du conseil d'administration ou du conseil de surveillance, le directeur général, le gérant, les directeurs généraux délégués, ou pour le président du directoire et les autres membres du directoire ou le directeur général unique »* (article L. 22-10-34 II du Code de commerce).
+- **Notion de « dirigeants mandataires sociaux »** : p. 51. Définis pour les besoins de la recommandation comme : *« Le président du conseil d'administration ou du conseil de surveillance, le directeur général, le gérant, les directeurs généraux délégués, ou pour le président du directoire et les autres membres du directoire ou le directeur général unique […] »* (article L. 22-10-34 II du Code de commerce).
 
 ##### Politique de rémunération — article L. 22-10-8 du Code de commerce (p. 51-52)
 
 - **Cadre légal cité** : *« dans les sociétés dont les actions sont admises aux négociations sur un marché réglementé, le conseil d'administration établit une politique de rémunération des mandataires sociaux. Cette politique est conforme à l'intérêt social de la société, contribue à sa pérennité et s'inscrit dans sa stratégie commerciale. »*
 - **Vote AG** : projet de résolution soumis à l'approbation de l'assemblée générale des actionnaires chaque année et lors de chaque modification importante (articles L. 225-98 et L. 22-10-32 du Code de commerce).
-- **Nullité** : *« aucun élément de rémunération [...] ne peut être déterminé, attribué ou versé par la société, [...] s'il n'est pas conforme à la politique de rémunération approuvée. »* Tout versement, attribution ou engagement effectué ou pris en méconnaissance de ces dispositions est **nul**.
+- **Nullité** : *« […] Aucun élément de rémunération […] ne peut être déterminé, attribué ou versé par la société, […] s'il n'est pas conforme à la politique de rémunération approuvée […] »* Tout versement, attribution ou engagement effectué ou pris en méconnaissance de ces dispositions est **nul**.
 - **Circonstances exceptionnelles** : dérogation temporaire, conforme à l'intérêt social et nécessaire pour garantir la pérennité ou viabilité de la société.
 
 ##### Article R. 22-10-14 du Code de commerce — critères de performance (p. 52)
 
-- **Critères variables** : *« lorsque la société attribue des éléments de rémunérations variables, les critères clairs, détaillés et variés, de nature financière et non financière, y compris, le cas échéant, relatifs à la responsabilité sociale et environnementale de l'entreprise, qui conditionnent leur attribution et la manière dont ces critères contribuent aux objectifs de la politique de rémunération. »*
+- **Critères variables** : *« Lorsque la société attribue des éléments de rémunérations variables, les critères clairs, détaillés et variés, de nature financière et non financière, y compris, le cas échéant, relatifs à la responsabilité sociale et environnementale de l'entreprise, qui conditionnent leur attribution et la manière dont ces critères contribuent aux objectifs de la politique de rémunération »*
 - **Engagements et droits conditionnels** : mêmes critères clairs, détaillés et variés.
 
 ##### Recommandations AMF — politique de rémunération (p. 52-54)
@@ -185,15 +185,15 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
   - Référence précise lorsque la résolution AG renvoie à un document présentant les éléments soumis au vote.
   - Résolutions distinctes pour chaque catégorie de dirigeant dès lors que les principes et critères sont distincts ou que la portée du vote diffère.
 - **Recommandation — candidat dirigeant** : p. 52. Communiquer avant l'AG l'ensemble des éléments d'information concernant la rémunération du ou des candidat(s) choisi(s) par le conseil pour être le(s) futur(s) dirigeant(s). Les éléments de rémunération devraient faire partie intégrante de la politique de rémunération présentée au sein du rapport sur les rémunérations (ou bien être communiqués en tant que complément à cette politique de rémunération) et ainsi être soumis à l'approbation de l'assemblée générale.
-- **Recommandation — augmentation de la rémunération fixe** : p. 52. Présenter les augmentations de la rémunération fixe des dirigeants, en indiquant le pourcentage d'augmentation par rapport à l'exercice précédent. *« L'AMF recommande qu'en cas d'augmentation significative de la rémunération, les raisons de cette augmentation soient explicitées »* (rapport AMF 2014).
-- **Recommandation — études comparatives** : p. 53. *« Lorsqu'une société justifie l'augmentation de la rémunération fixe (ou la rémunération totale) par des études comparatives, l'AMF recommande que la société apporte des explications circonstanciées, par exemple en donnant les caractéristiques du panel de sociétés comparables retenu »* (rapports AMF 2017 et 2020).
+- **Recommandation — augmentation de la rémunération fixe** : p. 52. Présenter les augmentations de la rémunération fixe des dirigeants, en indiquant le pourcentage d'augmentation par rapport à l'exercice précédent. *« L'AMF recommande qu'en cas d'augmentation significative de la rémunération, les raisons de cette augmentation soient explicitées. »* (rapport AMF 2014).
+- **Recommandation — études comparatives** : p. 52-53. *« Lorsqu'une société justifie l'augmentation de la rémunération fixe (ou la rémunération totale) par des études comparatives, l'AMF recommande que la société apporte des explications circonstanciées, par exemple en donnant les caractéristiques du panel de sociétés comparables retenu. »* (rapports AMF 2017 et 2020).
 - **Recommandations — critères de performance** : p. 53.
   - Indiquer de manière précise les critères qualitatifs ou indiquer a minima que certains critères qualitatifs ont été préétablis (raisons de confidentialité).
   - Indiquer le niveau de réalisation attendu des objectifs quantifiables ou indiquer a minima que le niveau a été établi de manière précise (raisons de confidentialité).
   - Présenter de manière claire et précise la clé de répartition des critères.
   - Distinguer chacun des critères en indiquant s'il s'agit d'un critère quantifiable ou qualitatif.
   - Indiquer le plafond de la rémunération variable soit par un pourcentage de la rémunération fixe, soit par un montant numéraire maximum (rapport AMF 2017).
-- **Recommandation — caractère préétabli des critères** : p. 53. *« L'AMF recommande aux sociétés de veiller à ce que le caractère préétabli des critères de performance fixés dans la politique de rémunération ne soit pas remis en cause »* (rapport AMF 2021). Les éventuelles clauses d'ajustement prévues au sein de la politique de rémunération doivent être rédigées de façon suffisamment précise et approuvées en connaissance de cause par l'assemblée générale.
+- **Recommandation — caractère préétabli des critères** : p. 53. *« L'AMF recommande aux sociétés de veiller à ce que le caractère préétabli des critères de performance fixés dans la politique de rémunération ne soit pas remis en cause. »* (rapport AMF 2021). Les éventuelles clauses d'ajustement prévues au sein de la politique de rémunération doivent être rédigées de façon suffisamment précise et approuvées en connaissance de cause par l'assemblée générale.
 
 ##### Bonnes pratiques — politique de rémunération (p. 53-54)
 
@@ -208,7 +208,7 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 
 ##### Modification de la politique de rémunération (p. 54-55)
 
-- **Position AMF** : p. 54. *« Lorsqu'il peut être constaté que la politique de rémunération approuvée n'est pas respectée, l'attribution de la rémunération est alors entachée de nullité. »*
+- **Position AMF** : p. 54. *« […] lorsqu'il peut être constaté que la politique de rémunération approuvée n'est pas respectée, l'attribution de la rémunération est alors entachée de nullité. »*
 - **Recommandation — ajustements** : p. 54. Rappeler dans le DEU ou le RFA de l'exercice considéré les explications fournies pour justifier certains éléments de la rémunération allouée aux dirigeants mandataires sociaux au titre d'un exercice donné, même s'ils ont déjà été communiqués dans le rapport sur le gouvernement d'entreprise ou DEU de l'exercice antérieur. Garantir l'exhaustivité et la clarté de l'information.
 - **Recommandation — communication aux investisseurs** : p. 54.
   - Communiquer le plus en amont possible de l'assemblée générale.
@@ -221,14 +221,14 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 - **Modification des critères de performance** : p. 55.
   - Justifier de l'impossibilité d'utiliser les critères de performance prévus par la politique de rémunération et chiffrer l'impact de la modification.
   - Évaluer le caractère exigeant des critères tels qu'ajustés.
-  - Rendre publiques les modifications après la réunion du conseil les ayant arrêtées et les mentionner dans le tableau de synthèse des recommandations non suivies du **Code AFEP-MEDEF**. *« En effet, le caractère préétabli des critères de performance, prévu par l'article 26.3.2 de ce code, est remis en cause par l'effet des modifications décidées par le conseil. »*
+  - Rendre publiques les modifications après la réunion du conseil les ayant arrêtées et les mentionner dans le tableau de synthèse des recommandations non suivies du **Code AFEP-MEDEF**. *« En effet, le caractère préétabli des critères de performance, prévu par l'article 26.3.2 de ce code, est remis en cause par l'effet des modifications décidées par le conseil. »* (p. 55)
 - **Modification des plans long terme** : p. 55.
   - Évaluer et donner une information sur l'impact de la modification sur la valorisation des actions de performance.
-  - Maintenir le caractère aléatoire des conditions de performance. *« L'article 26.3.3 du code AFEP-MEDEF rappelle que : "L'attribution d'options ou d'actions de performance doit correspondre à une politique d'association au capital, c'est-à-dire d'alignement des intérêts des bénéficiaires avec ceux des actionnaires, avec la part d'aléa qui s'y attache." »*
+  - Maintenir le caractère aléatoire des conditions de performance. *« L'article 26.3.3 du code AFEP-MEDEF rappelle que : "L'attribution d'options ou d'actions de performance doit correspondre à une politique d'association au capital, c'est-à-dire d'alignement des intérêts des bénéficiaires avec ceux des actionnaires, avec la part d'aléa qui s'y attache". »* (p. 55)
 
 ##### Rémunérations attribuées et/ou versées (p. 56)
 
-- **Recommandation — distinction rémunération exceptionnelle** : p. 56. *« L'AMF recommande aux sociétés de distinguer précisément les raisons de l'octroi de la rémunération fixe ou variable et celles de l'octroi d'une rémunération exceptionnelle »* (rapport AMF 2020).
+- **Recommandation — distinction rémunération exceptionnelle** : p. 56. *« L'AMF recommande aux sociétés de distinguer précisément les raisons de l'octroi de la rémunération fixe ou variable et celles de l'octroi d'une rémunération exceptionnelle. »* (rapport AMF 2020).
 - **Recommandation — tableaux récapitulatifs** : p. 56. Présenter les rémunérations de chacun des mandataires sociaux sous la forme de tableaux récapitulatifs conformes aux modèles reproduits en annexe 2 du guide.
 - **Renvoi article L. 22-10-9 du Code de commerce** : p. 56.
   - Proportion relative de la rémunération fixe et variable.
@@ -236,9 +236,9 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
   - Manière dont le vote de la dernière assemblée générale ordinaire a été pris en compte (article L. 22-10-34).
   - Tout écart par rapport à la procédure de mise en œuvre de la politique de rémunération et toute dérogation appliquée.
 
-##### Application des conditions de performance (p. 56-58)
+##### Application des conditions de performance (p. 56)
 
-- **Cadre légal — article L. 22-10-9 I 8° du Code de commerce** : *« une explication de la manière dont la rémunération totale respecte la politique de rémunération adoptée, y compris la manière dont elle contribue aux performances à long terme de la société, et de la manière dont les critères de performance ont été appliqués. »*
+- **Cadre légal — article L. 22-10-9 I 8° du Code de commerce** : *« une explication de la manière dont la rémunération totale respecte la politique de rémunération adoptée, y compris la manière dont elle contribue aux performances à long terme de la société, et de la manière dont les critères de performance ont été appliqués »*
 - **Recommandation AMF** : p. 56-57. Pour toutes les rémunérations soumises à condition de performance :
   - Distinguer chacun des critères en indiquant s'il s'agit d'un critère quantifiable ou qualitatif.
   - Indiquer de manière précise les critères qualitatifs ou indiquer a minima qu'ils ont été préétablis (confidentialité).
@@ -250,16 +250,16 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
   - Préciser pour chaque objectif quantifiable le niveau de réalisation atteint.
   - Justifier la décision du conseil lorsque la part de la rémunération variable annuelle attribuée sur la base de la performance observée des critères qualitatifs s'écarte significativement du rapport initialement fixé.
 
-##### Engagements pris par la société (p. 58-59)
+##### Engagements pris par la société
 
-- **Cadre légal — article L. 22-10-9 I 4° du Code de commerce** : présenter dans le rapport sur les rémunérations, pour chaque mandataire social, *« les engagements de toute nature pris par la société et correspondant à des éléments de rémunération, des indemnités ou des avantages dus ou susceptibles d'être dus à raison de la prise, de la cessation ou du changement des fonctions ou postérieurement à l'exercice de celles-ci, notamment les engagements de retraite et autres avantages viagers, en mentionnant [...] les modalités précises de détermination de ces engagements et l'estimation du montant des sommes susceptibles d'être versées à ce titre »*.
-- **Recommandation AMF — tableau de synthèse n° 11** : p. 58. Tableau reproduit en annexe 2 du guide. Présenter les engagements de toute nature + les éventuels contrats de travail.
+- **Cadre légal — article L. 22-10-9 I 4° du Code de commerce** : présenter dans le rapport sur les rémunérations, pour chaque mandataire social, (p. 58) *« Les engagements de toute nature pris par la société et correspondant à des éléments de rémunération, des indemnités ou des avantages dus ou susceptibles d'être dus à raison de la prise, de la cessation ou du changement des fonctions ou postérieurement à l'exercice de celles-ci, notamment les engagements de retraite et autres avantages viagers, en mentionnant […] les modalités précises de détermination de ces engagements et l'estimation du montant des sommes susceptibles d'être versées à ce titre »*.
+- **Recommandation AMF — tableau de synthèse n° 11** : p. 58-59. Tableau reproduit en annexe 2 du guide. Présenter les engagements de toute nature + les éventuels contrats de travail.
 - **Bonne pratique — protocole transactionnel** : p. 59.
-  - *« La pratique, consistant à soumettre un protocole transactionnel organisant les conditions financières du départ d'un dirigeant mandataire social exécutif et impliquant le versement d'une indemnité transactionnelle, à l'autorisation préalable du conseil d'administration et à l'approbation de l'assemblée générale des actionnaires, apparaît satisfaisante dans la mesure où, dans un cas d'incertitude juridique sur le régime applicable aux conventions prévoyant le versement d'une indemnité transactionnelle à l'occasion du départ d'un dirigeant mandataire social exécutif, elle permet tout à la fois de respecter le régime des conventions réglementées [...] et le régime du say on pay (non-versement de l'indemnité en cas de défaut d'approbation par l'assemblée générale des actionnaires). »* (rapports AMF 2021 et 2022).
+  - (p. 59) *« La pratique, consistant à soumettre un protocole transactionnel organisant les conditions financières du départ d'un dirigeant mandataire social exécutif et impliquant le versement d'une indemnité transactionnelle, à l'autorisation préalable du conseil d'administration et à l'approbation de l'assemblée générale des actionnaires, apparaît satisfaisante dans la mesure où, dans un cas d'incertitude juridique sur le régime applicable aux conventions prévoyant le versement d'une indemnité transactionnelle à l'occasion du départ d'un dirigeant mandataire social exécutif, elle permet tout à la fois de respecter le régime des conventions réglementées […] et le régime du say on pay (non-versement de l'indemnité en cas de défaut d'approbation par l'assemblée générale des actionnaires) »* (rapports AMF 2021 et 2022).
 
 ##### Présentation d'un multiple de rémunération (p. 59-60)
 
-- **Cadre légal — article L. 22-10-9 I 6° du Code de commerce** : p. 59. *« pour le président du conseil d'administration, le directeur général et chaque directeur général délégué, les ratios entre le niveau de la rémunération de chacun de ces dirigeants et, d'une part, la rémunération moyenne sur une base équivalent temps plein des salariés de la société autres que les mandataires sociaux, d'autre part, la rémunération médiane sur une base équivalent temps plein des salariés de la société autres que les mandataires sociaux. »*
+- **Cadre légal — article L. 22-10-9 I 6° du Code de commerce** : p. 59. *« pour le président du conseil d'administration, le directeur général et chaque directeur général délégué, les ratios entre le niveau de la rémunération de chacun de ces dirigeant [sic] et, d'une part, la rémunération moyenne sur une base équivalent temps plein des salariés de la société autres que les mandataires sociaux, d'autre part, la rémunération médiane sur une base équivalent temps plein des salariés de la société autres que les mandataires sociaux. »*
 - **Renvois aux sociétés à directoire et SCA** : p. 59. Articles L. 22-10-20 et L. 22-10-78 du Code de commerce.
 - **Référence aux lignes directrices AFEP de février 2021** : p. 59. *« Des lignes directrices de l'AFEP ont été publiées par l'AFEP en février 2021 dont l'objectif est de fournir une lecture commune des éléments de rémunération à prendre en compte tant au numérateur qu'au dénominateur et de fournir un modèle de tableau de manière à uniformiser les présentations des ratios. »*
 - **Recommandation — justification du périmètre retenu** : p. 59. *« L'AMF rappelle que les sociétés doivent présenter les ratios prévus par l'article L. 22-10-9 I 6° du code de commerce en prenant en compte le périmètre des "salariés de la société". Elle les incite, en complément, à retenir un ratio d'équité sur la base d'un périmètre jugé représentatif par cette société. Ce périmètre devrait être précisément défini et la société devrait justifier en quoi il est représentatif. »*
@@ -270,7 +270,7 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 
 ##### Évolution des performances (p. 60)
 
-- **Cadre légal — article L. 22-10-9 I 7° du Code de commerce** : *« L'évolution annuelle de la rémunération, des performances de la société, de la rémunération moyenne sur une base équivalent temps plein des salariés de la société, autres que les dirigeants, et des ratios mentionnés au 6°, au cours des cinq exercices les plus récents au moins, présentés ensemble et d'une manière qui permette la comparaison. »*
+- **Cadre légal — article L. 22-10-9 I 7° du Code de commerce** : *« L'évolution annuelle de la rémunération, des performances de la société, de la rémunération moyenne sur une base équivalent temps plein des salariés de la société, autres que les dirigeants, et des ratios mentionnés au 6°, au cours des cinq exercices les plus récents au moins, présentés ensemble et d'une manière qui permette la comparaison »*
 - **Recommandation AMF** : présenter, pour l'évolution annuelle des performances de la société, les indicateurs de performance qu'elles utilisent habituellement dans leur communiqué de résultats.
 
 ### Bloc F — Assemblée générale et droits actifs des actionnaires
@@ -292,8 +292,8 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
   - Sous-totaux significatifs : actionnaire agissant directement et indirectement, par l'intermédiaire des sociétés contrôlées ; groupe familial ; actionnaires agissant de concert.
   - Lignes spécifiques : actionnariat salarié, autodétention, autocontrôle.
 - **Définitions** : p. 65.
-  - **Droits de vote théoriques** : *« calculés sur la base de l'ensemble des actions auxquelles sont attachés des droits de vote, y compris les actions temporairement privées de droits de vote. Sont compris dans ce nombre les droits de vote double, mais également les droits de vote suspendus pouvant résulter d'une sanction prononcée par un tribunal ou résultant d'une privation de droits de vote de plein droit, à l'instar de celle qui frappe les actions autodétenues et les actions d'autocontrôle, ou les droits de vote dont sont privés les actionnaires qui n'avaient pas procédé régulièrement aux déclarations de franchissements de seuils (article L. 233-14 du code de commerce). »*
-  - **Droits de vote exerçables en assemblée générale** : *« calculés sur la base de l'ensemble des actions auxquelles sont attachés des droits de vote exerçables. Par conséquent, ils ne comprennent pas les droits de vote attachés aux actions autodétenues et autocontrôlées ou privées de droits de vote du fait d'une déclaration de franchissement de seuil tardive. »*
+  - **Droits de vote théoriques** : *« […] calculés sur la base de l'ensemble des actions auxquelles sont attachés des droits de vote, y compris les actions temporairement privées de droits de vote. Sont compris dans ce nombre les droits de vote double, mais également les droits de vote suspendus pouvant résulter d'une sanction prononcée par un tribunal ou résultant d'une privation de droits de vote de plein droit, à l'instar de celle qui frappe les actions autodétenues et les actions d'autocontrôle, ou les droits de vote dont sont privés les actionnaires qui n'avaient pas procédé régulièrement aux déclarations de franchissements de seuils (article L. 233-14 du code de commerce). »*
+  - **Droits de vote exerçables en assemblée générale** : *« […] calculés sur la base de l'ensemble des actions auxquelles sont attachés des droits de vote exerçables. Par conséquent, ils ne comprennent pas les droits de vote attachés aux actions autodétenues et autocontrôlées ou privées de droits de vote du fait d'une déclaration de franchissement de seuil tardive. »* (p. 65)
   - **Auto-détention** : actions détenues en propre directement par l'émetteur.
   - **Autocontrôle** : actions de l'émetteur détenues par ses filiales.
 
@@ -303,7 +303,7 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 
 ##### Droits de vote double (p. 66)
 
-- **Cadre légal — article L. 22-10-46 du Code de commerce** : *« Dans les sociétés dont les actions sont admises aux négociations sur un marché réglementé, les droits de vote double [...] sont de droit, sauf clause contraire des statuts adoptée postérieurement à la promulgation de la loi n° 2014-384 du 29 mars 2014 visant à reconquérir l'économie réelle, pour toutes les actions entièrement libérées pour lesquelles il est justifié d'une inscription nominative depuis deux ans au nom du même actionnaire. »*
+- **Cadre légal — article L. 22-10-46 du Code de commerce** : *« Dans les sociétés dont les actions sont admises aux négociations sur un marché réglementé, les droits de vote double […] sont de droit, sauf clause contraire des statuts adoptée postérieurement à la promulgation de la loi n°2014-384 du 29 mars 2014 visant à reconquérir l'économie réelle, pour toutes les actions entièrement libérées pour lesquelles il est justifié d'une inscription nominative depuis deux ans au nom du même actionnaire »*
 - **Informations à fournir** : durée d'inscription minimale au nominatif, date de l'AG ayant décidé la mise en place ou de l'absence d'attribution.
 
 ##### Limitation des droits de vote (p. 66)
@@ -313,7 +313,7 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 ##### Point 16.3 — Contrôle de l'émetteur (p. 67-68)
 
 - **Cadre** : si émetteur détenu ou contrôlé, directement ou indirectement, dans la mesure où ces informations sont connues, décrire la nature de ce contrôle et les mesures prises en vue d'éviter qu'il ne s'exerce de manière abusive.
-- **Notion de contrôle** : p. 67. *« La notion de contrôle à laquelle il est fait référence est distincte de celle définie notamment à l'article L. 233-3, I du code de commerce. »* Cela va ainsi au-delà des cas de détention directe ou indirecte d'une fraction du capital conférant la majorité des droits de vote.
+- **Notion de contrôle** : p. 67. *« La notion de contrôle à laquelle il est fait référence est distincte de celle définie notamment à l'article L. 233-3, I du code de commerce […] »* Cela va ainsi au-delà des cas de détention directe ou indirecte d'une fraction du capital conférant la majorité des droits de vote.
 - **Mesures prises pour éviter un contrôle abusif** : p. 67-68.
   - Présence d'administrateurs indépendants au sein du conseil ou dans les comités où l'actionnaire de référence pourrait être en conflit d'intérêts.
   - Dissociation des fonctions de président et de directeur général.
@@ -355,7 +355,7 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 #### Section 18.6 — Procédures judiciaires et d'arbitrage (p. 77-78)
 
 - **Cadre** : indiquer pour les 12 derniers mois minimum toute procédure administrative, judiciaire ou d'arbitrage (y compris en cours ou menaces) qui pourrait avoir ou a eu récemment des effets significatifs sur la situation financière ou la rentabilité de l'émetteur et/ou du groupe.
-- **Recommandation AMF** : *« L'AMF recommande que la présentation de ces litiges comprenne, lorsque cela est possible, une évaluation des conséquences financières pour la société et le lien avec les informations présentées dans les comptes, à l'exception des cas où cette évaluation est susceptible de nuire aux intérêts de la société dans le cadre d'un litige particulier. »*
+- **Recommandation AMF** : *« L'AMF recommande que la présentation de ces litiges comprenne, lorsque que [sic] cela est possible, une évaluation des conséquences financières pour la société et le lien avec les informations présentées dans les comptes, à l'exception des cas où cette évaluation est susceptible de nuire aux intérêts de la société dans le cadre d'un litige particulier. »* (p. 78)
 
 #### Salariés et participation (sous-thème du Bloc B / actionnariat salarié)
 
@@ -379,7 +379,7 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 - **Point 19.1.5** : Capital autorisé mais non émis. **Article L. 225-37-4 3° du Code de commerce** : tableau récapitulatif des délégations en cours de validité accordées par l'AG en matière d'augmentation de capital.
 - **Point 19.1.6** : Capital de tout membre du groupe faisant l'objet d'une option ou d'un accord conditionnel ou inconditionnel.
 - **Point 19.1.7** : Historique du capital social pour la période couverte.
-- **Recommandation AMF — nantissement** : p. 80-81. *« L'AMF recommande également aux émetteurs, lorsqu'ils en ont connaissance, de donner une information sur la part du capital de l'émetteur faisant l'objet de nantissements, lorsqu'elle représente un pourcentage significatif. »* Modèle de tableau fourni (nom de l'actionnaire inscrit au nominatif pur, bénéficiaire, date de départ, date d'échéance, condition de levée, nombre d'actions nanties, % de capital nanti). À défaut, mention spécifique : *« La société n'a pas, à sa connaissance, de nantissement portant sur une part significative de son capital. »*
+- **Recommandation AMF — nantissement** : p. 80-81. *« L'AMF recommande également aux émetteurs, lorsqu'ils en ont connaissance, de donner une information sur la part du capital de l'émetteur faisant l'objet de nantissements, lorsqu'elle représente un pourcentage significatif. »* (p. 80) Modèle de tableau fourni (nom de l'actionnaire inscrit au nominatif pur, bénéficiaire, date de départ, date d'échéance, condition de levée, nombre d'actions nanties, % de capital nanti). À défaut, mention spécifique : *« La société n'a pas, à sa connaissance, de nantissement portant sur une part significative de son capital »* (p. 80)
 
 ##### Point 19.2 — Acte constitutif et statuts (p. 81)
 
@@ -422,12 +422,12 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
 
 - **Position AMF** : p. 13. Oui, possible. Lorsque le DEU vaut RFA et inclut le rapport sur le gouvernement d'entreprise, l'émetteur est dispensé de la diffusion effective et intégrale de ce rapport sous réserve de la publication d'un communiqué précisant les modalités de mise à disposition (article 222-9 du RGAMF).
 - **Contenu obligatoire à présenter dans le DEU** : p. 14. Rémunération des mandataires sociaux (points 13.1 et 13.2 de l'annexe 1 du Règlement Délégué n° 2019/980) ; fonctionnement des organes d'administration et de direction (points 12 et 14 de l'annexe 1) ; déclaration de conformité au régime de gouvernance d'entreprise applicable (point 14.4 de l'annexe 1).
-- **Recommandation AMF — clarté de présentation** : p. 14. *« L'AMF recommande de centraliser l'ensemble des informations correspondantes dans une section dédiée ou d'insérer une table de correspondance permettant de reconstituer le contenu du rapport sur le gouvernement d'entreprise. »*
+- **Recommandation AMF — clarté de présentation** : p. 14. *« […] l'AMF recommande de centraliser l'ensemble des informations correspondantes dans une section dédiée ou d'insérer une table de correspondance permettant de reconstituer le contenu du rapport sur le gouvernement d'entreprise. »*
 
 ##### Q. 1.3.6 — Intégration du rapport financier annuel (RFA) dans le DEU (p. 14-15)
 
 - **Position AMF** : p. 14. Oui, possible. Le DEU déposé ou approuvé rendu public au plus tard quatre mois après la fin de l'exercice (article L. 451-1-2 I du Code monétaire et financier) et contenant les informations devant être publiées dans le RFA dispense l'émetteur de la diffusion effective et intégrale du RFA, sous réserve d'un communiqué de mise à disposition (article 221-4 du RGAMF).
-- **Obligation de tableau de correspondance** : p. 15. *« En application de l'article 9 paragraphe 12 du Règlement Prospectus, le DEU valant RFA doit inclure un tableau de correspondance indiquant où, dans ledit document, se trouve chacun des éléments qui doivent figurer dans les rapports financiers annuels et semestriels. »*
+- **Obligation de tableau de correspondance** : p. 15. *« […] En application de l'article 9 paragraphe 12 du Règlement Prospectus, le DEU valant RFA doit inclure un tableau de correspondance indiquant où, dans ledit document, se trouve chacun des éléments qui doivent figurer dans les rapports financiers annuels et semestriels. »*
 
 ##### Q. 1.3.7 — Intégration du rapport de gestion dans le DEU (p. 15)
 
@@ -435,12 +435,12 @@ Cette dimension est traitée par renvoi aux Codes AFEP-MEDEF / MIDDLENEXT. Le gu
   - le rapport de gestion a été établi ;
   - l'information du DEU est mise à jour pour rester cohérente avec les autres informations du DEU.
 - **Compléments requis** : p. 15. Le rapport de gestion intégré au DEU doit être complété des éléments d'information requis par le Règlement Prospectus (par exemple, point 7.2.2 de l'annexe 1 sur les changements importants du chiffre d'affaires).
-- **Distinction du texte original** : p. 15. *« Toute information qui serait ajoutée au rapport de gestion (tel qu'arrêté par le conseil ou le directoire) devrait être apparente afin de la distinguer du texte original »* (Orientation 4 de l'ESMA, paragraphe 27). Possibilité d'ajouter une section *« informations complémentaires au rapport de gestion »*.
+- **Distinction du texte original** : p. 15. *« Toute information qui serait ajoutée au rapport de gestion (tel qu'arrêté par le conseil ou le directoire) devrait être apparente afin de la distinguer du texte original. »* (Orientation 4 de l'ESMA, paragraphe 27). Possibilité d'ajouter une section *« informations complémentaires au rapport de gestion »*.
 
 ##### Q. 1.3.8 — Précautions lorsqu'un émetteur inclut une DPEF dans le DEU (p. 15)
 
 - **Recommandation AMF** : p. 15. Permettre à un investisseur de reconstituer les différentes parties de la DPEF — recours à des tables de correspondance (renvoi à Q. 1.3.2).
-- **Cohérence des informations extra-financières** : p. 15. *« L'AMF recommande en outre de veiller à la cohérence des informations extra-financières entre les différents supports. »* Renvoi au rapport AMF 2019 sur la RSE pour des exemples de bonnes pratiques.
+- **Cohérence des informations extra-financières** : p. 15. *« […] l'AMF recommande en outre de veiller à la cohérence des informations extra-financières entre les différents supports. »* Renvoi au rapport AMF 2019 sur la RSE pour des exemples de bonnes pratiques.
 
 ##### Stratégie et objectifs — point 5.4 (p. 33-34)
 
@@ -484,7 +484,7 @@ Voir Bloc B ci-dessus — Section 14.4 « Déclaration comply or explain ».
   - **DEU 2 en 1** : inclut le rapport financier annuel (« DEU valant RFA »).
   - **DEU 3 en 1** : inclut le RFA et le rapport de gestion complet au sens du Code de commerce, y compris le rapport sur le gouvernement d'entreprise.
   - **DEU 4 en 1** : inclut tous les éléments précédents + ensemble des informations requises pour l'AG.
-- **Dépôt au greffe du tribunal** : *« une société qui établit un "DEU 3 en 1" ou un "DEU 4 en 1" pourra déposer ce document au greffe du tribunal, en lieu et place des comptes et du rapport de gestion, s'il est en français et comprend une table permettant au greffier d'identifier ces informations »* (article L. 232-23 du Code de commerce).
+- **Dépôt au greffe du tribunal** : *« Une société qui établit un "DEU 3 en 1" ou un "DEU 4 en 1" pourra déposer ce document au greffe du tribunal, en lieu et place des comptes et du rapport de gestion, s'il est en français et comprend une table permettant au greffier d'identifier ces informations. »* (p. 8) (article L. 232-23 du Code de commerce).
 
 ### Section 4 — Principes généraux de l'information (p. 16-17)
 
@@ -528,7 +528,7 @@ Voir Bloc B ci-dessus — Section 14.4 « Déclaration comply or explain ».
 ### Section 10 — Mise à jour du DEU (p. 24-27)
 
 - **Article 9 paragraphes 7, 9 et article 10 du Règlement Prospectus** : actualisation par voie d'amendement, tant que le DEU n'est pas une partie constitutive d'un prospectus.
-- **Article 23 du Règlement Prospectus** : *« Tout fait nouveau significatif ou toute erreur ou inexactitude substantielle concernant les informations contenues dans un prospectus, qui est susceptible d'influencer l'évaluation des valeurs mobilières et survient ou est constaté entre le moment de l'approbation du prospectus et la clôture de l'offre ou le début de la négociation sur un marché réglementé, [...] est mentionné sans retard injustifié dans un supplément au prospectus. »*
+- **Article 23 du Règlement Prospectus** : *« Tout fait nouveau significatif ou toute erreur ou inexactitude substantielle concernant les informations contenues dans un prospectus, qui est susceptible d'influencer l'évaluation des valeurs mobilières et survient ou est constaté entre le moment de l'approbation du prospectus et la clôture de l'offre ou le début de la négociation sur un marché réglementé, […] est mentionné sans retard injustifié dans un supplément au prospectus »* (p. 27)
 
 ### Section 11 — Passeport du DEU (p. 27)
 
@@ -570,7 +570,7 @@ Le guide AMF DOC-2021-02, en juillet 2023, exprime :
   - **Tableau 4** (p. 129) : options / instruments financiers — date d'attribution du plan (conseil d'administration ou de surveillance) ; valeur retenue selon IFRS 2.
   - **Tableau 5** (p. 130) : options de souscription ou d'achat d'actions levées durant l'exercice ; date d'attribution du plan.
   - **Tableau 6** (p. 131) : options / actions — date d'attribution du plan ; valeur IFRS 2 ; critères de performance.
-  - **Tableau 7** (p. 132) : *« Actions attribuées gratuitement et devenues disponibles durant l'exercice pour chaque dirigeant mandataire social exécutif »*.
+  - **Tableau 7** (p. 132) : *« […] Actions attribuées gratuitement et devenues disponibles durant l'exercice pour chaque dirigeant mandataire social exécutif […] »*.
   - **Tableau 8** (p. 133) : autres instruments optionnels (BSA, BSAR, BSPCE…) attribués à l'occasion d'opérations réservées aux mandataires sociaux.
   - **Tableau 9** (p. 134) : autres instruments optionnels (BSA, BSAR, BSPCE…) ; information également donnée pour les dix principaux attributaires salariés sur une base globale.
   - **Tableau 10** (p. 135) : liste nominative des mandataires sociaux (mandataires dirigeants et mandataires non dirigeants) ; ajustement présenté en cas d'opération sur le capital.

@@ -13,7 +13,7 @@
 
 ### Objet du guide (citation liminaire)
 
-- **Préface, p. 3** : le guide a pour objet, selon le HCGE, de *« préciser l'interprétation retenue par le Haut Comité […] pour certaines recommandations du Code Afep-Medef […] et de fournir des outils pour faciliter son application »*. Il *« ne présente pas de nouvelles recommandations générales qui seraient soumises au principe "appliquer ou expliquer" »*. Édition portant sur la version du Code AFEP-MEDEF actualisée en décembre 2022.
+- **Préface, p. 3** : le guide a pour objet, selon le HCGE, de *« […] préciser l'interprétation retenue par le Haut Comité […] pour certaines recommandations du Code Afep-Medef […] et de fournir des outils pour faciliter son application. »*. Il *« […] ne présente pas de nouvelles recommandations générales qui seraient soumises au principe "appliquer ou expliquer" (comply or explain). »*. Édition portant sur la version du Code AFEP-MEDEF actualisée en décembre 2022.
 - **Mise à jour 2025 (fait non protégeable)** : selon le communiqué HCGE du 2 décembre 2025, la mise à jour intègre les positions des rapports 2024 et 2025 sur l'indépendance des administrateurs, les mandats intragroupes, le respect du taux d'indépendance dans les comités, la présentation des risques sociaux et environnementaux au comité d'audit, l'obligation de détention d'actions, et les critères de performance dans la rémunération. Le récapitulatif des informations (Partie II) a également été mis à jour.
 
 ---
@@ -31,7 +31,7 @@
 ### Missions des dirigeants mandataires sociaux non exécutifs (§ 3.2) — p. 6
 
 - **Objet** : description des missions confiées au Président du conseil en sus de celles conférées par la loi, en cas de dissociation des fonctions (renvoi au Code AFEP-MEDEF § 3.2).
-- **Position HCGE (p. 6)** : cette description est *« spécialement nécessaire quand les missions confiées au Président sont particulièrement importantes ou spécifiques »*, étant rappelé qu'il ne peut y avoir de mission empiétant sur les responsabilités de l'exécutif ou contraire à la collégialité du conseil. (Détail au guide, p. 6.)
+- **Position HCGE (p. 6)** : cette description est *« […] spécialement nécessaire quand les missions confiées au Président sont particulièrement importantes ou spécifiques […] »*, étant rappelé qu'il ne peut y avoir de mission empiétant sur les responsabilités de l'exécutif ou contraire à la collégialité du conseil. (Détail au guide, p. 6.)
 
 ### Motivations et justifications du choix du mode de gouvernance (§ 3.4) — p. 6
 
@@ -48,7 +48,7 @@
 - **Objet** : consultation des actionnaires lorsqu'est envisagée une cession portant sur la moitié au moins des actifs sur les deux derniers exercices (renvoi au Code § 6.3 et 6.4).
 - **Renvoi à l'AMF (fait non protégeable, p. 8)** : conformément à la position-recommandation AMF **DOC n° 2015-05 du 15 juin 2015**, le seuil est réputé atteint dès lors que deux ratios parmi cinq atteignent ou dépassent la moitié du montant consolidé sur les deux exercices précédents : (1) chiffre d'affaires des actifs cédés / CA consolidé ; (2) prix de cession / capitalisation boursière ; (3) valeur nette des actifs cédés / total de bilan consolidé ; (4) résultat courant avant impôt des actifs cédés / résultat courant consolidé avant impôt ; (5) effectifs de l'activité cédée / effectifs mondiaux du groupe.
 - **Comité ad hoc (fait non protégeable, p. 8)** : le Code recommande un comité ad hoc composé d'au moins deux tiers d'administrateurs indépendants, à l'exclusion des dirigeants mandataires sociaux exécutifs.
-- **Cas des sociétés de portefeuille (p. 9)** : renvoi au Rapport AMF sur les cessions et acquisitions d'actifs significatifs (30 avril 2015, § 2.1.4) — pour une société dont l'activité est l'acquisition et la gestion de participations, une cession importante *« entre clairement dans le cycle normal de l'activité et est donc prévisible par le marché et ses actionnaires »* (citation reprise par le guide). (Détail au guide, p. 8-9.)
+- **Cas des sociétés de portefeuille (p. 9)** : renvoi au Rapport AMF sur les cessions et acquisitions d'actifs significatifs (30 avril 2015, § 2.1.4) — pour une société dont l'activité est l'acquisition et la gestion de participations, une cession importante *« […] entre clairement dans le cycle normal de l'activité et est donc prévisible par le marché et ses actionnaires. »* (citation reprise par le guide). (Détail au guide, p. 8-9.)
 
 ---
 
@@ -72,15 +72,15 @@
 #### Proportion d'administrateurs indépendants (§ 10.3) — p. 11
 
 - **Seuils (faits non protégeables)** : moitié des membres du conseil dans les sociétés au capital dispersé et sans actionnaire de contrôle ; au moins un tiers dans les sociétés contrôlées ; au moins deux tiers au comité d'audit (§ 17.1) ; une majorité aux comités des nominations et des rémunérations (§ 18.1 et 19.1). Les administrateurs représentant les actionnaires salariés et ceux représentant les salariés ne sont pas comptabilisés.
-- **Position HCGE (p. 11)** : en cas de non-respect, *« il convient d'indiquer comment le bon fonctionnement du Conseil est néanmoins assuré »* ; pour les situations ne pouvant se résoudre immédiatement, prévoir d'y remédier (par exemple lors d'un renouvellement) et mentionner cette intention. (Détail au guide, p. 11.)
+- **Position HCGE (p. 11)** : en cas de non-respect, *« […] il convient d'indiquer comment le bon fonctionnement du Conseil est néanmoins assuré. »* ; pour les situations ne pouvant se résoudre immédiatement, prévoir d'y remédier (par exemple lors d'un renouvellement) et mentionner cette intention. (Détail au guide, p. 11.)
 
 #### Indépendance — mandats intragroupes (§ 10.5.1) — p. 11-13
 
 - **Objet** : critères d'exclusion de l'indépendance liés aux fonctions exercées dans une société consolidée ou la société mère au cours des cinq années précédentes (renvoi au Code § 10.5.1). L'expression « que la société consolide » s'entend des hypothèses de l'**article L. 233-16 C. com.** (fait non protégeable, p. 11).
-- **Position HCGE — empêchement permanent (p. 12)** : pour un mandat d'administrateur exercé concomitamment dans une société et une société qu'elle consolide, *« si la situation créée conduit à un empêchement permanent, la règle d'abstention peut s'avérer inopérante ou insuffisante […]. Le cas échéant, l'administrateur doit alors en tirer les conséquences quant à sa qualification d'administrateur indépendant. »* (Détail au guide, p. 12.)
-- **Position HCGE — sociétés sœurs (p. 12)** : pour les mandats exercés dans des sociétés consolidées par la même société mère, le HCGE *« pourra examiner, au cas par cas, d'éventuelles explications »* visant à écarter l'application de la recommandation. (Détail au guide, p. 12.)
-- **Position HCGE — opérations de rapprochement (NOUVEAUTÉ 2025, p. 12-13)** : pour une entité combinée résultant d'un rapprochement, l'appréciation de l'indépendance *« ne devrait pas en principe dépendre de la structuration juridique retenue pour le rapprochement »* (fusion vs OPE) ; ce raisonnement suppose que la ou les cibles n'aient pas été dans le périmètre de consolidation de l'acquéreur pendant la durée du mandat concerné. (Détail au guide, p. 12-13.)
-- **Position HCGE — scissions (NOUVEAUTÉ 2025, p. 13)** : l'appréciation de l'indépendance au sein d'une société issue d'une scission *« n'est pas en principe affectée par l'existence de ce mandat préalable ou concomitant »* ; en cas d'entités sous contrôle commun, se référer au cas des sociétés sœurs. (Détail au guide, p. 13.)
+- **Position HCGE — empêchement permanent (p. 12)** : pour un mandat d'administrateur exercé concomitamment dans une société et une société qu'elle consolide, *« […] si la situation créée conduit à un empêchement permanent, la règle d'abstention peut s'avérer inopérante ou insuffisante […]. Le cas échéant, l'administrateur doit alors en tirer les conséquences quant à sa qualification d'administrateur indépendant. »* (Détail au guide, p. 12.)
+- **Position HCGE — sociétés sœurs (p. 12)** : pour les mandats exercés dans des sociétés consolidées par la même société mère, le HCGE *« […] pourra examiner, au cas par cas, d'éventuelles explications […] »* visant à écarter l'application de la recommandation. (Détail au guide, p. 12.)
+- **Position HCGE — opérations de rapprochement (NOUVEAUTÉ 2025, p. 12)** : pour une entité combinée résultant d'un rapprochement, l'appréciation de l'indépendance *« […] ne devrait pas en principe dépendre de la structuration juridique retenue pour le rapprochement […] »* (p. 12) (fusion vs OPE) ; ce raisonnement suppose que la ou les cibles n'aient pas été dans le périmètre de consolidation de l'acquéreur pendant la durée du mandat concerné. (Détail au guide, p. 12-13.)
+- **Position HCGE — scissions (NOUVEAUTÉ 2025, p. 13)** : l'appréciation de l'indépendance au sein d'une société issue d'une scission *« […] n'est pas en principe affectée par l'existence de ce mandat préalable ou concomitant. »* ; en cas d'entités sous contrôle commun, se référer au cas des sociétés sœurs. (Détail au guide, p. 13.)
 
 #### Relations d'affaires significatives (§ 10.5.3) — p. 13-14
 
@@ -90,12 +90,12 @@
 #### Ancienneté supérieure à douze ans (§ 10.5.6) — p. 14
 
 - **Objet** : perte de la qualité d'indépendant à la date des douze ans (renvoi au Code § 10.5.6).
-- **Position HCGE (p. 14)** : si le conseil souhaite maintenir la qualification, l'explication *« doit être fondée sur la situation particulière de la société et de l'administrateur concerné, et non sur une mise en cause de la pertinence de la règle »*. (Détail au guide, p. 14.)
+- **Position HCGE (p. 14)** : si le conseil souhaite maintenir la qualification, l'explication *« […] doit être fondée sur la situation particulière de la société et de l'administrateur concerné, et non sur une mise en cause de la pertinence de la règle. »*. (Détail au guide, p. 14.)
 
 ### Évaluation du conseil — contribution effective des administrateurs (§ 11.2) — p. 14-15
 
 - **Objet** : trois objectifs de l'évaluation (fonctionnement, préparation des questions, contribution individuelle) — renvoi au Code § 11.2.
-- **Position HCGE (p. 14-15)** : l'appréciation de la contribution individuelle *« est indispensable pour guider le comité des nominations dans ses propositions pour les renouvellements ou les successions […]. Elle doit toutefois donner lieu à une restitution individuelle par le Président ou l'administrateur référent. »* Recommandation de la tenue d'**entretiens individuels tous les trois ans au moins** (fait non protégeable) ; le Président doit lui-même faire l'objet d'une telle évaluation. (Détail au guide, p. 14-15.)
+- **Position HCGE (p. 14)** : l'appréciation de la contribution individuelle *« […] est indispensable pour guider le comité des nominations dans ses propositions pour les renouvellements ou les successions […]. Elle doit toutefois donner lieu à une restitution individuelle par le Président ou l'administrateur référent. »* Recommandation de la tenue d'**entretiens individuels tous les trois ans au moins** (fait non protégeable) ; le Président doit lui-même faire l'objet d'une telle évaluation. (Détail au guide, p. 14-15.)
 
 ### Séances hors la présence des dirigeants exécutifs (§ 12.3) — p. 15
 
@@ -119,7 +119,7 @@
 ### Comité d'audit — exposition aux risques sociaux et environnementaux (§ 17.2) — p. 16
 
 - **Objet** : présentation par la direction de l'exposition aux risques, y compris sociaux et environnementaux (renvoi au Code § 17.2).
-- **Position HCGE (NOUVEAUTÉ 2025, p. 16)** : si une société confie la revue des risques RSE à un autre comité que le comité d'audit, *« les membres du comité désigné doivent échanger avec ceux du comité d'audit sur les risques identifiés et les dispositifs de gestion de ces risques »*. (Détail au guide, p. 16.)
+- **Position HCGE (NOUVEAUTÉ 2025, p. 16)** : si une société confie la revue des risques RSE à un autre comité que le comité d'audit, *« […] les membres du comité désigné doivent échanger avec ceux du comité d'audit sur les risques identifiés et les dispositifs de gestion de ces risques. »*. (Détail au guide, p. 16.)
 
 ### Comités des nominations et des rémunérations — taux d'indépendants (§ 18.1 et § 19.1) — p. 17
 
@@ -134,12 +134,12 @@
 ### Plans de succession des dirigeants mandataires sociaux (§ 18.2.2) — p. 18
 
 - **Objet** : établissement d'un plan de succession par le comité des nominations ou un comité ad hoc (renvoi au Code § 18.2.2).
-- **Position HCGE (p. 18)** : *« le rapport sur le gouvernement d'entreprise doit indiquer si ces plans font partie des compétences du comité des nominations ou d'un comité "ad hoc" et s'ils ont été effectivement préparés et examinés par le comité et le Conseil. Le rapport précisera si le plan existe, s'il est régulièrement revu et s'il a été revu au cours du dernier exercice (à défaut il précisera la date de la dernière révision). »* (Détail au guide, p. 18.)
+- **Position HCGE (p. 18)** : *« […] le rapport sur le gouvernement d'entreprise doit indiquer si ces plans font partie des compétences du comité des nominations ou d'un comité "ad hoc" et s'ils ont été effectivement préparés et examinés par le comité et le Conseil. Le rapport précisera si le plan existe, s'il est régulièrement revu et s'il a été revu au cours du dernier exercice (à défaut il précisera la date de la dernière révision). »* (Détail au guide, p. 18.)
 
 ### Fonctionnement des comités des nominations et des rémunérations (§ 18.3 et § 19.2) — p. 18
 
 - **Objet** : association du dirigeant exécutif aux travaux du comité des nominations ; rôle du comité des rémunérations (renvoi au Code § 18.3 et 19.2).
-- **Position HCGE (structure, p. 18)** : le dirigeant exécutif est *« consulté par le comité des nominations, sans pour autant en être membre »* ; en cas de dissociation, la participation du Président non exécutif aux travaux du comité est souhaitable même s'il n'en est pas membre. (Détail au guide, p. 18.)
+- **Position HCGE (structure, p. 18)** : le dirigeant exécutif est *« […] consulté par le comité des nominations, sans pour autant en être membre […] »* ; en cas de dissociation, la participation du Président non exécutif aux travaux du comité est souhaitable même s'il n'en est pas membre. (Détail au guide, p. 18.)
 
 ### Présence d'un administrateur salarié au comité des rémunérations (§ 19.1) — p. 19
 
@@ -153,16 +153,16 @@
 ### Nombre de mandats sociaux (§ 20.2 et § 20.4) — p. 19-20
 
 - **Limites (faits non protégeables, p. 19-20)** : un dirigeant mandataire social exécutif ne doit pas exercer plus de **deux autres mandats** d'administrateur dans des sociétés cotées extérieures à son groupe (y compris étrangères) ; un administrateur, pas plus de **quatre autres mandats** dans des sociétés cotées extérieures au groupe. La règle du Code peut avoir une portée différente de l'**article L. 225-94-1 C. com.** (qui ne prend en compte que les sociétés anonymes françaises).
-- **Position HCGE — application au renouvellement (p. 20)** : les mandataires « contrevenants » *« ne sont pas obligés de démissionner en cours de mandat, mais […] doivent s'abstenir d'accepter le renouvellement d'un mandat extérieur qui les maintiendrait en excès de la limite »*. (Détail au guide, p. 20.)
+- **Position HCGE — application au renouvellement (p. 20)** : les mandataires « contrevenants » *« […] ne sont pas obligés de démissionner en cours de mandat, mais […] doivent s'abstenir d'accepter le renouvellement d'un mandat extérieur qui les maintiendrait en excès de la limite. »*. (Détail au guide, p. 20.)
 - **Dérogation sociétés de portefeuille (faits non protégeables, p. 20)** : la limite de deux mandats n'est pas applicable aux mandats exercés par un dirigeant exécutif d'une société dont l'activité principale est d'acquérir et de gérer des participations, dans ces mêmes filiales et participations ; dérogation attachée à la personne, désormais également prévue par l'article L. 225-94-1 C. com. (Détail au guide, p. 20.)
 
 ### Déontologie de l'administrateur (§ 21) — p. 21-23
 
 - **Objet** : obligations de l'administrateur (conflits d'intérêts, assiduité, confidentialité) — renvoi au Code § 21.
 - **Position HCGE — conflit d'intérêts ponctuel (faits + citation courte, p. 21)** : un administrateur en situation de conflit d'intérêts potentiel ou avéré doit en faire part au conseil et s'abstenir d'assister au débat et de voter ; *« Le dossier afférent au point de l'ordre du jour qui génère le conflit d'intérêt ne lui est pas communiqué. »* (distinction conflit potentiel ≠ avéré.) (Détail au guide, p. 21.)
-- **Position HCGE — conflit général et durable (p. 21)** : un administrateur qui, *« en raison d'une situation de conflit d'intérêts général et durable, n'est plus en mesure de respecter simultanément les obligations d'abstention et d'assiduité […] s'expose à un manquement grave aux règles du Code Afep-Medef, et doit en tirer les conséquences en renonçant à son mandat »*. (Détail au guide, p. 21.)
+- **Position HCGE — conflit général et durable (p. 21)** : un administrateur qui, *« […] en raison d'une situation de conflit d'intérêts général et durable, n'est plus en mesure de respecter simultanément les obligations d'abstention et d'assiduité […] s'expose à un manquement grave aux règles du Code Afep-Medef, et doit en tirer les conséquences en renonçant à son mandat. »*. (Détail au guide, p. 21.)
 - **Position HCGE — confidentialité et représentant permanent (NOUVEAUTÉ 2025, p. 21-22)** : référence à l'**article L. 225-37 C. com.** (discrétion) et à l'**article L. 225-20 C. com.** (responsabilité du représentant permanent). Le HCGE précise que l'obligation de confidentialité s'impose à chaque administrateur sans distinction ; il appartient à chaque conseil de préciser les modalités pratiques dans le règlement intérieur (art. 13.1 du Code). Le règlement intérieur peut, si le conseil y consent, encadrer la communication d'informations au profit de la personne morale ayant désigné le représentant permanent (limitation aux fins de la mission, contenu strictement nécessaire, liste des personnes, respect du règlement abus de marché — **article 10.1 du Règlement européen relatif aux abus de marché**). (Détail au guide, p. 21-22.)
-- **Position HCGE — conventions de prestation de services (p. 23)** : une convention par laquelle un dirigeant non exécutif fournit des conseils stratégiques constitue *« une situation de conflit d'intérêts structurel »* incompatible avec les recommandations du Code ; de même pour le cumul de la fonction de censeur au conseil de surveillance et d'une mission de conseil auprès du directoire. (Détail au guide, p. 23.)
+- **Position HCGE — conventions de prestation de services (p. 23)** : une convention par laquelle un dirigeant non exécutif fournit des conseils stratégiques constitue *« […] une situation de conflit d'intérêts structurel […] »* incompatible avec les recommandations du Code ; de même pour le cumul de la fonction de censeur au conseil de surveillance et d'une mission de conseil auprès du directoire. (Détail au guide, p. 23.)
 
 ---
 
@@ -171,7 +171,7 @@
 ### Cessation du contrat de travail en cas de mandat social (§ 23.1 et § 23.2) — p. 23-24
 
 - **Objet** : recommandation de mettre fin au contrat de travail lorsqu'un salarié devient dirigeant mandataire social (renvoi au Code § 23.1 et 23.2).
-- **Position HCGE (faits + citation, p. 23-24)** : il s'agit d'une résiliation et non d'une simple suspension ; l'énumération du § 23.2 étant limitative, la recommandation **ne concerne pas les directeurs généraux délégués ni les membres du directoire** (fait non protégeable). Les indemnités de rupture du contrat de travail *« ne doivent pas excéder un montant correspondant à deux ans de rémunération fixe et variable annuelle »*. (Détail au guide, p. 23-24.)
+- **Position HCGE (faits + citation, p. 23-24)** : il s'agit d'une résiliation et non d'une simple suspension ; l'énumération du § 23.2 étant limitative, la recommandation **ne concerne pas les directeurs généraux délégués ni les membres du directoire** (fait non protégeable). Les indemnités de rupture du contrat de travail *« […] ne doivent pas excéder un montant correspondant à deux ans de rémunération fixe et variable annuelle. »* (p. 24). (Détail au guide, p. 23-24.)
 
 ### Obligation de détention d'actions des dirigeants mandataires sociaux (§ 24) — p. 24
 
@@ -188,7 +188,7 @@
 - **Objet** : intégration de critères RSE, dont au moins un critère climatique, dans la rémunération variable (renvoi au Code § 26.1.1).
 - **Position HCGE — exigence (p. 25)** : *« Le Haut Comité attend que les critères RSE soient définis de manière précise, soient lisibles, pertinents et intègrent les enjeux sociaux et environnementaux propres à l'entreprise. Une simple référence à l'application de politique RSE […] ne sont pas suffisants. »*
 - **Bonnes pratiques (faits non protégeables, p. 25)** : privilégier des critères RSE mesurables et vérifiables ; présentation de la méthodologie par la direction générale ; examen annuel de la trajectoire par le conseil.
-- **Position HCGE — équilibre des critères (NOUVEAUTÉ 2025, p. 26)** : en cas de *« déséquilibre significatif ou récurrent entre les taux d'atteinte des critères financiers, et ceux des critères extra-financiers, le Conseil doit réexaminer pour l'avenir la politique de rémunération »* afin d'éviter que les critères extra-financiers ne compensent une sous-performance des critères financiers (et inversement). (Détail au guide, p. 25-26.)
+- **Position HCGE — équilibre des critères (NOUVEAUTÉ 2025, p. 26)** : en cas de *« […] déséquilibre significatif ou récurrent entre les taux d'atteinte des critères financiers, et ceux des critères extra-financiers, le Conseil doit réexaminer pour l'avenir la politique de rémunération […] »* afin d'éviter que les critères extra-financiers ne compensent une sous-performance des critères financiers (et inversement). (Détail au guide, p. 25-26.)
 
 ### Rémunération fixe (§ 26.3.1) — p. 26
 
@@ -208,12 +208,12 @@
 ### Options d'actions et actions de performance (§ 26.3.3 et 27.2) — p. 29
 
 - **Objet** : périodes d'interdiction d'exercice ; engagement de non-recours aux opérations de couverture (renvoi au Code § 26.3.3).
-- **Position HCGE (structure, p. 29)** : c'est au conseil d'apprécier le degré de rigueur pour l'encadrement des opérations sur options ; l'interdiction de couverture figurant dans les plans *« ne peut remplacer l'engagement ferme du dirigeant »* ; cette recommandation s'applique à toute attribution d'instruments dénouée en titres. (Détail au guide, p. 29.)
+- **Position HCGE (structure, p. 29)** : c'est au conseil d'apprécier le degré de rigueur pour l'encadrement des opérations sur options ; l'interdiction de couverture figurant dans les plans *« […] ne peut remplacer l'engagement ferme du dirigeant […] »* ; cette recommandation s'applique à toute attribution d'instruments dénouée en titres. (Détail au guide, p. 29.)
 
 ### Rémunérations exceptionnelles (§ 26.3.4) — p. 30
 
 - **Objet** : seules des circonstances très particulières peuvent donner lieu à une rémunération exceptionnelle (renvoi au Code § 26.3.4).
-- **Position HCGE (p. 30)** : cette rémunération *« ne peut pas être utilisée pour rémunérer des missions inhérentes aux fonctions des dirigeants comme, par exemple, celle consistant à assurer une transition avec un successeur »* ; en cas de caractère fractionné, décrire chaque année les étapes franchies. Elle ne peut servir à modifier indirectement les critères de la rémunération variable. (Détail au guide, p. 30.)
+- **Position HCGE (p. 30)** : cette rémunération *« […] ne peut pas être utilisée pour rémunérer des missions inhérentes aux fonctions des dirigeants comme, par exemple, celle consistant à assurer une transition avec un successeur. »* ; en cas de caractère fractionné, décrire chaque année les étapes franchies. Elle ne peut servir à modifier indirectement les critères de la rémunération variable. (Détail au guide, p. 30.)
 
 ### Indemnité de prise de fonctions (§ 26.4) — p. 30
 
@@ -239,7 +239,7 @@
 
 ## Partie II — Récapitulatif des informations « appliquer ou expliquer » (article L. 22-10-10 C. com.) — p. 33-41
 
-*Structure — faits non protégeables. Le guide énumère 28 rubriques d'informations à faire figurer dans le rapport sur le gouvernement d'entreprise.*
+*Structure — faits non protégeables. Le guide énumère 28 rubriques (décompte de l'index) d'informations à faire figurer dans le rapport sur le gouvernement d'entreprise.*
 
 1. Référence à un Code de gouvernement d'entreprise (mise en œuvre de « appliquer ou expliquer ») — p. 33.
 2. Mode de direction (motivations, missions du Président, administrateur référent/Vice-Président) — p. 33.

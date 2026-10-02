@@ -41,9 +41,9 @@
 - **Cadre** : p. 11. La mise à jour intègre les positions prises par le HCGE dans le rapport 2024 et dans le présent rapport.
 - **Points intégrés** : p. 11.
   - Doctrine sur l'indépendance des membres du Conseil (§ 10.5.1) — réexamen de l'interprétation du critère se rapportant à l'exercice de plusieurs mandats au sein d'un même groupe.
-  - Taux d'indépendance dans le comité d'audit (§ 17.1) — intégration de la doctrine HCGE relative à la déviation : *« le comité d'audit peut être composé à titre temporaire de 60 % d'administrateurs indépendants [aux lieu et place des deux-tiers] à la condition d'avoir un président indépendant »*.
+  - Taux d'indépendance dans le comité d'audit (§ 17.1) — intégration de la doctrine HCGE relative à la déviation : *« le comité d'audit peut être composé à titre temporaire de 60 % d'administrateurs indépendants [aux lieu et place des deux-tiers] à la condition d'avoir un président indépendant »* (p. 11).
   - Comité d'audit — présentation de l'exposition aux risques RSE (§ 17.2).
-  - Obligation de détention d'actions des dirigeants mandataires sociaux (§ 24) — *« Pour le Haut Comité, la quantité minimum d'actions fixée par le Conseil ne peut se limiter à la détention d'une action ou d'un nombre très réduit d'actions. Le nombre d'actions à détenir par les dirigeants mandataires sociaux doit être significatif et en lien avec les références mentionnées par le Code. »*
+  - Obligation de détention d'actions des dirigeants mandataires sociaux (§ 24) — *« Pour le Haut Comité, la quantité minimum d'actions fixée par le Conseil ne peut se limiter à la détention d'une action ou d'un nombre très réduit d'actions. Le nombre d'actions à détenir par les dirigeants mandataires sociaux doit être significatif et en lien avec les références mentionnées par le Code. »* (p. 11)
   - Rémunération des dirigeants mandataires sociaux — **équilibre des critères financiers et extra-financiers** (§ 26.1.1).
   - Plans d'attribution d'actions — conditions de performance (§ 26.1.1).
   - Récapitulatif des informations à faire figurer dans les rapports annuels.
@@ -51,7 +51,7 @@
 #### Auto-saisines — courriers envoyés par le HCGE
 
 - **Statistique 2025** : p. 12. **19 sociétés** destinataires d'un courrier (contre 24 en 2024, 21 en 2023, 17 en 2022).
-- **Taux de participation HCGE** : p. 12. **91 %** sur l'année (vs 82 % en 2024).
+- **Taux de participation HCGE** : p. 12. **91 %** sur l'année (vs 82 % en 2024 — rapport HCGE 2024, p. 12).
 
 #### Citation nominative — VusionGroup
 
@@ -88,53 +88,53 @@
 
 ##### Mandat d'administrateur exercé concomitamment dans une société et l'une des sociétés qu'elle consolide
 
-- **Position HCGE** : p. 21. *« L'expression "que la société consolide" s'entend des diverses hypothèses de consolidation visées par l'article L. 233-16 du Code de commerce. En effet, le devoir de loyauté que le mandataire social d'une filiale a à l'égard de celle-ci peut créer des situations de conflit d'intérêts lors de certaines délibérations du conseil de la maison-mère où il siège aussi. »*
+- **Position HCGE** : p. 21. *« l'expression "que la société consolide" s'entend des diverses hypothèses de consolidation visées par l'article L. 233-16 du Code de commerce. En effet, le devoir de loyauté que le mandataire social d'une filiale a à l'égard de celle-ci peut créer des situations de conflit d'intérêts lors de certaines délibérations du conseil de la maison-mère où il siège aussi. »*
 - **Extension** : p. 21. *« Ces recommandations s'appliquent quand l'administrateur d'une société exerce aussi un mandat dans une société dans laquelle la première détient une participation non majoritaire mais significative, ou dans une société-sœur. »*
 - **Règle d'abstention** : p. 21. *« A minima, si le Conseil souhaite maintenir la qualification d'indépendance, il pourrait être précisé que l'intéressé s'abstiendra de participer aux décisions du Conseil de la maison-mère en cas de conflit d'intérêts entre celle-ci et la filiale. »*
-- **Empêchement permanent** : p. 21. *« Si la situation créée conduit à un empêchement permanent, la règle d'abstention peut s'avérer inopérante ou insuffisante car elle conduirait l'administrateur à se soustraire à son obligation d'assiduité. Le cas échéant, l'administrateur doit alors en tirer les conséquences quant à sa qualification d'administrateur indépendant. »*
+- **Empêchement permanent** : p. 21. *« […] si la situation créée conduit à un empêchement permanent, la règle d'abstention peut s'avérer inopérante ou insuffisante car elle conduirait l'administrateur à se soustraire à son obligation d'assiduité. Le cas échéant, l'administrateur doit alors en tirer les conséquences quant à sa qualification d'administrateur indépendant. »*
 
 ##### Mandats concomitants ou successifs exercés dans des sociétés consolidées par la même société mère
 
-- **Position HCGE** : p. 21-22. *« Le Code prévoit qu'un administrateur ne peut être considéré comme indépendant s'il détient un mandat dans une société-sœur. Le Haut Comité précise, sans remettre en cause le principe de la règle dans cette hypothèse, que certaines situations pourraient justifier l'absence de conflit d'intérêts ou de situation affectant l'indépendance de l'administrateur concerné. Tout en invitant les sociétés à éviter ce type de situation, le Haut Comité pourra examiner, au cas par cas, d'éventuelles explications. »*
+- **Position HCGE** : p. 21-22. *« Le Code prévoit qu'un administrateur ne peut être considéré comme indépendant s'il détient un mandat dans une société-sœur. Le Haut Comité précise, sans remettre en cause le principe de la règle dans cette hypothèse, que certaines situations pourraient justifier l'absence de conflit d'intérêts ou de situation affectant l'indépendance de l'administrateur concerné. Tout en invitant les sociétés à éviter ce type de situation, le Haut Comité pourra examiner, au cas par cas, d'éventuelles explications […] »*
 
 ##### Mandats dans le cadre d'opérations de rapprochement
 
-- **Position HCGE** : p. 22. *« L'appréciation de l'indépendance des administrateurs d'une entité combinée résultant d'un rapprochement d'entreprise ne devrait pas en principe dépendre de la structuration juridique retenue pour le rapprochement, relevant ainsi par exemple que le choix entre une fusion et une offre publique d'échange (OPE) est le plus souvent guidé par des considérations juridiques, réglementaires et/ou fiscales. »*
+- **Position HCGE** : p. 22. *« […] l'appréciation de l'indépendance des administrateurs d'une entité combinée résultant d'un rapprochement d'entreprise ne devrait pas en principe dépendre de la structuration juridique retenue pour le rapprochement, relevant ainsi par exemple que le choix entre une fusion et une offre publique d'échange (OPE) est le plus souvent guidé par des considérations juridiques, réglementaires et/ou fiscales […] »*
 
 ##### Scissions
 
-- **Position HCGE** : p. 22. *« L'appréciation de l'indépendance au sein d'une entité issue d'une scission, d'un administrateur indépendant de la société qui se scinde, n'est pas en principe affectée par l'existence de ce mandat préalable ou concomitant. Cependant, lorsque les entités issues de la scission sont sous contrôle commun, il convient de se référer aux développements sur les mandats au sein de sociétés sœurs. »*
+- **Position HCGE** : p. 22. *« […] l'appréciation de l'indépendance au sein d'une entité issue d'une scission, d'un administrateur indépendant de la société qui se scinde, n'est pas en principe affectée par l'existence de ce mandat préalable ou concomitant. Cependant, lorsque les entités issues de la scission sont sous contrôle commun, il convient de se référer aux développements sur les mandats au sein de sociétés sœurs. »*
 
 #### Étude HCGE — Présidents d'honneur (p. 22-23)
 
-- **Cadre** : p. 22. Référence au rapport AMF 2024 — *« plus d'une quinzaine de sociétés dont les titres sont cotés sur le marché réglementé ont nommé un "Président d'honneur" »*.
-- **Position HCGE** : p. 22. *« La pratique de nomination d'un Président d'honneur est limitée et la fonction se concentre, dans les cas existants, autour de personnes-clés dans l'histoire récente de l'entreprise : fondateur, ancien dirigeant emblématique. »*
+- **Cadre** : p. 22. Référence au rapport AMF 2024 — *« […] plus d'une quinzaine de sociétés dont les titres sont cotés sur le marché réglementé ont nommé un "Président d'honneur" »*.
+- **Position HCGE** : p. 22. *« […] la pratique de nomination d'un Président d'honneur est limitée et que la fonction se concentre, dans les cas existants, autour de personnes-clés dans l'histoire récente de l'entreprise : fondateur, ancien dirigeant emblématique. »*
 - **Catégories** : p. 22. Trois cas de figure dans le SBF 120 :
   - Titre purement honorifique (anciens Présidents ou PDG).
   - Membres du Conseil d'administration (soumis au même cadre légal et réglementaire).
   - Non administrateurs mais peuvent participer aux réunions du Conseil et/ou des comités.
-- **Position HCGE — règlement intérieur** : p. 22-23. *« Qu'ils soient soumis au même cadre réglementaire que les autres administrateurs ou non, il est nécessaire de faire en sorte que les règles, notamment déontologiques qui leur sont applicables, soient précisées dans le règlement intérieur du Conseil. »*
-- **Transparence** : p. 23. *« Le Haut Comité appelle l'attention des entreprises sur la nécessaire transparence des informations relatives aux Présidents d'honneur qui ne sont pas administrateurs concernant les modalités de leur désignation, leur rôle, leurs missions au sein du Conseil et/ou d'un comité et les moyens mis à leur disposition. »*
+- **Position HCGE — règlement intérieur** : p. 22-23. *« Qu'ils soient soumis au même cadre réglementaire que les autres administrateurs ou non, il est nécessaire de faire en sorte que les règles, notamment déontologiques qui leur sont applicables, soient précisées dans le règlement intérieur du Conseil. »* (p. 22)
+- **Transparence** : p. 23. *« Le Haut Comité appelle l'attention des entreprises sur la nécessaire transparence des informations relatives aux Présidents d'honneur qui ne sont pas administrateurs concernant les modalités de leur désignation, leur rôle, leurs missions au sein du Conseil et/ou d'un comité et, les moyens mis à leur disposition. »*
 
 ### Bloc D — Comités du conseil
 
 #### Comité en charge de la RSE (§ 16) — seconde année de suivi
 
-- **Position HCGE** : p. 15. *« Les Conseils doivent définir clairement les missions confiées aux comités en matière de RSE et préciser comment celles-ci s'articulent entre les comités. »*
-- **Statistique 2024** : p. 15. *« En 2024, 95 % des sociétés du SBF 120 appliquent cette recommandation (90 % en 2023) dont 97 % des sociétés du CAC 40. »*
-- **Position HCGE — revue des risques RSE** : p. 15. *« La revue des risques RSE qui doit, en principe, être confiée au comité d'audit. Cette recommandation se justifie par les compétences particulières des membres du comité d'audit en matière d'évaluation des risques. »*
+- **Position HCGE** : p. 15. *« Les Conseils doivent définir clairement les missions confiées aux comités en matière de RSE et préciser comment celles-ci s'articulent entre les comités […] »*
+- **Statistique 2024** : p. 15. *« En 2024, 95 % des sociétés du SBF 120 appliquent cette recommandation (90 % en 2023) dont 97 % des sociétés du CAC 40 […] »*
+- **Position HCGE — revue des risques RSE** : p. 15. *« Cette recommandation se justifie par les compétences particulières des membres du comité d’audit en matière d’évaluation des risques, notamment. »*
 
 #### Présence d'un administrateur représentant les salariés au comité des rémunérations
 
-- **Statistique 2024** : p. 18. *« La proportion de sociétés ayant un administrateur salarié au sein du comité des rémunérations s'est significativement accrue ces dernières années, se stabilisant autour de 85 % en 2024. »*
-- **Justifications observées** : p. 18. *« Forme sociale de la société, historique d'actionnariat salarié fort avec des structures de gouvernance particulières, ou encore la mise en place d'une dérogation temporaire liée à un nouveau mandat d'administrateur salarié. »*
-- **Position HCGE — invitation aux réunions** : p. 18. *« L'invitation du membre du Conseil représentant les salariés à participer aux réunions du comité des rémunérations n'est pas une explication jugée pertinente. L'administrateur salarié doit en effet être un membre du Conseil et du comité des rémunérations à part entière, et traité comme les autres administrateurs. À ce titre, il ne peut être cantonné à des sujets ciblés, ou exclu de certaines réunions. »*
+- **Statistique 2024** : p. 18. *« […] la proportion de sociétés ayant un administrateur salarié au sein du comité des rémunérations s'est significativement accrue ces dernières années, se stabilisant autour de 85 % en 2024. »*
+- **Justifications observées** : p. 18. *« […] la forme sociale de la société, un historique d'actionnariat salarié fort avec des structures de gouvernance particulières ou encore la mise en place d'une dérogation temporaire liée à un nouveau mandat d'administrateur salarié. »*
+- **Position HCGE — invitation aux réunions** : p. 18. *« […] l'invitation du membre du Conseil représentant les salariés à participer aux réunions du comité des rémunérations n'est pas une explication jugée pertinente. L'administrateur salarié doit en effet être un membre du Conseil et du comité des rémunérations à part entière, et traité comme les autres administrateurs. À ce titre, il ne peut être cantonné à des sujets ciblés, ou exclu de certaines réunions. »*
 
 ### Bloc E — Rémunérations des dirigeants
 
 #### Critères RSE et climatiques dans la rémunération variable (§ 26.1.1)
 
-- **Statistiques 2024** : p. 18. *« En 2024, comme en 2023, toutes les sociétés ayant attribué une rémunération variable annuelle et/ou long terme à leur dirigeant ont intégré un ou plusieurs critères RSE. Plus spécifiquement, 89 % des sociétés du SBF 120 ont intégré un critère lié au climat. »*
+- **Statistiques 2024** : p. 18. *« […] en 2024, comme en 2023, toutes les sociétés ayant attribué une rémunération variable annuelle et/ou long terme à leur dirigeant ont intégré un ou plusieurs critères RSE. Plus spécifiquement, 89 % des sociétés du SBF 120 ont intégré un critère lié au climat […] »*
 - **Étude principaux critères CAC 40** : p. 18. Critères RSE et climatiques utilisés au titre de l'exercice 2024 :
   - Réduction des émissions de gaz à effet de serre (**36 sociétés** sur 35 CAC 40 — critère de performance dans rémunération court terme et long terme).
   - Gestion / Attractivité des talents.
@@ -149,9 +149,9 @@
 #### Équilibre des critères financiers et extra-financiers
 
 - **Cadre Code AFEP-MEDEF** : p. 19. Les critères extra-financiers sont soumis aux mêmes recommandations du Code que les critères financiers (rapport 2024, § 3.2). Ils doivent répondre aux principes généraux posés par le Code :
-  - § 26.1.1 : *« Les critères quantifiables doivent être privilégiés. »*
-  - § 26.3.2 : *« Les critères qualitatifs doivent être définis de manière précise. Au sein de la rémunération variable annuelle, lorsque des critères qualitatifs sont utilisés, une limite doit être fixée à la part qualitative. »*
-- **Position HCGE** : p. 19. *« Le Conseil doit s'assurer que les critères de performance, financiers et extra-financiers, sont exigeants, mesurables et équilibrés, et que leur appréciation sera en mesure de refléter objectivement l'activité et l'ensemble des performances de l'entreprise. Dans l'hypothèse d'un déséquilibre significatif ou récurrent entre les taux d'atteinte des critères financiers, et ceux des critères extra-financiers, le Conseil doit réexaminer pour l'avenir la politique de rémunération en vue d'éviter que les critères de performance extra-financiers ne puissent être des éléments d'atténuation, voire de compensation, d'une sous-performance des critères financiers, et inversement. »*
+  - § 26.1.1 : (p. 19) *« […] Les critères quantifiables doivent être privilégiés ; »*
+  - § 26.3.2 : *« les critères qualitatifs doivent être définis de manière précise. Au sein de la rémunération variable annuelle, lorsque des critères qualitatifs sont utilisés, une limite doit être fixée à la part qualitative. »* (p. 19)
+- **Position HCGE** : p. 19. *« Le Conseil doit s'assurer que les critères de performance, financiers et extra-financiers sont exigeants, mesurables et équilibrés, et que leur appréciation sera en mesure de refléter objectivement l'activité et l'ensemble des performances de l'entreprise. Dans l'hypothèse d'un déséquilibre significatif ou récurrent entre les taux d'atteinte des critères financiers, et ceux des critères extra-financiers, le Conseil doit réexaminer pour l'avenir la politique de rémunération en vue d'éviter que les critères de performance extra-financiers ne puissent être des éléments d'atténuation, voire de compensation, d'une sous-performance des critères financiers, et inversement. »*
 - **Position HCGE — explications attendues** : p. 19. *« Qu'il s'agisse de la rémunération variable de court terme ou de long terme, les explications fournies sur les critères de performance doivent permettre de corréler les réalisations effectives des objectifs avec le niveau quantifié d'atteinte de ces objectifs. »*
 - **Position HCGE — votes contestataires** : p. 19. *« Des votes contestataires en Assemblées générales sur les résolutions relatives aux rémunérations (ex ante ou ex post) sont souvent indicatifs d'une sensibilité des actionnaires à l'égard des composantes de la rémunération ou de leur variation, d'un manque de transparence sur les critères de performance ou d'un déséquilibre entre les performances et les rémunérations. »*
 
@@ -174,31 +174,31 @@
 
 #### Présentation de la stratégie climatique à l'AG (§ 5.4 / § 15)
 
-- **Statistique 2025** : p. 16. *« Sur 97 sociétés se référant au Code (dont 35 sociétés du CAC 40) : 75 sociétés ont présenté leur stratégie climatique ou sa mise en œuvre lors de leur AG (contre 74 en 2024) ; 7 sociétés ont inscrit un point à l'ordre du jour sans vote (contre 9 en 2024) ; 4 sociétés ont consulté leurs actionnaires sur leur stratégie climatique ("Say-on-Climate") (contre 5 en 2024). »*
+- **Statistique 2025** : p. 16. *« Sur 97 sociétés se référant au Code (dont 35 sociétés du CAC 40) : 75 sociétés ont présenté leur stratégie climatique ou sa mise en œuvre lors de leur AG (contre 74 en 2024) ; 7 sociétés ont inscrit un point à l'ordre du jour sans vote (contre 9 en 2024) ; et 4 sociétés ont consulté leurs actionnaires sur leur stratégie climatique (" Say-on-Climate ") (contre 5 en 2024). »*
 - **Position HCGE** : p. 16. *« Les présentations ont inclus à la fois les réalisations et les objectifs à moyen-long terme, assortis d'indicateurs clés suivis dans le temps sur 4 axes (facteurs environnementaux, feuille de route en matière de climat et de neutralité carbone, gouvernance, engagement sociétal et social). La mise en œuvre de la Directive CSRD a conduit à apporter aux investisseurs des informations détaillées sur les plans de transition climatique. »*
 
 #### Relations avec les agences de conseil en vote (§ 3.6)
 
 - **Constat** : p. 20. *« Les politiques de vote des agences de conseil en vote ont influé de manière croissante sur la gouvernance actionnariale au cours de la dernière décennie. »*
-- **Comparaison ISS / Glass Lewis** : p. 20. *« La comparaison des politiques de vote 2025 d'ISS et de Glass Lewis dans 6 pays (USA, Royaume-Uni, Espagne, Pays-Bas, Allemagne et France) révèle un certain nombre de disparités de positions, concernant par exemple : les augmentations de capital sans droit préférentiel de souscription ; l'unicité / la dissociation des fonctions. »*
-- **Droits de vote multiples et doubles** : p. 21. *« Le Haut Comité constate que le principe "une action, une voix" est appliqué par les agences de conseil en vote à l'ensemble des sociétés, indépendamment des cadres réglementaires ou des codes de gouvernance nationaux auxquelles elles sont soumises ou se réfèrent et qui autorisent, dans certaines circonstances, de tels dispositifs. »*
+- **Comparaison ISS / Glass Lewis** : p. 20. *« […] la comparaison des politiques de vote 2025 d'ISS et de Glass Lewis dans 6 pays (USA, Royaume-Uni, Espagne, Pays-Bas, Allemagne et France) révèle un certain nombre de disparités de positions, concernant par exemple : les augmentations de capital sans droit préférentiel de souscription ; l'unicité / la dissociation des fonctions. »*
+- **Droits de vote multiples et doubles** : p. 21. *« […] le Haut Comité constate que le principe "une action, une voix" est appliqué par les agences de conseil en vote à l'ensemble des sociétés, indépendamment des cadres réglementaires ou des codes de gouvernance nationaux auxquelles elles sont soumises ou se réfèrent et qui autorisent, dans certaines circonstances, de tels dispositifs. »*
 
 ### Bloc J — Information sur la durabilité (CSRD)
 
 #### Articulation gouvernance/RSE — préface 2025
 
-- **Position HCGE (préface)** : p. 6-7. *« Il décrit les avancées continues dans les pratiques au sein du SBF 120, qui se matérialisent par un taux d'application élevé des recommandations du Code. C'est notamment le cas pour ce qui est de la responsabilité sociale et environnementale (RSE). »*
+- **Position HCGE (préface)** : p. 6-7. *« Il décrit les avancées continues dans les pratiques au sein du SBF 120, qui se matérialisent par un taux d'application élevé des recommandations du Code. C'est notamment le cas pour ce qui est de la responsabilité sociale et environnementale (RSE). »* (p. 7)
 - **Constats des Chairs européens (mai 2025)** : p. 13. Préoccupations sur la méthodologie d'élaboration des directives européennes (notamment absence d'approche fondée sur des preuves), leur multiplicité et leur complexité (CSRD, CS3D), pour les entreprises européennes :
-  - *« L'application de ces directives aux seules entreprises immatriculées dans les pays de l'Union Européenne (UE) constitue un risque concret et majeur pour leur compétitivité. »*
-  - *« Le possible chevauchement et/ou double emploi entre normes internationales et européennes (auxquelles s'ajoutent les normes sectorielles) constitue un risque non négligeable de devoir établir plusieurs rapports sur des sujets voisins en appliquant des normes différentes. »*
-  - *« L'obligation d'établir des rapports de durabilité très détaillés pour des petites entreprises faisant partie de la chaîne d'activité d'un grand groupe peut avoir un impact très pénalisant pour ces dernières. »*
+  - (p. 13) *« l'application de ces directives aux seules entreprises immatriculées dans les pays de l'Union Européenne (UE) constitue un risque concret et majeur pour leur compétitivité. »*
+  - *« le possible chevauchement et/ou double emploi entre normes internationales et européennes (auxquelles s'ajoutent les normes sectorielles) constitue un risque non négligeable de devoir établir plusieurs rapports sur des sujets voisins en appliquant des normes différentes ; […] »* (p. 13)
+  - *« l'obligation d'établir des rapports de durabilité très détaillés pour des petites entreprises faisant partie de la chaîne d'activité d'un grand groupe peut avoir un impact très pénalisant pour ces dernières ; […] »* (p. 13)
 
 #### Politique de mixité — instances dirigeantes
 
-- **Statistique 2024** : p. 17. *« Des avancées significatives ont été réalisées en matière de féminisation des instances dirigeantes au cours des dernières années avec une part des femmes qui est passée de 16 % pour le SBF 120 (20 % pour le CAC 40) en 2017 à 30 % (pour les deux indices) en 2024. »*
+- **Statistique 2024** : p. 17. *« Des avancées significatives ont été réalisées en matière de féminisation des instances dirigeantes au cours des dernières années avec une part des femmes qui est passée de 16 % pour le SBF 120 (20 % pour le CAC 40) en 2017 à 30 % (pour les deux indices) en 2024 […] »*
 - **Cadre légal complémentaire — Loi Rixain** : p. 17, note 6. **Loi du 24 décembre 2021** relative à l'égalité économique et professionnelle (désignée dans le rapport par sa date, sans numéro) a créé une obligation de représentation équilibrée entre les femmes et les hommes parmi les cadres dirigeants et les membres des instances dirigeantes des entreprises de plus de 1 000 salariés.
-- **Position HCGE — articulation Code/Loi Rixain** : p. 17. *« Cette loi retient un périmètre nécessairement français, contrairement aux recommandations du Code qui invitent les entreprises à élaborer un plan d'action au niveau du groupe et à le décliner au sein de l'ensemble de leurs filiales françaises et étrangères. »*
-- **Recommandation HCGE** : p. 17. *« Le Haut Comité invite les entreprises à mieux préciser la définition des instances dirigeantes (pour mémoire, ce périmètre intègre a minima le comité exécutif ou de direction ou tout comité similaire, comme le rappelle le Guide d'application du Haut Comité) ; et se fixer des objectifs ambitieux. »*
+- **Position HCGE — articulation Code/Loi Rixain** : p. 17. *« […] cette loi retient un périmètre nécessairement français, contrairement aux recommandations du Code qui invitent les entreprises à élaborer un plan d'action au niveau du groupe et à le décliner au sein de l'ensemble de leurs filiales françaises et étrangères. »*
+- **Recommandation HCGE** : p. 17. *« Le Haut Comité invite les entreprises à : mieux préciser la définition des instances dirigeantes (pour mémoire, ce périmètre intègre a minima le comité exécutif ou de direction ou tout comité similaire, comme le rappelle le Guide d'application du Haut Comité) ; et se fixer des objectifs ambitieux. »*
 
 #### Cybersécurité — focus 2025 (suite du thème 2024)
 
@@ -222,7 +222,7 @@
 
 - **Cadre** : p. 12. Pays membres : Allemagne, Belgique, Espagne, France, Italie, Pays-Bas, Royaume-Uni, Suède (« Eight Chairs Group »).
 - **Élargissement octobre 2025** : p. 14. *« À compter d'octobre 2025, les représentants du comité en charge du "Code suisse de bonnes pratiques pour la gouvernance d'entreprise" ont rejoint le Chairs Group, ce qui portera à neuf le nombre de pays représentés. »*
-- **Déclaration commune (mai 2025)** : p. 13-14. Référence à la déclaration publiée le 15 mai 2025 : *« Corporate Governance in Europe: A Joint Statement on responsible, sustainable long-term value creation and competitiveness. »*
+- **Déclaration commune (mai 2025)** : p. 13-14. Référence à la déclaration publiée le 15 mai 2025 : *« […] Corporate Governance in Europe: A Joint Statement on responsible, sustainable long-term value creation and competitiveness. »* (p. 13)
 
 ---
 
@@ -297,7 +297,7 @@
   - **SBF 120 unicité des fonctions** : **29 % (2015) → 89 % (2024)**.
   - **CAC 40 unicité des fonctions** : **43 % (2015) → plus de 90 % (2024)**.
 - **Statistique 2024** : p. 33. **24 sociétés monistes du SBF 120** ont désigné un administrateur référent, soit **89 %** ; au sein du CAC 40, **elles sont 12, soit plus de 90 %** (formulation littérale du rapport).
-- **Position HCGE** : p. 33. *« Systématiquement indépendant, l'administrateur référent joue un rôle de garant du bon fonctionnement des organes de gouvernance et de prévention des conflits d'intérêts. »*
+- **Position HCGE** : p. 32. *« Systématiquement indépendant, l'administrateur référent joue un rôle de garant du bon fonctionnement des organes de gouvernance et de prévention des conflits d'intérêts. »*
 
 ### Section 2 — Conseil d'administration ou de surveillance (p. 34-45)
 
@@ -320,8 +320,8 @@
 
 ##### Position HCGE — critères
 
-- **Position critère 1** : p. 34. *« L'exclusion de ce critère est difficile à justifier en raison d'un risque "structurel" de conflit d'intérêts entre sociétés au sein d'un même groupe, sauf circonstances particulières. »*
-- **Évolution critère 6 sur 10 ans** : p. 34. *« En 2015, ce critère était écarté par 24 sociétés du SBF 120 (20 % du panel) et par 15 sociétés du CAC 40 (soit 44 % de l'indice). »*
+- **Position critère 1** : p. 34. *« […] l'exclusion de ce critère est difficile à justifier en raison d'un risque "structurel" de conflit d'intérêts entre sociétés au sein d'un même groupe, sauf circonstances particulières. »*
+- **Évolution critère 6 sur 10 ans** : p. 34. *« […] en 2015, ce critère était écarté par 24 sociétés du SBF 120 (20 % du panel) et par 15 sociétés du CAC 40 (soit 44 % de l'indice). »*
 
 ##### Proportion des sociétés contrôlées et non contrôlées (exercice 2024)
 
@@ -413,7 +413,7 @@
 - **Taux moyen d'administrateurs indépendants** : p. 45. SBF 120 : **78 %** (stable) ; CAC 40 : **84 %** (83 % en 2023).
 - **Nombre moyen de séances** : p. 46. SBF 120 : **5,9** (5,8 en 2023) ; CAC 40 : **5,8** (5,7 en 2023).
 - **Présentation par la direction sur l'exposition aux risques de nature sociale et environnementale** : p. 46. **SBF 120 : 95 %** (90 % en 2023) ; **CAC 40 : 97 %** (stable). **5 sociétés** ne satisfont pas (contre 10 en 2023).
-- **Position HCGE — règle des 60 %** : p. 46. *« Lorsque le Président du comité est indépendant, la présence de 60 % d'administrateurs indépendants à titre temporaire aux lieu et place des deux-tiers est suffisante pour permettre d'écarter l'application de la recommandation du Code. Il est alors cependant impératif de faire figurer la recommandation non appliquée, ainsi que les explications afférentes dans la rubrique ou le tableau spécifique prévu par le Code. »*
+- **Position HCGE — règle des 60 %** : p. 46. *« […] lorsque le Président du comité est indépendant, la présence de 60 % d'administrateurs indépendants à titre temporaire aux lieu et place des deux-tiers est suffisante pour permettre d'écarter l'application de la recommandation du Code. Il est alors cependant impératif de faire figurer la recommandation non appliquée, ainsi que les explications afférentes dans la rubrique ou le tableau spécifique prévu par le Code. »*
 
 #### 3.2. Comité des rémunérations (p. 47-48)
 
@@ -449,7 +449,7 @@
 
 ##### Sélection des futurs administrateurs
 
-- **Statistique 2024** : p. 49. *« L'organisation d'une procédure destinée à la sélection des futurs administrateurs (§ 18.2.1) est mise en place par l'ensemble des sociétés du SBF 120, à une exception près. »*
+- **Statistique 2024** : p. 49. *« L'organisation d'une procédure destinée à la sélection des futurs administrateurs (§ 18.2.1) est mise en place par l'ensemble des sociétés du SBF 120, à une exception près […] »*
 
 ##### Participation du dirigeant mandataire social exécutif
 
@@ -528,7 +528,7 @@
 
 - **VIRIDIEN** (DEU 2024, p. 60) : *« Le Conseil d'administration a également décidé que conformément aux dispositions de l'article L. 225-197-1 du Code de commerce, la quantité d'actions résultant de l'acquisition d'actions que Sophie ZURQUIYAH est tenue de conserver au nominatif, pendant la durée de son mandat, devrait représenter 25 % des actions de performance définitivement attribuées par le Conseil d'administration. »*
 - **MÉTROPOLE TÉLÉVISION** (DEU 2024, p. 60) : *« Depuis 2009, le Conseil de surveillance a fixé, à l'égard des membres du Directoire, l'obligation de conservation, au nominatif sans condition, de 20 % des actions de performance attribuées jusqu'à la fin de leur mandat. »*
-- **COMPAGNIE DE SAINT-GOBAIN** (DEU 2024, p. 60) : *« Le Président-Directeur général a l'obligation de conserver 50 % des actions de performance attribuées en 2024 qui lui seront livrées, jusqu'à la cessation de ses fonctions. Toutefois, cette obligation de conservation cesse de s'appliquer si et lorsque le nombre total d'actions Saint-Gobain que le Président-Directeur général détient personnellement au nominatif – au jour de la date de livraison des actions de performance – atteint l'équivalent de trois années de rémunération fixe brute. »*
+- **COMPAGNIE DE SAINT-GOBAIN** (DEU 2024, p. 60) : *« Le Président-Directeur général a l'obligation de conserver 50 % des actions de performance attribuées en 2024 qui lui seront livrées, jusqu'à la cessation de ses fonctions. Toutefois, cette obligation de conservation cesse de s'appliquer si et lorsque le nombre total d'actions Saint-Gobain que le Président-Directeur général détient personnellement au nominatif – au jour de la date de livraison des actions de performance – atteint l'équivalent de trois années de rémunération fixe brute […] »*
 
 ### Section 8 — Rémunération des dirigeants mandataires sociaux (p. 61-70)
 
@@ -544,12 +544,12 @@
 
 ##### Partie variable annuelle
 
-- **Sociétés prévoyant le versement** : p. 61. *« À l'exception d'une société, la totalité des sociétés prévoient le versement d'une partie variable. »*
+- **Sociétés prévoyant le versement** : p. 61. *« […] à l'exception d'une société, la totalité des sociétés prévoient le versement d'une partie variable […] »*
 
 ##### Citations nominatives — sociétés ayant indiqué le détail des critères de rémunération variable annuelle et le niveau de réalisation requis
 
-- **BUREAU VERITAS** (DEU 2024, p. 63) : société citée comme exemple de présentation des critères, notamment RSE (dont lié au changement climatique), ainsi que le niveau de réalisation requis. *« Rappel des critères extra-financiers — Les critères extra-financiers sont liés à l'exécution de la stratégie du Groupe et comprennent : des critères internes climat en lien avec le plan de transition climat 2030 de la société : 5 % ; des critères internes RSE tels que le taux de féminisation des postes de direction et le taux d'accident en 2024 : 5 % ; gestion du portefeuille de la société : 10 % ; stratégie du Groupe et son exécution : 10 %. »* Détail de la rémunération variable d'Hinda Gharbi 2024 fixée à **145,0 % de la rémunération cible, soit 1 305 000 euros**.
-- **AMUNDI** (DEU 2024, p. 65) : société citée comme exemple de présentation détaillée des critères ESG de la rémunération variable. *« Mettre en œuvre les projets ESG (comptant pour 12,5 % du total) »* ; le Conseil a arrêté le taux d'atteinte de cet objectif à **113,5 %**, tenant compte des avancées à fin 2024 dans la mise en œuvre des dix engagements du plan Ambitions ESG 2025 (extrait du DEU 2024, p. 107, restitué au rapport p. 65).
+- **BUREAU VERITAS** (rapport HCGE 2025, p. 63, reproduisant le DEU 2024 de la société, p. 300) : société citée comme exemple de présentation des critères, notamment RSE (dont lié au changement climatique), ainsi que le niveau de réalisation requis. *« Rappel des critères extra-financiers [titre] Les critères extra-financiers sont liés à l'exécution de la stratégie du Groupe et comprennent : des critères internes climat en lien avec le plan de transition climat 2030 de la société : 5 % ; des critères internes RSE tels que le taux de féminisation des postes de direction et le taux d'accident en 2024 : 5 % ; gestion du portefeuille de la société : 10 % ; stratégie du Groupe et son exécution : 10 %. »* Détail de la rémunération variable d'Hinda Gharbi 2024 fixée à **145,0 % de la rémunération cible, soit 1 305 000 euros**.
+- **AMUNDI** (DEU 2024, p. 65) : société citée comme exemple de présentation détaillée des critères ESG de la rémunération variable. *« […] Mettre en œuvre les projets ESG (comptant pour 12,5 % du total) »* ; le Conseil a arrêté le taux d'atteinte de cet objectif à **113,5 %**, tenant compte des avancées à fin 2024 dans la mise en œuvre des dix engagements du plan Ambitions ESG 2025 (extrait du DEU 2024, p. 107, restitué au rapport p. 65).
 - **CRÉDIT AGRICOLE S.A.** (p. 65) : société citée dans le tableau de répartition des critères économiques de la rémunération variable, présenté conjointement avec le périmètre Amundi (« périmètre Amundi » et « périmètre Crédit Agricole S.A. »), chaque critère économique étant rapporté au montant fixé lors de l'élaboration, fin 2023, du budget 2024 (p. 65).
 - **AXA** (DEU 2024, p. 64) : société citée comme exemple. *« Sa rémunération variable annuelle cible s'élève à 1 750 000 euros, soit 106 % de sa rémunération fixe annuelle. »* (DEU AXA 2024, p. 106-108).
 
@@ -565,7 +565,7 @@
 #### 8.3. Conventions de prestations de services (p. 66)
 
 - **Tendance HCGE** : p. 66. *« Le recours à des conventions de prestations de services s'est sensiblement réduit au fil des années pour devenir marginal. Il fait l'objet d'une attention particulière du Haut Comité. »*
-- **Statistique 2024** : p. 66. *« Une société du SBF 120 a indiqué que dans le cadre d'un contrat de service conclu entre son Directeur Général et une autre entité du groupe, ce dernier bénéficie d'une indemnité de départ plafonnée à deux années de rémunération. »*
+- **Statistique 2024** : p. 66. *« […] une société du SBF 120 a indiqué que dans le cadre d'un contrat de service conclu entre son Directeur Général et une autre entité du groupe, ce dernier bénéficie d'une indemnité de départ plafonnée à deux années de rémunération. »*
 
 #### 8.4. Options de souscription ou d'achat d'actions (p. 66)
 
@@ -574,7 +574,7 @@
 
 #### 8.5. Actions de performance (p. 67-68)
 
-- **Tendance HCGE** : p. 67. *« La pratique des attributions d'actions de performance s'est fortement développée au cours de la dernière décennie puisqu'elle concernait en 2015 environ 45 % des sociétés du SBF 120 et 60 % des sociétés du CAC 40. »*
+- **Tendance HCGE** : p. 67. *« […] la pratique des attributions d'actions de performance s'est fortement développée au cours de la dernière décennie puisqu'elle concernait en 2015 environ 45 % des sociétés du SBF 120 et 60 % des sociétés du CAC 40. »*
 - **Statistique 2024 — Attribution d'actions de performance** : p. 67. **SBF 120 : 81 %** (80 % en 2023) ; **CAC 40 : 89 %** (89 % en 2023). **79 sociétés du SBF 120 dont 31 du CAC 40** ont attribué des actions de performance.
 
 ##### 8.5.1 — Valorisation des actions (p. 67)
@@ -596,7 +596,7 @@
 ##### 8.5.5 — Sous-plafond d'attribution d'actions (p. 68)
 
 - **Statistique 2024** : p. 68. **SBF 120 : 100 %** (95 % en 2023) ; **CAC 40 : 100 %** (97 % en 2023).
-- **Constat HCGE** : p. 68. *« Toutes les sociétés du SBF 120, attribuant des actions de performance ont spécifié un sous-plafond d'attribution d'actions pour leurs dirigeants mandataires sociaux »* (§ 26.3.3 du Code).
+- **Constat HCGE** : p. 68. *« Toutes les sociétés du SBF 120, attribuant des actions de performance ont spécifié un sous-plafond d'attribution d'actions pour leurs dirigeants mandataires sociaux […] »* (§ 26.3.3 du Code).
 
 #### 8.6. Indemnités de prise de fonctions, de départ et de non-concurrence (p. 68-69)
 
@@ -618,12 +618,12 @@
 
 #### 8.7. Rémunérations exceptionnelles (p. 70)
 
-- **Rappel Guide d'application HCGE** : p. 70. *« Il appartient ainsi à la société de motiver très précisément le recours à cette forme de rémunération exceptionnelle qui ne peut pas être utilisée pour rémunérer des missions inhérentes aux fonctions des dirigeants comme, par exemple, celle consistant à assurer une transition avec un successeur. »* (§ 26.3.4).
+- **Rappel Guide d'application HCGE** : p. 70. *« il appartient ainsi à la société de motiver très précisément le recours à cette forme de rémunération exceptionnelle qui ne peut pas être utilisée pour rémunérer des missions inhérentes aux fonctions des dirigeants comme, par exemple, celle consistant à assurer une transition avec un successeur. »* (§ 26.3.4).
 - **Statistique 2024** : p. 70. **7 sociétés du SBF 120** ont attribué une rémunération exceptionnelle à leur dirigeant mandataire social. **5 de ces sociétés** ont motivé cette décision. *« Les 2 sociétés n'ayant fourni aucune explication ont été contactées par le Haut Comité. »*
 
 #### 8.8. Retraites (p. 70)
 
-- **Rappel Code AFEP-MEDEF** : p. 70. *« Sauf lorsqu'elle a pour objet de compenser la perte des droits potentiels dont le bénéfice a été soumis à des conditions de performance, l'attribution d'avantages ou de rémunérations destinés à constituer un régime de retraite supplémentaire est soumise à de telles conditions »* (§ 26.6.1).
+- **Rappel Code AFEP-MEDEF** : p. 70. *« sauf lorsqu'elle a pour objet de compenser la perte des droits potentiels dont le bénéfice a été soumis à des conditions de performance, l'attribution d'avantages ou de rémunérations destinés à constituer un régime de retraite supplémentaire est soumise à de telles conditions »* (§ 26.6.1).
 - **Statistique 2024** : p. 70. **51 sociétés du SBF 120 dont 20 du CAC 40** attribuent des avantages ou des rémunérations destinés à constituer un régime de retraite supplémentaire.
 
 ### Section 9 — Ratio sur les écarts de rémunérations (p. 71-72)
@@ -632,7 +632,7 @@
 
 ##### Citation nominative — société publiant des ratios sur les écarts de rémunération en renseignant le périmètre choisi et la méthode de calcul
 
-- **ACCOR** (DEU 2024, p. 72) : société citée comme exemple. *« Les ratios d'équité sont publiés conformément aux dispositions de la loi n° 2019-486 du 22 mai 2019 relative à la croissance et à la transformation des entreprises, dite loi PACTE, et aux lignes directrices de l'AFEP. Les éléments de rémunération du Président-directeur général correspondent aux éléments de rémunération versés ou attribués au titre de chaque exercice. »*
+- **ACCOR** (DEU 2024, p. 72) : société citée comme exemple. *« Les ratios d'équité sont publiés conformément aux dispositions de la loi n° 2019-486 du 22 mai 2019 relative à la croissance et à la transformation des entreprises, dite loi PACTE, et aux lignes directrices de l'AFEP. Les éléments de rémunération du Président-directeur général correspondent aux éléments de rémunération versés ou attribués au cours de l'exercice, sur une base brute […] »*
 - **IPSEN** (DEU 2024, p. 72) : société citée comme exemple de présentation des ratios sur les écarts de rémunération en renseignant le périmètre choisi (périmètre de la Société et périmètre élargi comprenant l'ensemble des collaborateurs d'Ipsen en France) et la méthode de calcul, en application de l'article L. 22-10-9 C. com. (extrait du DEU 2024, p. 446, restitué au rapport p. 72).
 - **SOPRA STERIA** (DEU 2024, p. 72) : société citée comme exemple, avec des commentaires méthodologiques sur le numérateur des ratios (rémunération du Président telle qu'elle apparaît dans les tableaux normés Afep-Medef). (Extrait du DEU au rapport, p. 72.)
 
