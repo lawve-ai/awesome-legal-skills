@@ -1,16 +1,16 @@
 ---
-name: "gouvernance-des-societes-cotees-gillan-saleh"
-description: "Skill open source d'analyse documentaire à vocation scientifique sur la gouvernance des sociétés cotées françaises (SBF 120). Il agrège, sous forme d'index sourcés à la page près, le corpus réglementaire et doctrinal 2020-2025 — rapports AMF et HCGE, Code AFEP-MEDEF, doctrine AMF, priorités ESMA, rapport sénatorial Rietmann/Gay, guide Paris Europlace — complété par recherche web. Sa règle fondatrice est le zéro invention : chaque chiffre, citation et page provient d'une source vérifiée, mot pour mot, en distinguant strictement le régulateur (AMF, ESMA) de la soft law (HCGE, AFEP-MEDEF). Quatre usages : restitution sourcée, analyse longitudinale, audit d'émetteur sur une grille de 13 blocs, croisement thématique multi-émetteurs. Ni conseil juridique, ni conseil en investissement. "
+name: gouvernance-emetteurs-cotes
+description: >-
+  Index analytiques sourcés du corpus réglementaire et doctrinal sur la gouvernance des émetteurs cotés français (rapports AMF et HCGE 2020-2025, guide d'application HCGE, rapport sénatorial Rietmann/Gay, Code AFEP-MEDEF, sources légales et européennes). À utiliser pour : (1) retrouver une position, une statistique ou une citation exacte avec sa source et sa page ; (2) analyser l'évolution longitudinale des positions AMF/HCGE/ESMA sur un thème ; (3) appliquer la grille d'analyse en 13 blocs (A-M) à un émetteur. Déclencher pour toute question sur la gouvernance d'une société cotée française : conseil d'administration, indépendance des administrateurs, comités, rémunération des dirigeants, say on pay, say on climate, assemblée générale, droits des actionnaires, plans de succession, mixité, RSE/CSRD, comply-or-explain, name and shame AMF, soft law AFEP-MEDEF, recommandations AMF, positions HCGE.
 license: CC BY-NC-SA 4.0 (Gillan Saleh) — voir le fichier LICENSE ; usage non commercial
-version: 1.0.0
-updated: 2026-06-21
 metadata:
-  author: "Gillan Saleh"
-  license: "cc-by-4.0"
-  version: "2026-06-23"
+  version: 2.6.2
+  updated: 2026-09-18
 ---
 
 # Skill — Gouvernance des émetteurs cotés (`gouvernance-emetteurs-cotes`)
+
+> **État du droit — péremption déclarée.** Les références légales du skill et de ses fichiers ont été vérifiées sur Légifrance et EUR-Lex en **juin 2026**. Échéances connues à cette date : **L. 22-10-10 C. com.** en vigueur sous réserve d'abrogation différée au **1er janvier 2027** (loi du 30 avril 2025) ; **ordonnance n° 2025-229 du 12 mars 2025** (nullités) en vigueur depuis le 1er octobre 2025 ; calendrier **CSRD/Omnibus** mouvant (vérification de l'état en vigueur obligatoire à chaque usage du Bloc J). **Prochaine revue programmée : janvier 2027**, ou dès qu'une réforme touchant le corpus est signalée. Toute production vérifie l'état en vigueur des articles qu'elle mobilise à sa propre date : ce fichier déclare sa péremption, il ne la subit pas.
 
 ## 1. Objet et posture
 
@@ -111,6 +111,23 @@ Pour les sujets que les rapports traitent en focus ou en étude ponctuelle, sans
 
 Ces règles garantissent la fidélité scientifique du skill. **Toute violation est une erreur grave.**
 
+### Portée des règles — toute réponse, motif textuel, étanchéité des sections
+Précisions issues des rejeux successifs du jeu de tests (juillet et août 2026) :
+- **Toute réponse, pas seulement les fiches.** Les règles du présent §5 et les verrous du §8 s'appliquent à **toute réponse produite avec le skill** — y compris une réponse conversationnelle brève, une question de test ou un échange exploratoire. Il n'existe aucun registre « libre » où la paraphrase, l'à-peu-près ou la citation approximative seraient tolérés : une question appelant une citation reçoit la citation littérale, quel que soit le format de l'échange.
+- **Motif textuel des mentions nominatives.** Le motif d'une mention nominative se restitue **dans les termes de la source** (citation, ou décalque strict de son vocabulaire), jamais requalifié dans un vocabulaire propre (« non-conformité au principe de… », « manquement à… ») absent du texte. Si la source décrit des faits sans les qualifier, la restitution décrit les mêmes faits sans les qualifier.
+- **Étanchéité des sections (cas anonymisés).** Aucun attribut identifiant — appartenance à un indice, secteur, taille, nationalité — ne peut être rattaché à un cas anonymisé s'il ne figure pas dans le **passage même** qui traite ce cas. Un attribut lu dans une section voisine du même rapport ne se transporte pas : la contamination inter-sections est une invention.
+- **Encadrés normatifs : restitution intégrale ou ellipse signalée.** Un encadré « Recommandation », « Position », « Attendu » ou équivalent forme une **unité de sens close** : il se restitue **en entier**. S'il est abrégé, l'omission est signalée par `[…]` **à l'endroit exact où elle porte**, y compris lorsqu'elle porte sur la fin — une citation qui s'arrête à la deuxième phrase d'un encadré qui en compte quatre, guillemets refermés sans marque, laisse croire que la recommandation s'arrête là. Reprendre hors guillemets, en paraphrase, la phrase omise ne répare rien : la citation reste tronquée. Vérifier le nombre de phrases de l'encadré à la source **avant** de fermer les guillemets.
+- **Intitulés : lettre de la source, y compris le nombre et la langue.** Un titre de section, de rubrique, de priorité ou de colonne se restitue tel qu'il est imprimé. Le nombre n'est pas harmonisé — si la source écrit « Priority related to ESEF reporting » au singulier là où les autres intitulés sont au pluriel, le singulier est conservé. L'intitulé n'est pas traduit à l'intérieur des guillemets ; la traduction ou la glose se place hors citation. Restructurer une énumération de la source (regrouper, renuméroter, fondre des sections) est admis dans la synthèse, mais **ne dispense pas** de restituer d'abord les intitulés tels quels.
+
+### Verrous de fidélité citationnelle — issus du deuxième rejeu (juillet 2026)
+Six verrous supplémentaires, chacun tiré d'un écart constaté par une instance vérificatrice indépendante sur une production du skill :
+- **Les guillemets n'appartiennent qu'à la source.** Ne jamais placer entre guillemets un texte qui n'est pas lui-même entre guillemets dans l'index, ni une formulation reconstituée à partir de plusieurs phrases. Un intitulé de synthèse d'indexeur, une paraphrase, un résumé compressé se restituent **comme tels, attribués à l'index**, jamais en citation. Corollaire : à l'intérieur des guillemets, **ni majuscule initiale ni point final ajoutés** — la casse et la ponctuation de la source sont reproduites telles quelles, y compris lorsque la citation commence en milieu de phrase.
+- **Une citation = un passage = une page.** Interdiction de fusionner sous une même ellipse `[…]` deux extraits provenant de passages, de tirets ou de pages différents : l'ellipse signale une coupe **à l'intérieur d'un passage continu**, jamais un raccord entre deux passages. Deux extraits distincts = deux citations distinctes, chacune avec sa page.
+- **Numérotation d'article au millésime de la source.** Le Code AFEP-MEDEF a été renuméroté (version de décembre 2022) : le même critère d'ancienneté est l'art. **9.5.6** dans le rapport AMF 2022 et l'art. **10.5.6** dans le rapport AMF 2023 ; l'explication « pertinente » relève de l'art. **27.1** en 2022 et de l'art. **28.1** en 2023 ; le comité en charge des nominations de l'art. **17.1** en 2022 et de l'art. **18.1** en 2024. Avant de citer un numéro d'article, vérifier la numérotation **en vigueur dans le rapport cité** ; ne jamais rétro-appliquer une numérotation récente à un millésime antérieur, ni regrouper plusieurs millésimes sous une référence d'article unique.
+- **Constat conditionnel ≠ constat catégorique.** Lorsque le régulateur énonce une non-conformité sous condition (« *si l'on applique le critère d'indépendance défini à l'article 9.5.6…, la société ne respecte pas la règle de composition de ce comité* »), la condition fait partie du constat : la supprimer transforme une analyse hypothétique en affirmation de non-conformité. Restituer la condition.
+- **Un échec d'accès outillé ne vaut pas indisponibilité de la donnée.** Avant de déclarer une donnée « non récupérée », épuiser la **source officielle expressément désignée** par le corpus ou par l'émetteur (rubrique « résultats des votes », communiqué de résultats, DEU) **ainsi que les voies de substitution prévues au §6bis : BDIF (base AMF), BALO, miroirs de dépôt légal**. Un blocage technique sur un PDF (accès refusé, document monolithique) n'autorise pas à conclure à l'indisponibilité tant que ces voies n'ont pas été tentées. Une donnée publique déclarée manquante est un manquement de même nature que le renvoi-substitut prohibé au §8. Si la donnée reste inaccessible, déclarer précisément **ce qui a été tenté** et **où elle se trouve**.
+- **Dater toute donnée variable.** Capital social, effectifs, composition d'un organe, taux, montants : toute donnée susceptible d'avoir varié se restitue avec sa date d'arrêté ou son exercice. Un montant exact à une date mais présenté sans date est un écart.
+
 ### Restitution textuelle
 - Toute information issue d'un index se restitue **mot pour mot entre guillemets, avec le numéro de page**. Interdit : reformuler, raccourcir, ajouter ou retirer un mot, changer l'ordre. Test binaire : toute divergence est une violation.
 - Les ellipses `[…]` signalent toute coupe dans une citation.
@@ -176,6 +193,19 @@ Ces règles s'appliquent à la **production ou la mise à jour** d'un index du c
 ### Comptage rigoureux à la source
 - Ne **jamais** écrire un chiffre qui n'apparaît pas littéralement dans le document. Pas d'arrondi. Si la source liste sans totaliser : soit compter explicitement et le signaler (« j'en compte X »), soit ne pas mettre de chiffre. Jamais de chiffre de mémoire ou approximatif.
 
+### Contrôles automatiques (obligatoires avant toute livraison)
+
+Quatre scripts, dans `scripts/`, à exécuter dans cet ordre après toute modification d'un index :
+
+1. `extraire_corpus.py` — reconstitue le corpus page par page depuis les PDF (le corpus n'est pas stocké).
+2. `controle_citations_v2.py` — **présence** : chaque citation figure-t-elle dans le document, à la page annoncée ? Signale aussi les plages « p. N-M » dont la citation ne franchit pas la coupure. Option `--corriger-pages`, `--annoter-plages`.
+3. `controle_bornes_v3.py` — **bornes et fidélité** : marques d'omission posées sur une frontière réelle ou manquantes, ponctuation, casse initiale, guillemets de second niveau non restitués, appels de note conservés, espaces sensibles. Option `--corriger --elider`.
+4. `controle_invention.py` — **invention** : chaque mot placé entre guillemets figure-t-il dans la source ? Aligne la citation mot à mot sur sa tranche source et ne retient que les suites de mots absentes de **tout** le document.
+
+**Pourquoi le quatrième est indispensable.** Les deux premiers ignorent les citations qu'ils ne parviennent pas à localiser — or une citation dont des mots sont inventés n'est, par construction, pas localisable : elle tombait dans la classe « non localisable », c'est-à-dire hors de tout contrôle. C'est par là qu'est passée, jusqu'au 14 septembre 2026, une citation de l'AMF 2025 (p. 17) dont la fin — « délégué Quick-fix ESRS qui s'applique sans nécessiter de transposition » — ne figure nulle part dans le rapport : la phrase, laissée ouverte par l'extraction, avait été refermée de mémoire. **Aucun index ne se livre sans que ce contrôle ait tourné et que chacun de ses signaux ait été confronté à la page.**
+
+**Audit par tirage.** `tirage_audit.py` (stratifié par fichier, mesure un taux) et `tirage_cible.py` (stratifié par classe de risque : élisions, guillemets de second niveau, crochets, chiffres et références, citations longues, plages, non localisables). Les deux sont rejouables à graine fixe. Le second trouve environ deux fois plus d'écarts au mètre carré : il éprouve, il ne mesure pas.
+
 ### Bornes de pages et vérification visuelle
 - Avant d'indiquer une plage pour une section : vérifier par sondage (1) la page de début (titre de section présent) et (2) la page de fin (la suivante ouvre bien la section d'après). Les faits internes citent la **page exacte**, pas la page d'ouverture du chapitre.
 - **Vérification visuelle obligatoire** : pour toute citation critique (page, titre, formulation), vérifier le **rendu visuel du PDF source**, pas seulement le texte extrait ni l'index dérivé. Les scans (PDF issus de JPEG) exposent à un décalage de page d'une unité aux frontières (concaténation OCR) : contrôler le folio imprimé. En cas de divergence entre extrait texte et rendu image, **le rendu visuel fait foi**.
@@ -219,8 +249,8 @@ Appliquer la grille en 13 blocs (A-M) à une société.
 1. **Ouvrir par le document d'enregistrement universel (DEU/URD) de l'émetteur, sans redemander à l'utilisateur.** Le DEU est la source primaire de l'audit (chapitre « Rapport sur le gouvernement d'entreprise » et chapitre durabilité CSRD). Le récupérer d'office par recherche internet (site émetteur, rubrique information réglementée ; à défaut, BDIF/BALO). **Compléter systématiquement par la brochure de convocation à l'assemblée générale** (avis de convocation / cahier central), qui est une source primaire riche : présentation et CV des administrateurs et des candidats, dates de nomination et échéances de mandat, exposé des résolutions, éléments de rémunération soumis au say on pay, rapports des commissaires aux comptes. Retenir par défaut le **DEU de l'exercice le plus récent disponible** et la brochure de l'AG correspondante, sauf indication contraire. Ne demander à l'utilisateur que si plusieurs exercices sont en jeu ou si le périmètre est réellement ambigu — pas pour confirmer qu'il faut consulter le DEU (c'est systématique).
 2. **Si le DEU est introuvable ou inaccessible** : le signaler explicitement, s'appuyer sur les sources primaires de substitution (communiqués réglementés, BALO pour les AG, BDIF pour l'information AMF) et le corpus indexé, et **marquer comme partiels** les blocs qui dépendaient du DEU (ne pas les passer sous silence).
 3. Procéder **bloc par bloc (A à K), sans en omettre aucun**. Pour chaque bloc, couvrir l'ensemble des sous-thèmes définis en §4 (pour le Bloc B notamment : ne pas oublier l'évaluation du conseil et la formation des administrateurs). Confronter la situation de l'émetteur (DEU) aux recommandations applicables, en distinguant obligation légale / soft law / position de régulateur.
-3bis. **Drainer la TOTALITÉ du corpus indexé concernant l'émetteur (règle d'exhaustivité).** Avant de rédiger un bloc, balayer **tous** les index du corpus à la recherche de l'émetteur ET de ses entités liées (filiales cotées, holdings, sociétés du même groupe — ex. Christian Dior et Compagnie de l'Odet pour le groupe LVMH/Bolloré). Restituer **chaque fait trouvé**, mot pour mot avec sa source et sa page, sans en omettre ni en condenser aucun. Le corpus est constitué de faits sourcés ligne à ligne : un audit en restitue l'intégralité, jamais un échantillon ni un résumé. Avant livraison, vérifier qu'aucune mention de l'émetteur présente dans un index n'a été laissée de côté (voir checklist §8, point 13).
-3ter. **Interdiction du renvoi-substitut (règle absolue).** Ne JAMAIS répondre, pour une donnée factuelle accessible, par un renvoi du type « figure p. X du DEU », « disponible sur demande », « peut être restitué page à page ». La vocation du skill est de **restituer** l'information, pas d'indiquer à l'utilisateur où la chercher ni de lui faire faire le travail. Pour toute donnée chiffrée du DEU (composition et taux d'indépendance du conseil, nombre de réunions et taux d'assiduité, résultat de l'évaluation, montants et structure de la rémunération des dirigeants, ratios d'équité, actionnariat, délégations), appliquer la **méthode d'extraction du DEU** (§6bis) pour aller la chercher et la restituer. Le renvoi à une page sans restitution n'est légitime QUE pour le texte protégé par le droit d'auteur (HCGE, Code AFEP-MEDEF — voir §5). Si, après avoir épuisé la méthode d'extraction, une donnée reste réellement inaccessible, le déclarer explicitement comme une limite (« donnée non récupérée à ce stade, malgré recherche ciblée »), sans la présenter comme un service optionnel.
+3bis. **Drainer la TOTALITÉ du corpus indexé concernant l'émetteur (règle d'exhaustivité).** Avant de rédiger un bloc, balayer **tous** les index du corpus à la recherche de l'émetteur ET de ses entités liées (filiales cotées, holdings, sociétés du même groupe — ex. Christian Dior et Compagnie de l'Odet pour le groupe LVMH/Bolloré). Restituer **chaque fait trouvé**, mot pour mot avec sa source et sa page, sans en omettre ni en condenser aucun. Le corpus est constitué de faits sourcés ligne à ligne : un audit en restitue l'intégralité, jamais un échantillon ni un résumé. Avant livraison, vérifier qu'aucune mention de l'émetteur présente dans un index n'a été laissée de côté (voir §8.2, verrou Usage 3). **Arbitrage exhaustivité / lisibilité** : l'intégralité s'entend des **faits décisionnels** — chiffres, positions, mentions nominatives avec leur motif, fondements juridiques, dates — restitués mot pour mot sans exception ; le **contexte non décisionnel** (rappels génériques de cadre déjà restitués ailleurs dans la même production, développements descriptifs sans fait propre à l'émetteur) peut faire l'objet d'un **renvoi paginé assumé et signalé**. En cas de doute sur le caractère décisionnel d'un fait : restituer.
+3ter. **Interdiction du renvoi-substitut (règle absolue).** Ne JAMAIS répondre, pour une donnée factuelle accessible, par un renvoi du type « figure p. X du DEU », « disponible sur demande », « peut être restitué page à page ». La vocation du skill est de **restituer** l'information, pas d'indiquer à l'utilisateur où la chercher ni de lui faire faire le travail. Pour toute donnée chiffrée du DEU (composition et taux d'indépendance du conseil, nombre de réunions et taux d'assiduité, résultat de l'évaluation, montants et structure de la rémunération des dirigeants, ratios d'équité, actionnariat, délégations), appliquer la **méthode d'extraction du DEU** (§6bis) pour aller la chercher et la restituer. Le renvoi à une page sans restitution n'est légitime QUE pour le texte protégé par le droit d'auteur (HCGE, Code AFEP-MEDEF — voir §5) et pour le contexte non décisionnel au sens de l'arbitrage du 3bis. Si, après avoir épuisé la méthode d'extraction, une donnée reste réellement inaccessible, le déclarer explicitement comme une limite (« donnée non récupérée à ce stade, malgré recherche ciblée »), sans la présenter comme un service optionnel.
 4. Identifier la **vague CSRD applicable** avant tout constat sur le Bloc J (voir §7).
 5. Restituer des constats factuels sourcés, **sans** conclusion de conformité globale ni note d'appréciation.
 6. Vérifier les récurrences nominatives via `recurrences_nominatives.md` et, pour chaque mention AMF/HCGE, **en restituer le motif** (bonne pratique, non-conformité, exemple, échantillon), année par année — jamais un simple « cité X fois » (voir §5, asymétrie nominative).
@@ -272,7 +302,9 @@ Certaines sources ne sont accessibles qu'en partie (résumé, première page, ap
 - **Pour un audit d'émetteur (usage 3)** : ouvrir par le site de l'émetteur et la BDIF (information primaire), recouper les dates et résultats d'AG via le BALO, puis seulement mobiliser presse et doctrine pour le contexte — en maintenant à chaque étape la distinction de registre et de statut normatif.
 
 ### Format des productions — lisibilité mobile
-Les fiches et notes sont fréquemment lues sur téléphone. **Éviter les tableaux larges (plus de deux ou trois colonnes), qui débordent de l'écran mobile et deviennent illisibles.** Présenter les données d'évolution longitudinale, les séries statistiques et les comparaisons **en prose**, en intégrant les chiffres dans le texte (ex. « pour l'exercice 2024, le taux s'établit à 78 % sur le SBF 120 et 84 % sur le CAC 40 »), ou en listes verticales courtes. Les listes à puces et la prose se lisent bien en défilement vertical ; les tableaux à plusieurs colonnes ne se prêtent qu'aux contenus brefs (deux colonnes maximum) et à un usage sur écran large. En cas de doute, privilégier la prose. **Format des citations** : les citations littérales se présentent entre guillemets français « … » uniquement, sans balise (`<q>`, `<blockquote>`, etc.) ni guillemets droits — le rendu doit être propre en markdown comme en Word.
+Les fiches et notes sont fréquemment lues sur téléphone. **Éviter les tableaux larges (plus de deux ou trois colonnes), qui débordent de l'écran mobile et deviennent illisibles.** Présenter les données d'évolution longitudinale, les séries statistiques et les comparaisons **en prose**, en intégrant les chiffres dans le texte (ex. « pour l'exercice 2024, le taux s'établit à 78 % sur le SBF 120 et 84 % sur le CAC 40 »), ou en listes verticales courtes. Les listes à puces et la prose se lisent bien en défilement vertical ; les tableaux à plusieurs colonnes ne se prêtent qu'aux contenus brefs (deux colonnes maximum) et à un usage sur écran large. En cas de doute, privilégier la prose. **Format des citations** : les citations littérales se présentent entre guillemets français « … » uniquement, sans balise (`<q>`, `<blockquote>`, etc.) — le rendu doit être propre en markdown comme en Word. **Exception, seul emploi admis du guillemet droit** : lorsque la source place elle-même un passage entre guillemets *à l'intérieur* d'un passage cité, ce second niveau se restitue en guillemets droits " … ", afin que l'ouverture et la fermeture de la citation principale restent non ambiguës. Convention uniforme sur l'ensemble des index ; elle ne modifie aucun mot de la source et ne dispense d'aucune des règles de fidélité du §5.
+
+**Appels de note.** Le chiffre de renvoi à une note de bas de page n'appartient pas au texte : il se présente en exposant sur la page et se colle au mot précédent à l'extraction (« EC38 » pour « EC »38). Il est **retiré de l'intérieur des guillemets**. S'il importe de le signaler, il se mentionne hors citation (« … » — appels de notes 38 et 39). Un chiffre conservé dans une citation se lit comme un mot de la source et fait croire à une dénomination qui n'existe pas.
 
 ### Date d'élaboration exacte
 Toute fiche ou note indique sa **date exacte d'élaboration au jour près (jour mois année)**, par exemple « Fiche élaborée le 18 juin 2026 », et non une simple mention de mois ou d'année. Cette date figure dans l'en-tête ou l'encadré liminaire de la production. Elle est distincte des dates de consultation des sources web (qui accompagnent chaque lien).
@@ -295,7 +327,9 @@ Toute fiche, note ou document produit avec ce skill porte une **mention discrèt
 
 > **Formulation exacte de la marque** : « Fiche élaborée avec le skill gouvernance-emetteurs-cotes — © Gillan Saleh ».
 
-## 6bis. Méthode d'extraction du DEU et des données chiffrées
+## 6bis. Collecte — méthode d'extraction du DEU et des données chiffrées (couche délégable au MCP)
+
+> **Statut de cette section — couche de collecte.** Ce paragraphe décrit une *procédure de collecte* (localisation, téléchargement, lecture, extraction), distincte de la *méthode d'analyse* (taxonomie §2, règles §5, usages §6, contrôle §8). Lorsque le MCP local de la Phase 3 sera en service, ses outils (recherche BALO/BDIF, base documentaire indexée, extraction) se substitueront aux étapes manuelles ci-dessous **sans modification de la méthode** : seule cette section sera remplacée par les appels d'outils correspondants.
 
 Le DEU fait souvent plusieurs centaines de pages. La technique d'accès dépend de sa forme de publication : un **PDF monolithique** ne se cible pas page par page avec `web_fetch` (passer alors par le téléchargement local, étape 2, ou les recherches ciblées, étape 4) ; mais beaucoup d'émetteurs publient leur DEU comme un **site navigable, une URL par section** (gouvernance, rémunération, capital, durabilité) — dans ce cas `web_fetch` lit le chapitre **en entier**, et c'est la voie privilégiée. Cette contrainte technique **n'autorise jamais** à se rabattre sur un renvoi (§usage 3, 3ter).
 
@@ -313,6 +347,8 @@ Protocole, dans l'ordre, jusqu'à obtention de la donnée :
 **Données chiffrées à obtenir systématiquement pour un audit d'émetteur** (liste minimale, à restituer, pas à renvoyer) : taille du conseil, taux d'indépendance, taux de féminisation, ancienneté moyenne ; **pour chaque administrateur : date de première nomination et durée / échéance du mandat** (jamais omises) ; nombre de réunions du conseil et de chaque comité, taux d'assiduité ; résultat et modalités de l'évaluation du conseil ; composition nominative et taux d'indépendance de chaque comité ; rémunération de chaque dirigeant mandataire social (fixe, variable, long terme, total), critères de performance, ratios d'équité, résultats des votes say on pay ; structure de l'actionnariat et des droits de vote, franchissements de seuils ; délégations financières et programme de rachat ; vague et indicateurs clés de durabilité.
 
 
+
+## 7. Bloc J — durabilité (terrain à risque accru)
 
 Le Bloc J est un **terrain à risque accru** : la réglementation de la durabilité a évolué très rapidement et le corpus indexé (2020-2025) peut décrire un état du droit déjà dépassé. Toute analyse de durabilité exige une vérification de l'état en vigueur (recherche internet : EUR-Lex, AMF, EFRAG).
 
@@ -341,44 +377,90 @@ Après la directive « Stop-the-clock » (UE) 2025/794 et l'accord Omnibus du 16
 - Pour une analyse approfondie, **renvoyer aux sources brutes** (texte CSRD, ESRS applicables à la date, doctrine AMF durabilité via `index_AMF_DURABILITE_2024.md` et `index_AMF_CSRD_WAY_FORWARD_2025.md`, priorités ESMA via `index_ESMA_ECEP_2025.md`).
 - Distinguer **EFRAG** (conseiller technique, rédacteur des ESRS) de l'**ESMA** (régulateur) et de l'**AMF** (régulateur national) — jamais confondus.
 
-## 8. Checklist d'auto-vérification avant toute livraison
+## 8. Contrôle avant livraison — noyau bloquant, verrous d'usage, contrôles de forme
 
-1. **Chiffres** recomptés à la source (aucun arrondi, aucun chiffre de mémoire).
-2. **Vocabulaire juridique** restitué mot pour mot (épithètes composés conservés).
-3. **Aucun adjectif ou verbe interprétatif** non présent dans la source.
-4. **Pages** confirmées (vérification visuelle du PDF source pour toute citation critique).
-5. **Fondement juridique** identifié (légal / soft law / position de régulateur).
-6. **Année + indice** (SBF 120 / CAC 40) précisés pour chaque statistique.
-7. **Acteurs distingués** (AMF / HCGE / ESMA / EFRAG / ANC / IASB / ISSB — jamais confondus).
-8. **Mentions nominatives qualifiées** : chaque société citée l'est avec son motif (bonne pratique / non-conformité / exemple / échantillon), année par année — jamais un simple décompte.
-9. **Audit d'émetteur** : DEU consulté d'office (ou son indisponibilité signalée) ; tous les blocs A-M traités, aucun sous-thème omis (dont évaluation et formation du conseil au Bloc B).
-10. **Exhaustivité du corpus** : tous les index ont été balayés pour l'émetteur et ses entités liées ; chaque fait du corpus le concernant est restitué (mot pour mot, source + page), aucun n'a été condensé ni omis.
-11. **Aucun renvoi-substitut** : aucune donnée factuelle accessible n'a été remplacée par « figure p. X » ou « disponible sur demande » ; la méthode d'extraction du DEU (§6bis) a été appliquée ; toute indisponibilité résiduelle est déclarée comme limite explicite.
-12. **Données chiffrées restituées** : la liste minimale (§6bis) est renseignée par des chiffres effectifs, pas par des renvois.
-13. **Marque du skill** présente en pied de page sur chaque page de la production.
-14. **Droit d'auteur** respecté (HCGE et Code : ≤ 2-3 phrases par passage, renvoi au document, pas de paraphrase du raisonnement).
-15. **Bloc J** : vague CSRD et régime (DPEF/CSRD) identifiés ; état en vigueur vérifié si la question est actuelle.
-16. **Source vs web** : distinction explicite des trois registres — corpus indexé (daté), source primaire web officielle (site émetteur / BDIF / BALO / Légifrance, datée), source secondaire web (presse/doctrine, attribuée et corroborée sur une source primaire). Accès partiel signalé comme tel ; rien d'inféré au-delà de ce qui est consultable.
-17. **Recherche web systématique effectuée** — pour *toute* production de fond, sans condition de thème ni de période. La non-recherche n'est jamais justifiée par un thème jugé « bien couvert » ou « stabilisé » par l'index. Doctrine, presse et travaux récents (y compris postérieurs ou extérieurs au corpus) cherchés et mobilisés, pas seulement le corpus indexé.
-18. **Sourçage universel — rien sans renvoi** : chaque fait du corpus indexé renvoie au rapport et à sa **page exacte** ; chaque fait issu du web porte un **lien hypertexte cliquable** vers la source précise. Aucune affirmation, de corpus comme de web, n'est livrée sans sa source.
-19. **Lisibilité mobile** : pas de tableau large ; les évolutions, séries et comparaisons sont en prose ou en listes verticales.
-20. **Pas de crochets de registre** : aucune étiquette « [AMF] / [HCGE] / [WEB-S] » dans le corps ; références claires en toutes lettres pour le corpus et les sources officielles, liens hypertextes pour les sources externes ; registre exprimé par les mots.
-21. **Date de consultation** : chaque source web porte sa date de consultation.
-22. **Bibliographie récapitulative** présente en fin de fiche, organisée par catégorie.
-23. **Analyse longitudinale** (le cas échéant) : frise datée balayant chaque exercice ; **remontée à la genèse antérieure au corpus et intégration des développements postérieurs, via la recherche web** (le corpus 2020-2025 n'est qu'une fenêtre) ; absences signalées ; changements de codification distingués des évolutions de fond ; séquence juxtaposée et datée, jamais caractérisée (cf. Usage 2).
-24. **Vérification croisée des chiffres web** : tout chiffre secondaire corroboré (seconde source ou source primaire), rapporté au bon exercice et au bon périmètre ; aucun chiffre attribué à un exercice qui n'est pas le sien.
-25. **Divergences entre sources** : toute contradiction est exposée explicitement, chaque version attribuée et datée, résolue selon la hiérarchie (primaire > secondaire ; régulateur et soft law sur des plans distincts ; doctrine jamais prééminente) ; aucune divergence tranchée en silence.
-26. **Citation complète, pas paraphrase** : quand le texte exact est dans l'index, il est restitué intégralement en citation, jamais tronqué ni résumé.
-27. **Pas de titre fabriqué** : aucun intitulé de section n'ajoute de qualificatif interprétatif absent des sources.
-28. **Prospective restituée** : les développements « à venir » des sources (thèmes de réflexion, pistes) sont drainés, pas seulement les constats de l'exercice écoulé.
-29. **Présentation uniforme des citations** : toutes les citations dans le même style (bloc italique, source + page) ; pas de mélange.
-30. **Date d'élaboration exacte** (jour mois année) présente sur la production.
-31. **Droit vs organe / civil vs commercial** : un droit de l'actionnaire est fondé sur son socle civiliste (Code civil) avant ses modalités du Code de commerce, et le droit lui-même n'est pas confondu avec la compétence de l'organe qui en décide l'exercice.
-32. **Silences du corpus signalés** : si un thème est absent ou marginal dans une source faisant autorité, le constat est énoncé (après vérification à la source), pas masqué par un déséquilibre tacite.
-33. **Provenance des URL (zéro invention)** : chaque lien provient des résultats de recherche/fetch effectifs et pointe vers une page réelle ; aucune URL reconstituée, devinée ou citée de mémoire ; tout fait non sourçable est omis ou signalé comme non vérifié, jamais fabriqué (cf. règle fondatrice §1).
-34. **Comparaison multi-émetteurs (Usage 4)** : même exercice et même périmètre retenus pour tous les émetteurs (sinon signalé) ; régimes distincts (commandite par actions, société de droit étranger au say on pay consultatif) signalés et non agrégés ; recherche DEU automatique épuisée avant toute cellule « non récupérée ».
+La checklist v1 (34 points) est restructurée en deux étages, **sans suppression** : chaque point v1 est promu en verrou, rattaché à un verrou ou reclassé en contrôle de forme (correspondance en §8.5).
 
-*Si un seul test échoue : ne pas livrer.*
+### 8.1 Noyau bloquant universel (8 verrous)
+
+**Si un seul verrou échoue : ne pas livrer.** Ces huit tests s'appliquent à toute production, sans exception.
+
+**Verrou 1 — Zéro invention et sourçage universel.** Chaque fait — chiffre, citation, page, article, nom de société ou de personne, date, URL — provient d'une source effective : corpus indexé (avec page exacte) ou web réellement consulté (lien issu d'un résultat de recherche/fetch effectif, jamais reconstitué ni cité de mémoire). Chiffres recomptés à la source, sans arrondi ; si la source liste sans totaliser, compter explicitement et le signaler (« j'en compte X ») ; tout chiffre issu d'une source secondaire web est corroboré (seconde source ou source primaire) et rapporté au bon exercice. Tout fait non sourçable est omis ou déclaré non vérifié — jamais comblé par une invention vraisemblable.
+
+**Verrou 2 — Pages confirmées.** Vérification visuelle du PDF source pour toute citation critique ; la page restituée est celle où figure le fait, pas celle de l'ouverture du chapitre.
+
+**Verrou 3 — Fidélité du verbe.** Vocabulaire juridique restitué mot pour mot (notions composées et épithètes conservés : « dirigeant mandataire social exécutif », « avéré », « significatif »…). Quand le texte exact figure dans l'index, il est restitué intégralement en citation, jamais tronqué ni résumé. Aucun adjectif, verbe ou intitulé de section interprétatif absent de la source — ni dans le corps, ni dans les titres.
+
+**Verrou 4 — Autorités distinguées.** AMF / ESMA / ANC / HCGE / AFEP-MEDEF / EFRAG / IASB / ISSB jamais confondus. HCGE et AFEP-MEDEF jamais qualifiés d'« autorité » ou de « régulateur ».
+
+**Verrou 5 — Fondement juridique et socle du droit.** Pour chaque norme mobilisée : obligation légale ≠ soft law ≠ position de régulateur, explicitement identifié. Un droit de l'actionnaire est fondé sur son socle civiliste (Code civil) avant ses modalités du Code de commerce ; le droit lui-même n'est pas confondu avec la compétence de l'organe qui en décide l'exercice.
+
+**Verrou 6 — Exercice et périmètre.** Chaque statistique porte son exercice et son périmètre (SBF 120 / CAC 40 / échantillon AMF), jamais agrégés ni confondus entre eux.
+
+**Verrou 7 — Aucun renvoi-substitut.** Aucune donnée factuelle accessible n'est remplacée par « figure p. X », « disponible sur demande » ou équivalent ; la méthode d'extraction (§ 6bis) est épuisée avant toute mention « donnée non récupérée », laquelle est alors déclarée comme limite explicite.
+
+**Verrou 8 — Droit d'auteur.** HCGE et Code AFEP-MEDEF : au plus 2-3 phrases citées par passage, renvoi au document pour le reste, pas de paraphrase du raisonnement. (Seule exception légitime au verrou 7 : le renvoi paginé est ici la règle.)
+
+### 8.2 Verrous conditionnels (bloquants dans leur périmètre)
+
+**Toute production de fond :**
+- Recherche web systématique effectuée (doctrine, presse, travaux récents, y compris postérieurs ou extérieurs au corpus) — jamais dispensée au motif d'un thème « bien couvert » ou « stabilisé ».
+- Divergences entre sources exposées explicitement, chaque version attribuée et datée, résolues selon la hiérarchie (primaire > secondaire ; régulateur et soft law sur des plans distincts) — aucune divergence tranchée en silence.
+- Silences du corpus signalés (après vérification à la source), jamais masqués.
+- Prospective restituée : thèmes de réflexion et pistes « à venir » des sources drainés, pas seulement les constats de l'exercice écoulé.
+
+**Usage 2 (analyse longitudinale) :** frise datée balayant chaque exercice, absences signalées, changements de codification distingués des évolutions de fond ; genèse antérieure au corpus et développements postérieurs intégrés via la recherche web ; séquence juxtaposée et datée, jamais caractérisée.
+
+**Usage 3 (audit d'émetteur) :** DEU consulté d'office ou indisponibilité déclarée (blocs dépendants marqués partiels) ; tous les blocs A-M et tous leurs sous-thèmes couverts ; corpus drainé exhaustivement pour l'émetteur et ses entités liées, chaque fait décisionnel restitué mot pour mot avec source et page (arbitrage exhaustivité/lisibilité du 3bis) ; chaque mention nominative qualifiée par son motif (bonne pratique / non-conformité / exemple / échantillon), année par année.
+
+**Usage 4 (croisement multi-émetteurs) :** même exercice et même périmètre pour tous les émetteurs (sinon signalé) ; régimes particuliers (commandite, say on pay consultatif de droit étranger) signalés et non agrégés ; passe DEU + brochure épuisée avant toute cellule « non récupérée ».
+
+**Bloc J (durabilité) :** vague CSRD et régime applicable (DPEF / CSRD) identifiés avant tout constat ; état du droit en vigueur vérifié si la question est actuelle.
+
+### 8.3 Contrôles de forme (à corriger en relecture avant livraison)
+
+Défauts détectables et corrigeables sans reprendre le fond : marque du skill en pied de page ; date d'élaboration exacte (jour mois année) ; date de consultation sur chaque source web ; bibliographie récapitulative en fin de fiche, par catégorie ; présentation uniforme des citations (bloc italique, source + page) ; registre exprimé par les mots, sans crochets d'étiquetage ; distinction explicite des trois registres (corpus indexé / source primaire web / source secondaire web) ; lisibilité mobile (pas de tableau large ; séries et comparaisons en prose ou listes verticales).
+
+### 8.4 La checklist interne ne vaut pas vérification
+
+L'exécution du présent § 8 par l'instance productrice est une condition **nécessaire, jamais suffisante**. Toute production de fond destinée à être utilisée, citée ou diffusée passe par une **instance vérificatrice neutre, dans une conversation neuve**, selon le protocole `VERIFICATION.md`. Le verdict du vérificateur prime sur l'auto-attestation du producteur. Une production sans verdict archivé est réputée non vérifiée.
+
+### 8.5 Table de correspondance V1 → V2 (traçabilité)
+
+- V1-1 (chiffres recomptés) → Verrou 1
+- V1-2 (vocabulaire mot pour mot) → Verrou 3
+- V1-3 (aucun terme interprétatif) → Verrou 3
+- V1-4 (pages confirmées) → Verrou 2
+- V1-5 (fondement juridique) → Verrou 5
+- V1-6 (année + indice) → Verrou 6
+- V1-7 (acteurs distingués) → Verrou 4
+- V1-8 (mentions nominatives qualifiées) → 8.2 Usage 3
+- V1-9 (DEU + blocs A-M) → 8.2 Usage 3
+- V1-10 (exhaustivité du corpus) → 8.2 Usage 3
+- V1-11 (aucun renvoi-substitut) → Verrou 7
+- V1-12 (données chiffrées restituées) → Verrous 1 et 7
+- V1-13 (marque du skill) → 8.3
+- V1-14 (droit d'auteur) → Verrou 8
+- V1-15 (Bloc J) → 8.2 Bloc J
+- V1-16 (trois registres) → 8.3
+- V1-17 (recherche web systématique) → 8.2 production de fond
+- V1-18 (sourçage universel) → Verrou 1
+- V1-19 (lisibilité mobile) → 8.3
+- V1-20 (pas de crochets) → 8.3
+- V1-21 (date de consultation) → 8.3
+- V1-22 (bibliographie) → 8.3
+- V1-23 (frise longitudinale) → 8.2 Usage 2
+- V1-24 (chiffres web croisés) → Verrou 1
+- V1-25 (divergences exposées) → 8.2 production de fond
+- V1-26 (citation complète) → Verrou 3
+- V1-27 (pas de titre fabriqué) → Verrou 3
+- V1-28 (prospective) → 8.2 production de fond
+- V1-29 (citations uniformes) → 8.3
+- V1-30 (date d'élaboration) → 8.3
+- V1-31 (droit vs organe / civil vs commercial) → Verrou 5
+- V1-32 (silences signalés) → 8.2 production de fond
+- V1-33 (provenance des URL) → Verrou 1
+- V1-34 (multi-émetteurs) → 8.2 Usage 4
 
 ## 9. Gestion des erreurs
 

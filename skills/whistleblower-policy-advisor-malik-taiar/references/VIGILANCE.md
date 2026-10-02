@@ -9,7 +9,7 @@
 | Texte | Seuil d'application | Entrée en vigueur |
 |-------|---------------------|-------------------|
 | **Loi n°2017-399** (France) | ≥ 5 000 salariés (France) ou ≥ 10 000 salariés (monde) | 2017 |
-| **Directive (UE) 2024/1760** (CS3D) | ≥ 1 000 salariés + 450 M€ CA | Transposition 26/07/2026 |
+|**Directive (UE) 2024/1760** | (CS3D)≥ 1 000 salariés + 450 M€ CATransposition | 26/07/2026
 
 ---
 

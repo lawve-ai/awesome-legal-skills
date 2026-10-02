@@ -10,6 +10,11 @@
       "path": "skills/ism-tanaji-hemant-naik",
       "updated_at": "2026-07-26T14:51:28.212404+02:00"
     },
+    "0352d6a5-d83d-4669-a172-03bc9f96f36d": {
+      "digest": "1d8d63a4975f2075bb95fcf0b33969725f41d3b2b618271a86a2d54538c55274",
+      "path": "skills/jev-question-translator-seth-chandler",
+      "updated_at": "2026-09-27T20:42:35.276311+02:00"
+    },
     "03def865-66c4-5500-bdc5-c8b9bb210867": {
       "digest": "a817df2ad44fc8fc3d313e6d5b16756a9ceac4f9ea7d8dd628b3180c88325d0f",
       "path": "skills/special-jurisdiction-for-peace-jeanne-sulzer",
@@ -134,6 +139,11 @@
       "digest": "b1c9cc2076e125c0b9202434a1878f86be899cadc23c6c9e250f3af437c6591f",
       "path": "skills/en-us-legal-translation-wouter-van-den-berg",
       "updated_at": "2026-05-21T21:16:27.365073+02:00"
+    },
+    "1fa83ea7-bfd2-4933-9a5a-aa2cc73ca526": {
+      "digest": "046cd4fc622e6e321fbe7131f6259fa929910c42602ef9d3789cfe4c3cda57aa",
+      "path": "skills/pleading-injection-guard-matei-clej",
+      "updated_at": "2026-09-28T18:24:02.815932+02:00"
     },
     "21f69471-5b72-5a7d-a5da-72c6bd71a563": {
       "digest": "d2947becee9cdbc6ef79d6be7412b25c0ea99d2d7b109dfb0fc30564d348f66e",
@@ -340,6 +350,11 @@
       "path": "skills/dpia-sentinel-oliver-schmidt-prietz",
       "updated_at": "2026-04-30T12:26:57.979060+02:00"
     },
+    "45b5aa8d-3951-4d81-aea9-29ee2d526f28": {
+      "digest": "f9be3c57920ef65a733291e6f2c550f60d54993e29a4e25e6f0c9420e0b108e5",
+      "path": "skills/sanctions-screening-matei-clej",
+      "updated_at": "2026-09-10T15:23:59.264098+02:00"
+    },
     "461b8cc1-23d9-401e-b7c4-e950a71d935c": {
       "digest": "23b8122619e40db61e928662bb4d03a1c134affc2188ca465d886cbc32a94988",
       "path": "skills/law-review-editor-seth-chandler",
@@ -447,7 +462,7 @@
     },
     "54461ce1-d931-4eaf-85de-23579a42ce8c": {
       "digest": "1babb1f9823bab5b5a6855365f59a4c24c9384afa7abe9128f5266abf8906069",
-      "path": "skills/extradition-case-law-search-matei-clej-59ff8929",
+      "path": "skills/extradition-case-law-search-matei-clej",
       "updated_at": "2026-08-25T22:39:04.959040+02:00"
     },
     "54477ed5-9253-5c06-9dab-9cf3e7b9f2bc": {
@@ -455,10 +470,20 @@
       "path": "skills/eu-ai-act-knowledge-base-oliver-schmidt-prietz",
       "updated_at": "2026-06-09T11:55:26.161339+02:00"
     },
+    "5453cc00-f3af-4420-bdd9-a4691baa041d": {
+      "digest": "702b79a1d6b94b9d9cda6dae654743c5a9b1717a4de1051da60e0528c1afc723",
+      "path": "skills/note-de-synthese-crfpa-allison-fiorentino",
+      "updated_at": "2026-10-02T10:56:35.441398+02:00"
+    },
     "54c8f6db-67b9-586f-959a-8ef0c46f17ce": {
       "digest": "78f2025a2ebe70758ac41fca3cbf302f22ed1653b15a33dd8e5ddd1aed76e9c7",
       "path": "skills/pdf-editor-openai",
       "updated_at": "2026-01-30T01:00:00+01:00"
+    },
+    "5536f623-fd52-4c16-95dd-6b8c80a7fabe": {
+      "digest": "e92160209a69421c782beded202ad27017a5dd4e51271378c654276be2b162dd",
+      "path": "skills/contract-review-kevin-lordy",
+      "updated_at": "2026-10-01T05:49:36.256620+02:00"
     },
     "55ed6db0-5724-5aa1-b24e-2d566014a66c": {
       "digest": "6564f816ff306033f4cb5f4b9159d0830d7bc8dce70249eb6f3feff33eec4c04",
@@ -662,7 +687,7 @@
     },
     "7b462bb6-a34b-463e-b1c1-bd57b604ba19": {
       "digest": "60ee80b413c61b077cfb8042966a19cfc6d76c4151dc0f67ec656eb3ed12b339",
-      "path": "skills/uk-citation-verification-matei-clej-59ff8929",
+      "path": "skills/uk-citation-verification-matei-clej",
       "updated_at": "2026-08-28T19:17:24.767979+02:00"
     },
     "7be23529-5acc-40ba-9de7-8022abbe8361": {
@@ -676,9 +701,9 @@
       "updated_at": "2026-08-17T13:12:27.858639+02:00"
     },
     "7e54c9a6-fec1-579c-94fa-6b0ee8c68d15": {
-      "digest": "8fcc0e9a3fa0f6e6cbaec56462fa55ea20ab4dd090add118d150c8824771493f",
+      "digest": "c73dfb834b618da7c8a5005d74bacb23f15f22b2daaabe66367c85885a22d14b",
       "path": "skills/gouvernance-societes-cotees-gillan-saleh",
-      "updated_at": "2026-06-24T09:29:15.473715+02:00"
+      "updated_at": "2026-09-21T12:50:11.595894+02:00"
     },
     "7eac0ae2-b6d8-5e50-988e-a755470ed82f": {
       "digest": "1f500c2e0c64fa4122a5e362b4078e340b51f73f8f97e1c23e671169e023ad3d",
@@ -885,6 +910,11 @@
       "path": "skills/litigation-deadline-calendar-dave-marcus",
       "updated_at": "2026-05-14T18:57:49.591830+02:00"
     },
+    "ab41a3fc-715b-410e-9ee8-3c617eac95c6": {
+      "digest": "b48e33cca1e86cc7d4bcb5ec9ee73b45bd7729ed035b8d3611e68db489f97c11",
+      "path": "skills/reader-first-technical-edit-seth-chandler",
+      "updated_at": "2026-09-07T19:31:46.289199+02:00"
+    },
     "ad9f826d-a7bc-5797-a97d-ff619c90abee": {
       "digest": "d1f36c15be05bf1aadeaa4070bf0e09dcbfa2d760ea4a285bbfd22402b5a2919",
       "path": "skills/unmik-regulation-64-panels-jeanne-sulzer",
@@ -1066,9 +1096,9 @@
       "updated_at": "2026-04-25T12:09:28.635847+02:00"
     },
     "d4c0f294-7d56-5094-8f9b-d5888df5cc87": {
-      "digest": "600d96b8e68c3ac4f18ab94c3974f2b8fdeb7221830ae0174641a28a74ab607c",
+      "digest": "52cf95a304a64f3fccea5cb9ce35c348534fe772dcddef52beef46cfc774dee5",
       "path": "skills/whistleblower-policy-advisor-malik-taiar",
-      "updated_at": "2026-05-11T20:52:42.766367+02:00"
+      "updated_at": "2026-09-15T10:34:53.961358+02:00"
     },
     "d63f36f2-475a-5ba3-a6c5-e2cac6a8c072": {
       "digest": "3571d4bbde75910376c335a1b4cc93bddee19d16ab8f8ead21d25f3ebfe71115",

@@ -52,7 +52,7 @@ Quatre principes A, B, C, D.
 ### B. Engager un dialogue large et ouvert, tout en respectant ses limites
 
 - **Position Paris Europlace** : p. 3. *« Le dialogue actionnarial devrait rester large et ouvert. Il ne devrait ni se cantonner à quelques sujets prédéfinis par les émetteurs, ni se limiter à des échanges formels paraphrasant des informations déjà communiquées. »*
-- **Limites identifiées** : p. 3. Le guide vise notamment les *« interdictions de révélation de certaines données (divulgation illicite d'informations privilégiées, obligations de confidentialité et secret des affaires par exemple) »*.
+- **Limites identifiées** : p. 3. Le guide vise notamment les *« […] interdictions de révélation de certaines données (divulgation illicite d'informations privilégiées, obligations de confidentialité et secret des affaires par exemple). »*.
 
 ### C. Engager un dialogue constructif
 
@@ -91,11 +91,11 @@ Six sous-sections 1.1 à 1.6.
 
 - **Principe** : p. 4. *« Le conseil d'administration devrait organiser les conditions du dialogue engagé entre les actionnaires et lui-même. »*
 - **Identification d'une personne dédiée au sein du conseil** : p. 4. Mission d'assurer les relations des actionnaires avec le conseil d'administration, notamment sur les sujets de gouvernement d'entreprise.
-- **Cas de dissociation des fonctions président / directeur général** : p. 4. *« Cette mission aurait naturellement vocation à être confiée au président du conseil d'administration, lequel pourrait éventuellement s'adjoindre un administrateur indépendant s'il n'est pas lui-même indépendant. »*
-- **Cas de cumul des fonctions de président et de directeur général** : p. 4. *« Il serait souhaitable que cette mission – particulièrement en ce qui concerne la gouvernance – soit confiée à un administrateur indépendant (l'administrateur référent lorsqu'il en existe un), le président-directeur général pouvant difficilement faire abstraction de sa fonction exécutive lors du dialogue actionnarial. »*
+- **Cas de dissociation des fonctions président / directeur général** : p. 4. *« […] cette mission aurait naturellement vocation à être confiée au président du conseil d'administration, lequel pourrait éventuellement s'adjoindre un administrateur indépendant s'il n'est pas lui-même indépendant. »*
+- **Cas de cumul des fonctions de président et de directeur général** : p. 4. *« […] il serait souhaitable que cette mission – particulièrement en ce qui concerne la gouvernance – soit confiée à un administrateur indépendant (l'administrateur référent lorsqu'il en existe un), le président-directeur général pouvant difficilement faire abstraction de sa fonction exécutive lors du dialogue actionnarial. »*
 - **Accompagnement de la personne choisie** : p. 4. Par un ou plusieurs représentants de l'entreprise (le secrétaire du conseil par exemple).
-- **Coordination avec les responsables opérationnels** : p. 4. Personnes en charge des « relations investisseurs », directeurs compétents, directeur général. *« La personne en charge du dialogue devrait pouvoir leur demander d'être informée du déroulement des différentes rencontres qui se sont déroulées avec les actionnaires, notamment lors des "roadshows". »*
-- **Reddition de comptes au conseil** : p. 4. *« Il pourrait également être souhaitable que la personne choisie puisse rendre compte de l'exécution de sa mission au conseil d'administration. »*
+- **Coordination avec les responsables opérationnels** : p. 4. Personnes en charge des « relations investisseurs », directeurs compétents, directeur général. *« […] la personne en charge du dialogue devrait pouvoir leur demander d'être informée du déroulement des différentes rencontres qui se sont déroulées avec les actionnaires, notamment lors des "roadshows" »*
+- **Reddition de comptes au conseil** : p. 4. *« […] il pourrait également être souhaitable que la personne choisie puisse rendre compte de l'exécution de sa mission au conseil d'administration. »*
 
 #### 1.4. Mettre en place des outils visant à faciliter le dialogue actionnarial (p. 5)
 
@@ -109,7 +109,7 @@ Six sous-sections 1.1 à 1.6.
   - **Calendrier des réunions d'actionnaires** avec les thématiques abordées.
   - **Mise en ligne sur le site internet** des supports de présentation utilisés lors des *roadshows*.
   - **Lettre signée du président** adressée aux actionnaires au moins une fois par an.
-- **Pratiques observées chez certains émetteurs** : p. 5. Émetteurs *« très attentifs à la problématique du dialogue actionnarial, ayant un nombre important d'actionnaires individuels et ayant une forte capitalisation »* :
+- **Pratiques observées chez certains émetteurs** : p. 5. Émetteurs *« […] très attentifs à la problématique du dialogue actionnarial, ayant un nombre important d'actionnaires individuels et ayant une forte capitalisation […] »* :
   - **Club des actionnaires individuels**.
   - **Enquête en amont de l'assemblée générale** auprès d'un nombre significatif d'actionnaires individuels.
 
@@ -144,7 +144,7 @@ Quatre sous-sections 2.1 à 2.4.
 - **Cas du dialogue initié par l'émetteur** : p. 6. *« Engagé dans une politique active de dialogue actionnarial, un émetteur pourrait souhaiter échanger avec certains de ses actionnaires, notamment ceux qui seraient considérés comme des actionnaires significatifs ou des actionnaires représentatifs d'un certain type d'actionnariat. »*
 - **Recommandation aux actionnaires** : p. 6. *« Il est souhaitable que les actionnaires sollicités dans ce cadre soient ouverts à ces demandes de dialogue et s'efforcent d'y répondre, sous réserve qu'ils soient raisonnablement en mesure de répondre aux sollicitations de l'émetteur. »*
 - **Dialogue en amont de l'AG quand les projets de résolution semblent peu compatibles avec la politique de vote** : p. 6. *« Le dialogue devrait également s'instaurer en amont de l'assemblée générale, lorsque des projets de résolution semblent peu compatibles avec la politique de vote publiée par un investisseur. Un dialogue pourrait en effet permettre à l'actionnaire de mieux apprécier les circonstances spécifiques avancées par l'émetteur. »*
-- **Préparation de l'interlocuteur** : p. 6. *« La bonne préparation de l'interlocuteur représentant l'actionnaire permet de rendre le dialogue plus efficace. »*
+- **Préparation de l'interlocuteur** : p. 6. *« […] la bonne préparation de l'interlocuteur représentant l'actionnaire permet de rendre le dialogue plus efficace. »*
 
 #### 2.4. Dialoguer également en cas de dissensions (p. 6)
 
@@ -195,7 +195,7 @@ Pour l'analyse d'un émetteur sous l'angle du dialogue actionnarial, ce guide fo
 Le guide Paris Europlace **ne se substitue pas** aux instruments doctrinaux déjà indexés mais les **complète opérationnellement** sur le terrain spécifique du dialogue privé.
 
 - **AMF** : la position-recommandation AMF DOC-2016-08 traite du **cadre informationnel** du dialogue (information permanente, information privilégiée). Le guide Paris Europlace traite du **cadre opérationnel** (qui parle à qui, quand, comment, avec quels outils).
-- **Code AFEP-MEDEF (article 4)** : *« Le conseil et la communication avec les actionnaires et les marchés »*. Le guide Paris Europlace **précise les modalités d'application** au niveau du conseil et de ses interlocuteurs.
+- **Guide d'application HCGE — rubrique « Le conseil et la communication avec les actionnaires et les marchés » (§ 4.4 du code AFEP-MEDEF)**. Le guide Paris Europlace **précise les modalités d'application** au niveau du conseil et de ses interlocuteurs.
 - **HCGE** : doctrine sur le **rôle des administrateurs** et notamment de l'**administrateur référent** dans le dialogue actionnarial. Le guide Paris Europlace **structure les rôles respectifs** président / DG / administrateur référent / administrateur indépendant en fonction du mode de gouvernance retenu.
 
 ---

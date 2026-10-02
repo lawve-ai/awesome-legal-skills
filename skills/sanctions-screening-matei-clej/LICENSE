@@ -1,0 +1,40 @@
+MIT License
+
+Copyright (c) 2026 Matei Clej
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+The Software downloads sanctions lists published by third parties. Those lists
+are not covered by this licence and remain subject to the terms of the body
+that publishes them, which are recorded per source in reference/sources.md and
+printed by `python3 screen.py sources`. In summary:
+
+  UK Sanctions List (FCDO)        Open Government Licence v3.0
+  OFSI consolidated list          Open Government Licence v3.0
+  UN Security Council list        United Nations, free to reproduce
+  EU consolidated list            European Commission reuse policy
+  OFAC SDN and non-SDN lists      US Government work, public domain
+  Canada SEMA / JVCFOA list       Open Government Licence – Canada
+  SECO Swiss sanctions list       Swiss Confederation, free reuse
+  OpenSanctions (optional)        CC BY-NC 4.0 — NON-COMMERCIAL ONLY
+
+Contains public sector information licensed under the Open Government Licence
+v3.0.
