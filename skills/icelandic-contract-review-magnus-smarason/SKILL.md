@@ -128,8 +128,8 @@ Go through each clause of the contract and flag issues:
 - [ ] Language of proceedings
 
 #### G. Icelandic-Specific Issues
-- [ ] **Indexation (verðtrygging)**: Icelandic contracts frequently index obligations to CPI (vísitala neysluverðs). Consumer credit indexation is regulated by Lög nr. 38/2001 and has been the subject of extensive litigation (Hrd. 2010-10-17, nr. 92/2010)
-- [ ] **Currency**: ISK denomination requirements for domestic contracts; foreign currency restrictions under Lög nr. 87/1992
+- [ ] **Indexation (verðtrygging)**: Icelandic contracts frequently index obligations to CPI (vísitala neysluverðs). Consumer credit indexation is regulated by Lög nr. 38/2001 and has been the subject of extensive litigation. Retrieve the governing judgments rather than citing from memory; note that the gengislán (FX-linked) line of cases is a different doctrine from CPI indexation and the two are routinely conflated
+- [ ] **Currency**: ISK denomination requirements for domestic contracts; foreign currency rules under lög nr. 70/2021 um gjaldeyrismál (this replaced lög nr. 87/1992 — do not cite the older act as live)
 - [ ] **Registration requirements**: Certain contracts must be registered (e.g., with Þjóðskrá, Fyrirtækjaskrá, or the relevant registry)
 - [ ] **Tax implications**: VAT (virðisaukaskattur, Lög nr. 50/1988), withholding tax obligations
 - [ ] **Natural disaster / volcanic risk**: Iceland-specific force majeure considerations — volcanic eruptions, earthquakes, glacial floods (jökulhlaup) should be addressed in FM clauses
@@ -155,10 +155,13 @@ Apply the 36. gr. test to any clause that appears potentially unreasonable. The 
 4. **Market practice**: Does the clause deviate from standard practice in the relevant industry?
 5. **Cumulative effect**: Even if individual clauses are acceptable, their combined effect may be unreasonable.
 
-Key Hæstiréttur decisions on 36. gr.:
-- Hrd. 2001-03-01, nr. 477/2000 — Standard form contract terms in insurance
-- Hrd. 2009-10-16, nr. 153/2009 — Limitation of liability in commercial context
-- Hrd. 2012-05-24, nr. 672/2011 — Consumer credit indexation and reasonableness
+**Case law on 36. gr. — retrieve, do not recall.** A previous version of this
+skill listed three "key" Hæstiréttur decisions here. On verification none of
+them concerned 36. gr.: one case number does not exist, and the others resolve
+to judgments on unrelated subjects. Search the merged case database at
+`island.is/domar` for `"36. gr."` together with `"lög nr. 7/1936"`, and quote
+the holding from the retrieved text. If you cannot quote it, you have not
+retrieved it.
 
 ## Output Format
 

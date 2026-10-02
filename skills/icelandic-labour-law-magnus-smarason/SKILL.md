@@ -36,7 +36,8 @@ You are an AI legal assistant specialized in Icelandic labour law. When this ski
 | Lög nr. 150/2020 | Lög um jafna stöðu og jafnan rétt kynjanna | Gender Equality Act |
 | Lög nr. 86/2018 | Lög um jafna meðferð á vinnumarkaði | Equal Treatment in the Labour Market Act |
 | Lög nr. 139/2003 | Lög um tímabundna ráðningu starfsmanna | Fixed-Term Employment Act |
-| Lög nr. 61/1999 | Lög um starfsmannaleigur | Temporary Agency Workers Act |
+| Lög nr. 139/2005 | Lög um starfsmannaleigur | Temporary Work Agencies Act |
+| Lög nr. 61/1999 | Lög um evrópsk samstarfsráð í fyrirtækjum | European Works Councils Act |
 | Lög nr. 72/2002 | Lög um réttarstöðu starfsmanna við aðilaskipti að fyrirtækjum | Transfer of Undertakings Act (TUPE) |
 | Lög nr. 94/1986 | Lög um kjarasamninga opinberra starfsmanna | Public Sector Collective Agreements Act |
 | Lög nr. 70/1996 | Lög um réttindi og skyldur starfsmanna ríkisins | Rights and Duties of State Employees Act |
