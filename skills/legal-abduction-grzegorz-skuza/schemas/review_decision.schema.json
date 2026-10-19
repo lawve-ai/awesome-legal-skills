@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/review_decision/v1",
+  "title": "Review file row",
+  "type": "object",
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "decision": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "evidence_class": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "reconsiders_review_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^rev:[A-Za-z0-9._-]{1,128}$",
+          "maxLength": 140
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "item_id",
+    "decision",
+    "evidence_class"
+  ],
+  "additionalProperties": false
+}

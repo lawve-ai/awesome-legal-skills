@@ -1,0 +1,3 @@
+# Overview
+
+Screens AI Skills, MCP servers, plugins, and agent tools before installation or activation using provenance, static inspection, least privilege, version pinning, and PASS/REVIEW/BLOCK decisions. Use when a user asks whether an agent capability is safe, wants to install a Skill or MCP, reviews a marketplace or GitHub artifact, or reassesses a changed capability. Do not use as an antivirus guarantee, a runtime sandbox, or a substitute for professional incident response.

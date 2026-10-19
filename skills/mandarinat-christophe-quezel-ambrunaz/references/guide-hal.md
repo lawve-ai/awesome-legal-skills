@@ -1,5 +1,7 @@
 # Guide d'utilisation de l'API HAL pour la recherche doctrinale
 
+<!-- NOYAU v4 — synchronisé mandarinat 2.0.0 / assistant-juridique-fr 8.0.0. Fichier commun aux deux skills (script sync-noyau.sh). -->
+
 ## Vue d'ensemble
 
 HAL (Hyper Articles en Ligne) est l'archive ouverte nationale française, gérée par le CCSD (CNRS). L'API permet d'interroger la base sans authentification.

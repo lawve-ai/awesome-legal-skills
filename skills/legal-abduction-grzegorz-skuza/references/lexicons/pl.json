@@ -1,0 +1,22 @@
+{
+  "version": "1",
+  "lang": "pl",
+  "curation": {"status": "unreviewed", "needs_legal_review": true, "question": "Q6"},
+  "negation": {
+    "words": ["nie", "brak", "braku", "brakiem", "brakuje", "bez", "żaden", "żadna", "żadne", "żadnego", "żadnej", "żadnemu",
+              "żadnym", "żadni", "nigdy", "nikt", "nikogo", "nikomu", "nikim", "nic", "niczego", "niczym", "ani", "nigdzie"],
+    "nie_prefix": {"min_length": 6, "exceptions": ["niedziela", "niedzielę", "niedzieli", "niedziele", "niebo", "nieba",
+                    "niebieski", "niebieska", "niebieskie", "niemiecki", "niemiecka", "niemieckie", "niemal", "niemowlę",
+                    "niedźwiedź", "nieruchomość", "nieruchomości", "niewielki", "niewielka", "niewielkie", "niemiec"]}
+  },
+  "modality": {
+    "words": ["może", "mogą", "mógł", "mogła", "mogło", "mogli", "można", "możliwe", "możliwy", "możliwa", "prawdopodobnie",
+              "chyba", "rzekomo", "podobno", "ewentualnie", "powinien", "powinna", "powinno", "powinni", "musi", "muszą",
+              "trzeba", "zapewne", "najpewniej", "wydaje", "jakoby", "pewnie"]
+  },
+  "forbidden_boosters": {
+    "prefixes": ["udowodn", "udowodnion", "dowodzi", "dowiodł", "dowiodła", "dowiedzion", "wykazał", "wykazała", "wykazano",
+                 "wykazuj", "wykazan", "bezsprzecz", "niezbicie", "niepodważaln", "bezspornie"]
+  },
+  "language_markers": ["się", "jest", "oraz", "że", "który", "która", "które", "dla", "przez", "tego", "tej"]
+}

@@ -12,6 +12,23 @@ OpenLegi doit être utilisé **en priorité** avant web_search pour toute recher
 
 ---
 
+## Recherche jurisprudentielle via LibreJustice
+
+**LibreJustice** (`librejustice.fr`) est un serveur MCP offrant un moteur de recherche **sémantique et lexical** sur l'ensemble des juridictions françaises (Cour de cassation, Conseil d'État, Conseil constitutionnel, Tribunal des conflits, cours d'appel, tribunaux judiciaires, tribunaux des activités économiques, CAA, TA), la CNDA, les sanctions CNIL, la CEDH et la CJUE, ainsi qu'un référentiel de textes normatifs versionnés (codes français, codes étrangers curés, droit de l'UE, traités).
+
+### Utilisation
+- Jurisprudence : `search_decisions` (filtres structurés et facettes) puis `get_decision` (texte intégral, `appellateFate`, `caseChronology`, `commentaires`)
+- Textes : `search_norms` (article recherché par son objet), `get_norm` (rédaction à une date donnée, chronologie des versions)
+- Guide d'utilisation : `references/guide-librejustice.md`
+
+### Fiabilité et réserves
+Le corpus provient des bases publiques de diffusion (Judilibre, ArianeWeb, opendata de la justice administrative, HUDOC, CURIA). Deux réserves gouvernent son emploi :
+
+1. **Les aperçus ne fondent rien** — `aiSummary` est une paraphrase produite par un modèle, `snippet` le passage d'appariement des mots-clés (possiblement issu des moyens des parties). Toute citation suppose la lecture du texte intégral par `get_decision`.
+2. **LibreJustice ne fournit pas de lien Légifrance** — toute référence française diffusée sur Légifrance est repassée par OpenLegi pour en extraire le lien officiel ; à défaut de diffusion (décisions du fond, CNDA), le lien `librejustice.fr` tient lieu de lien vérifiable, source mentionnée.
+
+---
+
 ## ⚠️ LISTE NOIRE - Sites à ne JAMAIS consulter ou citer
 
 **INTERDICTION ABSOLUE** de consulter, référencer ou citer les sites suivants car ils diffusent de fausses informations juridiques :
@@ -32,6 +49,7 @@ OpenLegi doit être utilisé **en priorité** avant web_search pour toute recher
 - https://www.legifrance.gouv.fr/ - Textes législatifs et réglementaires
 - Tous les sites du domaine gouv.fr
 - https://www.service-public.gouv.fr/ - Information administrative
+- https://librejustice.fr/ - LibreJustice (moteur de recherche jurisprudentielle, toutes juridictions)
 - https://www.courdecassation.fr/ - Cour de cassation (site principal et Judilibre)
 - https://www.courdecassation.fr/acces-rapide-judilibre - Base de données Judilibre
 - https://www.conseil-etat.fr/ - Conseil d'État (jurisprudence et documentation)
@@ -84,11 +102,12 @@ Le script dédoublonne par DOI puis par titre normalisé et signale les sources 
 ## Utilisation des sources
 
 Toujours privilégier ces sources lors des recherches juridiques. Ordre de priorité pour l'accès :
-1. **OpenLegi** (accès direct aux bases officielles — fiable par défaut)
-2. **`doctrine_search.py`** (recherche doctrinale multi-sources — HAL + OpenAlex + Isidore, identifiant vérifiable) — voir `references/guide-hal.md`
-3. **HAL API ciblé** (`hal_search.py` — notes d'arrêt par pourvoi, recherche par auteur) — voir `references/guide-hal.md`
-4. **Sites officiels listés ci-dessus** (via web_search/web_fetch)
-5. **Sources doctrinales web** (via web_search : Cairn, Persée, OpenEdition)
+1. **LibreJustice** (recherche jurisprudentielle sémantique — toutes juridictions françaises, CNDA, CNIL, CEDH, CJUE ; textes versionnés) — voir `references/guide-librejustice.md`
+2. **OpenLegi** (accès direct aux bases officielles — fiable par défaut, source du lien Légifrance)
+3. **`doctrine_search.py`** (recherche doctrinale multi-sources — HAL + OpenAlex + Isidore, identifiant vérifiable) — voir `references/guide-hal.md`
+4. **HAL API ciblé** (`hal_search.py` — notes d'arrêt par pourvoi, recherche par auteur) — voir `references/guide-hal.md`
+5. **Sites officiels listés ci-dessus** (via web_search/web_fetch)
+6. **Sources doctrinales web** (via web_search : Cairn, Persée, OpenEdition)
 
 En cas de conflit entre sources, respecter la hiérarchie des normes :
 1. Textes législatifs et réglementaires en vigueur

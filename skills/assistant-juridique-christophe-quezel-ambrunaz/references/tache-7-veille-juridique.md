@@ -1,6 +1,6 @@
 # Tâche 7 — Veille juridique
 
-> **Pré-requis environnement** : aucun — exécutable en tout mode. COWORK/CHAT_CU : livrable Word. CHAT : réponse conversationnelle structurée.
+> **Environnement** : aucun prérequis. Livrable Word par défaut (artefact Docs si l'utilisateur le demande) ; pour une question brève, réponse structurée dans la conversation. Tableau de vérification remis en document séparé (`references/environnement-et-livrables.md`).
 
 ## Objectif
 
@@ -22,10 +22,11 @@ Identifier le périmètre de la veille : matière, période, type de sources per
 - `rechercher_code` → articles modifiés ou créés sur la période
 - Identifier : lois promulguées, ordonnances, décrets d'application, projets/propositions en cours
 
-**2b. Évolutions jurisprudentielles** via OpenLegi :
-- `rechercher_jurisprudence_judiciaire` (tri `DATE_DESC`) → arrêts récents de la Cour de cassation
-- `rechercher_jurisprudence_administrative` (tri `DATE_DESC`) → arrêts récents du Conseil d'État
-- `rechercher_decisions_constitutionnelles` → QPC récentes sur le sujet
+**2b. Évolutions jurisprudentielles** via LibreJustice puis OpenLegi :
+- `LibreJustice:search_decisions` avec `date_from` (borne de la période veillée), `sort: "date_desc"` et `seat` successivement `["CC"]`, `["CE"]`, `["CONSTIT"]` — puis les juridictions du fond si la veille les couvre
+- `procedure: ["QPC"]` pour isoler les questions prioritaires de constitutionnalité, `publication: ["PUBLIE_RAPPORT","PUBLIE_BULLETIN","LETTRE_CHAMBRE","PUBLIE_LEBON"]` pour hiérarchiser
+- `LibreJustice:get_decision` sur chaque décision signalée dans la veille : motifs réels, `appellateFate`, `commentaires` institutionnels
+- `OpenLegi:rechercher_jurisprudence_judiciaire` / `rechercher_jurisprudence_administrative` (tri `DATE_DESC`) et `rechercher_decisions_constitutionnelles` — complément et lien Légifrance de chaque décision citée
 - Identifier : revirements, précisions, confirmations de jurisprudence constante
 
 **2c. Évolutions doctrinales** via HAL + web_search :

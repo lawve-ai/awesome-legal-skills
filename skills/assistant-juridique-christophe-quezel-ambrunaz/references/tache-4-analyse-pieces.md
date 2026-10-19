@@ -1,6 +1,6 @@
 # Tâche 4 — Analyse et synthèse de pièces d'un dossier
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU requis pour la lecture des pièces. En mode CHAT, exécutable uniquement si les documents sont visibles dans la fenêtre de contexte — sinon, interrompre et demander d'activer computer use. Recommander COWORK si le dossier dépasse 5 pièces ou 30 pages cumulées (persistance nécessaire pour un travail fiable).
+> **Environnement** : lecture des pièces jointes ou du dossier connecté. Un dossier volumineux se traite par lots dans l'espace de travail (extraction du texte, fiche par pièce) ; lorsqu'un dossier connecté existe, y écrire la chronologie et l'analyse au fur et à mesure, pour permettre la reprise dans une autre conversation.
 
 ## Objectif
 

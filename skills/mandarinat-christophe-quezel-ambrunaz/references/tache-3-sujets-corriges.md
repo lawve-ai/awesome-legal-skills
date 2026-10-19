@@ -1,6 +1,6 @@
 # Tâche 3 — Sujets et corrigés d'exercices juridiques universitaires
 
-> **Pré-requis environnement** : aucun — exécutable en tout mode. COWORK/CHAT_CU : livrable Word. CHAT : réponse conversationnelle structurée.
+> **Environnement** : aucun prérequis. Livrable Word par défaut (artefact Docs si l'utilisateur le demande) ; pour une question brève, réponse structurée dans la conversation. Tableau de vérification remis en document séparé (`references/environnement-et-livrables.md`).
 
 ## Objectif
 
@@ -41,13 +41,13 @@ Cadrage juridique du thème. Le playbook identifie les questions de droit pertin
 
 Pour le **sujet** : recherche ciblée sur le thème pour s'assurer de la pertinence et de l'actualité.
 
-Pour le **corrigé** : recherche approfondie suivant la séquence du §3 du SKILL.md (textes → jurisprudence suprême → jurisprudence du fond → doctrine → droit comparé si pertinent).
+Pour le **corrigé** : recherche approfondie suivant la séquence du § 4 du SKILL.md (textes → jurisprudence suprême → jurisprudence du fond → doctrine → droit comparé si pertinent).
 
 ### 5. Rédaction
 
 **Si sujet** :
 - Rédiger un énoncé conforme aux standards du type d'exercice et du niveau
-- Pour un commentaire d'arrêt : fournir le texte de la décision (trouvée via OpenLegi, JAMAIS inventée)
+- Pour un commentaire d'arrêt : fournir le texte **intégral** de la décision (`LibreJustice:get_decision` ou `OpenLegi`, JAMAIS inventée ni reconstituée depuis un aperçu). Vérifier `appellateFate` avant de retenir l'arrêt : une décision du fond infirmée ne se commente qu'en connaissance de son sort. Les `commentaires` institutionnels (notice explicative, conclusions du rapporteur public) alimentent utilement le corrigé, sans dispenser de la lecture des motifs
 - Pour un cas pratique : rédiger une hypothèse factuelle réaliste et juridiquement riche
 - Pour une note de synthèse : constituer un dossier documentaire cohérent (documents réels uniquement)
 
@@ -64,7 +64,7 @@ Pour le **corrigé** : recherche approfondie suivant la séquence du §3 du SKIL
 
 Nommage : `[AAAA-MM-JJ]-[type-exercice]-[matiere]-[niveau].docx`
 
-Proposer des tâches connexes : QCM sur le même thème (rediriger vers skill `qcm-generator`), variantes du sujet, grille d'évaluation.
+Proposer des tâches connexes : QCM ou exercices rapides sur le même thème (rediriger vers skill `qcm-exercices`), variantes du sujet, grille d'évaluation.
 
 ---
 
@@ -182,7 +182,7 @@ Application du droit positif à une situation factuelle. Raisonnement syllogisti
 - Classer par ordre logique
 
 ### Syllogisme juridique (structure invariable par problème)
-1. **Majeure** : règle de droit applicable (article, jurisprudence), citée avec précision, **dans sa rédaction en vigueur à la date des faits de l'énoncé** (et non à la date du jour, cf. §7 du SKILL.md). Déterminer explicitement cette date pivot ; si l'énoncé est muet, la fixer par hypothèse signalée ou raisonner sur le droit positif actuel en le précisant.
+1. **Majeure** : règle de droit applicable (article, jurisprudence), citée avec précision, **dans sa rédaction en vigueur à la date des faits de l'énoncé** (et non à la date du jour, cf. § 6 du SKILL.md). Déterminer explicitement cette date pivot ; si l'énoncé est muet, la fixer par hypothèse signalée ou raisonner sur le droit positif actuel en le précisant.
 2. **Mineure** : application aux faits spécifiques — vérifier chaque condition
 3. **Conclusion** : solution opérationnelle (« X peut / ne peut pas… »)
 

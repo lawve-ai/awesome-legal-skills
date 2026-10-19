@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- citable · Copyright (C) 2026 ccrnyc · SPDX-License-Identifier: AGPL-3.0-only · https://www.gnu.org/licenses/agpl-3.0.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+:root{
+  --bg:#f7f6f3; --panel:#ffffff; --ink:#1c1b19; --ink2:#55524c; --mut:#8a867e; --line:#e4e1da; --line2:#efece6;
+  --accent:#2f4a6d; --link:#1f5aa6;
+  --ok:#2f7d4f; --ok-bg:#e9f4ed; --warn:#a36a00; --warn-bg:#fbf1dc; --bad:#b3372c; --bad-bg:#f9e7e5; --pend:#8a867e; --pend-bg:#f1efea;
+  --serif:"Iowan Old Style","Charter","Georgia","Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --mono:"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#141414; --panel:#1c1c1d; --ink:#ecebe8; --ink2:#b9b6b0; --mut:#8c8983; --line:#2e2e30; --line2:#262628;
+  --accent:#9db6d8; --link:#7fb0f0;
+  --ok:#5cc38a; --ok-bg:#1b2d22; --warn:#e0a63a; --warn-bg:#33291a; --bad:#ef7c70; --bad-bg:#361f1d; --pend:#8c8983; --pend-bg:#252527;
+}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 var(--sans)}
+a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px 48px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top .wrap{padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand .mark{font:600 13px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.brand h1{margin:0;font:600 22px/1.2 var(--serif)}
+.brand .matter{color:var(--mut);font-size:13px}
+.headrow{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.actions{display:flex;align-items:center;gap:8px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 10px}
+.toolbar input,.toolbar select{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.toolbar input{min-width:220px;flex:1 1 220px;max-width:340px}
+.spacer{flex:1}
+button{font:500 13px var(--sans);border-radius:8px;padding:7px 12px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+button:hover{filter:brightness(.97)}
+.savestate{font-size:12px;color:var(--mut);display:flex;align-items:center;gap:6px}
+.savestate .dot{width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.savestate.dirty .dot{background:var(--warn)}
+
+/* summary */
+.summary{display:grid;grid-template-columns:repeat(3,minmax(110px,158px)) minmax(280px,1fr);gap:10px;margin:12px 0 8px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.card .k{font-size:11.5px;color:var(--mut);white-space:nowrap} .card .v{font:600 19px/1.25 var(--serif);margin-top:1px}
+.card .v small{font:400 12px var(--sans);color:var(--mut)}
+.card.click{cursor:pointer} .card.click:hover{border-color:var(--accent)} .card.hot .v{color:var(--warn)}
+.card.wide{grid-column:auto;padding:10px 14px}
+.bar{display:flex;height:14px;border-radius:7px;overflow:hidden;background:var(--pend-bg);margin:8px 0 7px}
+.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--ink2)}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px;vertical-align:0}
+.note{font-size:12.5px;color:var(--ink2);margin:10px 0 18px;padding:8px 12px;border-left:3px solid var(--accent);background:var(--panel);border-radius:0 8px 8px 0}
+
+/* table */
+.table{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.thead,.block{display:grid;grid-template-columns:minmax(280px,1.3fr) minmax(470px,1.5fr)}
+.thead .r,.subs .sub{display:grid;grid-template-columns:minmax(190px,1fr) 170px minmax(150px,.85fr)}
+.thead{font:600 11.5px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--mut);background:var(--line2);border-bottom:1px solid var(--line)}
+.thead>div>div,.thead>div:first-child{padding:10px 12px}
+.group{display:flex;align-items:baseline;gap:10px;padding:10px 12px 6px;border-top:1px solid var(--line);background:var(--panel)}
+.group:first-child{border-top:0}
+.group .g{font:600 14px var(--serif)}
+.group .gp{font-size:12px;color:var(--mut)}
+.block{border-top:1px solid var(--line2)}
+.passage{padding:12px;font:15px/1.6 var(--serif)}
+mark.cm{background:color-mix(in srgb,var(--accent) 11%,transparent);color:inherit;border-radius:3px;padding:1px 2px;transition:background .15s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+mark.cm.nc{background:color-mix(in srgb,var(--accent) 6%,transparent);border-bottom:1px dashed color-mix(in srgb,var(--accent) 45%,transparent)}
+mark.cm.on{background:color-mix(in srgb,var(--accent) 26%,transparent)}
+.cn{display:inline-block;min-width:13px;height:13px;padding:0 3px;border-radius:3px;background:color-mix(in srgb,var(--accent) 10%,var(--panel));color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);font:600 9px/12px var(--sans);text-align:center;vertical-align:3px;margin-left:2px;font-style:normal;text-decoration:none}
+mark.cm.on .cn,.sub.on .cn{background:var(--accent);color:var(--panel)}
+.chg{display:inline-block;font:600 10.5px var(--sans);border-radius:4px;padding:0 5px;vertical-align:1px}
+.chg.changed,.chg.reworded,.chg.relinked{color:var(--warn);background:var(--warn-bg)} .chg.new{color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.was{font-size:12px;color:var(--ink2);margin-top:6px;padding:5px 8px;border-left:2px solid var(--warn);background:var(--bg);border-radius:0 6px 6px 0}
+.was b{font-weight:600;color:var(--mut)}
+.banner{font-size:12.5px;color:var(--ink2);margin:16px 0 0;padding:8px 12px;border-left:3px solid var(--line);background:var(--panel);border-radius:0 8px 8px 0}
+.banner p{margin:0} .banner p+p{margin-top:3px} .banner a{cursor:pointer}
+.rmv{padding:10px 0;border-top:1px solid var(--line2)} .rmv:first-of-type{border-top:0} .rmv .p{font:14px var(--serif);color:var(--ink)} .rmv .m{font-size:12px;color:var(--mut);margin-top:3px}
+.subs{border-left:1px solid var(--line2)}
+.sub{border-top:1px dashed var(--line);transition:background .15s}
+.sub:first-child{border-top:0}
+.sub>div{padding:10px 12px}
+.sub.on,.sub:hover{background:color-mix(in srgb,var(--line2) 60%,transparent)}
+.sub[data-cc="confirmed"]{box-shadow:inset 3px 0 var(--ok)}
+.sub[data-cc="partial support"]{box-shadow:inset 3px 0 var(--warn)}
+.sub[data-cc="unsupported"]{box-shadow:inset 3px 0 var(--bad)}
+.lk-head{display:flex;align-items:center;gap:6px;margin-bottom:6px;font-size:12px;color:var(--mut)}
+.lk-head .cn{margin-left:0}
+.fn{display:inline-block;font:600 10.5px var(--sans);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.chips{display:flex;flex-direction:column;gap:5px;margin-top:8px}
+.chip{display:inline-block;align-self:flex-start;max-width:100%;font:500 12.5px/1.4 var(--sans);padding:4px 9px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--link)}
+.chip .l{white-space:normal}
+.chip:hover{text-decoration:none;border-color:var(--link)}
+.chip .s{font-weight:400;color:var(--mut);white-space:nowrap}
+.chip .d{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:7px;vertical-align:1px}
+.chip.inferred .d{background:var(--warn)} .chip.nolink{color:var(--mut)} .chip.nolink .d{background:var(--line)} .chip.unresolved{color:var(--bad)} .chip.unresolved .d{background:var(--bad)}
+.chip .flag{display:inline-block;white-space:nowrap;font:600 10px/1.5 var(--sans);color:var(--warn);background:var(--warn-bg);border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:1px}
+.why{font-size:12px;color:var(--bad);margin-top:4px} .why.mute{color:var(--mut)} .why.warn{color:var(--ink2)}
+select.cc{width:100%;font:500 13px var(--sans);border-radius:8px;padding:6px 8px;border:1px solid var(--line);background:var(--pend-bg);color:var(--ink)}
+select.cc[data-v="confirmed"]{background:var(--ok-bg);color:var(--ok);border-color:color-mix(in srgb,var(--ok) 35%,transparent)}
+select.cc[data-v="partial support"]{background:var(--warn-bg);color:var(--warn);border-color:color-mix(in srgb,var(--warn) 35%,transparent)}
+select.cc[data-v="unsupported"]{background:var(--bad-bg);color:var(--bad);border-color:color-mix(in srgb,var(--bad) 35%,transparent)}
+textarea{width:100%;min-height:38px;resize:vertical;font:13px/1.4 var(--sans);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.empty{padding:28px;text-align:center;color:var(--mut)}
+details.nc{margin-top:18px;color:var(--ink2);font-size:13px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+details.nc summary{cursor:pointer;color:var(--ink2);font-weight:600}
+.ncitem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:9px 0;border-top:1px solid var(--line2)}
+.ncitem:first-of-type{border-top:0} .ncitem q{font:14px var(--serif);color:var(--ink)} .ncitem .where{font-size:12px;color:var(--mut);margin-top:2px}
+.ncitem .chips{margin-top:6px}
+button.small{font-size:12px;padding:5px 10px} button.ghost{background:none;border-color:transparent;color:var(--mut)}
+.added{display:inline-block;font:600 10.5px var(--sans);color:var(--accent);border:1px dashed color-mix(in srgb,var(--accent) 50%,transparent);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.rm{font-size:11.5px;color:var(--mut);background:none;border:0;padding:0;margin-top:6px;cursor:pointer;text-decoration:underline}
+footer{margin-top:22px;font-size:12px;color:var(--mut)}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:.95}
+
+@media (max-width:900px){
+  .thead{display:none}
+  .block{grid-template-columns:1fr} .subs{border-left:0}
+  .subs .sub{grid-template-columns:1fr 1fr} .sub>div:first-child{grid-column:1/-1}
+  .summary{grid-template-columns:repeat(3,1fr)} .card.wide{grid-column:1/-1}
+}
+@media print{
+  header.top{position:static;border:0} .toolbar,.actions,details.nc{display:none}
+  body,.table,.card{background:#fff} .block{break-inside:avoid}
+  select.cc{appearance:none;border:0;padding:0;background:none!important}
+  textarea{border:0;background:none;resize:none}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap headrow">
+  <div class="brand"><span class="mark">citable</span><h1 id="title"></h1><span class="matter" id="matter"></span></div>
+  <div class="actions">
+    <span class="savestate" id="savestate"><span class="dot"></span><span id="savetext">No changes</span></span>
+    <button id="csv" title="Download the table with your statuses and notes as a spreadsheet">Export CSV</button>
+    <button id="save" class="primary" title="Save this page with your statuses and notes (Ctrl/Cmd+S)">Save</button>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <div class="banner" id="banner" hidden></div>
+  <section class="summary" id="summary"></section>
+  <div class="note">Quickly verify each proposition by clicking the adjacent link. Update the cite-check status for each proposition and record any notes. Click <b>Save</b> to keep your work. <b>Save your work frequently</b>: changes that have not been saved are lost when this tab or the browser closes.</div>
+  <div class="toolbar" id="toolbar">
+    <input id="q" type="search" placeholder="Search propositions and citations">
+    <select id="ft"><option value="">All sources</option><option value="record">Record</option><option value="case">Case law</option><option value="statute">Statutes &amp; rules</option></select>
+    <select id="fc"><option value="">All cite-check statuses</option><option>check pending</option><option>confirmed</option><option>partial support</option><option>unsupported</option></select>
+    <select id="fl"><option value="">All links</option><option value="open">Links in need of review</option><option value="issues">All approximate or unresolved links</option><option value="changed">Changed since last version</option></select>
+  </div>
+  <div class="table" id="table"><div class="thead"><div>Proposition and citation</div><div class="r"><div>Links</div><div>Cite-check status</div><div>Note</div></div></div><div id="body"></div></div>
+  <details class="nc" id="nc"></details>
+  <details class="nc" id="removed" hidden></details>
+  <footer id="foot"></footer>
+</main>
+<div class="toast" id="toast"></div>
+
+<script id="citable-meta" type="application/json">__META__</script>
+<script id="citable-rows" type="application/json">__ROWS__</script>
+<script id="citable-state" type="application/json">{}</script>
+<script>
+(function(){
+const META=JSON.parse(document.getElementById('citable-meta').textContent);
+const BASE=JSON.parse(document.getElementById('citable-rows').textContent);
+const NC=META.notCites||[];
+const FILE_STATE=JSON.parse(document.getElementById('citable-state').textContent||'{}');
+const STATUSES=['check pending','confirmed','partial support','unsupported'];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const blank=()=>({cc:'check pending',note:'',t:0});
+
+// ---- state: held only in this page until Save writes it into the file (nothing is kept in the browser)
+try{for(let i=localStorage.length-1;i>=0;i--){const k=localStorage.key(i);if(k&&k.startsWith('citable:'))localStorage.removeItem(k);}}catch(e){}   // clear what earlier versions stored
+const F=FILE_STATE;
+const state={rows:{},promoted:{}};
+for(const r of BASE.concat(NC)){const v=(F.rows||{})[r.id]; if(v) state.rows[r.id]=v;}
+for(const r of NC){const v=(F.promoted||{})[r.id]; if(v) state.promoted[r.id]=v;}
+const st=id=>(state.rows[id]||(state.rows[id]=blank()));
+let lastFileSave=F.savedAt||null;
+let dirty=false;
+
+// rows = the brief's citations + references the reviewer promoted; numbered in reading order
+const BLOCKS=META.blocks||[]; const BYID=Object.fromEntries(BLOCKS.map(b=>[b.id,b]));
+function allRows(){
+  const rs=BASE.concat(NC.filter(r=>state.promoted[r.id]&&state.promoted[r.id].on));
+  rs.sort((a,b)=>(BYID[a.block].ord-BYID[b.block].ord)||((a.hl?a.hl[0]:1e9)-(b.hl?b.hl[0]:1e9))||(a.ord-b.ord));
+  rs.forEach((r,i)=>r.num=i+1); return rs;
+}
+const flagged=r=>r.linkStatus!=='exact'&&r.linkStatus!=='nolink';
+const open=r=>flagged(r)&&st(r.id).cc==='check pending';
+
+// ---- header & summary
+$('title').textContent=META.doc; $('matter').textContent=META.matter;
+function summary(){
+  const rows=allRows(), n=rows.length, c={}; STATUSES.forEach(s=>c[s]=0); rows.forEach(r=>c[st(r.id).cc]++);
+  const col={'confirmed':'var(--ok)','partial support':'var(--warn)','unsupported':'var(--bad)','check pending':'var(--pend-bg)'};
+  const bar=['confirmed','partial support','unsupported'].map(s=>`<span style="width:${n?100*c[s]/n:0}%;background:${col[s]}" title="${s}: ${c[s]}"></span>`).join('');
+  const nl=rows.filter(r=>r.linkStatus==='nolink').length, exact=rows.filter(r=>r.linkStatus==='exact').length, fl=rows.filter(flagged).length, op=rows.filter(open).length;
+  $('summary').innerHTML=
+   `<div class="card"><div class="k">Citations</div><div class="v">${n}</div></div>`+
+   `<div class="card"><div class="k">Exact-page links</div><div class="v">${exact} <small>/ ${n-nl}${nl?` · ${nl} not linked`:''}</small></div></div>`+
+   `<div class="card click${op?' hot':''}" id="needs" title="Links marked approximate (amber) or unresolved (red) whose cite-check status is still “check pending”. Click to show them."><div class="k">Links in need of review</div><div class="v">${op} <small>of ${fl}</small></div></div>`+
+   `<div class="card wide"><div class="k">Cite-check progress · ${n-c['check pending']} of ${n} reviewed</div><div class="bar">${bar}</div>`+
+   `<div class="legend">${STATUSES.map(s=>`<span><i style="background:${col[s]};${s==='check pending'?'border:1px solid var(--line)':''}"></i>${s} ${c[s]}</span>`).join('')}</div></div>`;
+  $('needs').onclick=()=>{$('fl').value='open';render();$('toolbar').scrollIntoView({behavior:'smooth',block:'start'});};
+}
+
+// ---- table
+function chipHTML(ch){
+  const flag=ch.status==='inferred'?' <span class="flag">approx.</span>':'';
+  const inner=`<span class="d"></span><span class="l">${esc(ch.label)}</span>${ch.sub?` <span class="s">· ${esc(ch.sub)}</span>`:''}${flag}`;
+  return ch.href?`<a class="chip ${ch.status}" href="${esc(ch.href)}" target="_blank" title="${esc(ch.how)}">${inner}</a>`
+               :`<span class="chip unresolved" title="${esc(ch.how)}">${inner}</span>`;
+}
+function passageHTML(b,rows){
+  const P=b.passage, spans=rows.filter(r=>r.hl).map(r=>({s:r.hl[0],e:r.hl[1],r})).sort((x,y)=>x.s-y.s);
+  const hl=[]; let last=-1; for(const sp of spans){ if(sp.s>=last){hl.push(sp); last=sp.e;} }
+  const cuts=new Set([0,P.length]); (b.style||[]).forEach(([a,z])=>{cuts.add(a);cuts.add(z);}); hl.forEach(h=>{cuts.add(h.s);cuts.add(h.e);});
+  const pts=[...cuts].sort((x,y)=>x-y);
+  const flagAt=i=>{for(const [a,z,f] of (b.style||[])) if(i>=a&&i<z) return f; return 0;};
+  const wrap=(t,f)=>{let h=esc(t); if(f&4)h=`<u>${h}</u>`; if(f&2)h=`<b>${h}</b>`; if(f&1)h=`<i>${h}</i>`; return h;};
+  let out='';
+  for(let n=0;n<pts.length-1;n++){ const a=pts[n], z=pts[n+1];
+    const open=hl.find(h=>h.s===a), close=hl.find(h=>h.e===a);
+    if(close) out+=`<span class="cn">${close.r.num}</span></mark>`;
+    if(open) out+=`<mark class="cm${open.r.promoted?' nc':''}" data-k="${open.r.num}">`;
+    out+=wrap(P.slice(a,z),flagAt(a)); }
+  const endH=hl.find(h=>h.e===P.length); if(endH) out+=`<span class="cn">${endH.r.num}</span></mark>`;
+  const loose=rows.filter(r=>!r.hl).map(r=>` <span class="cn" data-k="${r.num}">${r.num}</span>`).join('');
+  return out+loose;
+}
+function subHTML(r){
+  const s=st(r.id);
+  const chips=(r.chips.length?r.chips.map(chipHTML).join(''):(r.linkStatus==='nolink'?`<span class="chip nolink" title="${esc(r.why||'')}"><span class="d"></span>not linked</span>`:'<span class="chip unresolved"><span class="d"></span>no link</span>'));
+  const idnote=r.viaId?`<span>${esc((r.cite.match(/\[=\s*([^\]]+)\]/)||[])[1]?'id. = '+r.cite.match(/\[=\s*([^\]]+)\]/)[1]:'id.')}</span>`:'';
+  const tag=(r.promoted?'<span class="added" title="Added by the reviewer from “Not treated as citations”">added</span>':'')+
+    (r.change?`<span class="chg ${r.change.kind}" title="${esc(r.change.msg)}">${r.change.kind}</span>`:'');
+  const was=r.change&&r.change.was?`<div class="was"><b>${r.change.kind==='changed'?'Previously cited as':(r.change.kind==='relinked'?'Previously linked to':'Proposition previously read')}:</b> ${esc(r.change.was)}${r.change.wasStatus?` <b>· Previous status:</b> ${esc(r.change.wasStatus)}`:''}</div>`:'';
+  return `<div class="sub" data-id="${esc(r.id)}" data-k="${r.num}" data-cc="${esc(s.cc)}">`+
+    `<div><div class="lk-head"><span class="cn">${r.num}</span>${tag}${idnote}</div><div class="chips">${chips}</div>${r.why?`<div class="why${r.linkStatus==='nolink'?' mute':r.linkStatus==='inferred'?' warn':''}">${esc(r.why)}</div>`:''}${was}${r.promoted?`<button class="rm" data-demote="${esc(r.id)}">Remove from table</button>`:''}</div>`+
+    `<div><select class="cc" data-v="${esc(s.cc)}">${STATUSES.map(x=>`<option${x===s.cc?' selected':''}>${x}</option>`).join('')}</select></div>`+
+    `<div><textarea placeholder="Add a note">${esc(s.note)}</textarea></div></div>`;
+}
+function render(){
+  const q=$('q').value.trim().toLowerCase(), ft=$('ft').value, fc=$('fc').value, fl=$('fl').value;
+  const rows=allRows(), byBlock=new Map();
+  rows.forEach(r=>{if(!byBlock.has(r.block))byBlock.set(r.block,[]);byBlock.get(r.block).push(r);});
+  const keep=r=>{const s=st(r.id);
+    if(ft && r.type!==ft) return false; if(fc && s.cc!==fc) return false;
+    if(fl==='issues' && !flagged(r)) return false; if(fl==='open' && !open(r)) return false; if(fl==='changed' && !r.change) return false;
+    if(q && !(BYID[r.block].passage+' '+r.cite+' '+s.note).toLowerCase().includes(q)) return false; return true;};
+  let html='', lastGroup=null;
+  for(const [bid,brs] of byBlock){
+    const vis=brs.filter(keep); if(!vis.length) continue;
+    const b=BYID[bid];
+    if(b.group!==lastGroup){lastGroup=b.group;
+      html+=`<div class="group"><span class="g">${esc(b.group)}</span><a class="gp" href="${esc(b.docHref)}" target="_blank">${esc(META.doc)} · PDF p. ${b.docpage}</a></div>`;}
+    html+=`<div class="block" data-b="${esc(bid)}"><div class="passage">${b.fn?`<span class="fn">n.${esc(b.fn)}</span>`:''}${passageHTML(b,brs)}</div><div class="subs">${vis.map(subHTML).join('')}</div></div>`;
+  }
+  $('body').innerHTML=html||'<div class="empty">No citations match these filters.</div>';
+}
+function hot(k,on){document.querySelectorAll(`#body [data-k="${k}"]`).forEach(el=>el.classList.toggle('on',on));}
+$('body').addEventListener('mouseover',e=>{const el=e.target.closest('[data-k]');if(el)hot(el.dataset.k,true);});
+$('body').addEventListener('mouseout',e=>{const el=e.target.closest('[data-k]');if(el)hot(el.dataset.k,false);});
+$('body').addEventListener('change',e=>{if(!e.target.matches('select.cc'))return;const row=e.target.closest('.sub'),s=st(row.dataset.id);
+  s.cc=e.target.value;s.t=Date.now();e.target.dataset.v=e.target.value;row.dataset.cc=e.target.value;changed();summary();});
+$('body').addEventListener('input',e=>{if(!e.target.matches('textarea'))return;const s=st(e.target.closest('.sub').dataset.id);
+  s.note=e.target.value;s.t=Date.now();changed();});
+$('body').addEventListener('click',e=>{const id=e.target.dataset&&e.target.dataset.demote;if(!id)return;setPromoted(id,false);});
+['q','ft','fc','fl'].forEach(id=>$(id).addEventListener('input',render));
+
+// ---- not treated as citations
+function setPromoted(id,on){state.promoted[id]={on,t:Date.now()};changed();summary();render();renderNC();
+  if(on){const el=document.querySelector(`.sub[data-id="${CSS.escape(id)}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});}toast('Added to the table');}}
+function renderNC(){
+  $('nc').innerHTML=`<summary>Not treated as citations (${NC.length})</summary>`+(NC.length?NC.map(r=>{
+    const on=state.promoted[r.id]&&state.promoted[r.id].on;
+    return `<div class="ncitem"><div><q>${esc(r.cite)}</q>`+
+      `<div class="where"><a href="${esc(r.docHref)}" target="_blank">${esc(r.group)}${r.fn?', n.'+esc(r.fn):''} · ${esc(META.doc)} PDF p. ${r.docpage}</a></div>`+
+      (r.chips.length?`<div class="chips">${r.chips.map(chipHTML).join('')}</div>`:'')+`</div>`+
+      (on?`<button class="small ghost" data-nc="${esc(r.id)}" data-on="0">In the table · Remove</button>`
+         :`<button class="small" data-nc="${esc(r.id)}" data-on="1">Promote to proposition for checking</button>`)+`</div>`;}).join(''):'<p>None.</p>');
+}
+$('nc').addEventListener('click',e=>{const b=e.target.closest('button[data-nc]');if(!b)return;setPromoted(b.dataset.nc,b.dataset.on==='1');});
+
+// ---- save status
+function fmt(ts){const d=new Date(ts);return d.toLocaleDateString(undefined,{month:'short',day:'numeric'})+' '+d.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'})}
+function paintSave(){const el=$('savestate');el.classList.toggle('dirty',dirty);
+  $('savetext').textContent=dirty?'Unsaved changes: click Save':(lastFileSave?'Saved to file '+fmt(lastFileSave):'No changes');}
+function changed(){dirty=true;paintSave();}
+function toast(t){const el=$('toast');el.textContent=t;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200);}
+
+// ---- Save: write this page, with state embedded, back to disk
+let handle=null;
+function pageWithState(now){
+  const clone=document.documentElement.cloneNode(true);
+  clone.querySelector('#citable-state').textContent=JSON.stringify({savedAt:now,rows:state.rows,promoted:state.promoted}).replace(/<\//g,'<\\/');
+  ['#body','#summary','#nc'].forEach(sel=>clone.querySelector(sel).innerHTML='');['#nc','#removed'].forEach(sel=>clone.querySelector(sel).removeAttribute('open'));clone.querySelector('#toast').className='toast';
+  return '<!doctype html>\n'+clone.outerHTML;
+}
+const fileName=decodeURIComponent(location.pathname.split('/').pop()||('citable-'+META.slug+'.html'));
+async function save(){
+  const now=Date.now(); const html=pageWithState(now);
+  try{
+    if(window.showSaveFilePicker){
+      if(!handle) handle=await window.showSaveFilePicker({suggestedName:fileName,types:[{description:'citable page',accept:{'text/html':['.html']}}]});
+      const w=await handle.createWritable(); await w.write(html); await w.close();
+      lastFileSave=now; dirty=false; paintSave(); toast('Saved to '+handle.name); return;
+    }
+  }catch(e){ if(e&&e.name==='AbortError') return; handle=null; }
+  const stamp=new Date(now).toISOString().slice(0,16).replace('T','_').replace(':','');
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([html],{type:'text/html'}));
+  a.download=fileName.replace(/\.html$/,'')+'_saved-'+stamp+'.html';a.click();
+  lastFileSave=now; dirty=false; paintSave(); toast('Saved a copy to your Downloads folder');
+}
+$('save').onclick=save;
+document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='s'){e.preventDefault();save();}});
+window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
+
+// ---- CSV
+$('csv').onclick=()=>{
+  const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+  const out=[['#','location','footnote','added_by_reviewer','proposition_and_citation','citation','links','link_status','cite_check_status','note']];
+  allRows().forEach(r=>{const s=st(r.id);out.push([r.num,r.group,r.fn||'',r.promoted?'yes':'',BYID[r.block].passage,r.cite,r.chips.map(c=>c.label+(c.sub?' · '+c.sub:'')+(c.href?' <'+c.href+'>':'')).join(' | '),r.linkStatus,s.cc,s.note]);});
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([out.map(r=>r.map(q).join(',')).join('\n')],{type:'text/csv'}));
+  a.download='citable-'+META.slug+'-review.csv';a.click();
+};
+
+$('foot').innerHTML=`Generated ${esc(META.generated)} by citable from ${esc(META.docFile)}. Link dot: green = exact page · amber = approximate · red = unresolved · grey = listed for checking but not linked (Westlaw/Lexis, supra, state statutes and local rules, another case's docket entries, citations the map marks “do not link”).<br>citable © 2026 ccrnyc · licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">GNU AGPL v3.0</a> (AGPL-3.0-only); no warranty.`;
+// ---- formatting warnings found while reading the brief
+const stampOf=v=>{ if(!v) return ''; const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(v);
+  const d=m?new Date(+m[1],+m[2]-1,+m[3]):new Date(v); if(isNaN(d)) return esc(v);
+  return d.toLocaleDateString(undefined,{day:'numeric',month:'long',year:'numeric'})+(String(v).includes('T')?' at '+d.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'}):''); };
+(function(){
+  let h=`<p>This table was built from <b>${esc(META.docFile)}</b> on ${stampOf(META.builtAt||META.generated)}.</p>`;
+  if(META.carry){ const c=META.carry.counts, ch=c.changed+c.reworded+c.new+(c.relinked||0);
+    h+=`<p>It flags citation-related changes since the previous version, <b>${esc(META.carry.previousDoc||META.carry.previous)}</b>`+
+       (META.carry.previousBuilt?` (table built ${stampOf(META.carry.previousBuilt)})`:'')+`: `+
+       (ch?`<a id="showchg">${ch} changed citation${ch===1?'':'s'}</a>`:'no changed citations')+
+       (c.removed?`, <a id="showrm">${c.removed} removed</a>`:'')+`.</p>`; }
+  $('banner').hidden=false; $('banner').innerHTML=h;
+  if($('showchg')) $('showchg').onclick=()=>{$('fl').value='changed';render();$('toolbar').scrollIntoView({behavior:'smooth',block:'start'});};
+  if($('showrm')) $('showrm').onclick=()=>{$('removed').open=true;$('removed').scrollIntoView({behavior:'smooth'});};
+  const R=META.removed||[];
+  if(R.length){ $('removed').hidden=false; $('removed').innerHTML=`<summary>Removed since the previous version (${R.length})</summary>`+
+    R.map(x=>`<div class="rmv"><div class="p">${esc(x.passage)}</div><div class="m">${esc(x.group)}${x.fn?', n.'+esc(x.fn):''} · ${esc(x.cite)} · previous status: ${esc(x.cc)}${x.note?' · note: '+esc(x.note):''}</div></div>`).join(''); }
+})();
+summary(); render(); renderNC(); paintSave();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/run/v1",
+  "title": "Run",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^run:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "analysis_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "render_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "approved_set_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "code_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "model_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "runtime": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "chain_head": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "parent_run_id": {
+      "type": "string",
+      "pattern": "^run:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "corpus_hash",
+    "analysis_hash",
+    "render_hash",
+    "approved_set_hash",
+    "code_version",
+    "model_id",
+    "runtime",
+    "chain_head"
+  ],
+  "additionalProperties": false
+}

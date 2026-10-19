@@ -1,6 +1,6 @@
 # Tâche 8 — Analyse d'un article de loi
 
-> **Pré-requis environnement** : aucun — exécutable en tout mode. COWORK/CHAT_CU : livrable Word. CHAT : réponse conversationnelle structurée.
+> **Environnement** : aucun prérequis. Livrable Word par défaut (artefact Docs si l'utilisateur le demande) ; pour une question brève, réponse structurée dans la conversation. Tableau de vérification remis en document séparé (`references/environnement-et-livrables.md`).
 
 ## Objectif
 
@@ -10,11 +10,13 @@ Produire une fiche technique complète sur un article de loi ou de code : texte 
 
 ### 1. Récupération du texte
 
-**EXÉCUTER via OpenLegi :**
-- `rechercher_code` (champ `NUM_ARTICLE`, type `EXACTE`) → texte intégral de l'article
+**EXÉCUTER via OpenLegi et LibreJustice :**
+- `OpenLegi:rechercher_code` (champ `NUM_ARTICLE`, type `EXACTE`) → texte intégral de l'article et **lien Légifrance**
+- `LibreJustice:get_norm` sur `https://librejustice.fr/norm/fr/{code}/{article}` (ou `textId` LEGIARTI) → rédaction en vigueur à une date donnée (paramètre `date`), **chronologie complète des versions**, articles cités en liens, commentaires institutionnels
 - Extraire : texte complet, état juridique, date début/fin vigueur, chemin dans le code (arborescence), articles cités
 - Si l'article est abrogé : identifier le texte de remplacement
-- Si l'article a été modifié : identifier les versions successives
+- Si l'article a été modifié : établir les versions successives à partir de la chronologie retournée, et préciser la rédaction commentée
+- **Jurisprudence d'application** : `LibreJustice:search_decisions` avec `legal_article: ["{code}|{article}"]` → décisions visant précisément cet article, filtrables par juridiction, période et solution
 
 ### 2. Contexte normatif
 

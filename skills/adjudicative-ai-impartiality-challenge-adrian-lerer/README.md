@@ -1,0 +1,3 @@
+# Overview
+
+Public-safe preliminary screen for challenges to the impartiality of an AI evaluator, LLM-as-a-judge, decision-support agent, or adjudicative system based on prior outputs, suspected bias, unstable reasoning, or self-reinforcing memory. Use when asked whether an AI should be recused, disqualified, replaced, audited, or escalated. Does not decide real cases or claim that human judicial-recusal doctrine automatically applies.

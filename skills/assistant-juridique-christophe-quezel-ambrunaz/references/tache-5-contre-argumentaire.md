@@ -1,6 +1,6 @@
 # Tâche 5 — Analyse des références et contre-argumentaire
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU requis. Le document adverse doit être lu et analysé en profondeur. En mode CHAT, exécutable uniquement si le document est court (< 10 pages) et visible dans la fenêtre de contexte — sinon, interrompre et demander d'activer computer use. Recommander COWORK si le document dépasse 20 pages (persistance nécessaire).
+> **Environnement** : le document adverse est lu intégralement (pièce jointe ou dossier connecté). Un document long se traite par sections dans l'espace de travail ; lorsqu'un dossier connecté existe, y écrire l'analyse au fur et à mesure (reprise). Livrable Word par défaut.
 
 ## Objectif
 
@@ -62,10 +62,10 @@ Construire un tableau chronologique des événements :
 
 Pour chaque référence citée par l'adversaire :
 
-**EXÉCUTER via OpenLegi (jurisprudence et textes) et web_search (doctrine) :**
-1. Vérifier l'existence de la référence
-2. Vérifier l'exactitude de la citation (date, numéro, juridiction, contenu)
-3. Vérifier le statut temporel (texte en vigueur ? jurisprudence non renversée ?)
+**EXÉCUTER via LibreJustice et OpenLegi (jurisprudence et textes) et web_search (doctrine) :**
+1. Vérifier l'existence de la référence (`OpenLegi` par numéro exact ; `LibreJustice:search_decisions` en régime lexical, la citation entre guillemets, lorsque le numéro est absent ou erroné)
+2. Vérifier l'exactitude de la citation (date, numéro, juridiction, contenu) — lecture du texte intégral par `LibreJustice:get_decision`, jamais d'un aperçu
+3. Vérifier le statut temporel (texte en vigueur ? décision infirmée ou cassée ? — lire `appellateFate` et `caseChronology`, et signaler le cas échéant que l'adversaire invoque une décision réformée)
 4. Évaluer la pertinence : la référence soutient-elle réellement l'argument avancé ?
 5. Identifier les citations tronquées, sorties de contexte, ou détournées
 
@@ -85,7 +85,7 @@ Pour chaque moyen adverse :
 
 ### 5. Élaboration du contre-argumentaire
 
-**Séquence de recherche descendante (§3 du SKILL.md)** pour chaque moyen de réponse :
+**Séquence de recherche descendante (§ 4 du SKILL.md)** pour chaque moyen de réponse :
 1. Textes normatifs soutenant la position opposée
 2. Jurisprudence suprême contraire ou permettant de distinguer
 3. Jurisprudence du fond favorable

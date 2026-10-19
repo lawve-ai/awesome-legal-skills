@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/task_matrix/v1",
+  "title": "Matrix assessment proposal",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "observation_id": {
+            "type": "string",
+            "pattern": "^obs:[A-Za-z0-9._-]{1,128}$",
+            "maxLength": 140
+          },
+          "hypothesis_id": {
+            "type": "string",
+            "pattern": "^hyp:[A-Za-z0-9._-]{1,128}$",
+            "maxLength": 140
+          },
+          "relation": {
+            "enum": ["supports", "conflicts", "neutral"]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "basis_passage_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^psg:[A-Za-z0-9._-]{1,128}$",
+              "maxLength": 140
+            },
+            "maxItems": 1000
+          }
+        },
+        "required": [
+          "observation_id",
+          "hypothesis_id",
+          "relation",
+          "reason",
+          "basis_passage_ids"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,7 @@
+{
+  "protocol": "la:quality-paired/v1",
+  "status": "not_run",
+  "prereg_sha256": null,
+  "records": [],
+  "notes": "Empty template, not observations. Populate only with independently monitored and blinded human-scored synthetic runs. See protocol.md for record shape; failures retain oracle denominators with zero numerator."
+}

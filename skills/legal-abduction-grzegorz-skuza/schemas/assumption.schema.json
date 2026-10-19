@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/assumption/v1",
+  "title": "Assumption",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^asm:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "basis": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "kind": {
+      "enum": [
+        "bridge_rule",
+        "background",
+        "model_assumed"
+      ]
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "statement",
+    "kind"
+  ],
+  "additionalProperties": false
+}

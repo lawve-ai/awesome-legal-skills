@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/packet/v1",
+  "title": "Model packet",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "packet_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "task_type": {
+      "enum": [
+        "claims",
+        "hypotheses",
+        "altcause",
+        "matrix",
+        "tests",
+        "event_time"
+      ]
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "prompt_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "lang": {
+      "enum": [
+        "pl",
+        "en"
+      ]
+    },
+    "model_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{1,100}$"
+    },
+    "analysis_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "output_schema_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "cache_key": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "items": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "content": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "hash",
+          "content"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "case_id",
+    "packet_id",
+    "task_type",
+    "schema_version",
+    "prompt_version",
+    "lang",
+    "model_id",
+    "analysis_hash",
+    "output_schema_id",
+    "cache_key",
+    "items"
+  ],
+  "additionalProperties": false
+}

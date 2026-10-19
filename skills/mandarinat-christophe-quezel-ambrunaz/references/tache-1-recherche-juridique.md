@@ -1,6 +1,6 @@
 # Tâche 1 — Recherche juridique approfondie
 
-> **Pré-requis environnement** : aucun — exécutable en tout mode. COWORK/CHAT_CU : livrable Word. CHAT : réponse conversationnelle structurée.
+> **Environnement** : aucun prérequis. Livrable Word par défaut (artefact Docs si l'utilisateur le demande) ; pour une question brève, réponse structurée dans la conversation. Tableau de vérification remis en document séparé (`references/environnement-et-livrables.md`).
 
 ## Objectif
 
@@ -14,7 +14,7 @@ Identifier les questions juridiques et le droit applicable. Le playbook oriente 
 
 ### 2. Recherche documentaire — Séquence descendante
 
-Suivre la séquence du §3 du SKILL.md dans cet ordre strict :
+Suivre la séquence du § 4 du SKILL.md dans cet ordre strict :
 
 **EXÉCUTER :**
 
@@ -25,16 +25,17 @@ Suivre la séquence du §3 du SKILL.md dans cet ordre strict :
 - Vérifier les métadonnées temporelles de chaque texte (état juridique, dates de vigueur)
 - Qualifier le statut temporel dans chaque citation
 
-**2b. Jurisprudence suprême** via OpenLegi :
-- `rechercher_jurisprudence_judiciaire` (filtre Cour de cassation, `publication_bulletin: true` en premier)
-- `rechercher_jurisprudence_administrative` (filtre Conseil d'État, `publication_recueil: true` en premier)
-- `rechercher_decisions_constitutionnelles` si pertinent
+**2b. Jurisprudence suprême** via LibreJustice (première intention), OpenLegi (référence exacte et lien Légifrance) :
+- `LibreJustice:search_decisions` — requête descriptive ; `seat` `["CC"]`, `["CE"]`, `["CONSTIT"]` (ou une chambre : `CC.C1_CIVILE`…) ; `publication` `["PUBLIE_RAPPORT","PUBLIE_BULLETIN","LETTRE_CHAMBRE","PUBLIE_LEBON"]` pour remonter d'abord les décisions publiées ; `legal_article` (`code-civil|1240`) pour cibler les décisions visant un article déterminé
+- `LibreJustice:get_decision` sur chaque décision retenue — motifs, dispositif, `appellateFate`, `caseChronology`, `commentaires`. Jamais de sélection ni de citation sur la foi d'un `aiSummary` ou d'un `snippet`
+- `OpenLegi:rechercher_jurisprudence_judiciaire` / `rechercher_jurisprudence_administrative` / `rechercher_decisions_constitutionnelles` — recherche par numéro exact et extraction du lien Légifrance de chaque décision citée
 - Identifier les arrêts de principe, les revirements, la jurisprudence constante
 
-**2c. Jurisprudence du fond** via OpenLegi :
-- `rechercher_jurisprudence_judiciaire` (filtre cours d'appel, tribunaux judiciaires)
-- `rechercher_jurisprudence_administrative` (filtre CAA, TA)
-- Sélectionner les décisions illustrant concrètement l'application de la règle
+**2c. Jurisprudence du fond** via LibreJustice :
+- `LibreJustice:search_decisions` — `seat` (`CA`, `TJ`, `TCOM`, `CAA`, `TA`, ou une juridiction déterminée : `CA.PARIS`, `TA.LYON`…) ; `CNDA` pour l'asile
+- Lire `appellateFate` avant de retenir une décision : une décision infirmée n'illustre pas l'état du droit sans que son infirmation soit signalée
+- `OpenLegi:rechercher_jurisprudence_judiciaire` / `rechercher_jurisprudence_administrative` en complément et pour le lien Légifrance ; à défaut de diffusion sur Légifrance, porter le lien `librejustice.fr` en le qualifiant
+- Sélectionner les décisions illustrant concrètement l'application de la règle, sans jamais présenter l'absence de décision trouvée comme une absence de jurisprudence
 
 **2d. Doctrine** (priorité renforcée — contexte académique) :
 - `scripts/doctrine_search.py` → recherche doctrinale multi-sources (HAL + OpenAlex + Isidore), identifiant vérifiable par référence ; `scripts/hal_search.py` pour les notes d'arrêt par pourvoi
@@ -57,7 +58,7 @@ Suivre la séquence du §3 du SKILL.md dans cet ordre strict :
 ### 3. Vérification
 
 Pour chaque référence citée :
-1. Confirmer l'existence via OpenLegi ou web_search (cf. `references/principes-cardinaux.md`)
+1. Confirmer l'existence et **lire le contenu** via LibreJustice (`get_decision`, `get_norm`), OpenLegi ou web_search (cf. `references/principes-cardinaux.md`)
 2. Vérifier le statut temporel (en vigueur / abrogé / futur)
 3. Qualifier la nature de la source (normatif / travaux parlementaires / informatif)
 4. Créer un lien hypertexte vers la source
@@ -91,6 +92,6 @@ Pour chaque référence citée :
 
 ### 5. Livraison
 
-Écrire le fichier Word selon le mode d'environnement (cf. §6 du SKILL.md). Nommage : `[AAAA-MM-JJ]-recherche-[sujet].docx`.
+Écrire le livrable selon le § 3 du SKILL.md (Word par défaut, Docs sur demande). Nommage : `[AAAA-MM-JJ]-recherche-[sujet].docx`.
 
 Proposer des tâches connexes : création de sujet d'examen sur le thème, mise à jour d'un cours existant, préparation d'un support de cours.

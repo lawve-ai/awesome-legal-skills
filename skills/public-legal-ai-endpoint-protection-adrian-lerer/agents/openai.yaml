@@ -1,0 +1,4 @@
+interface:
+  display_name: "Endpoint Protection by Ignacio Lerer"
+  short_description: "Review public AI endpoints before launch"
+  default_prompt: "Use $public-legal-ai-endpoint-protection to review this public AI endpoint before launch."

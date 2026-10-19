@@ -15,7 +15,7 @@ Format d'entrée attendu (chaque référence) :
     "url": "URL vers la source",
     "authors": ["Nom1", "Nom2"],
     "year": 2023,
-    "source_tool": "OpenLegi|HAL|web_search"
+    "source_tool": "OpenLegi|LibreJustice|HAL|web_search"
 }
 """
 

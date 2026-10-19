@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/review/v1",
+  "title": "Review",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^rev:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "item_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "decision": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "evidence_class": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "review_file_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "batch_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "sampled": {
+      "type": "boolean"
+    },
+    "triage": {
+      "enum": [
+        "I",
+        "II"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "individual",
+        "bulk"
+      ]
+    },
+    "item_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "reconsiders_review_id": {
+      "type": "string",
+      "pattern": "^rev:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "item_id",
+    "decision",
+    "reviewer",
+    "evidence_class",
+    "review_file_sha256",
+    "batch_id",
+    "sampled"
+  ],
+  "additionalProperties": false
+}

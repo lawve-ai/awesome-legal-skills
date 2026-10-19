@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/assessment/v1",
+  "title": "Assessment",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^ass:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "observation_id": {
+      "type": "string",
+      "pattern": "^obs:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "hypothesis_id": {
+      "type": "string",
+      "pattern": "^hyp:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "relation": {
+      "enum": ["supports", "conflicts", "neutral"]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "basis_passage_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^psg:[A-Za-z0-9._-]{1,128}$",
+        "maxLength": 140
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "supersedes": {
+      "type": "string",
+      "pattern": "^ass:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "observation_id",
+    "hypothesis_id",
+    "relation",
+    "reason",
+    "basis_passage_ids"
+  ],
+  "additionalProperties": false
+}

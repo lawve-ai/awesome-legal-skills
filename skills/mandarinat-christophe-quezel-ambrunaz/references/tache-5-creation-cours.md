@@ -1,6 +1,6 @@
 # Tâche 5 — Création de cours
 
-> **Pré-requis environnement** : COWORK **obligatoire**. Cette tâche produit un ou plusieurs fichiers lourds (Word + potentiellement PPTX). **Bloquer** en mode CHAT et CHAT_CU.
+> **Environnement** : espace de travail requis. Support écrit : Word par défaut (artefact Docs sur demande). Support de présentation : PowerPoint (.pptx, skill `pptx`) par défaut, artefact Slides si l'utilisateur demande des « slides » ou une présentation à éditer en ligne.
 
 ## Objectif
 
@@ -26,9 +26,9 @@ Cadrage juridique du thème. Identifier les axes structurants, les questions-cl�
 
 ### 3. Recherche documentaire approfondie
 
-Suivre intégralement la séquence de recherche du §3 du SKILL.md :
-- Textes normatifs (OpenLegi)
-- Jurisprudence suprême puis fond (OpenLegi)
+Suivre intégralement la séquence de recherche du § 4 du SKILL.md :
+- Textes normatifs (OpenLegi ; `LibreJustice:get_norm` pour les rédactions successives lorsqu'un cours doit exposer une évolution)
+- Jurisprudence suprême puis fond (LibreJustice `search_decisions` / `get_decision` en première intention, OpenLegi pour le lien Légifrance)
 - Doctrine (`scripts/doctrine_search.py` multi-sources + web_search) — **minimum 15 sources doctrinales** pour un cours complet, chacune avec identifiant vérifiable (DOI/HAL/URL)
 - Droit comparé (LegalDataHunter) si pertinent pour le thème
 
@@ -82,11 +82,11 @@ BIBLIOGRAPHIE INDICATIVE
 
 **Format des citations** : voir `references/format-citations.md`
 
-### 6. Création du support PPTX (si demandé)
+### 6. Création du support de présentation (si demandé)
 
-**Invoquer la skill `pptx` pour la génération de la présentation.**
+**Format** : PowerPoint par défaut — invoquer la skill `pptx`. Si l'utilisateur demande des « slides » ou une présentation à éditer en ligne, créer un artefact Slides (type d'artefact proposé par Claude) en suivant les instructions que ce type fournit à sa création. Les principes ci-dessous valent dans les deux cas.
 
-**Principes du support PPTX :**
+**Principes du support :**
 - Le PPTX est un **support de présentation**, pas une duplication du cours
 - Contenu épuré : titres, schémas, points-clés, citations marquantes
 - Pas de paragraphes de texte longs sur les slides
@@ -105,8 +105,8 @@ BIBLIOGRAPHIE INDICATIVE
 ### 7. Vérification
 
 Avant livraison :
-1. Vérifier toutes les références citées (anti-hallucination, §2 du SKILL.md)
-2. Vérifier la temporalité des textes (§7 du SKILL.md)
+1. Vérifier toutes les références citées (checklist pré-livraison, tableau remis en document séparé)
+2. Vérifier la temporalité des textes (§ 6 du SKILL.md)
 3. Vérifier la cohérence du plan et l'équilibre des parties
 4. Vérifier l'adaptation au niveau annoncé
 
@@ -114,10 +114,10 @@ Avant livraison :
 
 Nommage :
 - Cours : `[AAAA-MM-JJ]-cours-[matiere]-[theme].docx`
-- PPTX : `[AAAA-MM-JJ]-cours-[matiere]-[theme].pptx`
+- Présentation : `[AAAA-MM-JJ]-cours-[matiere]-[theme].pptx` (ou artefact Slides du même titre)
 
 Proposer des tâches connexes :
 - Création de sujets d'examen (tâche 3)
-- Création de QCM (rediriger vers skill `qcm-generator`)
+- Création de QCM ou d'exercices rapides d'entraînement (rediriger vers skill `qcm-exercices`)
 - Création de fiches de TD
 - Mise à jour future (tâche 4)

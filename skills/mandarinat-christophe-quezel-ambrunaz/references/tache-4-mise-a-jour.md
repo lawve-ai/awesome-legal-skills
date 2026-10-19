@@ -1,6 +1,6 @@
 # Tâche 4 — Mise à jour de documents juridiques
 
-> **Pré-requis environnement** : COWORK **obligatoire**. Cette tâche nécessite la lecture intégrale du document source, la production d'un fichier de modifications numéroté, et potentiellement l'intégration des modifications. **Bloquer** en mode CHAT et CHAT_CU si le document dépasse 10 pages.
+> **Environnement** : espace de travail requis (lecture intégrale du document source, fichier de modifications numéroté, intégration éventuelle). Un document long se traite par sections ; lorsqu'un dossier connecté existe, y écrire le fichier de modifications au fur et à mesure (reprise dans une autre conversation). Livrable Word par défaut.
 
 ## Objectif
 
@@ -42,8 +42,10 @@ Pour chaque point de droit identifié dans le document :
 - `recherche_journal_officiel` → textes récents non encore codifiés
 - **Signaler** toute modification législative postérieure à la date estimée de dernière mise à jour
 
-**3b. Recherche jurisprudentielle** via OpenLegi :
-- `rechercher_jurisprudence_judiciaire` / `_administrative` avec mots-clés + filtre date postérieure à la dernière mise à jour
+**3b. Recherche jurisprudentielle** via LibreJustice puis OpenLegi :
+- `LibreJustice:search_decisions` avec `date_from` fixée à la date estimée de dernière mise à jour, `sort: "date_desc"`, `publication: ["PUBLIE_RAPPORT","PUBLIE_BULLETIN","LETTRE_CHAMBRE","PUBLIE_LEBON"]` pour hiérarchiser, et `legal_article` pour cibler les décisions visant les articles traités par le document
+- `LibreJustice:get_decision` sur chaque décision retenue (motifs réels, `appellateFate`) ; `OpenLegi` pour le lien Légifrance
+- `OpenLegi:rechercher_jurisprudence_judiciaire` / `_administrative` avec mots-clés + filtre date postérieure à la dernière mise à jour
 - Identifier : nouveaux arrêts de principe, revirements, évolutions significatives
 - Distinguer : arrêts fondateurs (à conserver) vs. arrêts illustratifs (remplaçables si plus récent et plus pertinent)
 
@@ -59,7 +61,7 @@ Pour chaque point de droit identifié dans le document :
 
 Pour chaque référence présente dans le document :
 1. Vérifier l'existence et l'exactitude via OpenLegi ou web_search
-2. Vérifier le statut temporel (texte toujours en vigueur ? jurisprudence non renversée ?)
+2. Vérifier le statut temporel (texte toujours en vigueur ? — `LibreJustice:get_norm` avec `date` ; jurisprudence non renversée ? — `appellateFate` et `caseChronology`)
 3. Si erreur : corriger dans le fichier de modifications
 4. Si référence obsolète : proposer un remplacement
 
@@ -128,4 +130,4 @@ Pour chaque référence présente dans le document :
    - Modifications à discuter ou rejeter
    - Recherches complémentaires sur des points spécifiques
 
-Proposer des tâches connexes : mise à jour d'un support PPTX associé, création de QCM actualisés (rediriger vers `qcm-generator`), création d'un nouveau sujet d'examen sur le thème actualisé.
+Proposer des tâches connexes : mise à jour d'un support PPTX associé, création de QCM ou d'exercices rapides actualisés (rediriger vers `qcm-exercices`), création d'un nouveau sujet d'examen sur le thème actualisé.

@@ -35,6 +35,11 @@
       "path": "skills/employment-law-research-yue-deng-wu",
       "updated_at": "2026-05-18T21:47:42.010917+02:00"
     },
+    "066f694b-b686-5ae1-8917-c13e5c4c45ab": {
+      "digest": "cab7c86849cc750c8b6a9c3168597fd07a98b10f7041d8652d047f727ff33d73",
+      "path": "skills/docx-operational-integrity-check-adrian-lerer",
+      "updated_at": "2026-08-17T00:14:20.612846+02:00"
+    },
     "06b5e21b-d972-537a-9861-1050e48a6827": {
       "digest": "59fd3ea18eda82b81b690c2dcafa848589975c5ca16834c8d1b86e21d5ed8f03",
       "path": "skills/legal-mdl-audit-adrian-lerer",
@@ -120,6 +125,11 @@
       "path": "skills/ambiguity-report-seth-chandler",
       "updated_at": "2026-07-29T21:46:38.509489+02:00"
     },
+    "1d1c6b6b-e96f-4509-92d3-0e35b4a7d7e5": {
+      "digest": "455bf1749d4ab7b05582ea8c959a87d73e483c67e9d9f8c634829ca67c78f5d6",
+      "path": "skills/citable-cameron-russell",
+      "updated_at": "2026-10-07T21:11:48.365511+02:00"
+    },
     "1d2c5672-5823-5431-bf3e-6ac0bf14f8c9": {
       "digest": "c84d0258aa525eeeaab02c97b60736ffc9cfb72da5d36ef02dd6b7f1774fd5e6",
       "path": "skills/requete-cph-licenciement-faute-grave-selim-brihi",
@@ -174,6 +184,11 @@
       "digest": "e45c016010970a7bafa6af463aa600d9eed968b42024b01ddc4db77e0ab1f953",
       "path": "skills/special-panels-timor-leste-jeanne-sulzer",
       "updated_at": "2026-06-25T15:45:04.001406+02:00"
+    },
+    "28bf7347-478f-45b4-b305-8a7cca21553a": {
+      "digest": "af04de614b1950a2cc57088538182e3afd33b6f6c3ad7c09965d3d2631deab25",
+      "path": "skills/fiche-commentaire-arret-administratif-el-ouertani-faouzi",
+      "updated_at": "2026-10-04T19:32:10.937120+02:00"
     },
     "297321a3-26b9-5980-9654-778666748002": {
       "digest": "4d9b7b7bb50140d9f729ed51fa64feb0b20949c7d5cc76738fe4b026aceb8bea",
@@ -315,6 +330,11 @@
       "path": "skills/excel-editor-openai",
       "updated_at": "2026-01-30T01:00:00+01:00"
     },
+    "411c7f1a-cee3-4b3d-a1e2-a3906d2a0f0e": {
+      "digest": "f3be2b76879650622ec0d473bf40d7b3caa513b87959e844f234c98b87409b38",
+      "path": "skills/capability-admission-check-adrian-lerer",
+      "updated_at": "2026-08-17T00:00:19.824557+02:00"
+    },
     "411ce151-8e31-4b2a-a40b-676d9537e385": {
       "digest": "f7f05a25feb6809fee774b050f18feccb6f67edc7247ff3236324e594640cf5d",
       "path": "skills/thesis-assesor-seth-chandler",
@@ -370,6 +390,11 @@
       "path": "skills/recherche-doctrine-allison-fiorentino",
       "updated_at": "2026-04-30T12:17:36.762799+02:00"
     },
+    "48447dde-3334-5896-a985-46a165d713e2": {
+      "digest": "b7d34600cd59d62b36c3b02a99ed2e81a9ba155bb6d8c8f4d7fe852fc7c46ee4",
+      "path": "skills/workflow-to-skill-adrian-lerer",
+      "updated_at": "2026-08-17T00:16:14.776844+02:00"
+    },
     "493983e0-4d5d-5fe5-aed8-523780d4bcf1": {
       "digest": "97f029228a7ee719e63df67b7785597872f435d83701dd63e1f5729028ca6b9d",
       "path": "skills/icelandic-labour-law-magnus-smarason",
@@ -384,6 +409,11 @@
       "digest": "206bbaa4e783bc47fe2e8d4ebde45ea4a02957ec81e97125d456c90a3104ff32",
       "path": "skills/eu-legislation-malik-taiar",
       "updated_at": "2026-07-09T11:26:55.355684+02:00"
+    },
+    "4a14756e-a39e-40ef-a760-89794f4f7732": {
+      "digest": "f856a6600ce3b24729b1791c637bd9214048eca8411c5972a78f61a6d19e6d0e",
+      "path": "skills/tabellion-christophe-quezel-ambrunaz",
+      "updated_at": "2026-10-08T06:27:13.811282+02:00"
     },
     "4b7711be-0e22-59cc-8bcb-a0de0b85af20": {
       "digest": "660688c87f3b1bc004181554f923be3a1f419a54042e084c04b978567e6adedc",
@@ -436,9 +466,9 @@
       "updated_at": "2026-07-29T21:24:11.261497+02:00"
     },
     "51a0abd8-117d-50e6-9c73-74fd3e7b2c3a": {
-      "digest": "e86c084e77242dccc186f249e63248271434940687d2521dbf3db4390b5104a8",
+      "digest": "f7412330c53f1a2dd320ea02f2a30a80c3f2cb7350ebcb21f499a06ed29b0e1b",
       "path": "skills/mandarinat-christophe-quezel-ambrunaz",
-      "updated_at": "2026-07-27T11:45:26.856436+02:00"
+      "updated_at": "2026-10-15T07:29:45.534633+02:00"
     },
     "52a61a0f-ea76-578b-a713-5c6963aa2cb8": {
       "digest": "6364649d60b45bb636f8e014ed2627b7d2e8faf3c4528182679a8a022e0f120c",
@@ -552,7 +582,7 @@
     },
     "63079b41-32f3-433d-a912-aaff1adb803e": {
       "digest": "089e19dee159681445f78e543eecbd113eff7f62e1aba9666a645d3a4c532b9b",
-      "path": "skills/regulatory-threat-model-ansvar-ai",
+      "path": "skills/regulatory-threat-model-jeffrey-von-rotz",
       "updated_at": "2026-07-22T06:55:56.891745+02:00"
     },
     "64c87da1-61a0-560a-9c9d-784f56797d90": {
@@ -665,10 +695,15 @@
       "path": "skills/vn-pdpl-tanaji-hemant-naik",
       "updated_at": "2026-07-26T15:40:09.762827+02:00"
     },
+    "77d78ee6-e1e3-4e56-b5de-aadd08d0339b": {
+      "digest": "0c6f65f95b8292fa2a7410de0e1494e94907af18161d5591019e51191c78cc9d",
+      "path": "skills/assistant-juridique-droit-travail-el-ouertani-faouzi",
+      "updated_at": "2026-10-07T21:17:42.994111+02:00"
+    },
     "784d5ed1-86e7-5dba-ac57-16e5882d1b3c": {
-      "digest": "c899440a141243c570126c82b82adee7abec78752f2b6df0762d5efcd02b2e3e",
+      "digest": "233e70813e5463a56eb022ed911fcc294d01932e39e07438eb7cb8a8111d0fdb",
       "path": "skills/assistant-juridique-christophe-quezel-ambrunaz",
-      "updated_at": "2026-07-27T11:45:07.816258+02:00"
+      "updated_at": "2026-10-15T07:28:36.421569+02:00"
     },
     "78c461ec-bc0f-5f91-9b91-9723b47b54b4": {
       "digest": "60ccb573366bbb71bd36d4e68a1ed6bb314d76b6cbcae17060847b1a95198173",
@@ -737,7 +772,7 @@
     },
     "835a875c-ad83-4756-a5bf-33804b4f600a": {
       "digest": "f66eb6eceac1b36d14cee059ff8e3c41ee1150c4463b1c0c1a5729892419d2a4",
-      "path": "skills/incident-reporting-navigator-ansvar-ai",
+      "path": "skills/incident-reporting-navigator-jeffrey-von-rotz",
       "updated_at": "2026-07-19T14:23:51.881448+02:00"
     },
     "83d601e7-2175-5768-a2ea-a8f032d72d36": {
@@ -749,6 +784,16 @@
       "digest": "262e644a7685ffe04f3c07a7f7bc914b86e6e36d750407499886b3dd6a27ff95",
       "path": "skills/california-bar-complete-robb-miller",
       "updated_at": "2026-07-31T23:25:22.838761+02:00"
+    },
+    "87b5de4c-bd9c-4642-bfab-8aa6351c7d21": {
+      "digest": "ca7e9c422f39041fd13389d84ef26044c0cd904b602453e6c39f3ca1ea229fa8",
+      "path": "skills/legal-abduction-grzegorz-skuza",
+      "updated_at": "2026-10-15T21:31:13.987757+02:00"
+    },
+    "87d5e16a-381f-4535-938f-1ac63bc94820": {
+      "digest": "777b92fe5c74e05b81b602a247f5832957653c67033fe1241dd6b501900a8ee8",
+      "path": "skills/scotus-argument-analyzer-seth-chandler",
+      "updated_at": "2026-10-06T19:37:20.648322+02:00"
     },
     "8824818f-daa9-5c2d-82aa-fce854ce383b": {
       "digest": "6bc544517f27da59575f0fbc5f2add272a4180c793476a4f62e90dab98c0e4fe",
@@ -826,9 +871,14 @@
       "updated_at": "2026-06-29T11:31:23.496994+02:00"
     },
     "9888736a-aee5-447d-b97d-dd47908bc99e": {
-      "digest": "3f3fa25867a767297ac5d17ae770f55a7197f96d1cc3ef7a7361223e7efed0ab",
+      "digest": "6a0a14d2d860f68f342374336f8d97856e7a239950899ec23d308b7ead6ebdab",
       "path": "skills/recherche-normes-librejustice",
-      "updated_at": "2026-08-06T19:15:53.119235+02:00"
+      "updated_at": "2026-10-07T11:40:48.472108+02:00"
+    },
+    "99812c2f-ab92-4689-9e9e-7290bbaa2cd9": {
+      "digest": "49a687f716f675ed8fe58634c9974a4e4ed45fc1fce98052eb73687483929426",
+      "path": "skills/adjudicative-ai-impartiality-challenge-adrian-lerer",
+      "updated_at": "2026-09-26T18:15:01.393792+02:00"
     },
     "9ad3e9af-1d83-5b06-b59d-2ef2d2642e88": {
       "digest": "aec6a1f043c7cef45fdf720f43b0f1bbe238ec9528ddf4c1fa03b87a5d8e98b6",
@@ -877,7 +927,7 @@
     },
     "a383c631-795d-459e-bcce-be1e1d1026f5": {
       "digest": "3cc2da86fb8045d7e42a1f94844be0f6918aa3d8819447c19000fd9e7fd354d2",
-      "path": "skills/cra-vulnerability-obligations-ansvar-ai",
+      "path": "skills/cra-vulnerability-obligations-jeffrey-von-rotz",
       "updated_at": "2026-07-19T13:31:41.111842+02:00"
     },
     "a4d17bb1-ddbc-5600-9bf9-7a0b5faf6121": {
@@ -914,6 +964,11 @@
       "digest": "b48e33cca1e86cc7d4bcb5ec9ee73b45bd7729ed035b8d3611e68db489f97c11",
       "path": "skills/reader-first-technical-edit-seth-chandler",
       "updated_at": "2026-09-07T19:31:46.289199+02:00"
+    },
+    "ac352ad3-9d0d-5d43-a948-7513efe55b99": {
+      "digest": "2cb976155e224694e2c97d4a9d04371e6b86961b3cebbf9d7efd96c9f0ef481a",
+      "path": "skills/public-legal-ai-endpoint-protection-adrian-lerer",
+      "updated_at": "2026-08-17T00:16:55.875630+02:00"
     },
     "ad9f826d-a7bc-5797-a97d-ff619c90abee": {
       "digest": "d1f36c15be05bf1aadeaa4070bf0e09dcbfa2d760ea4a285bbfd22402b5a2919",
@@ -1054,6 +1109,11 @@
       "digest": "dc493810593815d187c123c782bb9c77207676d2e8bb4e518293305c3aea664b",
       "path": "skills/regulatory-audit-generator-moonshot-ai",
       "updated_at": "2026-08-07T14:56:22.578302+02:00"
+    },
+    "cb46619a-a47b-481c-9b4a-161b8337596c": {
+      "digest": "33e3a023989d3ffbc141c0263968f36b6428c22693c0452ef6ebcc4d1bb1fa83",
+      "path": "skills/pci-compliance-el-ouertani-faouzi",
+      "updated_at": "2026-10-05T15:45:22.925076+02:00"
     },
     "cc9ce356-43ea-57e2-8fee-88c149046cdc": {
       "digest": "1069ea5842eee204f5590b884aebf56061706bda599acb4b34f43d2403330d30",
@@ -1236,9 +1296,9 @@
       "updated_at": "2026-04-30T12:05:39.635026+02:00"
     },
     "f154645d-c960-4291-9250-f434fd5ffe52": {
-      "digest": "e63dc171de10c7367293471a20c982f991d167775e683d0bb0bdd332ba78ec12",
+      "digest": "b68a32530f637959d9e6d090457d055f28e77b89b02c05ef80a76191cdf65951",
       "path": "skills/recherche-jurisprudence-librejustice",
-      "updated_at": "2026-08-06T19:11:12.378073+02:00"
+      "updated_at": "2026-10-07T10:16:53.967843+02:00"
     },
     "f1b1506e-c1a0-4164-89d0-8e4e46faf673": {
       "digest": "1d045381c3ba8903c6ffcd8fbdbc1a2ea2147872d82744a638d6de0f3192b717",

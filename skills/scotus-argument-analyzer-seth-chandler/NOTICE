@@ -1,0 +1,26 @@
+Supreme Court Oral Argument Analyzer
+Copyright 2026 Seth J. Chandler
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Origin: Seth J. Chandler's original scotus-argument-analyzer.skill.
+The author confirmed ownership and approved Apache-2.0 in this preparation session.
+Author link: https://legaled.ai
+
+AI-assisted preparation for distribution, October 6, 2026:
+- Retained the nine-section transcript-analysis workflow and source-pinpoint requirements.
+- Qualified vote inferences and distinguished silence from verified nonparticipation.
+- Added coverage checks, source and capability fallbacks, and explicit uncertainty.
+- Replaced embedded PDF conversion code with an optional standard-library text tally.
+- Added catalogue documentation, metadata, license, attribution, and code disclosure.
+
+Code disclosure: scripts/tally.py reads one user-named UTF-8 text file and prints
+section-level judicial speaking turns and approximate whitespace-delimited word
+counts. It uses the Python standard library only. It makes no network calls,
+writes no files, starts no child processes, and performs no dynamic code evaluation.
+It requires official-style headings and manual verification against the transcript.
+
+The example Suncor report supplied for preparation is not included or licensed
+through this package. Its factual claims were not independently verified here.
+No endorsement by the Supreme Court, OpenAI, Lawve, or any other platform is implied.
+This skill provides research assistance, not legal advice. It does not warrant
+accuracy of authority verification, inferred votes, or predicted dispositions.

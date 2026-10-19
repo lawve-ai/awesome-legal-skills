@@ -1,18 +1,14 @@
 # Connect the LibreJustice MCP server
 
-Every tool this skill uses (`search_legal_texts`, `get_legal_text`,
-`search_decisions`, `get_decision`) is served by the LibreJustice
-remote MCP server — the skill does nothing without it.
+Every tool this skill uses (`search_norms`, `get_norm`, `search_decisions`, `get_decision`) is served by the LibreJustice remote MCP server: the skill does nothing without it.
 
 - Endpoint: `https://librejustice.fr/mcp`
 - Transport: streamable HTTP
-- Auth: OAuth 2.1, auto-discovered by the client. The browser flow
-  creates a free account if the user does not have one.
+- Auth: OAuth 2.1, auto-discovered by the client. The browser flow creates a free account if the user does not have one.
 
 ## Agent CLIs
 
-Claude Code — the plugin installs the connector and the skills
-together:
+Claude Code: the plugin installs the connector and the skills together:
 
 ```
 /plugin marketplace add librejustice/librejustice
@@ -40,7 +36,4 @@ Any client that reads a JSON MCP config:
 
 ## Chat apps
 
-claude.ai, ChatGPT (Developer mode), Le Chat (Mistral), Perplexity:
-add a custom connector pointing at `https://librejustice.fr/mcp` and
-authorize via OAuth. Step-by-step per client:
-<https://librejustice.fr/mcp-guide>
+claude.ai, ChatGPT (Developer mode), Le Chat (Mistral), Perplexity: add a custom connector pointing at `https://librejustice.fr/mcp` and authorize via OAuth. Step-by-step per client: <https://librejustice.fr/mcp-guide>

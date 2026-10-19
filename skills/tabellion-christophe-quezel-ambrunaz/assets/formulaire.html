@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>__TITRE__</title>
+<style>
+:root {
+  --papier: #f7f5f0; --carte: #ffffff; --encre: #1f2430; --doux: #5b6170; --filet: #dcd7cc;
+  --accent: #2c4a6e; --accent-doux: #e6ecf3; --alerte: #9a3412; --alerte-fond: #fdf1e7; --ok: #276749;
+  --ok-fond: #e8f4ec; --essai: #7a5b00; --essai-fond: #fff6d6; --rayon: 6px;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --papier: #16181d; --carte: #1f232a; --encre: #e6e3dc; --doux: #a3a7b0; --filet: #343a44;
+    --accent: #9db8d9; --accent-doux: #253244; --alerte: #f0a77a; --alerte-fond: #3a2618; --ok: #8fd1a7;
+    --ok-fond: #1d3326; --essai: #f1d277; --essai-fond: #3a3115;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--papier); color: var(--encre); font: 15px/1.5 var(--sans); }
+header.tete { border-bottom: 1px solid var(--filet); background: var(--carte); }
+.tete .dedans { max-width: 1180px; margin: 0 auto; padding: 18px 16px 14px; }
+h1 { font: 600 1.6rem/1.2 var(--serif); margin: 0 0 4px; }
+h2 { font: 600 1.2rem/1.3 var(--serif); margin: 0 0 10px; }
+h3 { font: 600 1rem/1.3 var(--sans); margin: 14px 0 8px; }
+.sous { color: var(--doux); font-size: .9rem; }
+.barre { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+button, .bouton { font: inherit; border: 1px solid var(--filet); background: var(--carte); color: var(--encre);
+  padding: 6px 12px; border-radius: var(--rayon); cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button.principal { background: var(--accent); color: var(--carte); border-color: var(--accent); }
+button.petit { padding: 2px 8px; font-size: .85rem; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.page { max-width: 1180px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: 220px 1fr; gap: 20px; }
+nav.sommaire { position: sticky; top: 12px; align-self: start; font-size: .92rem; }
+nav.sommaire a { display: block; padding: 5px 8px; color: var(--encre); text-decoration: none; border-radius: var(--rayon); }
+nav.sommaire a:hover { background: var(--accent-doux); }
+nav.sommaire .compte { float: right; color: var(--alerte); font-variant-numeric: tabular-nums; }
+section.bloc { background: var(--carte); border: 1px solid var(--filet); border-radius: var(--rayon); padding: 16px;
+  margin-bottom: 16px; }
+.champ { margin: 0 0 12px; }
+.champ > label, .champ > .lib { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 3px; }
+.aide { color: var(--doux); font-size: .82rem; margin-top: 2px; }
+.sensible { display: inline-block; font-size: .72rem; font-weight: 500; color: var(--alerte); border: 1px solid var(--alerte);
+  border-radius: 10px; padding: 0 6px; margin-left: 6px; vertical-align: 1px; }
+input[type=text], input[type=date], input[type=time], input[type=email], select, textarea {
+  font: inherit; color: var(--encre); background: var(--papier); border: 1px solid var(--filet); border-radius: var(--rayon);
+  padding: 5px 8px; width: 100%; max-width: 520px; }
+textarea { min-height: 90px; max-width: 100%; }
+input.invalide { border-color: var(--alerte); background: var(--alerte-fond); }
+.ligne { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.ligne > * { flex: 0 1 auto; }
+.court { max-width: 160px !important; }
+.tres-court { max-width: 90px !important; }
+fieldset { border: 1px solid var(--filet); border-radius: var(--rayon); padding: 10px 12px 2px; margin: 0 0 12px; }
+legend { font-weight: 600; font-size: .9rem; padding: 0 4px; }
+.grille-adresse { display: grid; grid-template-columns: 90px 1fr; gap: 6px; max-width: 520px; }
+.grille-adresse input { max-width: none; }
+.carte { border: 1px solid var(--filet); border-radius: var(--rayon); padding: 12px; margin: 0 0 12px; background: var(--papier); }
+.carte .entete { display: flex; justify-content: space-between; gap: 8px; align-items: center; margin-bottom: 8px; }
+.carte .entete strong { font-family: var(--serif); font-size: 1.05rem; }
+.puce { display: inline-flex; gap: 4px; align-items: center; background: var(--accent-doux); border-radius: 14px;
+  padding: 2px 4px 2px 10px; margin: 0 6px 6px 0; }
+.bandeau { border-radius: var(--rayon); padding: 10px 14px; margin: 0 0 16px; }
+.bandeau.essai { background: var(--essai-fond); color: var(--essai); border: 1px solid var(--essai); }
+.bandeau.info { background: var(--accent-doux); }
+.liste-verif { margin: 0; padding-left: 20px; }
+.liste-verif li { margin: 2px 0; }
+.manque { color: var(--alerte); }
+.ok { color: var(--ok); }
+pre.apercu { white-space: pre-wrap; font: 13px/1.5 var(--serif); background: var(--papier); border: 1px solid var(--filet);
+  border-radius: var(--rayon); padding: 14px; max-height: 480px; overflow: auto; }
+.choix-radio label { display: block; font-weight: normal; margin: 3px 0; }
+table.calculs { border-collapse: collapse; width: 100%; font-size: .9rem; }
+table.calculs td, table.calculs th { border-top: 1px solid var(--filet); padding: 6px; text-align: left; vertical-align: top; }
+.discret { color: var(--doux); }
+details summary { cursor: pointer; font-weight: 600; }
+dialog { border: 1px solid var(--filet); border-radius: var(--rayon); background: var(--carte); color: var(--encre); max-width: 560px; }
+dialog::backdrop { background: rgba(0,0,0,.35); }
+footer.pied { max-width: 1180px; margin: 0 auto; padding: 8px 16px 40px; color: var(--doux); font-size: .82rem; }
+@media (max-width: 820px) {
+  .page { grid-template-columns: 1fr; }
+  nav.sommaire { position: static; display: flex; flex-wrap: wrap; gap: 4px; }
+  nav.sommaire a { border: 1px solid var(--filet); }
+}
+</style>
+</head>
+<body>
+<header class="tete"><div class="dedans">
+  <h1 id="titre"></h1>
+  <div class="sous" id="sous-titre"></div>
+  <div class="barre">
+    <button class="principal" id="b-generer">Générer le document</button>
+    <button id="b-exporter">Enregistrer le dossier (.json)</button>
+    <button id="b-importer">Ouvrir un dossier (.json)</button>
+    <button id="b-nouveau">Nouveau dossier vide</button>
+    <button id="b-essai">Recharger les données d'essai</button>
+    <input type="file" id="fichier-json" accept=".json,application/json" hidden>
+  </div>
+</div></header>
+
+<div class="page">
+  <nav class="sommaire" id="sommaire" aria-label="Sommaire"></nav>
+  <main id="principal"></main>
+</div>
+<footer class="pied">Formulaire produit par tabellion. Tout s'exécute dans ce navigateur : aucune donnée n'est transmise,
+et la page fonctionne sans connexion. Le dossier n'est conservé que dans ce navigateur et dans les fichiers .json que vous
+enregistrez ; ces fichiers ne sont pas chiffrés.</footer>
+
+<dialog id="dialogue"><form method="dialog">
+  <h2 id="d-titre"></h2><div id="d-corps"></div>
+  <div class="barre" style="justify-content:flex-end"><button value="non">Annuler</button><button class="principal" value="oui" id="d-oui">Continuer</button></div>
+</form></dialog>
+
+<script type="application/json" id="donnees-dictionnaire">__DICTIONNAIRE__</script>
+<script type="application/json" id="donnees-modele">__MODELE__</script>
+<script type="application/json" id="donnees-plan">__PLAN__</script>
+<script type="application/json" id="donnees-essai">__ESSAI__</script>
+<script>
+__MOTEUR__
+</script>
+<script>
+(function () {
+"use strict";
+var lireJson = function (id) { return JSON.parse(document.getElementById(id).textContent); };
+var D = lireJson("donnees-dictionnaire"), M = lireJson("donnees-modele"), PLAN = lireJson("donnees-plan"),
+    ESSAI = lireJson("donnees-essai");
+var CLE = "tabellion:" + M.id;
+var dossier;
+var cloner = function (x) { return JSON.parse(JSON.stringify(x)); };
+
+// ------------------------------------------------------------ stockage
+function charger() {
+  try { var s = localStorage.getItem(CLE); if (s) return JSON.parse(s); } catch (e) { /* stockage indisponible */ }
+  return cloner(ESSAI);
+}
+function sauver() { try { localStorage.setItem(CLE, JSON.stringify(dossier)); } catch (e) { /* sans effet */ } }
+function estEssai() { return (dossier.valeurs_fictives || []).indexOf("*") >= 0; }
+function normaliserDossier(d) {
+  d.format = "tabellion-dossier";
+  ["personnes", "biens", "vehicules", "comptes", "roles", "attributs_roles", "modules", "local", "decisions", "types_extensions"].forEach(function (k) { d[k] = d[k] || {}; });
+  Object.keys(M.types_extensions || {}).forEach(function (k) { d.types_extensions[k] = M.types_extensions[k]; });
+  d.local[M.id] = d.local[M.id] || {};
+  d.decisions[M.id] = d.decisions[M.id] || { options: {}, choix: {} };
+  d.decisions[M.id].options = d.decisions[M.id].options || {};
+  d.decisions[M.id].choix = d.decisions[M.id].choix || {};
+  d.version_dictionnaire = d.version_dictionnaire || D.version;
+  return d;
+}
+
+// ------------------------------------------------------------ outils DOM
+function el(tag, attrs) {
+  var e = document.createElement(tag);
+  Object.keys(attrs || {}).forEach(function (k) {
+    var v = attrs[k];
+    if (v === undefined || v === null || v === false) return;
+    if (k === "texte") e.textContent = v;
+    else if (k.slice(0, 2) === "on") e.addEventListener(k.slice(2), v);
+    else if (k === "classe") e.className = v;
+    else e.setAttribute(k, v === true ? "" : v);
+  });
+  for (var i = 2; i < arguments.length; i++) {
+    var c = arguments[i];
+    if (c === null || c === undefined || c === false) continue;
+    (Array.isArray(c) ? c : [c]).forEach(function (x) { if (x) e.appendChild(typeof x === "string" ? document.createTextNode(x) : x); });
+  }
+  return e;
+}
+var nbIds = 0;
+function nouvelId() { return "c" + (++nbIds); }
+
+// accès : { get, set } sur une valeur du dossier
+function acces(obj, cle) {
+  return { get: function () { return obj()[cle]; },
+           set: function (v) { var o = obj(); if (v === undefined || v === null || v === "") delete o[cle]; else o[cle] = v; } };
+}
+function sousAcces(parent, cle) {
+  return { get: function () { var o = parent.get(); return o ? o[cle] : undefined; },
+           set: function (v) {
+             var o = parent.get() || {};
+             if (v === undefined || v === null || v === "") delete o[cle]; else o[cle] = v;
+             parent.set(Object.keys(o).length ? o : undefined);
+           } };
+}
+
+// ------------------------------------------------------------ validation des saisies
+function lireNombre(s) {
+  if (s === "" || s === undefined) return undefined;
+  var n = Number(String(s).replace(/[\s  ]/g, "").replace(",", "."));
+  return isNaN(n) ? NaN : n;
+}
+function ecrireNombre(n) { return n === undefined || n === null ? "" : String(n).replace(".", ","); }
+function luhn(s) { var t = 0; s.split("").reverse().forEach(function (c, i) { var d = +c; if (i % 2) { d *= 2; if (d > 9) d -= 9; } t += d; }); return t % 10 === 0; }
+function mod97(s) { var r = 0; for (var i = 0; i < s.length; i++) r = (r * 10 + (+s[i])) % 97; return r; }
+var CONTROLES = {
+  siren: function (s) { s = s.replace(/\s/g, ""); return /^\d{9}$/.test(s) && luhn(s); },
+  siret: function (s) { s = s.replace(/\s/g, ""); return /^\d{14}$/.test(s) && luhn(s); },
+  tva_fr: function (s) { var m = /^FR(\d{2})(\d{9})$/.exec(s.replace(/\s/g, "")); return !!m && +m[1] === (12 + 3 * (+m[2] % 97)) % 97; },
+  rna: function (s) { return /^W[0-9A-Z]{9}$/.test(s.replace(/\s/g, "")); },
+  iban: function (s) { s = s.replace(/\s/g, "").toUpperCase(); if (!/^[A-Z]{2}\d{2}[A-Z0-9]+$/.test(s)) return false;
+    var r = (s.slice(4) + s.slice(0, 4)).replace(/[A-Z]/g, function (c) { return String(c.charCodeAt(0) - 55); }); return mod97(r) === 1; },
+  nir: function (s) { s = s.replace(/\s/g, "").toUpperCase().replace("2A", "19").replace("2B", "18");
+    return /^\d{15}$/.test(s) && 97 - mod97(s.slice(0, 13)) === +s.slice(13); },
+  code_postal_fr: function (s) { return /^\d{5}$/.test(s); }
+};
+
+// ------------------------------------------------------------ champs
+var changementStructure = function () { construire(); };
+function apresSaisie() { sauver(); planifierVerification(); }
+
+function entree(type, valeur, surSaisie, attrs) {
+  var i = el("input", Object.assign({ type: type, value: valeur === undefined ? "" : valeur, id: nouvelId() }, attrs || {}));
+  i.addEventListener("input", function () { surSaisie(i); });
+  return i;
+}
+
+function uiChamp(def, a, chemin) {
+  var id = nouvelId(), t = def.type, aide = def.aide || PLAN.aides[chemin];
+  var tete = el("label", { "for": id, texte: def.libelle }, def.sensible ? el("span", { classe: "sensible", texte: "donnée sensible" }) : null);
+  var corps;
+  switch (t) {
+    case "groupe":
+      return el("fieldset", null, el("legend", { texte: def.libelle }),
+        def.champs.map(function (c) { return uiChamp(c, sousAcces(a, c.id), chemin + "." + c.id); }),
+        aide ? el("div", { classe: "aide", texte: aide }) : null);
+    case "liste":
+      return uiListe(def, a, chemin);
+    case "texte_long":
+      corps = el("textarea", { id: id }); corps.value = a.get() || "";
+      corps.addEventListener("input", function () { a.set(corps.value); apresSaisie(); });
+      break;
+    case "date": case "heure":
+      corps = entree(t === "date" ? "date" : "time", a.get(), function (i) { a.set(i.value); apresSaisie(); }, { classe: "court" });
+      corps.id = id; break;
+    case "entier": case "decimal": case "pourcentage":
+      corps = el("div", { classe: "ligne" });
+      var n = entree("text", ecrireNombre(a.get()), function (i) {
+        var v = lireNombre(i.value);
+        var bon = v === undefined || (!isNaN(v) && (t !== "entier" || Math.floor(v) === v));
+        i.classList.toggle("invalide", !bon);
+        if (bon) { a.set(v); apresSaisie(); }
+      }, { inputmode: "decimal", classe: "court" });
+      n.id = id; corps.appendChild(n);
+      if (t === "pourcentage") corps.appendChild(el("span", { texte: "%" }));
+      break;
+    case "montant":
+      var m = a.get() || {};
+      corps = el("div", { classe: "ligne" });
+      var mv = entree("text", ecrireNombre(m.valeur), function (i) {
+        var v = lireNombre(i.value); i.classList.toggle("invalide", v !== undefined && isNaN(v));
+        if (v === undefined) a.set(undefined);
+        else if (!isNaN(v)) { var o = a.get() || {}; o.valeur = v; o.devise = o.devise || "EUR"; a.set(o); }
+        apresSaisie();
+      }, { inputmode: "decimal", classe: "court" });
+      mv.id = id;
+      var md = entree("text", m.devise || "EUR", function (i) {
+        var o = a.get(); if (o) { o.devise = i.value.toUpperCase() || "EUR"; a.set(o); apresSaisie(); }
+      }, { classe: "tres-court", maxlength: "3", "aria-label": "Devise" });
+      corps.appendChild(mv); corps.appendChild(md);
+      break;
+    case "duree":
+      var du = a.get() || {};
+      corps = el("div", { classe: "ligne" });
+      var dv = entree("text", ecrireNombre(du.valeur), function (i) {
+        var v = lireNombre(i.value), bon = v === undefined || (!isNaN(v) && Math.floor(v) === v && v >= 0);
+        i.classList.toggle("invalide", !bon);
+        if (!bon) return;
+        if (v === undefined) a.set(undefined);
+        else { var o = a.get() || { unite: su.value }; o.valeur = v; o.unite = su.value; a.set(o); }
+        apresSaisie();
+      }, { inputmode: "numeric", classe: "tres-court" });
+      dv.id = id;
+      var su = el("select", { "aria-label": "Unité", onchange: function () { var o = a.get(); if (o) { o.unite = su.value; a.set(o); apresSaisie(); } } },
+        [["jours", "jour(s)"], ["semaines", "semaine(s)"], ["mois", "mois"], ["annees", "an(s)"]].map(function (u) {
+          return el("option", { value: u[0], selected: (du.unite || "mois") === u[0], texte: u[1] }); }));
+      su.className = "court";
+      corps.appendChild(dv); corps.appendChild(su);
+      break;
+    case "booleen":
+      corps = el("select", { id: id, classe: "court", onchange: function () {
+        a.set(corps.value === "" ? undefined : corps.value === "oui"); apresSaisie(); } },
+        el("option", { value: "", texte: "—" }), el("option", { value: "oui", texte: "Oui", selected: a.get() === true }),
+        el("option", { value: "non", texte: "Non", selected: a.get() === false }));
+      break;
+    case "choix":
+      corps = el("select", { id: id, onchange: function () { a.set(corps.value || undefined); apresSaisie();
+        if (def.id === "forme_juridique" || def.id === "capacite") changementStructure(); } },
+        el("option", { value: "", texte: "—" }),
+        def.valeurs.map(function (v) { return el("option", { value: v.id, texte: v.long && v.long !== v.libelle ? v.libelle + " — " + v.long : v.libelle, selected: a.get() === v.id }); }));
+      break;
+    case "adresse":
+      return uiAdresse(def, a, aide);
+    case "reference":
+      return uiReference(def, a, aide);
+    case "identifiant":
+      corps = entree("text", a.get(), function (i) {
+        var f = CONTROLES[def.validation], v = i.value.trim();
+        i.classList.toggle("invalide", !!(v && f && !f(v)));
+        a.set(v || undefined); apresSaisie();
+      }, { classe: "court" });
+      corps.id = id;
+      if (def.validation && CONTROLES[def.validation] && a.get() && !CONTROLES[def.validation](a.get())) corps.classList.add("invalide");
+      break;
+    case "courriel":
+      corps = entree("email", a.get(), function (i) { a.set(i.value.trim()); apresSaisie(); }); corps.id = id; break;
+    default:
+      corps = entree("text", a.get(), function (i) { a.set(i.value); apresSaisie(); }); corps.id = id;
+  }
+  return el("div", { classe: "champ" }, tete, corps, aide ? el("div", { classe: "aide", texte: aide }) : null);
+}
+
+function uiAdresse(def, a, aide) {
+  var grille = el("div", { classe: "grille-adresse" });
+  D.entites.adresse.champs.forEach(function (c) {
+    var sa = sousAcces(a, c.id), id = nouvelId();
+    var i = entree("text", sa.get(), function (x) {
+      sa.set(x.value);
+      if (c.id === "code_postal") x.classList.toggle("invalide", !!(x.value && !(sousAcces(a, "pays").get()) && !CONTROLES.code_postal_fr(x.value)));
+      apresSaisie();
+    });
+    i.id = id;
+    grille.appendChild(el("label", { "for": id, classe: "discret", texte: c.libelle.replace(/ \(.*\)$/, "") }));
+    grille.appendChild(i);
+  });
+  return el("fieldset", null, el("legend", { texte: def.libelle }), grille, aide ? el("div", { classe: "aide", texte: aide }) : null);
+}
+
+function uiListe(def, a, chemin) {
+  var liste = a.get() || [];
+  var bloc = el("fieldset", null, el("legend", { texte: def.libelle }));
+  liste.forEach(function (item, k) {
+    var ia = { get: function () { return (a.get() || [])[k]; },
+               set: function (v) { var l = a.get() || []; l[k] = v === undefined ? (def.champs ? {} : "") : v; a.set(l); } };
+    var outils = el("span", { classe: "ligne" },
+      el("button", { classe: "petit", type: "button", texte: "↑", title: "Monter", disabled: k === 0, onclick: function () {
+        var l = a.get(); l.splice(k - 1, 0, l.splice(k, 1)[0]); a.set(l); apresSaisie(); changementStructure(); } }),
+      el("button", { classe: "petit", type: "button", texte: "↓", title: "Descendre", disabled: k === liste.length - 1, onclick: function () {
+        var l = a.get(); l.splice(k + 1, 0, l.splice(k, 1)[0]); a.set(l); apresSaisie(); changementStructure(); } }),
+      el("button", { classe: "petit", type: "button", texte: "Retirer", onclick: function () {
+        var l = a.get(); l.splice(k, 1); a.set(l.length ? l : undefined); apresSaisie(); changementStructure(); } }));
+    var carte = el("div", { classe: "carte" }, el("div", { classe: "entete" }, el("strong", { texte: "N° " + (k + 1) }), outils));
+    if (def.champs) def.champs.forEach(function (c) { carte.appendChild(uiChamp(c, sousAcces(ia, c.id), chemin + "." + c.id)); });
+    else carte.appendChild(uiChamp({ id: "v", libelle: "Valeur", type: def.element }, ia, chemin));
+    bloc.appendChild(carte);
+  });
+  bloc.appendChild(el("button", { type: "button", texte: "Ajouter un élément", onclick: function () {
+    var l = a.get() || []; l.push(def.champs ? {} : ""); a.set(l); apresSaisie(); changementStructure(); } }));
+  return bloc;
+}
+
+var COLLECTIONS = { personne: "personnes", bien_immobilier: "biens", vehicule: "vehicules", compte_bancaire: "comptes" };
+function libelleEntite(cible, id) {
+  var o = dossier[COLLECTIONS[cible]][id];
+  if (!o) return id + " (introuvable)";
+  if (cible === "personne") return id + " — " + (Tabellion.nommer(D, M, dossier, o) || "personne sans nom");
+  return id + " — " + (o.designation || o.immatriculation || o.iban || (o.adresse && o.adresse.commune) || D.entites[cible].libelle);
+}
+function nouvelleEntite(cible, nature) {
+  var coll = dossier[COLLECTIONS[cible]], prefixe = cible === "personne" ? "P" : D.entites[cible].prefixe_identifiant, n = 1;
+  while (coll[prefixe + n]) n++;
+  coll[prefixe + n] = cible === "personne" ? { nature: nature || "physique" } : {};
+  return prefixe + n;
+}
+
+function uiReference(def, a, aide) {
+  var id = nouvelId(), coll = dossier[COLLECTIONS[def.cible]];
+  var s = el("select", { id: id, onchange: function () {
+    if (s.value.indexOf("+") === 0) { a.set(nouvelleEntite(def.cible, s.value.slice(1))); apresSaisie(); changementStructure(); return; }
+    a.set(s.value || undefined); apresSaisie(); construireSommaire(); } },
+    el("option", { value: "", texte: "—" }),
+    Object.keys(coll).filter(function (k) { return def.cible !== "personne" || !def.natures || def.natures.indexOf(coll[k].nature) >= 0; })
+      .map(function (k) { return el("option", { value: k, selected: a.get() === k, texte: libelleEntite(def.cible, k) }); }),
+    def.cible === "personne"
+      ? (def.natures || ["physique", "morale"]).map(function (n) { return el("option", { value: "+" + n, texte: "Nouvelle personne " + n + "…" }); })
+      : el("option", { value: "+", texte: "Nouveau : " + D.entites[def.cible].libelle.toLowerCase() + "…" }));
+  return el("div", { classe: "champ" }, el("label", { "for": id, texte: def.libelle }), s, aide ? el("div", { classe: "aide", texte: aide }) : null);
+}
+
+// ------------------------------------------------------------ sections
+function section(id, titre, contenu, note) {
+  return el("section", { classe: "bloc", id: id, "data-titre": titre }, el("h2", { texte: titre }), note ? el("p", { classe: "sous", texte: note }) : null, contenu);
+}
+
+function sectionDecisions() {
+  if (!PLAN.options.length && !PLAN.choix.length) return null;
+  var dec = dossier.decisions[M.id], corps = [];
+  PLAN.choix.forEach(function (c) {
+    var nom = nouvelId();
+    corps.push(el("div", { classe: "champ choix-radio" }, el("span", { classe: "lib", texte: c.libelle }),
+      c.cas.map(function (k) {
+        return el("label", null, el("input", { type: "radio", name: nom, value: k.id, checked: dec.choix[c.id] === k.id,
+          onchange: function () { dec.choix[c.id] = k.id; apresSaisie(); } }), " " + k.libelle);
+      })));
+  });
+  PLAN.options.forEach(function (o) {
+    var nom = nouvelId(), v = dec.options[o.id];
+    corps.push(el("div", { classe: "champ choix-radio" }, el("span", { classe: "lib", texte: o.libelle }),
+      el("label", null, el("input", { type: "radio", name: nom, checked: v === true, onchange: function () { dec.options[o.id] = true; apresSaisie(); } }), " Retenue"),
+      el("label", null, el("input", { type: "radio", name: nom, checked: v === false, onchange: function () { dec.options[o.id] = false; apresSaisie(); } }), " Écartée")));
+  });
+  return section("s-decisions", "Options et variantes", corps, "Ces choix déterminent les passages repris dans le document.");
+}
+
+function sectionPersonnes() {
+  var ent = PLAN.entites.personne;
+  if (!ent) return null;
+  var corps = [];
+  Object.keys(dossier.personnes).forEach(function (pid) {
+    var p = dossier.personnes[pid], pa = { get: function () { return dossier.personnes[pid]; }, set: function () {} };
+    var titre = el("strong", { texte: libelleEntite("personne", pid) });
+    var nat = el("select", { "aria-label": "Nature", classe: "court", onchange: function () { p.nature = nat.value; apresSaisie(); changementStructure(); } },
+      el("option", { value: "physique", texte: "Personne physique", selected: p.nature !== "morale" }),
+      el("option", { value: "morale", texte: "Personne morale", selected: p.nature === "morale" }));
+    var carte = el("div", { classe: "carte", "data-personne": pid },
+      el("div", { classe: "entete" }, titre, el("span", { classe: "ligne" }, nat,
+        el("button", { type: "button", classe: "petit", texte: "Supprimer", onclick: function () {
+          demander("Supprimer " + libelleEntite("personne", pid) + " ?", "La personne sera retirée du dossier et de tous les rôles.", function () {
+            delete dossier.personnes[pid];
+            Object.keys(dossier.roles).forEach(function (r) { dossier.roles[r] = dossier.roles[r].filter(function (x) { return x !== pid; }); });
+            Object.keys(dossier.attributs_roles).forEach(function (r) { delete dossier.attributs_roles[r][pid]; });
+            apresSaisie(); changementStructure();
+          });
+        } }))));
+    (ent.commun || []).filter(function (c) { return c.id !== "nature"; }).concat(p.nature === "morale" ? ent.morale : ent.physique)
+      .filter(function (c) {   // champs utiles seulement dans certains cas
+        if (c.id === "forme_precisee" || c.id === "genre_grammatical") return p.forme_juridique === "autre" || !!p[c.id];
+        if (c.id === "representants") return (p.capacite && p.capacite !== "majeur_capable") || !!(p.representants || []).length;
+        return true;
+      })
+      .forEach(function (c) { carte.appendChild(uiChamp(c, sousAcces(pa, c.id), "personne." + c.id)); });
+    carte.addEventListener("input", function () { titre.textContent = libelleEntite("personne", pid); });
+    corps.push(carte);
+  });
+  corps.push(el("div", { classe: "ligne" },
+    el("button", { type: "button", texte: "Ajouter une personne physique", onclick: function () { nouvelleEntite("personne", "physique"); apresSaisie(); changementStructure(); } }),
+    el("button", { type: "button", texte: "Ajouter une personne morale", onclick: function () { nouvelleEntite("personne", "morale"); apresSaisie(); changementStructure(); } })));
+  return section("s-personnes", "Personnes", corps, "Chaque personne n'est saisie qu'une fois ; elle est ensuite désignée dans les rôles.");
+}
+
+function sectionRoles() {
+  if (!PLAN.roles.length) return null;
+  var corps = PLAN.roles.map(function (r) {
+    var ids = dossier.roles[r.cle] = dossier.roles[r.cle] || [];
+    var max = r.cardinalite.slice(-1) === "n" ? Infinity : +r.cardinalite.slice(-1);
+    var puces = ids.map(function (pid, k) {
+      return el("span", { classe: "puce" }, libelleEntite("personne", pid),
+        el("button", { type: "button", classe: "petit", texte: "↑", title: "Avancer", disabled: k === 0, onclick: function () { ids.splice(k - 1, 0, ids.splice(k, 1)[0]); apresSaisie(); changementStructure(); } }),
+        el("button", { type: "button", classe: "petit", texte: "✕", title: "Retirer", onclick: function () {
+          ids.splice(k, 1);
+          if (dossier.attributs_roles[r.cle]) delete dossier.attributs_roles[r.cle][pid];
+          apresSaisie(); changementStructure(); } }));
+    });
+    var fiches = (r.attributs || []).length ? ids.map(function (pid) {
+      var aa = { get: function () { var t = dossier.attributs_roles[r.cle] = dossier.attributs_roles[r.cle] || {}; return t[pid] = t[pid] || {}; }, set: function () {} };
+      return el("div", { classe: "carte" }, el("div", { classe: "entete" }, el("strong", { texte: libelleEntite("personne", pid) + ", " + r.libelles.ms })),
+        r.attributs.map(function (c) { return uiChamp(c, sousAcces(aa, c.id), r.cle + "." + c.id); }));
+    }) : [];
+    var choix = el("select", { classe: "court", "aria-label": "Désigner une personne", onchange: function () {
+      if (!choix.value) return;
+      var pid = choix.value.indexOf("+") === 0 ? nouvelleEntite("personne", choix.value.slice(1)) : choix.value;
+      ids.push(pid); apresSaisie(); changementStructure(); } },
+      el("option", { value: "", texte: "Désigner…" }),
+      Object.keys(dossier.personnes).filter(function (k) { return ids.indexOf(k) < 0 && r.natures.indexOf(dossier.personnes[k].nature || "physique") >= 0; })
+        .map(function (k) { return el("option", { value: k, texte: libelleEntite("personne", k) }); }),
+      r.natures.map(function (n) { return el("option", { value: "+" + n, texte: "Nouvelle personne " + n + "…" }); }));
+    var nb = ids.length, mini = +r.cardinalite.charAt(0);
+    return el("div", { classe: "champ" }, el("span", { classe: "lib", texte: r.libelles.ms.charAt(0).toUpperCase() + r.libelles.ms.slice(1) }),
+      el("div", null, puces, nb < max ? choix : null), fiches,
+      (nb < mini || nb > max) ? el("div", { classe: "aide manque", texte: "Nombre de personnes attendu : " + r.cardinalite.replace("..", " à ").replace("n", "plusieurs") }) : null);
+  });
+  return section("s-roles", "Rôles", corps, "Rattachez chaque rôle du modèle aux personnes du dossier. L'ordre des personnes est celui de leur énumération.");
+}
+
+function sectionModule(m) {
+  var a = { get: function () { return dossier.modules[m.id] = dossier.modules[m.id] || {}; }, set: function () {} };
+  return section("s-mod-" + m.id, m.libelle, m.champs.map(function (c) { return uiChamp(c, sousAcces(a, c.id), m.id + "." + c.id); }));
+}
+
+function sectionEntites(cible) {
+  var ent = PLAN.entites[cible], coll = dossier[COLLECTIONS[cible]], corps = [];
+  Object.keys(coll).forEach(function (id) {
+    var ea = { get: function () { return coll[id]; }, set: function () {} };
+    var carte = el("div", { classe: "carte" }, el("div", { classe: "entete" }, el("strong", { texte: libelleEntite(cible, id) }),
+      el("button", { type: "button", classe: "petit", texte: "Supprimer", onclick: function () { delete coll[id]; apresSaisie(); changementStructure(); } })));
+    ent.champs.forEach(function (c) { carte.appendChild(uiChamp(c, sousAcces(ea, c.id), cible + "." + c.id)); });
+    corps.push(carte);
+  });
+  corps.push(el("button", { type: "button", texte: "Ajouter", onclick: function () { nouvelleEntite(cible); apresSaisie(); changementStructure(); } }));
+  var pluriels = { bien_immobilier: "Biens immobiliers", vehicule: "Véhicules", compte_bancaire: "Comptes bancaires" };
+  return section("s-ent-" + cible, pluriels[cible] || ent.libelle, corps);
+}
+
+function sectionLocales() {
+  if (!PLAN.locales.length) return null;
+  var a = { get: function () { return dossier.local[M.id]; }, set: function () {} };
+  return section("s-locales", "Éléments propres à ce modèle", PLAN.locales.map(function (l) { return uiChamp(l, sousAcces(a, l.id), "local." + l.id); }));
+}
+
+var zoneVerif, zoneCalculs;
+function sectionVerification() {
+  zoneVerif = el("div");
+  return section("s-verification", "Vérification et aperçu", zoneVerif);
+}
+function sectionCalculs() {
+  if (!PLAN.calculs.length) return null;
+  zoneCalculs = el("div");
+  return section("s-calculs", "Calculs", zoneCalculs, "Valeurs calculées par le formulaire, selon les règles arrêtées lors de la préparation du modèle.");
+}
+
+// ------------------------------------------------------------ vérification
+var minuterie = null, dernierBilan = null;
+function planifierVerification() { clearTimeout(minuterie); minuterie = setTimeout(verifier, 250); }
+function verifier() {
+  try { dernierBilan = Tabellion.verifier(D, M, dossier); }
+  catch (e) { dernierBilan = { erreur: e.message, manquants: [], alertes: [], controles: [], apercu: "", calculs: [] }; }
+  var b = dernierBilan;
+  zoneVerif.textContent = "";
+  if (b.erreur) zoneVerif.appendChild(el("p", { classe: "manque", texte: "Erreur du moteur : " + b.erreur }));
+  zoneVerif.appendChild(el("h3", { texte: b.manquants.length ? "Éléments à compléter (" + b.manquants.length + ")" : "Tous les éléments utilisés sont renseignés" }));
+  if (b.manquants.length) zoneVerif.appendChild(el("ul", { classe: "liste-verif manque" }, b.manquants.map(function (x) { return el("li", { texte: x }); })));
+  if (b.controles.length) {
+    zoneVerif.appendChild(el("h3", { texte: "Contrôles de cohérence" }));
+    zoneVerif.appendChild(el("ul", { classe: "liste-verif" }, b.controles.map(function (c) {
+      return el("li", { classe: c.respecte ? "ok" : "manque", texte: (c.respecte ? "✓ " : "✗ ") + c.message + (!c.respecte && c.bloquant ? " (bloquant)" : "") }); })));
+  }
+  if (b.alertes.length) {
+    zoneVerif.appendChild(el("h3", { texte: "Remarques" }));
+    zoneVerif.appendChild(el("ul", { classe: "liste-verif" }, b.alertes.map(function (x) { return el("li", { texte: x }); })));
+  }
+  zoneVerif.appendChild(el("details", null, el("summary", { texte: "Aperçu du texte (sans mise en page)" }), el("pre", { classe: "apercu", texte: b.apercu })));
+  if (zoneCalculs) {
+    zoneCalculs.textContent = "";
+    zoneCalculs.appendChild(el("table", { classe: "calculs" }, el("tr", null, el("th", { texte: "Calcul" }), el("th", { texte: "Résultat" }), el("th", { texte: "Méthode" })),
+      PLAN.calculs.map(function (c) {
+        var r = (b.calculs || []).filter(function (x) { return x.id === c.id; })[0], v = r ? r.valeur : null, s;
+        try { s = c.element_de ? "calculé pour chaque élément de la liste" : v === null || v === undefined ? "— (données incomplètes)" : Tabellion.formater(D, M, c.type, v, null); } catch (e) { s = String(v); }
+        return el("tr", null, el("td", { texte: c.libelle }), el("td", { texte: s }),
+          el("td", null, el("div", { texte: c.explication }), c.source ? el("div", { classe: "discret", texte: "Source : " + c.source }) : null));
+      })));
+  }
+  var compte = document.getElementById("compte-manquants");
+  if (compte) compte.textContent = b.manquants.length || "";
+}
+
+// ------------------------------------------------------------ construction
+function construireSommaire() {
+  var nav = document.getElementById("sommaire");
+  nav.textContent = "";
+  document.querySelectorAll("section.bloc").forEach(function (s) {
+    var a = el("a", { href: "#" + s.id, texte: s.getAttribute("data-titre") });
+    if (s.id === "s-verification") a.appendChild(el("span", { classe: "compte", id: "compte-manquants" }));
+    nav.appendChild(a);
+  });
+}
+
+function construire() {
+  var y = window.scrollY;
+  var main = document.getElementById("principal");
+  main.textContent = "";
+  if (estEssai()) main.appendChild(el("div", { classe: "bandeau essai" },
+    el("strong", { texte: "Données d'essai. " }),
+    "Le formulaire est prérempli de valeurs fictives pour que vous puissiez en voir l'effet. Un document généré dans cet état porte la mention ESSAI dans son nom. ",
+    el("button", { type: "button", classe: "petit", texte: "Commencer un dossier réel", onclick: function () { nouveauDossier(); } })));
+  main.appendChild(el("details", { classe: "bandeau info" }, el("summary", { texte: "Mode d'emploi" }),
+    el("ol", null,
+      el("li", { texte: "Choisissez les options et variantes du document." }),
+      el("li", { texte: "Saisissez les personnes une seule fois, puis désignez-les dans les rôles." }),
+      el("li", { texte: "Complétez les rubriques ; la section « Vérification » liste ce qui manque." }),
+      el("li", { texte: "Générez le document : il est créé sur cet ordinateur, au format du modèle d'origine." }),
+      el("li", { texte: "Enregistrez le dossier (.json) à la fin de chaque séance : c'est votre seule sauvegarde. Il peut être rouvert ici, ou dans un autre formulaire tabellion pour réutiliser les mêmes personnes." })),
+    el("p", { texte: "Le dossier est aussi conservé dans ce navigateur, sauf en navigation privée ; vider les données de navigation l'efface. Les fichiers .json ne sont pas chiffrés : traitez-les comme des pièces confidentielles." })));
+  [sectionDecisions(), sectionPersonnes(), sectionRoles()].concat(PLAN.modules.map(sectionModule))
+    .concat(Object.keys(PLAN.entites).filter(function (k) { return k !== "personne"; }).map(sectionEntites))
+    .concat([sectionLocales(), sectionCalculs(), sectionVerification()])
+    .forEach(function (s) { if (s) main.appendChild(s); });
+  construireSommaire();
+  verifier();
+  window.scrollTo(0, y);
+}
+
+// ------------------------------------------------------------ dialogues, fichiers
+function demander(titre, corps, siOui, libelleOui) {
+  var d = document.getElementById("dialogue");
+  document.getElementById("d-titre").textContent = titre;
+  var c = document.getElementById("d-corps"); c.textContent = "";
+  (Array.isArray(corps) ? corps : [corps]).forEach(function (x) { c.appendChild(typeof x === "string" ? el("p", { texte: x }) : x); });
+  document.getElementById("d-oui").textContent = libelleOui || "Continuer";
+  d.onclose = function () { if (d.returnValue === "oui") siOui(); };
+  d.returnValue = "";
+  if (d.showModal) d.showModal(); else if (window.confirm(titre)) siOui();
+}
+
+function telecharger(nom, octets, type) {
+  var blob = new Blob([octets], { type: type });
+  var a = el("a", { href: URL.createObjectURL(blob), download: nom });
+  document.body.appendChild(a); a.click();
+  setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
+
+function dateJour() { var d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+function nomSur(s) { return String(s).replace(/[\\/:*?"<>|]+/g, " ").replace(/\s+/g, " ").trim(); }
+
+function generer() {
+  verifier();
+  var b = dernierBilan;
+  if (b.erreur) { demander("Génération impossible", "Erreur du moteur : " + b.erreur, function () {}); return; }
+  var bloquants = b.controles.filter(function (c) { return !c.respecte && c.bloquant; });
+  if (bloquants.length && !estEssai()) {
+    demander("Contrôles non respectés", [el("ul", null, bloquants.map(function (c) { return el("li", { texte: c.message }); })), "Corrigez ces points avant de générer le document."], function () {});
+    return;
+  }
+  var essai = estEssai();
+  function produire() {
+    var r;
+    try { r = Tabellion.generer(D, M, dossier); } catch (e) { demander("Génération impossible", "Erreur du moteur : " + e.message, function () {}); return; }
+    var ref = ((dossier.modules.acte || {}).reference_interne || "");
+    var nom = nomSur(M.titre + (ref ? " - " + ref : "") + " - " + dateJour() + (essai ? " - ESSAI" : "")) + "." + M.format;
+    telecharger(nom, r.octets, M.format === "docx" ? "application/vnd.openxmlformats-officedocument.wordprocessingml.document" : "application/vnd.oasis.opendocument.text");
+  }
+  var avis = [];
+  if (essai) avis.push("Le dossier contient des données d'essai : le fichier sera nommé « … - ESSAI ».");
+  if (essai && bloquants.length) avis.push("Contrôles non respectés par les données d'essai (bloquants pour un dossier réel) : " +
+    bloquants.map(function (c) { return c.message; }).join(" ; ") + ".");
+  if (b.manquants.length) avis.push(el("div", null, el("p", { texte: b.manquants.length + " élément(s) manquant(s) seront signalés dans le document par la mention [À COMPLÉTER] :" }),
+    el("ul", null, b.manquants.slice(0, 12).map(function (x) { return el("li", { texte: x }); }), b.manquants.length > 12 ? el("li", { texte: "…" }) : null)));
+  if (avis.length) demander("Générer malgré tout ?", avis, produire, "Générer");
+  else produire();
+}
+
+function exporter() {
+  dossier.modifie_le = new Date().toISOString();
+  dossier.cree_le = dossier.cree_le || dossier.modifie_le;
+  var ref = (dossier.modules.acte || {}).reference_interne || M.titre;
+  telecharger(nomSur("dossier - " + ref + " - " + dateJour()) + ".json", new TextEncoder().encode(JSON.stringify(dossier, null, 2)), "application/json");
+}
+
+function importer(fichier) {
+  var lecteur = new FileReader();
+  lecteur.onload = function () {
+    var d;
+    try { d = JSON.parse(lecteur.result); } catch (e) { demander("Fichier illisible", "Ce fichier n'est pas un fichier .json valide.", function () {}); return; }
+    if (d.format !== "tabellion-dossier") { demander("Fichier non reconnu", "Ce fichier n'est pas un dossier tabellion.", function () {}); return; }
+    var appliquer = function () { dossier = normaliserDossier(d); sauver(); construire(); };
+    var conflits = Object.keys(d.types_extensions || {}).filter(function (k) {
+      return (M.types_extensions || {})[k] && M.types_extensions[k] !== d.types_extensions[k]; });
+    if (conflits.length) {
+      demander("Rubriques de même nom, de types différents", ["Ce dossier a été rempli avec un autre formulaire, qui emploie les rubriques suivantes avec un autre type que celui-ci :",
+        el("ul", null, conflits.map(function (k) { return el("li", { texte: k + " : " + d.types_extensions[k] + " dans le dossier, " + M.types_extensions[k] + " ici" }); })),
+        "Les valeurs concernées risquent d'être mal lues. Vérifiez-les après ouverture."], appliquer, "Ouvrir quand même");
+      return;
+    }
+    if (d.version_dictionnaire && d.version_dictionnaire.split(".")[0] !== D.version.split(".")[0])
+      demander("Version différente", "Ce dossier a été produit avec une autre version du dictionnaire (" + d.version_dictionnaire + "). Les champs inconnus sont conservés ; vérifiez le résultat.", appliquer, "Ouvrir");
+    else appliquer();
+  };
+  lecteur.readAsText(fichier, "utf-8");
+}
+
+function nouveauDossier() {
+  demander("Commencer un dossier vide ?", "Les données actuelles seront effacées de ce navigateur. Enregistrez-les d'abord en .json si vous souhaitez les conserver.", function () {
+    dossier = normaliserDossier({ cree_le: new Date().toISOString(), valeurs_fictives: [] });
+    sauver(); construire();
+  }, "Effacer et commencer");
+}
+
+document.getElementById("b-generer").addEventListener("click", generer);
+document.getElementById("b-exporter").addEventListener("click", exporter);
+document.getElementById("b-importer").addEventListener("click", function () { document.getElementById("fichier-json").click(); });
+document.getElementById("fichier-json").addEventListener("change", function (e) { if (e.target.files[0]) importer(e.target.files[0]); e.target.value = ""; });
+document.getElementById("b-nouveau").addEventListener("click", nouveauDossier);
+document.getElementById("b-essai").addEventListener("click", function () {
+  demander("Recharger les données d'essai ?", "Les données actuelles seront remplacées par les valeurs fictives.", function () {
+    dossier = normaliserDossier(cloner(ESSAI)); sauver(); construire(); }, "Recharger");
+});
+
+document.getElementById("titre").textContent = M.titre;
+document.title = M.titre;
+document.getElementById("sous-titre").textContent = "Formulaire hors ligne · modèle " + M.format.toUpperCase() + " version " + M.version_modele +
+  (M.date_gel ? " · données de référence arrêtées au " + Tabellion.dateLongue(M.date_gel) : "");
+dossier = normaliserDossier(charger());
+construire();
+window.__tabellion = { dossier: function () { return dossier; }, generer: function () { return Tabellion.generer(D, M, dossier); } };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "format": "tabellion-dossier",
+  "version_dictionnaire": "0.2.0",
+  "cree_le": "2026-10-05T12:00:00+02:00",
+  "modifie_le": "2026-10-05T12:00:00+02:00",
+  "personnes": {
+    "P1": {
+      "nature": "morale",
+      "forme_juridique": "sci",
+      "denomination": "ALPHA ESSAI",
+      "capital": {"valeur": 1000, "devise": "EUR"},
+      "immatriculation": {"registre": "rcs", "greffe": "Exempleville", "numero": "000 000 000"},
+      "siren": "000000000",
+      "siege": {"numero": "1", "voie": "place de l'Exemple", "code_postal": "00000", "commune": "Exempleville"},
+      "representants_legaux": [{"personne": "P6", "qualite": "gérante"}]
+    },
+    "P2": {
+      "nature": "physique",
+      "civilite": "monsieur",
+      "nom": "Essai",
+      "prenoms": "Paul, Henri",
+      "prenom_usuel": "Paul",
+      "date_naissance": "1985-03-02",
+      "lieu_naissance": {"commune": "Exempleville", "departement": "99"},
+      "nationalite": "française",
+      "profession": "technicien",
+      "capacite": "majeur_capable"
+    },
+    "P3": {
+      "nature": "physique",
+      "civilite": "madame",
+      "nom": "Fictif",
+      "prenoms": "Lucie",
+      "date_naissance": "1987-07-21",
+      "nationalite": "française",
+      "profession": "infirmière",
+      "capacite": "majeur_capable"
+    },
+    "P5": {
+      "nature": "physique",
+      "civilite": "madame",
+      "nom": "Modele",
+      "prenoms": "Claire",
+      "qualite_professionnelle": {"profession_reglementee": "avocat", "ressort": "Exempleville", "toque": "000"}
+    },
+    "P6": {
+      "nature": "physique",
+      "civilite": "madame",
+      "nom": "Essai",
+      "prenoms": "Jeanne, Marie",
+      "prenom_usuel": "Jeanne"
+    }
+  },
+  "biens": {
+    "B1": {
+      "nature": "appartement",
+      "designation": "Un appartement de trois pièces principales.",
+      "adresse": {"numero": "12", "voie": "rue de l'Exemple", "code_postal": "00000", "commune": "Exempleville"},
+      "etage": "2e",
+      "copropriete": true,
+      "lots": [{"numero": "12", "description": "appartement", "tantiemes": "125/10000"}],
+      "surface_habitable": 62.5,
+      "nombre_pieces": 3
+    }
+  },
+  "roles": {
+    "bail.bailleur": ["P1"],
+    "bail.preneur": ["P2", "P3"],
+    "procedure_civile.demandeur": ["P1"],
+    "procedure_civile.defendeur": ["P2", "P3"],
+    "acte.signataire": ["P6", "P2", "P3"]
+  },
+  "modules": {
+    "acte": {"reference_interne": "ESSAI-2026-001", "date_acte": "2026-10-05", "lieu_acte": "Exempleville"},
+    "bail": {
+      "type_bail": "habitation_vide",
+      "bien": "B1",
+      "destination": "habitation principale",
+      "date_prise_effet": "2026-11-01",
+      "duree": {"valeur": 3, "unite": "annees"},
+      "loyer": {"montant": {"valeur": 850, "devise": "EUR"}, "periodicite": "mensuel", "terme": "a_echoir", "jour_exigibilite": 1},
+      "charges": {"mode": "provision", "montant": {"valeur": 60, "devise": "EUR"}},
+      "depot_garantie": {"valeur": 850, "devise": "EUR"},
+      "clause_resolutoire": true,
+      "solidarite_preneurs": true
+    },
+    "procedure_civile": {
+      "juridiction": {"type": "tribunal_judiciaire", "ville": "Exempleville", "formation": "juge des contentieux de la protection"},
+      "nature_instance": "refere",
+      "audience": {"date": "2026-12-01", "heure": "09:30"},
+      "conseils": [{"partie": "P1", "avocat_postulant": "P5"}],
+      "bordereau_pieces": [{"numero": "1", "intitule": "Contrat de bail", "date": "2026-10-05"}]
+    },
+    "dommage_corporel": {"date_consolidation": "2027-01-01"}
+  },
+  "local": {},
+  "valeurs_fictives": ["personnes", "biens", "modules"],
+  "extensions": {}
+}

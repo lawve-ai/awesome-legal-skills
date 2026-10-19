@@ -78,9 +78,10 @@ def execute_query(params):
     for key, value in params.items():
         if key == "fq":
             for fq_val in value:
-                query_parts.append(f"fq={urllib.parse.quote(fq_val, safe=':()[] ')}")
+                query_parts.append(f"fq={urllib.parse.quote(fq_val, safe=':()[]')}")
         else:
-            query_parts.append(f"{key}={urllib.parse.quote(str(value), safe=':()[] \"')}")
+            safe_chars = ':()[]"'
+            query_parts.append(f"{key}={urllib.parse.quote(str(value), safe=safe_chars)}")
 
     url = BASE_URL + "?" + "&".join(query_parts)
 

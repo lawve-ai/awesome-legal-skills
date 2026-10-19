@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/task_tests/v2",
+  "title": "Test proposal",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "outcomes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                },
+                "impact": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "enum": [
+                      "strengthens",
+                      "weakens",
+                      "none"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "label",
+                "impact"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0,
+            "maxItems": 100
+          },
+          "uninformative_outcome": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "access_basis": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "scope_id": {
+            "type": "string",
+            "pattern": "^set:[A-Za-z0-9._-]{1,128}$",
+            "maxLength": 140
+          },
+          "uncertainty": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000,
+                "pattern": "\\S"
+              },
+              "observation_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^obs:[A-Za-z0-9._-]{1,128}$",
+                  "maxLength": 140
+                },
+                "minItems": 0,
+                "maxItems": 10000,
+                "uniqueItems": true
+              },
+              "hypothesis_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^hyp:[A-Za-z0-9._-]{1,128}$",
+                  "maxLength": 140
+                },
+                "minItems": 2,
+                "maxItems": 10000,
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "description",
+              "observation_ids",
+              "hypothesis_ids"
+            ],
+            "additionalProperties": false
+          },
+          "document": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "enum": [
+                  "in_corpus",
+                  "referenced_not_obtained",
+                  "existence_unconfirmed"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000,
+                "pattern": "\\S"
+              },
+              "document_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^doc:[A-Za-z0-9._-]{1,128}$",
+                    "maxLength": 140
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "basis": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000,
+                "pattern": "\\S"
+              },
+              "basis_passage_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^psg:[A-Za-z0-9._-]{1,128}$",
+                  "maxLength": 140
+                },
+                "minItems": 0,
+                "maxItems": 10000,
+                "uniqueItems": true
+              },
+              "relevant_period": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400,
+                "pattern": "\\S"
+              },
+              "custodian": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "status",
+              "description",
+              "document_id",
+              "basis",
+              "basis_passage_ids",
+              "relevant_period",
+              "custodian"
+            ],
+            "additionalProperties": false
+          },
+          "next_step": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "question",
+          "outcomes",
+          "uninformative_outcome",
+          "access_basis",
+          "scope_id",
+          "uncertainty",
+          "document",
+          "next_step"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}
