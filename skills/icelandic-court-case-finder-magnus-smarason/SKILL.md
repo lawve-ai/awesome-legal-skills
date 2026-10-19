@@ -32,6 +32,27 @@ Hæstiréttur Íslands (Supreme Court)
 | **Kjaradómur** | Public sector wage disputes | Rare — convened as needed |
 | **Landsdómur** | Impeachment of ministers | Convened once (2010-2012, Geir Haarde case) |
 
+### Administrative tribunals — check these before concluding a point is unsettled
+
+Whole fields of Icelandic law are decided by administrative tribunals whose decisions never reach a
+court. Searching only Hæstiréttur and Landsréttur will find almost nothing and will wrongly suggest
+there is no precedent.
+
+The most consequential for commercial work:
+
+| Tribunal | Jurisdiction | Volume | Where |
+|---|---|---|---|
+| **Kærunefnd útboðsmála** | Public procurement challenges under Act 120/2016 | ~40–70 cases/yr; **676 decisions 2007–2026** in this corpus | `stjornarradid.is` — **not** `yskn.is`, despite being hosted by yfirskattanefnd |
+| **Yfirskattanefnd** | Tax appeals | High | `yskn.is` |
+| **Persónuvernd** | Data protection | Moderate | `personuvernd.is` |
+
+For public procurement, use the dedicated
+**`icelandic-procurement-law-magnus-smarason`** skill rather than this one. It carries the corpus,
+the retrieval method, the board's own keyword taxonomy, and — critically — the distinction between
+an **ákvörðun** (interim ruling, often on lifting the automatic standstill) and an **úrskurður**
+(final ruling on the merits). Those are near-equal in number, so roughly half the documents in the
+series are not outcomes, and reporting an ákvörðun as the result of a case is the standard error.
+
 ## Court Decision Databases
 
 ### Hæstiréttur Íslands (Supreme Court)
@@ -72,7 +93,8 @@ Hæstiréttur Íslands (Supreme Court)
 | Source | Content | Access |
 |--------|---------|--------|
 | **Lögbirtingablaðið** | Official legal notices | logbirtingablad.is |
-| **Úrskurðarnefndir** (Appeals committees) | Administrative appeal decisions | Various ministry websites |
+| **Úrskurðarnefndir** (Appeals committees) | Administrative appeal decisions | Mostly indexed at `stjornarradid.is/gogn/urskurdir-og-alit-/`, filterable by committee and year |
+| **Kærunefnd útboðsmála** | Public procurement appeals | `stjornarradid.is` — note that úrskurður (final) and ákvörðun (interim) are different instruments; roughly half the series is interim |
 | **EFTA Court** | EEA law decisions affecting Iceland | eftacourt.int |
 | **ESA** | EFTA Surveillance Authority decisions | eftasurv.int |
 | **Persónuvernd** | Data protection decisions | personuvernd.is |
@@ -309,42 +331,52 @@ Iceland does not follow strict stare decisis as in common law systems, but:
 
 5. **EFTA Court advisory opinions**: Highly persuasive on EEA law questions. Icelandic courts are expected to follow them (but are not technically bound).
 
-### Key Landmark Decisions
+### Landmark Decisions — retrieve, do not recall
 
-#### Constitutional Law
-| Citation | Subject | Significance |
-|----------|---------|-------------|
-| Hrd. 1998-11-19, nr. 145/1998 | Guðmundur Andri Ástráðsson | Right to a lawfully constituted court |
-| Hrd. 2007-02-12, nr. 382/2006 | Property rights and expropriation | Constitutional protection of property |
-| Hrd. 2021-02-09, mál nr. 26/2020 | Landsréttur appointment case | Judicial independence, referred to ECtHR |
+**This skill deliberately contains no table of landmark cases.**
 
-#### Contract Law
-| Citation | Subject | Significance |
-|----------|---------|-------------|
-| Hrd. 2001-03-01, nr. 477/2000 | 36. gr. standard form contracts | Leading case on reasonableness in insurance contracts |
-| Hrd. 2010-10-17, nr. 92/2010 | CPI indexation of loans | Landmark on legality of inflation-indexed credit |
-| Hrd. 2012-05-24, nr. 672/2011 | Currency loan indexation | Foreign currency loan legality |
-| Hrd. 2009-10-16, nr. 153/2009 | Limitation of liability | Commercial reasonableness under 36. gr. |
+An earlier version of this file carried tables of "key" decisions across
+constitutional, contract, tort, labour and EEA law. On verification against
+the live case databases, **every Icelandic citation in them was wrong.** Two
+case numbers did not exist at all; the rest resolved to real judgments about
+entirely different subjects — the authority given for reasonableness in
+commercial contracts was a criminal assault case, the one for currency-loan
+indexation was a rape case, and the one for judicial independence was a
+competition fine against the dairy board. Dates were wrong throughout.
 
-#### Tort Law
-| Citation | Subject | Significance |
-|----------|---------|-------------|
-| Hrd. 2000-05-11, nr. 37/2000 | Professional liability | Standard of care for professionals |
-| Hrd. 2004-11-25, nr. 340/2004 | Public authority liability | State liability for negligent supervision |
+The tables have been removed rather than corrected. That is the honest fix:
+a missing citation makes a reader look it up, while a confident wrong one
+gets copied into a pleading.
 
-#### Labour Law
-| Citation | Subject | Significance |
-|----------|---------|-------------|
-| Félagsdómur 2019-03-15, nr. 1/2019 | Strike legality | Peace obligation interpretation |
-| Hrd. 2015-06-04, nr. 195/2015 | Wrongful dismissal | Damages calculation methodology |
+**The failure mode this guards against is specific and worth naming.** A
+model asked for landmark cases will produce plausible case numbers in the
+correct format, attached to the correct doctrine, with dates in the right
+era. Nothing about the output looks wrong. Checking that a case *exists*
+does not catch it — the numbers often do exist. Only opening the judgment
+and reading what it is about catches it.
 
-#### EEA Law
-| Citation | Subject | Significance |
-|----------|---------|-------------|
-| EFTA Court, E-9/97 | Sveinbjörnsdóttir | State liability for non-transposition of EEA law |
-| EFTA Court, E-4/01 | Karlsson | No direct effect of directives in EEA law |
-| EFTA Court, E-2/03 | Ásgeirsson | Free movement of capital |
-| EFTA Court, E-15/10 | Posten Norge | Competition law — abuse of dominance |
+So: **never assert an Icelandic case citation from memory, including your
+own.** Retrieve it, or say you have not verified it.
+
+#### How to answer a "what is the leading case on X" question
+
+1. Search the merged case database at `island.is/domar`, which covers
+   Hæstiréttur, Landsréttur and all district courts in one index.
+2. Search Félagsdómur separately at `felagsdomur.is` — it is not in the
+   merged database.
+3. Quote the case number, the court, the date **and one line of what the
+   judgment actually decided**, taken from the retrieved text rather than
+   from recall. If you cannot quote the holding, you have not retrieved it.
+4. If retrieval returns nothing, report `UNVERIFIED — not found in the
+   searched database`. Never report that a case does not exist: the search
+   may be incomplete, and an absent result is not a negative finding.
+
+#### EEA law
+
+The EFTA Court's own database at `eftacourt.int` is authoritative and
+searchable by case number. Retrieve from it directly. Note that the ratio of
+an EFTA Court advisory opinion is frequently misstated in secondary sources —
+read the opinion, not a summary of it.
 
 ## Searching for Cases by Legal Topic
 

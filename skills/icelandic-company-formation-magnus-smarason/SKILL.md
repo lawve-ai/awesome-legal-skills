@@ -72,11 +72,11 @@ The ehf is by far the most common business entity in Iceland, suitable for every
   - Provisions on dissolution
 
 **Step 4: Governance Setup**
-- **Board of directors (stjórn)**: Minimum 1 member for companies with share capital under ISK 4,000,000. Otherwise, minimum 3 members.
-- **Managing director (framkvæmdastjóri)**: Optional for small ehf, but recommended. Required if share capital exceeds ISK 4,000,000.
+- **Board of directors (stjórn)**: at least three members, **unless the company has four or fewer shareholders**, in which case one or two suffice (lög nr. 138/1994, 39. gr.). The test is the number of SHAREHOLDERS, not the size of the share capital.
+- **Managing director (framkvæmdastjóri)**: optional. 41. gr. is permissive — the board *may* appoint one or more. There is no share-capital threshold that makes it mandatory. Where a board of one exists, that person may also be the managing director; on a two-member board, one may be.
 - **Alternate board members (varamenn)**: Required if board has fewer than 3 members
 - Board members must be at least 18, have legal capacity, not be bankrupt
-- At least one board member (or the managing director) must be resident in Iceland (or another EEA state)
+- Residency: managing directors **and at least half the board** must be resident in Iceland or another EEA/EFTA state (lög nr. 138/1994, 42. gr.). Verify against the current text — this is stricter than "at least one board member".
 
 **Step 5: Registration with Fyrirtækjaskrá**
 - File with Fyrirtækjaskrá (the Register of Enterprises, part of Skatturinn / Directorate of Internal Revenue)
