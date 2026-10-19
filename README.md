@@ -1,6 +1,6 @@
-<picture>
-  <a href="https://lawve.ai"><img src="assets/lawve-logo.png" alt="AI Agent Skills for Legal Professionals" width="100%"></a>
-</picture>
+<p align="center">
+  <a href="https://lawve.ai"><img src="assets/lawve-logo.png" alt="AI Agent Skills for Legal Professionals" width="85%"></a>
+</p>
 
 <p align="center">
   <a href="#table-of-contents"><img src="https://img.shields.io/badge/Skills-276-yellow.svg" alt="Browse" /></a>
@@ -12,6 +12,8 @@
 </p>
 
 *A curated collection of the finest open-source agent skills for legal work, bringing together contributions from practicing lawyers, in-house counsel, academics, and legal technologists. Built on portable, open standards rather than proprietary agent formats, it aims to make AI accessible and practical for legal professionals.*
+
+The most recent skills are published first on [lawve.ai](https://lawve.ai); this repository is synced from there periodically.
 
 > [!IMPORTANT]
 > **What are Agent Skills?** — Skills are organized collections of files that package composable procedural knowledge for AI agents. For legal professionals, this means encoding your expertise into reusable AI workflows: draft GDPR-compliant privacy policies, review NDAs using your firm's methodology, create due diligence checklists that match your standards, etc.
