@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/perspective/v1",
+  "title": "Perspective",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^per:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "role": {
+      "enum": [
+        "party",
+        "subject",
+        "organization",
+        "third_party"
+      ]
+    },
+    "conduct_in_scope": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "label",
+    "role",
+    "conduct_in_scope"
+  ],
+  "additionalProperties": false
+}

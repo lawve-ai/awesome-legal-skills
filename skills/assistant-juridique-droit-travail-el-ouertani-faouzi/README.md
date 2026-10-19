@@ -1,0 +1,3 @@
+# Overview
+
+Orchestrateur multi-rôles en droit du travail français (salarié, employeur, audit, conseil, veille, formation). Charger pour toute consultation prud'homale, rédaction d'actes (non-concurrence, transaction, avertissement), audit de contrat ou d'accord d'entreprise, calcul d'indemnités, conformité CCN, CSE, CDD, harcèlement, temps de travail, veille chambre sociale ou audit social, avec traçabilité obligatoire des sources.

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/proposal/v1",
+  "title": "Proposal (no status column)",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "task_type": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "cache_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "payload_json": {
+      "type": "object"
+    },
+    "created_step_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "task_type",
+    "cache_key",
+    "payload_json",
+    "created_step_id"
+  ],
+  "additionalProperties": false
+}

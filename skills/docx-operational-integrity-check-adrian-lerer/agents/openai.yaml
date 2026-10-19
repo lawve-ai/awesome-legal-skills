@@ -1,0 +1,4 @@
+interface:
+  display_name: "DOCX Integrity by Ignacio Lerer"
+  short_description: "Preserve legal Word documents during AI edits"
+  default_prompt: "Use $docx-operational-integrity-check to review this AI-assisted Word workflow for document integrity."

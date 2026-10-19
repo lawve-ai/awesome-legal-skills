@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/family_membership/v1",
+  "title": "FamilyMembership",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "document_id": {
+      "type": "string",
+      "pattern": "^doc:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "family_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "basis": {
+      "enum": [
+        "bytes",
+        "email_headers",
+        "human"
+      ]
+    },
+    "supersedes": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  },
+  "required": [
+    "case_id",
+    "document_id",
+    "family_id",
+    "basis"
+  ],
+  "additionalProperties": false
+}

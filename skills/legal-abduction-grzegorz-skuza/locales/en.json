@@ -1,0 +1,10 @@
+{
+  "E_LANG_REQUIRED": "Report language is not set. Pass --lang pl|en or set lang in the profile; only doctor runs without it.",
+  "E_CASE_EXISTS": "A case already exists in this directory; init never overwrites it. Use a new directory or change the profile through an audited update.",
+  "E_PROFILE_MISSING": "case.json not found in the case directory. Run init first.",
+  "E_PROFILE_INCOMPLETE": "Profile field missing: {field}.",
+  "E_PROFILE_INVALID": "Profile field invalid or not allowed: {field}.",
+  "E_CONTEXT_UNSUPPORTED": "Deployment context 'judicial' (court, arbitration, ADR) is not supported in v1.",
+  "E_HIGH_RISK_ACK": "High-risk deployment context requires deployer_ack in the profile.",
+  "E_LEVEL_C_REQUIRED": "Model processing is not allowed for this case. Case files are already in the agent environment at level A/B, so the analysis must run at level C, outside the agent session."
+}

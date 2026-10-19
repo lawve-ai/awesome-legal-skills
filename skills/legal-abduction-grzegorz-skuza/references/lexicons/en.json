@@ -1,0 +1,19 @@
+{
+  "version": "1",
+  "lang": "en",
+  "curation": {"status": "unreviewed", "needs_legal_review": true, "question": "Q6"},
+  "negation": {
+    "words": ["not", "no", "never", "none", "nobody", "nothing", "nowhere", "neither", "nor", "without", "cannot", "lack",
+              "lacked", "lacks", "lacking", "absent", "denied", "denies", "deny", "failed", "fails"],
+    "contraction_suffix": "n't"
+  },
+  "modality": {
+    "words": ["may", "might", "could", "would", "possibly", "possible", "probably", "perhaps", "allegedly", "reportedly",
+              "apparently", "should", "must", "likely", "seems", "appears", "supposedly", "presumably", "maybe"]
+  },
+  "forbidden_boosters": {
+    "words": ["proven", "proved", "proves", "prove", "established", "establishes", "demonstrates", "demonstrated",
+              "demonstrate", "conclusively", "undeniably", "indisputably", "irrefutably", "unquestionably"]
+  },
+  "language_markers": ["the", "and", "is", "was", "that", "with", "from", "this", "were", "which", "of"]
+}

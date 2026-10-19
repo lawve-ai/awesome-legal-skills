@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/search_record/v1",
+  "title": "SearchRecord",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "filters": {
+      "type": "object"
+    },
+    "parser_errors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "known_limits": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "hits": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^psg:[A-Za-z0-9._-]{1,128}$",
+        "maxLength": 140
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    }
+  },
+  "required": [
+    "case_id",
+    "query",
+    "variants",
+    "corpus_hash",
+    "parser_errors",
+    "known_limits",
+    "hits"
+  ],
+  "additionalProperties": false
+}

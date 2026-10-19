@@ -1,6 +1,6 @@
 # Tâche 6 — Analyse de contrat
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU requis pour le livrable Word. En mode CHAT, exécutable si le contrat est visible dans la fenêtre de contexte (réponse conversationnelle) — sinon, interrompre et demander d'activer computer use.
+> **Environnement** : contrat en pièce jointe ou dans le dossier connecté. Livrable Word par défaut (artefact Docs sur demande).
 
 ## Objectif
 
@@ -29,7 +29,7 @@ EXÉCUTER :
 - Régime spécial applicable (bail, vente, travail, consommation, etc.)
 - Mentions obligatoires pour ce type de contrat
 - Clauses réputées non écrites ou interdites
-- Jurisprudence récente sur les clauses litigieuses de ce type de contrat
+- Jurisprudence récente sur les clauses litigieuses de ce type de contrat — `LibreJustice:search_decisions` (requête descriptive sur la clause, `date_from` sur les cinq dernières années, `legal_instrument` sur le code applicable), lecture par `get_decision`, puis repasse OpenLegi pour le lien Légifrance
 
 ### 4. Analyse clause par clause
 

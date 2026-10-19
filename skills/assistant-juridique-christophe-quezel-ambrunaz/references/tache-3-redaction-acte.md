@@ -1,6 +1,6 @@
 # Tâche 3 — Rédaction d'acte juridique
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU pour le livrable Word. En mode CHAT sans computer use, une rédaction conversationnelle est possible pour les actes courts, mais sans mise en forme professionnelle — le signaler à l'utilisateur et proposer d'activer computer use.
+> **Environnement** : livrable Word (skill `docx`) par défaut, artefact Docs sur demande. Sans espace de travail (cas résiduel) : rédaction dans la conversation pour un acte court, en signalant l'absence de mise en forme.
 
 ## Objectif
 

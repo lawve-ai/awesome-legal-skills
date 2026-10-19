@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-verify_links.py — Vérification batch d'URLs juridiques (Légifrance, HUDOC, Curia).
+verify_links.py — Vérification batch d'URLs juridiques (Légifrance, LibreJustice,
+HUDOC, Curia).
 
 Vérifications effectuées pour chaque URL :
     1. Correspondance à un pattern officiel reconnu (JURITEXT, CETATEXT,
@@ -11,18 +12,28 @@ Vérifications effectuées pour chaque URL :
        (GET) et vérification que le numéro de pourvoi / numéro d'article /
        mot-clé attendu apparaît dans le contenu.
 
+Les URLs LibreJustice (https://librejustice.fr/decision/… et
+https://librejustice.fr/norm/{juridiction}/{code}/{article}, ainsi que
+l'ancien format /texte/{code}/{article}) sont reconnues comme
+patterns valides : elles constituent le lien vérifiable des décisions
+non diffusées sur Légifrance (juridictions du fond, CNDA). Le mode
+--extract-ids retourne pour chacune l'outil MCP LibreJustice à appeler
+(get_decision / get_norm), qui n'est affecté ni par la liste des
+domaines autorisés de l'espace de travail ni par le challenge anti-bot
+Cloudflare de Légifrance.
+
 Modes de fonctionnement :
     - --preflight : teste l'état de la sortie réseau et l'accès à
        Légifrance, sans vérifier d'URL. Distingue désormais quatre cas :
-       réseau OK (0), bloqué par allowlist Cowork (2), erreur réseau
+       réseau OK (0), bloqué par la liste des domaines autorisés (2), erreur réseau
        générique (3), bloqué par challenge anti-bot Cloudflare (4).
     - --extract-ids : lit une liste d'URLs (ou un texte brut via
        --extract-ids-from-text) et retourne les identifiants Légifrance
        reconnus (LEGIARTI, JURITEXT, CETATEXT, JORFTEXT, JORFARTI,
        LEGITEXT, CNILTEXT, KALITEXT) avec, pour chacun, le nom de
        l'outil OpenLegi à appeler pour vérifier son existence par API.
-       Conçu pour les sandbox où Légifrance est inaccessible (Cloudflare
-       ou allowlist) : la vérification est déléguée à OpenLegi par
+       Canal nominal : Légifrance est inaccessible aux requêtes
+       automatisées (challenge Cloudflare) : la vérification est déléguée à OpenLegi par
        l'agent.
     - --strict : code de retour ≠ 0 si au moins une URL est invalide
                  (pattern non reconnu, inaccessible, contenu non concordant).
@@ -50,6 +61,10 @@ Sortie : JSON avec, pour chaque URL :
 
 Code de retour : 0 si tout passe (ou si --strict est désactivé), sinon 1.
 """
+
+# Fichier commun aux skills assistant-juridique-fr (7.5.0) et mandarinat
+# (1.5.0) : toute modification doit être répercutée à l'identique dans
+# l'autre skill.
 
 import argparse
 import json
@@ -106,6 +121,22 @@ LEGIFRANCE_TYPE_TO_OPENLEGI_TOOL = {
         "verification": (
             "Appeler get_decision_cnil avec l'identifiant et vérifier "
             "que la décision correspond."
+        ),
+    },
+    "CONSTEXT": {
+        "tool": "OpenLegi:get_decision_constitutionnelle",
+        "argument": "identifiant",
+        "verification": (
+            "Appeler get_decision_constitutionnelle avec l'identifiant et "
+            "vérifier le numéro (QPC, DC…), la date et l'objet de la décision."
+        ),
+    },
+    "JUFITEXT": {
+        "tool": "OpenLegi:get_decision_financiere",
+        "argument": "identifiant",
+        "verification": (
+            "Appeler get_decision_financiere avec l'identifiant et vérifier "
+            "la juridiction financière, la date et le numéro."
         ),
     },
     "LEGIARTI_CODE": {
@@ -177,6 +208,31 @@ LEGIFRANCE_TYPE_TO_OPENLEGI_TOOL = {
 # Patterns d'URL reconnus
 # ─────────────────────────────────────────────────────────────────────────────
 
+LIBREJUSTICE_TYPE_TO_TOOL = {
+    "LIBREJUSTICE_DECISION": {
+        "tool": "LibreJustice:get_decision",
+        "argument": "url=<URL LibreJustice de la décision>",
+        "verification": (
+            "Appeler get_decision avec l'URL et vérifier que la "
+            "juridiction, la date et le numéro d'affaire correspondent à "
+            "ce qui est cité. Lire les motifs et le dispositif (jamais un "
+            "aiSummary ni un snippet) pour le content-matching, et "
+            "contrôler appellateFate : une décision infirmée ne peut "
+            "être citée comme état du droit."
+        ),
+    },
+    "LIBREJUSTICE_TEXTE": {
+        "tool": "LibreJustice:get_norm",
+        "argument": "url=<URL LibreJustice de l'article>, date=<date pertinente>",
+        "verification": (
+            "Appeler get_norm avec l'URL et la date pertinente "
+            "(date des faits pour une analyse rétrospective). Vérifier "
+            "que la rédaction citée est celle en vigueur à cette date et "
+            "préciser la version citée."
+        ),
+    },
+}
+
 LEGIFRANCE_PATTERNS = [
     # Jurisprudence judiciaire (Cour de cassation, cours d'appel)
     ("JURITEXT", re.compile(
@@ -218,6 +274,14 @@ LEGIFRANCE_PATTERNS = [
     ("KALITEXT", re.compile(
         r"^https?://www\.legifrance\.gouv\.fr/conv_coll/id/KALITEXT\d+/?$"
     , re.IGNORECASE)),
+    # Conseil constitutionnel (fonds CONSTIT de Légifrance)
+    ("CONSTEXT", re.compile(
+        r"^https?://www\.legifrance\.gouv\.fr/cons/id/CONSTEXT\d+/?$"
+    , re.IGNORECASE)),
+    # Juridictions financières (fonds JUFI)
+    ("JUFITEXT", re.compile(
+        r"^https?://www\.legifrance\.gouv\.fr/jufi/id/JUFITEXT\d+/?$"
+    , re.IGNORECASE)),
 ]
 
 EXTERNAL_OFFICIAL_PATTERNS = [
@@ -240,7 +304,26 @@ EXTERNAL_OFFICIAL_PATTERNS = [
     , re.IGNORECASE)),
 ]
 
-ALL_PATTERNS = LEGIFRANCE_PATTERNS + EXTERNAL_OFFICIAL_PATTERNS
+LIBREJUSTICE_PATTERNS = [
+    # Décision (identifiant opaque)
+    ("LIBREJUSTICE_DECISION", re.compile(
+        r"^https?://(?:www\.)?librejustice\.fr/decision/[A-Za-z0-9_\-]+/?$"
+    , re.IGNORECASE)),
+    # Article ou texte : /norm/{juridiction}/{code}[/{article}]
+    ("LIBREJUSTICE_TEXTE", re.compile(
+        r"^https?://(?:www\.)?librejustice\.fr/norm/[A-Za-z]{2,4}/"
+        r"[A-Za-z0-9_\-]+(?:/[A-Za-z0-9_.\-]+)?/?$"
+    , re.IGNORECASE)),
+    # Ancien format (avant le renommage get_legal_text -> get_norm)
+    ("LIBREJUSTICE_TEXTE", re.compile(
+        r"^https?://(?:www\.)?librejustice\.fr/texte/[A-Za-z0-9_\-]+/"
+        r"[A-Za-z0-9_.\-]+/?$"
+    , re.IGNORECASE)),
+]
+
+ALL_PATTERNS = (
+    LEGIFRANCE_PATTERNS + EXTERNAL_OFFICIAL_PATTERNS + LIBREJUSTICE_PATTERNS
+)
 
 
 def identify_pattern(url):
@@ -546,7 +629,7 @@ def _classify_response_indicators(http_code, headers, raw_message=""):
 
     Statuts possibles :
       - "ok" (0)
-      - "blocked_by_allowlist" (2) — proxy Cowork
+      - "blocked_by_allowlist" (2) — proxy de l'espace de travail
       - "network_error" (3) — erreur générique
       - "blocked_by_anti_bot" (4) — challenge Cloudflare ou équivalent
     """
@@ -561,7 +644,7 @@ def _classify_response_indicators(http_code, headers, raw_message=""):
         "http_status": http_code,
     }
 
-    # 1. Blocage explicite par l'allowlist Cowork (en-tête sentinelle).
+    # 1. Blocage explicite par la liste des domaines autorisés (en-tête sentinelle).
     proxy_err = (indicators["x_proxy_error"] or "").lower()
     if (
         "blocked-by-allowlist" in proxy_err
@@ -573,14 +656,17 @@ def _classify_response_indicators(http_code, headers, raw_message=""):
             "status": "blocked_by_allowlist",
             "exit_code": 2,
             "message": (
-                "Accès réseau bloqué par l'allowlist du sandbox Cowork."
+                "Accès réseau bloqué par la liste des domaines autorisés "
+                "de l'espace de travail."
             ),
             "recommendation": (
                 "Autoriser les cinq domaines (www.legifrance.gouv.fr, "
                 "www.conseil-constitutionnel.fr, hudoc.echr.coe.int, "
-                "curia.europa.eu, eur-lex.europa.eu) dans "
-                "Settings -> Capabilities -> Network access, puis "
-                "redémarrer la session Cowork pour propager l'allowlist."
+                "curia.europa.eu, eur-lex.europa.eu) dans les paramètres "
+                "d'accès réseau de Claude (Paramètres > Capacités), puis "
+                "ouvrir une nouvelle conversation. Pour Légifrance, sans "
+                "effet utile : le challenge anti-bot Cloudflare subsiste ; "
+                "le canal nominal est OpenLegi / LibreJustice."
             ),
             "headers_indicators": indicators,
         }
@@ -739,6 +825,8 @@ LEGIFRANCE_ID_PATTERNS = [
     ("CETATEXT", re.compile(r"\b(CETATEXT\d+)\b", re.IGNORECASE)),
     ("CNILTEXT", re.compile(r"\b(CNILTEXT\d+)\b", re.IGNORECASE)),
     ("KALITEXT", re.compile(r"\b(KALITEXT\d+)\b", re.IGNORECASE)),
+    ("CONSTEXT", re.compile(r"\b(CONSTEXT\d+)\b", re.IGNORECASE)),
+    ("JUFITEXT", re.compile(r"\b(JUFITEXT\d+)\b", re.IGNORECASE)),
     ("JORFARTI", re.compile(r"\b(JORFARTI\d+)\b", re.IGNORECASE)),
     ("JORFTEXT", re.compile(r"\b(JORFTEXT\d+)\b", re.IGNORECASE)),
     ("LEGIARTI", re.compile(r"\b(LEGIARTI\d+)\b", re.IGNORECASE)),
@@ -836,6 +924,37 @@ def extract_ids_from_urls(urls):
     return results
 
 
+def extract_librejustice_from_urls(urls):
+    """Extrait les URLs LibreJustice et l'outil MCP à appeler pour chacune.
+
+    Pendant de extract_ids_from_urls pour le canal LibreJustice : le
+    connecteur MCP n'est affecté ni par la liste des domaines autorisés ni par le
+    challenge anti-bot Cloudflare de Légifrance, et reste donc
+    utilisable lorsque la vérification HTTP directe est inopérante.
+    """
+    results = []
+    seen = set()
+    for url in urls:
+        if not isinstance(url, str) or url in seen:
+            continue
+        for type_name, pattern in LIBREJUSTICE_PATTERNS:
+            if not pattern.match(url):
+                continue
+            seen.add(url)
+            mapping = LIBREJUSTICE_TYPE_TO_TOOL.get(type_name, {})
+            results.append({
+                "url": url,
+                "type": type_name,
+                "librejustice_tool": mapping.get("tool"),
+                "librejustice_argument": mapping.get("argument"),
+                "librejustice_verification_instruction": mapping.get(
+                    "verification"
+                ),
+            })
+            break
+    return results
+
+
 def main():
     parser = argparse.ArgumentParser(
         description=(
@@ -857,7 +976,7 @@ def main():
         help=(
             "Tester l'état de la sortie réseau et l'accès à Légifrance. "
             "Codes de retour : 0 = réseau OK et Légifrance répond ; "
-            "2 = bloqué par allowlist Cowork ; 3 = erreur réseau "
+            "2 = bloqué par la liste des domaines autorisés ; 3 = erreur réseau "
             "générique ; 4 = bloqué par challenge anti-bot Cloudflare "
             "(la couche réseau est OK, mais Légifrance refuse les "
             "requêtes automatisées : utiliser --extract-ids et "
@@ -925,6 +1044,7 @@ def main():
     if args.extract_ids:
         if args.extract_ids_from_text:
             ids = extract_ids_from_text(args.extract_ids_from_text)
+            librejustice = []
         elif args.urls or args.from_file:
             if args.urls:
                 raw = json.loads(args.urls)
@@ -942,6 +1062,7 @@ def main():
                 elif isinstance(entry, dict) and "url" in entry:
                     urls_only.append(entry["url"])
             ids = extract_ids_from_urls(urls_only)
+            librejustice = extract_librejustice_from_urls(urls_only)
         else:
             parser.error(
                 "--extract-ids requiert --urls, --from-file, ou "
@@ -950,6 +1071,8 @@ def main():
         output = {
             "total_ids": len(ids),
             "ids": ids,
+            "total_librejustice": len(librejustice),
+            "librejustice": librejustice,
             "instruction_agent": (
                 "Pour chaque identifiant ci-dessous, appeler l'outil "
                 "OpenLegi indiqué (champ openlegi_tool) avec l'argument "
@@ -958,7 +1081,12 @@ def main():
                 "openlegi_verification_instruction). Toute référence "
                 "dont l'identifiant n'est pas confirmé par OpenLegi "
                 "doit être supprimée du livrable ou convertie en "
-                "formulation impersonnelle."
+                "formulation impersonnelle. Pour les entrées du bloc "
+                "librejustice, appeler l'outil indiqué (champ "
+                "librejustice_tool) : ce canal API reste opérationnel "
+                "lorsque Légifrance est inaccessible, et fournit le "
+                "texte intégral nécessaire au content-matching ainsi que "
+                "le sort en voie de recours (appellateFate)."
             ),
         }
         print(json.dumps(output, ensure_ascii=False, indent=2))

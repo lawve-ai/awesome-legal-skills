@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/event_time_assessment/v1",
+  "title": "EventTimeAssessment",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "observation_id": {
+      "type": "string",
+      "pattern": "^obs:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "earliest": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "latest": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "time_basis": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "ambiguous": {
+      "type": "boolean"
+    },
+    "supersedes": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  },
+  "required": [
+    "case_id",
+    "observation_id",
+    "time_basis",
+    "ambiguous"
+  ],
+  "additionalProperties": false
+}

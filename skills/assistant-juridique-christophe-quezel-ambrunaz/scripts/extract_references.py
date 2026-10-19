@@ -23,10 +23,9 @@ import os
 # Patterns de détection des références juridiques
 PATTERNS = {
     "JURIS_CASS": [
-        # Cass. civ. 1re, 12 juill. 2023, n° 21-12.345
-        r"Cass\.?\s+(?:civ\.\s*\d+(?:re|e)|com\.|soc\.|crim\.|Ass\.\s*pl[ée]n\.|Ch\.\s*mixte)[,\s]+\d{1,2}\s+\w+\.?\s+\d{4},?\s*n°\s*\d{2}-\d{2}[\.\s]?\d{3}",
-        # Variantes plus souples
-        r"(?:Civ\.\s*\d+(?:re|e)|Com\.|Soc\.|Crim\.)[,\s]+\d{1,2}\s+\w+\.?\s+\d{4},?\s*n°\s*\d{2}-\d{2}[\.\s]?\d{3}",
+        # Cass. civ. 1re, 12 juill. 2023, n° 21-12.345 ; Cass. 2e civ. ; Civ. 2e ;
+        # Cass. ass. plén. ; Ch. mixte ; Ch. réunies ; soc., com., crim.
+        r"(?:Cass\.?,?\s+)?(?:[Cc]iv\.\s*\d+(?:re|er|e)|\d+(?:re|e)\s+civ\.|[Cc]om\.|[Ss]oc\.|[Cc]rim\.|[Aa]ss\.\s*pl[ée]n\.|[Cc]h\.\s*(?:mixte|r[ée]unies))[,\s]+\d{1,2}(?:er)?\s+\w+\.?\s+\d{4},?\s*n°\s*[A-Z]?\s*\d{2}-\d{2}[\.\s]?\d{3}",
     ],
     "JURIS_CE": [
         r"CE[,\s]+(?:Ass\.|Sect\.|ss-sect\.)?[,\s]*\d{1,2}\s+\w+\.?\s+\d{4},?\s*n°\s*\d{4,7}",
@@ -123,10 +122,14 @@ def extract_references_from_text(text_lines):
             loc = f"Note de fin n°{match.group(1)}" if match else "Note de fin"
             line = re.sub(r"^\[(?:END)?NOTE \d+\]\s*", "", line)
 
-        # Chercher les références
+        # Chercher les références (sans doublon sur un même segment)
+        taken = []
         for ref_type, patterns in PATTERNS.items():
             for pattern in patterns:
                 for match in re.finditer(pattern, line):
+                    if any(match.start() < e and match.end() > b for b, e in taken):
+                        continue
+                    taken.append((match.start(), match.end()))
                     # Générer l'ID
                     prefix_map = {
                         "JURIS_CASS": "J", "JURIS_CE": "J", "JURIS_CONST": "J",

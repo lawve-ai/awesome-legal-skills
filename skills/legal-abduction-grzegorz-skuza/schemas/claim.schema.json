@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/claim/v1",
+  "title": "Claim",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^clm:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "passage_id": {
+      "type": "string",
+      "pattern": "^psg:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "speaker": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "speaker_role": {
+      "enum": [
+        "party",
+        "subject",
+        "witness",
+        "third",
+        "system"
+      ]
+    },
+    "proposition": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "polarity": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "modality": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "quote": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "end": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "epistemic_status": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "not": {
+        "const": "established"
+      }
+    },
+    "guard_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "source_lang": {
+      "enum": [
+        "pl",
+        "en",
+        "other"
+      ]
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "passage_id",
+    "speaker",
+    "speaker_role",
+    "proposition",
+    "polarity",
+    "modality",
+    "quote",
+    "start",
+    "end",
+    "epistemic_status",
+    "guard_flags",
+    "source_lang"
+  ],
+  "additionalProperties": false
+}

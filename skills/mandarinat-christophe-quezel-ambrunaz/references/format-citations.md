@@ -1,11 +1,13 @@
 # Normes de citation juridique
 
+<!-- NOYAU-ANTIHALLUCINATION v4 — synchronisé mandarinat 2.0.0 / assistant-juridique-fr 8.0.0. Fichier commun aux deux skills (script sync-noyau.sh). -->
+
 Référence normative : Guide de rédaction SNE RefLex 2022
 https://reflex.sne.fr/sites/default/files/guide/Guide-de-redaction-SNE-RefLex-2022-03-18.pdf
 
-## Lien Légifrance obligatoire pour toute référence
+## Lien officiel obligatoire pour toute référence
 
-Toute référence jurisprudentielle ou normative française citée dans un livrable doit être accompagnée d'un lien hypertexte vers la source officielle Légifrance. La règle est cardinale (voir `references/principes-cardinaux.md`) ; elle est rappelée ici dans sa dimension formelle.
+Toute référence jurisprudentielle ou normative française citée dans un livrable doit être accompagnée d'un lien hypertexte vers la source officielle Légifrance — sous la seule réserve des décisions non diffusées sur Légifrance (nombreuses décisions du fond, CNDA), pour lesquelles le lien `librejustice.fr` tient lieu de lien vérifiable (cf. « Régime d'emploi » ci-dessous et `references/principes-cardinaux.md`, point (d)). La règle est cardinale ; elle est rappelée ici dans sa dimension formelle.
 
 Patterns d'URL Légifrance attendus, par type de référence :
 
@@ -15,7 +17,7 @@ Patterns d'URL Légifrance attendus, par type de référence :
 | Jurisprudence administrative (CE, CAA, TA) | `https://www.legifrance.gouv.fr/ceta/id/CETATEXT…` | `https://www.legifrance.gouv.fr/ceta/id/CETATEXT000018259414` (CE, ass., 8 févr. 2007, n° 287110, *Gardedieu*) |
 | Décisions du Conseil constitutionnel | `https://www.legifrance.gouv.fr/jorf/id/JORFTEXT…` ou page dédiée du site du Conseil | (URL à extraire de la réponse de l'outil de recherche) |
 | Décisions de la CNIL | `https://www.legifrance.gouv.fr/cnil/id/CNILTEXT…` | (URL à extraire de la réponse de `OpenLegi:rechercher_decisions_cnil`) |
-| Articles de codes | `https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI…` | `https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437058` (art. 1242 C. civ.) |
+| Articles de codes | `https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI…` | lien de la version citée, lu dans la réponse de l'outil |
 | Articles de lois et textes consolidés (LODA) | `https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI…` ou `…/loda/id/LEGITEXT…` | (URL à extraire de la réponse de `OpenLegi:rechercher_dans_texte_legal`) |
 | Textes publiés au JO | `https://www.legifrance.gouv.fr/jorf/id/JORFTEXT…` | `https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051782996` (loi n° 2025-568 du 23 juin 2025) |
 | Articles JO | `https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI…` | `https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000051783004` (art. 3 de la loi n° 2025-568) |
@@ -29,9 +31,19 @@ Pour les sources non françaises, les URLs officielles équivalentes s'imposent 
 | CJUE (Curia) | `https://curia.europa.eu/juris/document/document.jsf?docid=…` |
 | Textes UE (EUR-Lex) | `https://eur-lex.europa.eu/eli/…` ou `…/legal-content/…` |
 
-**Origine du lien** — Le lien est **extrait de la réponse de l'outil de recherche** (OpenLegi, LegalDataHunter, etc.) appelé pour cette référence dans la session courante. Il n'est jamais reconstruit de mémoire ni par analogie. Toute reconstruction est interdite (cf. `references/principes-cardinaux.md`, section « Ce qui est interdit »).
+**Liens LibreJustice** — patterns : `https://librejustice.fr/decision/{identifiant}` (décision) et `https://librejustice.fr/norm/{juridiction}/{code}/{article}` (article, par exemple `…/norm/fr/code-civil/1240` ; ancien format `…/texte/code-civil/1240`).
 
-**Vérification** — En modes COWORK et CHAT_CU, exécuter `scripts/verify_links.py` sur l'ensemble des URLs avant livraison (cf. `references/checklist-pre-livraison.md`).
+Régime d'emploi :
+
+| Situation | Lien porté dans le livrable |
+|---|---|
+| Référence française diffusée sur Légifrance | **Lien Légifrance obligatoire**, extrait d'une réponse OpenLegi. Le lien LibreJustice ne peut s'y substituer ; il peut être ajouté en second lien lorsqu'il apporte quelque chose (texte intégral commode, commentaires institutionnels). |
+| Décision non diffusée sur Légifrance (décisions du fond, CNDA) | Lien LibreJustice, qui vaut alors lien vérifiable, avec mention de la source (« LibreJustice »). La recherche Légifrance par numéro d'affaire doit avoir été tentée au préalable. |
+| CEDH, CJUE | Lien HUDOC / Curia (règle inchangée) ; lien LibreJustice en complément facultatif. |
+
+**Origine du lien** — Le lien est **extrait de la réponse de l'outil de recherche** (OpenLegi, LibreJustice, LegalDataHunter, etc.) appelé pour cette référence dans la session courante. Il n'est jamais reconstruit de mémoire ni par analogie. Toute reconstruction est interdite (cf. `references/principes-cardinaux.md`, section « Ce qui est interdit »).
+
+**Vérification** — Avant livraison, vérifier chaque lien selon les canaux de la checklist (OpenLegi pour les identifiants Légifrance, `scripts/verify_links.py --check-content` pour HUDOC, Curia, EUR-Lex ; cf. `references/checklist-pre-livraison.md`).
 
 ## Jurisprudence
 
@@ -167,7 +179,7 @@ Chaque référence en note de fin doit comporter le lien hypertexte vers la sour
 
 > Cass. ass. plén., 25 févr. 2000, n° 97-17.378, *Costedoat*, *https://www.legifrance.gouv.fr/juri/id/JURITEXT000007043704*.
 
-> Art. 1242 al. 4 C. civ., dans sa rédaction issue de la loi n° 2025-568 du 23 juin 2025, *https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437058*.
+> Art. 1242 al. 4 C. civ., dans sa rédaction issue de la loi n° 2025-568 du 23 juin 2025, *<lien Légifrance de la version citée, lu dans la réponse de l'outil>*.
 
 L'absence de lien rend la note non conforme : la référence est alors traitée selon la procédure de la `references/checklist-pre-livraison.md` (suppression, reformulation impersonnelle ou mention « à vérifier »).
 

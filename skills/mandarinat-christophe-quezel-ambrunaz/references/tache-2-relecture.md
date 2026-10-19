@@ -1,6 +1,6 @@
 # Tâche 2 — Relecture de documents
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU **obligatoire** pour les étapes 2 (commentaires Word) et 3 (vérification des références). En mode CHAT : seule l'étape 1 (relecture linguistique et structurelle) est exécutable si le document est visible dans la fenêtre de contexte. **Bloquer** et demander de basculer sur Cowork si le document dépasse 15 pages ou si l'étape 2 ou 3 est requise.
+> **Environnement** : espace de travail requis pour les commentaires Word (étape 2) et la vérification outillée des références (étape 3) ; un document long se traite par sections, sans limite de pages. Lorsqu'un dossier connecté existe, y écrire le document commenté et le journal au fur et à mesure (reprise). Sans espace de travail (cas résiduel) : seule l'étape 1 est exécutable, sur un document visible dans la conversation ; indiquer que l'activation de « Exécution de code et création de fichiers » permettrait le reste.
 
 ## Objectif
 
@@ -69,11 +69,11 @@ Proposer ensuite d'intégrer les corrections comme commentaires Word dans le doc
 
 ## ÉTAPE 2 — Vérification des références
 
-> **Pré-requis** : COWORK ou CHAT_CU obligatoire.
+> **Environnement** : espace de travail requis.
 
 ### Phase 2.1 — Extraction exhaustive
 
-Parcourir l'intégralité du document. Extraire **toutes** les références juridiques (corps du texte, notes de bas de page, bibliographie, annexes). En modes COWORK / CHAT_CU, amorcer l'extraction par `scripts/extract_references.py --file [document]`, qui détecte automatiquement les références (jurisprudence, articles de codes, lois/décrets, doctrine) et leur localisation, puis compléter manuellement les références non capturées par les motifs.
+Parcourir l'intégralité du document. Extraire **toutes** les références juridiques (corps du texte, notes de bas de page, bibliographie, annexes). Amorcer l'extraction par `scripts/extract_references.py --file [document]`, qui détecte automatiquement les références (jurisprudence, articles de codes, lois/décrets, doctrine) et leur localisation, puis compléter manuellement les références non capturées par les motifs.
 
 Pour chaque référence extraite :
 - **Localisation** : note n°X, corps p. Y, bibliographie
@@ -92,10 +92,11 @@ Vérifier chaque référence unique, par ordre de priorité (P1 → P2 → P3).
 
 | Type | Outil primaire | Stratégie | Fallback |
 |---|---|---|---|
-| JURIS_CASS | `rechercher_jurisprudence_judiciaire` | N° pourvoi, NUM_AFFAIRE, EXACTE | web_search |
-| JURIS_CE | `rechercher_jurisprudence_administrative` | N° requête, NUM_AFFAIRE, EXACTE | web_search |
-| JURIS_CA_TJ | `rechercher_jurisprudence_judiciaire` | Juridiction filtrée + n° RG | web_search |
-| JURIS_CONST | `rechercher_decisions_constitutionnelles` | N° décision | web_search |
+| JURIS_CASS | `OpenLegi:rechercher_jurisprudence_judiciaire` | N° pourvoi, NUM_AFFAIRE, EXACTE | `LibreJustice:search_decisions` (lexical) puis web_search |
+| JURIS_CE | `OpenLegi:rechercher_jurisprudence_administrative` | N° requête, NUM_AFFAIRE, EXACTE | `LibreJustice:search_decisions` (lexical) puis web_search |
+| JURIS_CA_TJ | `LibreJustice:search_decisions` (`seat`, ou `mode: "reference"` sur le numéro) puis `get_decision` | Juridiction + n° RG ou objet de la décision | `OpenLegi:rechercher_jurisprudence_judiciaire` puis web_search |
+| JURIS_CONST | `OpenLegi:rechercher_decisions_constitutionnelles` | N° décision | `LibreJustice` (`seat: ["CONSTIT"]`) puis web_search |
+| JURIS_CEDH_CJUE | `LibreJustice:search_decisions` (`seat: ["CEDH"]` / `["CJUE"]`) | N° de requête ou d'affaire, ou objet | `LegalDataHunter:search` puis web_search |
 | CODE_ARTICLE | `rechercher_code` | Code exact + n° article, EXACTE | web_search |
 | LOI_DECRET | `rechercher_dans_texte_legal` | N° du texte | web_search |
 | DOCTRINE | web_search puis HAL | Auteur + titre court + revue + année | — |
@@ -105,7 +106,7 @@ Vérifier chaque référence unique, par ordre de priorité (P1 → P2 → P3).
 
 | Emoji | Statut | Signification |
 |---|---|---|
-| ✅ | SOURCE_DIRECTE_CONFORME | Trouvée via OpenLegi ou site officiel, métadonnées concordantes |
+| ✅ | SOURCE_DIRECTE_CONFORME | Trouvée via OpenLegi, LibreJustice ou site officiel, métadonnées et contenu concordants |
 | 🔵 | SOURCE_INDIRECTE_CONFORME | Trouvée via base doctrinale ou source secondaire |
 | ⚠️ | ERREUR_CITATION | Trouvée mais divergence notable (date, numéro, juridiction) |
 | ❌ | NON_TROUVEE | Non localisée après recherches (≠ fausse) |

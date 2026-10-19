@@ -1,0 +1,6 @@
+interface:
+  display_name: "Recherche normes"
+  short_description: "Codes à date, traités, UE, droit étranger"
+  default_prompt: "Utilise $recherche-normes pour retrouver le texte applicable à la date des faits."
+policy:
+  allow_implicit_invocation: true

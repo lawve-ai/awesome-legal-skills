@@ -1,6 +1,6 @@
 # Tâche 2 — Cas pratique / Consultation
 
-> **Pré-requis environnement** : aucun — exécutable en tout mode. COWORK/CHAT_CU : livrable Word. CHAT : réponse conversationnelle structurée.
+> **Environnement** : aucun prérequis. Livrable Word par défaut (artefact Docs si l'utilisateur le demande) ; pour une question brève, réponse structurée dans la conversation. Tableau de vérification remis en document séparé (`references/environnement-et-livrables.md`).
 
 ## Objectif
 
@@ -12,7 +12,7 @@ Analyser une situation factuelle et produire une réponse juridique structurée,
 
 ### 2. Analyse des documents du dossier
 
-Scanner le dossier de travail (§4 du SKILL.md). Si des pièces sont présentes : les lire, extraire les éléments factuels pertinents (dates, sommes, relations contractuelles, preuves disponibles).
+Scanner le dossier de travail (`references/environnement-et-livrables.md` § 2). Si des pièces sont présentes : les lire, extraire les éléments factuels pertinents (dates, sommes, relations contractuelles, preuves disponibles).
 
 ### 2bis. Construction de la chronologie des faits
 
@@ -75,9 +75,9 @@ Décomposer en sous-questions si nécessaire (arborescence logique).
 ### 5. Recherche — Séquence descendante
 
 Pour chaque question/sous-question :
-1. Textes normatifs applicables (OpenLegi)
-2. Jurisprudence suprême (OpenLegi) — arrêts de principe
-3. Jurisprudence du fond (OpenLegi) — décisions illustratives proches des faits
+1. Textes normatifs applicables (OpenLegi ; `LibreJustice:get_norm` avec `date` pour la rédaction en vigueur à la date des faits)
+2. Jurisprudence suprême (LibreJustice `search_decisions` puis `get_decision` ; OpenLegi pour le lien Légifrance) — arrêts de principe
+3. Jurisprudence du fond (LibreJustice, filtre `seat`) — décisions illustratives proches des faits, sort en appel vérifié (`appellateFate`)
 4. Doctrine (HAL + web_search) — analyses pertinentes
 
 ### 6. Raisonnement syllogistique
@@ -89,7 +89,7 @@ MINEURE  : Application aux faits de l'espèce
 CONCLUSION : Solution juridique
 ```
 
-**Date pivot** : la majeure mobilise le texte **dans sa rédaction en vigueur à la date des faits** soumis (et non à la date du jour), conformément au §7 du SKILL.md. Déterminer explicitement cette date pivot ; si la consultation est prospective, retenir la date de l'effet projeté. Signaler toute évolution postérieure du texte si elle éclaire la réponse.
+**Date pivot** : la majeure mobilise le texte **dans sa rédaction en vigueur à la date des faits** soumis (et non à la date du jour), conformément au § 6 du SKILL.md. Déterminer explicitement cette date pivot ; si la consultation est prospective, retenir la date de l'effet projeté. Signaler toute évolution postérieure du texte si elle éclaire la réponse.
 
 Identifier les forces et faiblesses de chaque argument. Si consultation orientée : développer les arguments favorables à la partie tout en signalant les risques.
 

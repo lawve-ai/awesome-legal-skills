@@ -1,10 +1,19 @@
 # Guide d'utilisation OpenLegi
 
+<!-- NOYAU-ANTIHALLUCINATION v4 — synchronisé mandarinat 2.0.0 / assistant-juridique-fr 8.0.0. Fichier commun aux deux skills (script sync-noyau.sh). -->
+
 ## Présentation
 
-OpenLegi est un serveur MCP (Model Context Protocol) offrant un accès direct aux bases de données officielles de Legifrance. Il constitue la **source prioritaire** de cette compétence pour tous les textes et décisions accessibles via Legifrance.
+OpenLegi est un serveur MCP (Model Context Protocol) offrant un accès direct aux bases de données officielles de Legifrance. Il constitue la **source prioritaire** de cette compétence pour les textes normatifs, le Journal officiel et les conventions collectives, ainsi que la **source unique du lien Légifrance** exigé pour toute référence citée. Pour la *recherche* de jurisprudence, la première intention appartient désormais à LibreJustice (voir ci-dessous).
 
 **Principe fondamental** : Toute source accédée via OpenLegi est considérée comme **fiable** (données officielles Legifrance). La vérification anti-hallucination porte alors sur l'adéquation entre le résultat et l'usage qu'on en fait, non sur la fiabilité de la source elle-même.
+
+**Articulation avec LibreJustice** — depuis l'intégration du MCP LibreJustice (`references/guide-librejustice.md`), la répartition est la suivante :
+
+- **recherche** de jurisprudence par problème, notion ou situation de fait, et jurisprudence du fond, CNDA, CEDH, CJUE : **LibreJustice** en première intention (moteur sémantique, filtres structurés, sort en voie de recours) ;
+- **recherche par référence exacte** (numéro de pourvoi, de requête, numéro d'article), **lien Légifrance**, **état juridique**, **JORF** et **conventions collectives** : **OpenLegi**, qui reste la source officielle et l'unique fournisseur du lien Légifrance exigé par la règle du lien officiel.
+
+Toute décision trouvée par LibreJustice et destinée à être citée est donc repassée par OpenLegi (`rechercher_jurisprudence_judiciaire` / `_administrative`, `champ: "NUM_AFFAIRE"`, `type_recherche: "EXACTE"`) pour en extraire le lien Légifrance ; à défaut de diffusion sur Légifrance (nombreuses décisions du fond, CNDA), le lien `librejustice.fr` est conservé et la source mentionnée.
 
 ## Disponibilité et chargement
 
@@ -16,7 +25,7 @@ Au début de chaque tâche nécessitant des recherches dans les bases officielle
 - Informer l'utilisateur : « Les outils OpenLegi ne sont pas disponibles dans cette session. La recherche s'effectue via web_search sur les sources officielles. Les résultats peuvent être moins précis. »
 - **Ne jamais bloquer la tâche** : l'indisponibilité d'OpenLegi ne doit pas empêcher l'exécution de la compétence.
 
-## Outils disponibles (12)
+## Outils disponibles (18)
 
 ### 1. `OpenLegi:lister_codes_juridiques`
 **Usage** : Obtenir la liste complète des 67 codes juridiques disponibles.
@@ -124,6 +133,22 @@ Au début de chaque tâche nécessitant des recherches dans les bases officielle
 **Paramètres** : Similaires à `rechercher_dans_texte_legal`, avec `panorama` disponible.
 **Tri** : PERTINENCE, DATE_ASC, DATE_DESC
 
+### 13. `OpenLegi:rechercher_jurisprudence_financiere`
+
+Cour des comptes, chambres régionales et territoriales des comptes, CDBF (décisions historiques), Cour d'appel financière. Paramètres analogues à la jurisprudence judiciaire (`search`, `champ`, `type_recherche`, `juridiction` : `COURS_COMPTES`, `CHAMBRES_COMPTES`, `CDBF`, `COURS_APPEL_FINANCIERE`, `publication_recueil`, `sort`, `date_debut` / `date_fin`, `panorama`). Identifiants `JUFITEXT`. `champ: "NUM_AFFAIRE"` n'est exact qu'avec `type_recherche: "EXACTE"`.
+
+### 14 à 18. Lecture intégrale par identifiant
+
+| Outil | Identifiant | Fonds |
+|---|---|---|
+| `OpenLegi:get_decision_judiciaire` | `JURITEXT…` | Cour de cassation, cours d'appel, tribunaux |
+| `OpenLegi:get_decision_administrative` | `CETATEXT…` | Conseil d'État, CAA, TA |
+| `OpenLegi:get_decision_constitutionnelle` | `CONSTEXT…` | Conseil constitutionnel |
+| `OpenLegi:get_decision_financiere` | `JUFITEXT…` | juridictions financières |
+| `OpenLegi:get_decision_cnil` | `CNILTEXT…` | CNIL |
+
+Flux en deux temps : recherche (qui retourne l'identifiant), puis lecture intégrale (texte, métadonnées, lien Légifrance). C'est le canal nominal du content-matching et de la vérification d'un identifiant cité (`scripts/verify_links.py --extract-ids` indique l'outil adéquat).
+
 ## Extraction du lien Légifrance par type de réponse
 
 Toute réponse OpenLegi contient un lien Légifrance dans ses métadonnées. Ce lien est l'**unique source légitime** du lien à reproduire dans le livrable : il n'est jamais reconstruit de mémoire ni par analogie. Le tableau ci-dessous récapitule, par outil OpenLegi, le pattern d'URL attendu et le champ de la réponse où le trouver.
@@ -217,14 +242,14 @@ Si OpenLegi est totalement inaccessible :
 - La vérification porte sur l'**adéquation** (est-ce le bon texte pour le bon usage ?), le **statut temporel** (le texte est-il en vigueur ?) et la **traçabilité du lien** (le lien Légifrance reproduit dans le livrable provient-il bien de la réponse OpenLegi obtenue dans la session courante ?).
 - L'interdiction d'inventer des références reste absolue : utiliser OpenLegi pour trouver, jamais pour « confirmer » une référence imaginée.
 - L'interdiction de reconstruire un lien Légifrance de mémoire est également absolue. Le lien est extrait de la réponse OpenLegi, et de nulle part ailleurs.
-- Avant toute livraison, exécuter la `references/checklist-pre-livraison.md` sous la forme du tableau structuré obligatoire à quatre colonnes (citation, outil + identifiant, extrait textuel pertinent, ✓ / ✗ / reformulation), ligne par citation effective. En COWORK / CHAT_CU, `scripts/verify_links.py` alimente le tableau ; en CHAT (et en mode dégradé), le tableau est produit manuellement à partir des fiches OpenLegi. La livraison est conditionnée à la prononciation de la formule de clôture explicite.
+- Avant toute livraison, exécuter la `references/checklist-pre-livraison.md` : tableau de vérification généré depuis le journal de références et remis en document séparé. OpenLegi est le **canal nominal** de vérification des identifiants Légifrance (`scripts/verify_links.py --extract-ids` indique l'outil à appeler pour chacun), Légifrance refusant les requêtes HTTP automatisées. La livraison est conditionnée à la formule de clôture.
 
 ### Renumérotations et modifications fréquentes
 
 Les codes et textes consolidés évoluent constamment. La skill ne peut **en aucun cas** présumer de la stabilité d'un numéro d'article ou d'une rédaction, même pour les articles « ultra-classiques » :
 
 - Les anciens articles 1382 et 1384 du Code civil sont devenus 1240 et 1242 par l'ordonnance n° 2016-131 du 10 février 2016 — <https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032004939>.
-- L'article 1242 al. 4 C. civ. — <https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437058> — (responsabilité parentale) a été substantiellement modifié par la loi n° 2025-568 du 23 juin 2025 — <https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051782996>.
+- L'article 1242 al. 4 C. civ. (responsabilité parentale) a été substantiellement modifié par la loi n° 2025-568 du 23 juin 2025 — <https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051782996>.
 - Les recodifications successives produisent des renumérotations analogues dans tous les codes.
 
 **Vérifier systématiquement** la rédaction en vigueur via `rechercher_code` (état juridique, date début/fin vigueur). Mentionner explicitement la version applicable lorsque le texte a connu des modifications récentes susceptibles d'affecter le raisonnement.

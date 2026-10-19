@@ -1,12 +1,12 @@
 # Tâche 6 — Préparation de fiches de travaux dirigés (TD)
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU recommandé pour la production de documents Word. En mode CHAT, réponse structurée en Markdown admise pour une fiche unique.
+> **Environnement** : livrable Word par défaut (artefact Docs sur demande) ; une fiche unique peut être rendue dans la conversation si l'utilisateur le souhaite.
 
 ## Objectif
 
 Préparer des fiches de TD pour un enseignement de droit, fondées sur des recherches réelles préalables. Chaque fiche comporte trois exercices complémentaires : connaissance, approfondissement, mise en pratique.
 
-**Règle anti-hallucination absolue** : les arrêts, textes, articles de doctrine utilisés dans les exercices doivent avoir été trouvés par une recherche réelle via OpenLegi, `doctrine_search.py`/HAL ou web_search. Aucun arrêt, article ou texte inventé ou reconstitué de mémoire.
+**Règle anti-hallucination absolue** : les arrêts, textes, articles de doctrine utilisés dans les exercices doivent avoir été trouvés par une recherche réelle via LibreJustice, OpenLegi, `doctrine_search.py`/HAL ou web_search, et **lus dans leur texte intégral**. Aucun arrêt, article ou texte inventé ou reconstitué de mémoire.
 
 ---
 
@@ -43,15 +43,16 @@ Pour chaque thème validé, exécuter d'abord le **playbook (tâche 0)** sur ce 
 
 **EXÉCUTER avant toute production** — la fiche doit reposer sur des sources trouvées, pas sur la mémoire.
 
-Séquence de recherche (§3 du SKILL.md) adaptée aux besoins pédagogiques :
+Séquence de recherche (§ 4 du SKILL.md) adaptée aux besoins pédagogiques :
 
 1. **Textes normatifs** (`OpenLegi:rechercher_code`) :
    - Identifier les articles de code centraux sur le thème
    - Vérifier leur état de vigueur (métadonnées temporelles)
    - Repérer les définitions légales, les conditions, les effets, les sanctions
 
-2. **Jurisprudence suprême** (`OpenLegi:rechercher_jurisprudence_judiciaire` / `rechercher_jurisprudence_administrative`) :
-   - Trouver les arrêts de principe (au moins 3, idéalement 5-6)
+2. **Jurisprudence suprême** (`LibreJustice:search_decisions` puis `get_decision` ; `OpenLegi:rechercher_jurisprudence_judiciaire` / `rechercher_jurisprudence_administrative` pour le lien Légifrance) :
+   - Trouver les arrêts de principe (au moins 3, idéalement 5-6) — `publication: ["PUBLIE_RAPPORT","PUBLIE_BULLETIN","LETTRE_CHAMBRE","PUBLIE_LEBON"]` remonte en priorité les décisions publiées
+   - Lire les motifs par `get_decision` : un arrêt de TD est choisi pour ce qu'il juge, jamais sur la foi d'un `aiSummary` ou d'un `snippet`
    - Identifier les revirements ou évolutions notables
    - Pour chaque arrêt : noter la juridiction, la date, le numéro de pourvoi, le principe dégagé
 
@@ -61,7 +62,7 @@ Séquence de recherche (§3 du SKILL.md) adaptée aux besoins pédagogiques :
 
 4. **Texte de loi ou arrêt principal** pour l'exercice de connaissance :
    - Sélectionner un texte (article de code, extrait de loi) ou un arrêt lisible et pédagogiquement riche
-   - S'assurer qu'il est accessible (Legifrance, OpenLegi) et citable
+   - S'assurer qu'il est accessible (Legifrance via OpenLegi, ou `librejustice.fr` pour une décision non diffusée sur Légifrance) et citable — porter le lien dans la fiche
 
 ### Étape 2 — Construction de la fiche
 
@@ -167,6 +168,6 @@ La fiche de TD comporte **trois exercices distincts et séquentiels** :
 
 Après livraison, proposer :
 - Préparation des autres fiches de la série (si Variante A)
-- Conversion en QCM des exercices de connaissance (rediriger vers skill `qcm-generator`)
+- Conversion en QCM ou en exercices rapides (textes à trous, appariements, flashcards) des exercices de connaissance (rediriger vers skill `qcm-exercices`)
 - Création d'un support de cours sur le même thème (tâche 5)
 - Mise à jour si la jurisprudence ou la législation a évolué (tâche 4)

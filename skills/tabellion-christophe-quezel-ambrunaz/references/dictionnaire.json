@@ -1,0 +1,4589 @@
+{
+  "nom": "Dictionnaire de données tabellion",
+  "version": "0.2.0",
+  "date": "2026-10-05",
+  "statut": "projet soumis à critique",
+  "conventions": {
+    "identifiants": "Identifiants en français, en minuscules, sans diacritiques, mots séparés par « _ » (date_naissance). Les libellés affichés sont en français accentué. Raison : une balise saisie dans Word ne doit pas dépendre de la normalisation Unicode des accents (NFC/NFD) ni de la correction automatique.",
+    "chemins": "Une balise désigne une valeur par un chemin : rôle ou module, puis champ. Exemples : {{bail.loyer.montant}}, {{bail.bailleur.designation_complete}}, {{acte.date_acte}}.",
+    "personnes_et_roles": "Les personnes, biens, véhicules et comptes sont saisis une seule fois dans le dossier et désignés par identifiant (P1, B1…). Les modèles déclarent des rôles (module.role) que l'utilisateur rattache aux personnes. La même personne peut tenir des rôles dans plusieurs modèles.",
+    "accords": "Le genre et le nombre d'un rôle se déduisent des personnes qui y sont rattachées : singulier ou pluriel selon leur nombre ; au pluriel, féminin seulement si toutes sont de genre féminin (règle traditionnelle ; paramétrable). Une personne morale prend le genre de son nom générique (« la société X, demanderesse »).",
+    "termes_definis": "Dans les contrats, le rôle est souvent un terme défini invariable (« ci-après le Bailleur »). Le modèle choisit, au balisage, entre terme défini invariable et qualité accordée ; seuls les participes et adjectifs (« dénommé(e) », « né(e) ») s'accordent alors.",
+    "absence_de_regles_de_droit": "Le dictionnaire ne contient aucune règle de droit ni valeur légale (taux, montants, délais). Les règles qu'un modèle met en œuvre sont arrêtées au balisage avec l'utilisateur, avec leur source ; les valeurs évolutives (indices, taux) sont figées dans le formulaire avec leur date de gel, au-delà de laquelle le calcul est refusé.",
+    "champs_sensibles": "Les champs marqués sensibles (santé, protection juridique, NIR, IBAN) sont signalés à la saisie ; le formulaire rappelle que le fichier .json n'est pas chiffré.",
+    "valeurs_fictives": "Les exemples du dictionnaire sont manifestement fictifs (ESSAI, Exempleville, code postal 00000, SIREN 000000000, banque 99999). Préchargés pour le test, ils sont marqués dans le dossier ; le formulaire refuse la génération finale tant qu'une valeur fictive subsiste, sauf confirmation expresse.",
+    "trame": "Le dictionnaire commun est une trame, jamais bloquante. Le manifeste d'un modèle peut lui ajouter des champs (à une entité, un module, un groupe ou une liste), des modules, des rôles, des attributs de rôle, et modifier des libellés. Rien n'est supprimé : le formulaire n'affiche que ce que le modèle utilise. Les données des extensions sont rangées dans le dossier au même endroit que celles du dictionnaire, ce qui préserve leur réutilisation.",
+    "attributs_de_role": "Un attribut de rôle porte une donnée propre à une personne en tant qu'elle tient un rôle dans l'acte (parts cédées, origine de propriété), distincte des données de la personne elle-même.",
+    "variables_locales": "Une valeur simple propre au modèle, sans vocation à être réutilisée, peut aller dans local.<champ>. Une donnée réutilisable ou structurée relève plutôt d'une extension.",
+    "compatibilite": "Le dossier déclare la version du dictionnaire. Les champs inconnus d'un formulaire sont conservés intacts à l'export, pour ne pas détruire les données destinées à un autre modèle.",
+    "une_instance_par_module": "Un dossier contient au plus une instance de chaque module (un bail, une instance). Plusieurs instances supposent plusieurs dossiers, en v0.1."
+  },
+  "format_dossier": {
+    "format": "tabellion-dossier",
+    "cles": {
+      "format": "toujours « tabellion-dossier »",
+      "version_dictionnaire": "version du dictionnaire utilisée",
+      "cree_le / modifie_le": "horodatage ISO 8601",
+      "personnes": "objet { P1: {...}, P2: {...} }",
+      "biens": "objet { B1: {...} }",
+      "vehicules": "objet { V1: {...} }",
+      "comptes": "objet { C1: {...} }",
+      "roles": "objet { 'module.role': [identifiants] }",
+      "attributs_roles": "objet { 'module.role': { identifiant: { attribut: valeur } } }",
+      "types_extensions": "objet { chemin: type } des extensions employées ; permet de déceler un même nom employé avec deux types",
+      "modules": "objet { module: { champ: valeur } }",
+      "local": "objet { identifiant_modele: { champ: valeur } }",
+      "decisions": "objet { identifiant_modele: { options: { id: true|false }, choix: { id: id_cas } } }",
+      "valeurs_fictives": "liste des chemins encore fictifs",
+      "extensions": "réservé ; conservé tel quel"
+    }
+  },
+  "types": {
+    "texte": {
+      "description": "Texte court, sur une ligne.",
+      "rendus": [
+        "tel_quel"
+      ]
+    },
+    "texte_long": {
+      "description": "Texte sur plusieurs lignes ou paragraphes ; les sauts de paragraphe sont reproduits dans le document."
+    },
+    "entier": {
+      "description": "Nombre entier.",
+      "rendus": [
+        "chiffres",
+        "lettres",
+        "ordinal",
+        "ordinal_abrege",
+        "romain"
+      ]
+    },
+    "decimal": {
+      "description": "Nombre décimal, virgule décimale à l'affichage.",
+      "rendus": [
+        "chiffres",
+        "lettres"
+      ]
+    },
+    "montant": {
+      "description": "Valeur et devise.",
+      "stockage": {
+        "valeur": "décimal, point décimal",
+        "devise": "code ISO 4217, EUR par défaut"
+      },
+      "rendus": [
+        "chiffres",
+        "lettres",
+        "lettres_puis_chiffres",
+        "chiffres_puis_lettres"
+      ],
+      "parametres": {
+        "orthographe_nombres": [
+          "traditionnelle",
+          "rectifiee_1990"
+        ]
+      }
+    },
+    "pourcentage": {
+      "description": "Taux exprimé en pour cent (3,5 et non 0,035).",
+      "rendus": [
+        "chiffres",
+        "lettres"
+      ]
+    },
+    "date": {
+      "description": "Date du calendrier grégorien.",
+      "stockage": "AAAA-MM-JJ",
+      "rendus": [
+        "longue",
+        "courte",
+        "lettres",
+        "iso"
+      ],
+      "exemples_rendus": {
+        "longue": "5 octobre 2026",
+        "courte": "05/10/2026",
+        "lettres": "cinq octobre deux mille vingt-six"
+      }
+    },
+    "heure": {
+      "description": "Heure.",
+      "stockage": "HH:MM",
+      "rendus": [
+        "courte",
+        "lettres"
+      ]
+    },
+    "texte_transformations": {
+      "description": "Transformations applicables à toute valeur rendue, après le rendu propre au type.",
+      "rendus": [
+        "majuscules",
+        "minuscules",
+        "initiale_majuscule"
+      ]
+    },
+    "duree": {
+      "description": "Durée exprimée dans une unité.",
+      "stockage": {
+        "valeur": "entier",
+        "unite": [
+          "jours",
+          "semaines",
+          "mois",
+          "annees"
+        ]
+      },
+      "rendus": [
+        "chiffres",
+        "lettres"
+      ]
+    },
+    "booleen": {
+      "description": "Oui ou non ; sert de condition aux blocs optionnels.",
+      "rendus": [
+        "oui_non"
+      ]
+    },
+    "choix": {
+      "description": "Une valeur parmi une liste fermée ; chaque valeur porte un libellé, éventuellement un genre.",
+      "rendus": [
+        "libelle",
+        "long"
+      ]
+    },
+    "adresse": {
+      "description": "Adresse postale structurée (voir entité adresse).",
+      "rendus": [
+        "ligne",
+        "bloc"
+      ]
+    },
+    "telephone": {
+      "description": "Numéro de téléphone, conservé tel que saisi."
+    },
+    "courriel": {
+      "description": "Adresse électronique.",
+      "validation": "forme local@domaine"
+    },
+    "identifiant": {
+      "description": "Numéro normalisé, contrôlé par une règle de format ou une clé (voir validation du champ).",
+      "rendus": [
+        "tel_quel",
+        "groupe"
+      ]
+    },
+    "reference": {
+      "description": "Renvoi vers une entité du dossier (personne, bien, compte) par son identifiant ; jamais de recopie."
+    },
+    "groupe": {
+      "description": "Ensemble de champs formant une unité."
+    },
+    "liste": {
+      "description": "Suite répétable d'éléments ; rendue par énumération, puces, numérotation ou tableau.",
+      "rendus": [
+        "nombre",
+        "enumeration_ou"
+      ]
+    }
+  },
+  "validations": {
+    "siren": "9 chiffres, clé de Luhn",
+    "siret": "14 chiffres, clé de Luhn",
+    "tva_fr": "FR + clé de 2 chiffres + SIREN ; clé = (12 + 3 × (SIREN mod 97)) mod 97",
+    "rna": "W + 9 caractères",
+    "iban": "clé ISO 13616 (modulo 97)",
+    "nir": "13 chiffres + clé de 2 chiffres = 97 − (NIR mod 97) ; Corse : 2A → 19, 2B → 18 avant calcul",
+    "code_postal_fr": "5 chiffres"
+  },
+  "entites": {
+    "adresse": {
+      "libelle": "Adresse",
+      "champs": [
+        {
+          "id": "numero",
+          "libelle": "Numéro",
+          "type": "texte",
+          "exemple": "12"
+        },
+        {
+          "id": "indice",
+          "libelle": "Indice de répétition",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "bis",
+              "libelle": "bis"
+            },
+            {
+              "id": "ter",
+              "libelle": "ter"
+            },
+            {
+              "id": "quater",
+              "libelle": "quater"
+            }
+          ],
+          "exemple": ""
+        },
+        {
+          "id": "voie",
+          "libelle": "Type et libellé de la voie",
+          "type": "texte",
+          "exemple": "rue de l'Exemple"
+        },
+        {
+          "id": "complement",
+          "libelle": "Complément (bâtiment, escalier, étage)",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "lieu_dit",
+          "libelle": "Lieu-dit",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "code_postal",
+          "libelle": "Code postal",
+          "type": "texte",
+          "validation": "code_postal_fr si pays = France",
+          "exemple": "00000"
+        },
+        {
+          "id": "commune",
+          "libelle": "Commune",
+          "type": "texte",
+          "exemple": "Exempleville"
+        },
+        {
+          "id": "cedex",
+          "libelle": "Cedex",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "pays",
+          "libelle": "Pays",
+          "type": "texte",
+          "aide": "Laisser vide pour la France.",
+          "exemple": ""
+        }
+      ]
+    },
+    "personne": {
+      "libelle": "Personne",
+      "prefixe_identifiant": "P",
+      "discriminant": "nature",
+      "commun": [
+        {
+          "id": "nature",
+          "libelle": "Nature",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "physique",
+              "libelle": "Personne physique"
+            },
+            {
+              "id": "morale",
+              "libelle": "Personne morale"
+            }
+          ]
+        },
+        {
+          "id": "telephone",
+          "libelle": "Téléphone",
+          "type": "telephone"
+        },
+        {
+          "id": "courriel",
+          "libelle": "Courriel",
+          "type": "courriel"
+        },
+        {
+          "id": "adresse_correspondance",
+          "libelle": "Adresse de correspondance, si elle diffère",
+          "type": "adresse",
+          "exemple": ""
+        }
+      ],
+      "physique": [
+        {
+          "id": "civilite",
+          "libelle": "Civilité",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "monsieur",
+              "libelle": "Monsieur",
+              "genre": "m"
+            },
+            {
+              "id": "madame",
+              "libelle": "Madame",
+              "genre": "f"
+            }
+          ],
+          "exemple": "madame"
+        },
+        {
+          "id": "nom",
+          "libelle": "Nom de famille",
+          "type": "texte",
+          "aide": "Rendu en capitales dans les désignations.",
+          "exemple": "ESSAI"
+        },
+        {
+          "id": "nom_naissance",
+          "libelle": "Nom de naissance, s'il diffère",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "nom_usage",
+          "libelle": "Nom d'usage",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "prenoms",
+          "libelle": "Prénoms",
+          "type": "texte",
+          "aide": "Tous les prénoms, dans l'ordre de l'état civil.",
+          "exemple": "Jeanne, Marie"
+        },
+        {
+          "id": "prenom_usuel",
+          "libelle": "Prénom usuel",
+          "type": "texte",
+          "exemple": "Jeanne"
+        },
+        {
+          "id": "date_naissance",
+          "libelle": "Date de naissance",
+          "type": "date",
+          "exemple": "1980-01-15"
+        },
+        {
+          "id": "lieu_naissance",
+          "libelle": "Lieu de naissance",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "commune",
+              "libelle": "Commune",
+              "type": "texte",
+              "exemple": "Exempleville"
+            },
+            {
+              "id": "departement",
+              "libelle": "Département (numéro ou nom)",
+              "type": "texte",
+              "exemple": "99"
+            },
+            {
+              "id": "pays",
+              "libelle": "Pays, si hors de France",
+              "type": "texte",
+              "exemple": ""
+            }
+          ]
+        },
+        {
+          "id": "nationalite",
+          "libelle": "Nationalité",
+          "type": "texte",
+          "aide": "Au féminin : « de nationalité française ».",
+          "exemple": "française"
+        },
+        {
+          "id": "profession",
+          "libelle": "Profession",
+          "type": "texte",
+          "exemple": "architecte"
+        },
+        {
+          "id": "domicile",
+          "libelle": "Domicile",
+          "type": "adresse"
+        },
+        {
+          "id": "capacite",
+          "libelle": "Capacité",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "majeur_capable",
+              "libelle": "Majeur capable"
+            },
+            {
+              "id": "mineur",
+              "libelle": "Mineur"
+            },
+            {
+              "id": "tutelle",
+              "libelle": "Majeur en tutelle"
+            },
+            {
+              "id": "curatelle",
+              "libelle": "Majeur en curatelle"
+            },
+            {
+              "id": "curatelle_renforcee",
+              "libelle": "Majeur en curatelle renforcée"
+            },
+            {
+              "id": "sauvegarde_justice",
+              "libelle": "Majeur sous sauvegarde de justice"
+            },
+            {
+              "id": "habilitation_familiale",
+              "libelle": "Majeur sous habilitation familiale"
+            },
+            {
+              "id": "mandat_protection_future",
+              "libelle": "Majeur bénéficiant d'un mandat de protection future"
+            }
+          ],
+          "sensible": true,
+          "exemple": "majeur_capable"
+        },
+        {
+          "id": "representants",
+          "libelle": "Représentants (tuteur, curateur, administrateur légal…)",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "personne",
+              "libelle": "Personne",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "qualite",
+              "libelle": "Qualité",
+              "type": "texte",
+              "exemple": "tuteur"
+            },
+            {
+              "id": "decision",
+              "libelle": "Décision de désignation (juridiction, date)",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "date_deces",
+          "libelle": "Date du décès",
+          "type": "date",
+          "exemple": ""
+        },
+        {
+          "id": "lieu_deces",
+          "libelle": "Lieu du décès",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "nir",
+          "libelle": "Numéro de sécurité sociale",
+          "type": "identifiant",
+          "validation": "nir",
+          "sensible": true,
+          "exemple": "100019999999980"
+        },
+        {
+          "id": "qualite_professionnelle",
+          "libelle": "Exercice d'une profession réglementée",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "profession_reglementee",
+              "libelle": "Profession",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "avocat",
+                  "libelle": "Avocat"
+                },
+                {
+                  "id": "commissaire_de_justice",
+                  "libelle": "Commissaire de justice"
+                },
+                {
+                  "id": "notaire",
+                  "libelle": "Notaire"
+                },
+                {
+                  "id": "expert_judiciaire",
+                  "libelle": "Expert judiciaire"
+                },
+                {
+                  "id": "mediateur",
+                  "libelle": "Médiateur"
+                },
+                {
+                  "id": "administrateur_judiciaire",
+                  "libelle": "Administrateur judiciaire"
+                },
+                {
+                  "id": "mandataire_judiciaire",
+                  "libelle": "Mandataire judiciaire"
+                },
+                {
+                  "id": "expert_comptable",
+                  "libelle": "Expert-comptable"
+                },
+                {
+                  "id": "commissaire_aux_comptes",
+                  "libelle": "Commissaire aux comptes"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "Autre"
+                }
+              ]
+            },
+            {
+              "id": "ressort",
+              "libelle": "Barreau, compagnie ou ressort",
+              "type": "texte",
+              "exemple": "Exempleville"
+            },
+            {
+              "id": "toque",
+              "libelle": "Toque ou case",
+              "type": "texte"
+            },
+            {
+              "id": "structure_exercice",
+              "libelle": "Structure d'exercice",
+              "type": "reference",
+              "cible": "personne",
+              "natures": [
+                "morale"
+              ]
+            },
+            {
+              "id": "adresse_professionnelle",
+              "libelle": "Adresse professionnelle",
+              "type": "adresse"
+            }
+          ]
+        }
+      ],
+      "morale": [
+        {
+          "id": "forme_juridique",
+          "libelle": "Forme juridique",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "sa",
+              "libelle": "SA",
+              "long": "société anonyme",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "sas",
+              "libelle": "SAS",
+              "long": "société par actions simplifiée",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "sasu",
+              "libelle": "SASU",
+              "long": "société par actions simplifiée unipersonnelle",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "sarl",
+              "libelle": "SARL",
+              "long": "société à responsabilité limitée",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "eurl",
+              "libelle": "EURL",
+              "long": "entreprise unipersonnelle à responsabilité limitée",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "snc",
+              "libelle": "SNC",
+              "long": "société en nom collectif",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "sca",
+              "libelle": "SCA",
+              "long": "société en commandite par actions",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "scs",
+              "libelle": "SCS",
+              "long": "société en commandite simple",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "sci",
+              "libelle": "SCI",
+              "long": "société civile immobilière",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "sc",
+              "libelle": "SC",
+              "long": "société civile",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "scp",
+              "libelle": "SCP",
+              "long": "société civile professionnelle",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "selarl",
+              "libelle": "SELARL",
+              "long": "société d'exercice libéral à responsabilité limitée",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "selas",
+              "libelle": "SELAS",
+              "long": "société d'exercice libéral par actions simplifiée",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "scop",
+              "libelle": "SCOP",
+              "long": "société coopérative de production",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "gie",
+              "libelle": "GIE",
+              "long": "groupement d'intérêt économique",
+              "generique": "groupement",
+              "genre": "m"
+            },
+            {
+              "id": "association",
+              "libelle": "Association",
+              "long": "association",
+              "generique": "association",
+              "genre": "f"
+            },
+            {
+              "id": "fondation",
+              "libelle": "Fondation",
+              "long": "fondation",
+              "generique": "fondation",
+              "genre": "f"
+            },
+            {
+              "id": "syndicat_coproprietaires",
+              "libelle": "Syndicat des copropriétaires",
+              "long": "syndicat des copropriétaires",
+              "generique": "syndicat des copropriétaires",
+              "genre": "m"
+            },
+            {
+              "id": "syndicat_professionnel",
+              "libelle": "Syndicat professionnel",
+              "long": "syndicat professionnel",
+              "generique": "syndicat",
+              "genre": "m"
+            },
+            {
+              "id": "etablissement_public",
+              "libelle": "Établissement public",
+              "long": "établissement public",
+              "generique": "établissement",
+              "genre": "m"
+            },
+            {
+              "id": "commune",
+              "libelle": "Commune",
+              "long": "commune",
+              "generique": "commune",
+              "genre": "f"
+            },
+            {
+              "id": "departement",
+              "libelle": "Département",
+              "long": "département",
+              "generique": "département",
+              "genre": "m"
+            },
+            {
+              "id": "region",
+              "libelle": "Région",
+              "long": "région",
+              "generique": "région",
+              "genre": "f"
+            },
+            {
+              "id": "etat",
+              "libelle": "État",
+              "long": "État",
+              "generique": "État",
+              "genre": "m"
+            },
+            {
+              "id": "societe_etrangere",
+              "libelle": "Société de droit étranger",
+              "long": "société de droit étranger",
+              "generique": "société",
+              "genre": "f"
+            },
+            {
+              "id": "autre",
+              "libelle": "Autre",
+              "aide": "Préciser la forme ; le genre grammatical doit alors être renseigné."
+            }
+          ],
+          "exemple": "sas"
+        },
+        {
+          "id": "forme_precisee",
+          "libelle": "Forme juridique (si « Autre »)",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "genre_grammatical",
+          "libelle": "Genre grammatical",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "m",
+              "libelle": "Masculin"
+            },
+            {
+              "id": "f",
+              "libelle": "Féminin"
+            }
+          ],
+          "aide": "Déduit de la forme ; à renseigner seulement pour « Autre » ou pour corriger."
+        },
+        {
+          "id": "denomination",
+          "libelle": "Dénomination sociale",
+          "type": "texte",
+          "exemple": "ALPHA ESSAI"
+        },
+        {
+          "id": "sigle",
+          "libelle": "Sigle",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "nom_commercial",
+          "libelle": "Nom commercial",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "enseigne",
+          "libelle": "Enseigne",
+          "type": "texte",
+          "exemple": ""
+        },
+        {
+          "id": "capital",
+          "libelle": "Capital social",
+          "type": "montant",
+          "exemple": {
+            "valeur": 10000,
+            "devise": "EUR"
+          }
+        },
+        {
+          "id": "capital_variable",
+          "libelle": "Capital variable",
+          "type": "booleen",
+          "exemple": false
+        },
+        {
+          "id": "immatriculation",
+          "libelle": "Immatriculation",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "registre",
+              "libelle": "Registre",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "rcs",
+                  "libelle": "Registre du commerce et des sociétés"
+                },
+                {
+                  "id": "rne",
+                  "libelle": "Registre national des entreprises"
+                },
+                {
+                  "id": "rm",
+                  "libelle": "Répertoire des métiers"
+                },
+                {
+                  "id": "rna",
+                  "libelle": "Répertoire national des associations"
+                },
+                {
+                  "id": "etranger",
+                  "libelle": "Registre étranger"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "Autre"
+                }
+              ],
+              "exemple": "rcs"
+            },
+            {
+              "id": "greffe",
+              "libelle": "Greffe ou ville d'immatriculation",
+              "type": "texte",
+              "exemple": "Exempleville"
+            },
+            {
+              "id": "numero",
+              "libelle": "Numéro",
+              "type": "texte",
+              "aide": "Pour le RCS, en principe le SIREN.",
+              "exemple": "000 000 000"
+            }
+          ]
+        },
+        {
+          "id": "siren",
+          "libelle": "SIREN",
+          "type": "identifiant",
+          "validation": "siren",
+          "exemple": "000000000"
+        },
+        {
+          "id": "siret",
+          "libelle": "SIRET de l'établissement",
+          "type": "identifiant",
+          "validation": "siret",
+          "exemple": ""
+        },
+        {
+          "id": "tva_intracommunautaire",
+          "libelle": "Numéro de TVA intracommunautaire",
+          "type": "identifiant",
+          "validation": "tva_fr",
+          "exemple": "FR12000000000"
+        },
+        {
+          "id": "rna",
+          "libelle": "Numéro RNA",
+          "type": "identifiant",
+          "validation": "rna",
+          "exemple": ""
+        },
+        {
+          "id": "siege",
+          "libelle": "Siège",
+          "type": "adresse"
+        },
+        {
+          "id": "etablissement",
+          "libelle": "Établissement concerné, s'il diffère du siège",
+          "type": "adresse",
+          "exemple": ""
+        },
+        {
+          "id": "representants_legaux",
+          "libelle": "Représentants légaux",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "personne",
+              "libelle": "Personne",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "qualite",
+              "libelle": "Qualité",
+              "type": "texte",
+              "exemple": "président"
+            },
+            {
+              "id": "pouvoirs",
+              "libelle": "Origine des pouvoirs (statuts, délibération du…)",
+              "type": "texte"
+            }
+          ]
+        }
+      ],
+      "derives": [
+        {
+          "id": "genre",
+          "libelle": "Genre grammatical",
+          "regle": "Personne physique : genre de la civilité. Personne morale : genre_grammatical, à défaut celui de la forme."
+        },
+        {
+          "id": "designation_courte",
+          "libelle": "Désignation courte",
+          "regle": "« Madame Jeanne ESSAI » ; « la société ALPHA ESSAI » (article + nom générique de la forme + dénomination)."
+        },
+        {
+          "id": "designation_complete",
+          "libelle": "Désignation complète",
+          "regle": "Physique : civilité, prénoms, NOM, « né(e) le … à … », nationalité, profession, « demeurant … ». Morale : nom générique, dénomination, forme longue, capital, immatriculation, siège, « prise en la personne de son représentant légal » ou désignation du représentant. Les éléments vides sont omis avec leur ponctuation. L'ordre et les mentions retenus par un modèle sont fixés au balisage, non par le dictionnaire."
+        },
+        {
+          "id": "nom_complet",
+          "libelle": "Nom complet",
+          "regle": "« Jeanne ESSAI » (prénom usuel, à défaut premier prénom, et NOM) ; dénomination pour une personne morale."
+        },
+        {
+          "id": "age",
+          "libelle": "Âge",
+          "regle": "En années révolues à une date de référence ; la date de référence est TOUJOURS déclarée par le modèle."
+        },
+        {
+          "id": "majeur",
+          "libelle": "Majorité",
+          "regle": "Âge ≥ 18 à la date de référence déclarée par le modèle."
+        }
+      ]
+    },
+    "bien_immobilier": {
+      "libelle": "Bien immobilier",
+      "prefixe_identifiant": "B",
+      "champs": [
+        {
+          "id": "nature",
+          "libelle": "Nature",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "appartement",
+              "libelle": "Appartement"
+            },
+            {
+              "id": "maison",
+              "libelle": "Maison"
+            },
+            {
+              "id": "local_commercial",
+              "libelle": "Local commercial"
+            },
+            {
+              "id": "local_professionnel",
+              "libelle": "Local professionnel"
+            },
+            {
+              "id": "bureaux",
+              "libelle": "Bureaux"
+            },
+            {
+              "id": "terrain",
+              "libelle": "Terrain"
+            },
+            {
+              "id": "immeuble",
+              "libelle": "Immeuble entier"
+            },
+            {
+              "id": "stationnement",
+              "libelle": "Emplacement de stationnement"
+            },
+            {
+              "id": "cave",
+              "libelle": "Cave"
+            },
+            {
+              "id": "autre",
+              "libelle": "Autre"
+            }
+          ],
+          "exemple": "appartement"
+        },
+        {
+          "id": "designation",
+          "libelle": "Désignation",
+          "type": "texte_long",
+          "exemple": "Un appartement de trois pièces principales."
+        },
+        {
+          "id": "adresse",
+          "libelle": "Adresse",
+          "type": "adresse"
+        },
+        {
+          "id": "batiment",
+          "libelle": "Bâtiment",
+          "type": "texte"
+        },
+        {
+          "id": "etage",
+          "libelle": "Étage",
+          "type": "texte",
+          "exemple": "2e"
+        },
+        {
+          "id": "cadastre",
+          "libelle": "Références cadastrales",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "prefixe",
+              "libelle": "Préfixe",
+              "type": "texte"
+            },
+            {
+              "id": "section",
+              "libelle": "Section",
+              "type": "texte",
+              "exemple": "AB"
+            },
+            {
+              "id": "numero",
+              "libelle": "Numéro",
+              "type": "texte",
+              "exemple": "123"
+            },
+            {
+              "id": "lieu_dit",
+              "libelle": "Lieu-dit ou adresse cadastrale",
+              "type": "texte"
+            },
+            {
+              "id": "contenance",
+              "libelle": "Contenance",
+              "type": "texte",
+              "exemple": "00 ha 05 a 20 ca"
+            }
+          ]
+        },
+        {
+          "id": "copropriete",
+          "libelle": "Bien en copropriété",
+          "type": "booleen",
+          "exemple": true
+        },
+        {
+          "id": "lots",
+          "libelle": "Lots de copropriété",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "numero",
+              "libelle": "Numéro de lot",
+              "type": "texte",
+              "exemple": "12"
+            },
+            {
+              "id": "description",
+              "libelle": "Description",
+              "type": "texte"
+            },
+            {
+              "id": "tantiemes",
+              "libelle": "Quote-part des parties communes",
+              "type": "texte",
+              "exemple": "125/10000"
+            }
+          ]
+        },
+        {
+          "id": "surface_habitable",
+          "libelle": "Surface habitable (m²)",
+          "type": "decimal",
+          "exemple": 62.5
+        },
+        {
+          "id": "surface_privative",
+          "libelle": "Superficie de la partie privative (m²)",
+          "type": "decimal"
+        },
+        {
+          "id": "nombre_pieces",
+          "libelle": "Nombre de pièces principales",
+          "type": "entier",
+          "exemple": 3
+        },
+        {
+          "id": "annexes",
+          "libelle": "Annexes et dépendances",
+          "type": "liste",
+          "element": "texte"
+        },
+        {
+          "id": "epoque_construction",
+          "libelle": "Époque ou année de construction",
+          "type": "texte"
+        },
+        {
+          "id": "classe_energie",
+          "libelle": "Classe énergétique",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "A",
+              "libelle": "A"
+            },
+            {
+              "id": "B",
+              "libelle": "B"
+            },
+            {
+              "id": "C",
+              "libelle": "C"
+            },
+            {
+              "id": "D",
+              "libelle": "D"
+            },
+            {
+              "id": "E",
+              "libelle": "E"
+            },
+            {
+              "id": "F",
+              "libelle": "F"
+            },
+            {
+              "id": "G",
+              "libelle": "G"
+            }
+          ]
+        },
+        {
+          "id": "classe_climat",
+          "libelle": "Classe climat (GES)",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "A",
+              "libelle": "A"
+            },
+            {
+              "id": "B",
+              "libelle": "B"
+            },
+            {
+              "id": "C",
+              "libelle": "C"
+            },
+            {
+              "id": "D",
+              "libelle": "D"
+            },
+            {
+              "id": "E",
+              "libelle": "E"
+            },
+            {
+              "id": "F",
+              "libelle": "F"
+            },
+            {
+              "id": "G",
+              "libelle": "G"
+            }
+          ]
+        }
+      ]
+    },
+    "vehicule": {
+      "libelle": "Véhicule",
+      "prefixe_identifiant": "V",
+      "champs": [
+        {
+          "id": "categorie",
+          "libelle": "Catégorie",
+          "type": "texte",
+          "exemple": "voiture particulière"
+        },
+        {
+          "id": "marque",
+          "libelle": "Marque",
+          "type": "texte"
+        },
+        {
+          "id": "modele",
+          "libelle": "Modèle",
+          "type": "texte"
+        },
+        {
+          "id": "immatriculation",
+          "libelle": "Immatriculation",
+          "type": "texte"
+        },
+        {
+          "id": "numero_identification",
+          "libelle": "Numéro d'identification (VIN)",
+          "type": "texte"
+        },
+        {
+          "id": "date_premiere_immatriculation",
+          "libelle": "Date de première immatriculation",
+          "type": "date"
+        },
+        {
+          "id": "proprietaire",
+          "libelle": "Propriétaire",
+          "type": "reference",
+          "cible": "personne"
+        }
+      ]
+    },
+    "compte_bancaire": {
+      "libelle": "Compte bancaire",
+      "prefixe_identifiant": "C",
+      "champs": [
+        {
+          "id": "titulaire",
+          "libelle": "Titulaire",
+          "type": "reference",
+          "cible": "personne"
+        },
+        {
+          "id": "etablissement",
+          "libelle": "Établissement teneur du compte",
+          "type": "texte",
+          "exemple": "BANQUE EXEMPLE"
+        },
+        {
+          "id": "iban",
+          "libelle": "IBAN",
+          "type": "identifiant",
+          "validation": "iban",
+          "sensible": true,
+          "exemple": "FR7699999000000000000000130"
+        },
+        {
+          "id": "bic",
+          "libelle": "BIC",
+          "type": "texte"
+        }
+      ]
+    }
+  },
+  "modules": [
+    {
+      "id": "acte",
+      "libelle": "Acte et dossier",
+      "description": "Données communes à tout document : références, date et lieu, signataires, annexes. Toujours présent.",
+      "roles": [
+        {
+          "id": "redacteur",
+          "libelles": {
+            "ms": "rédacteur",
+            "fs": "rédactrice",
+            "mp": "rédacteurs",
+            "fp": "rédactrices"
+          },
+          "cardinalite": "0..1",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "signataire",
+          "libelles": {
+            "ms": "signataire",
+            "fs": "signataire",
+            "mp": "signataires",
+            "fp": "signataires"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        }
+      ],
+      "champs": [
+        {
+          "id": "reference_interne",
+          "libelle": "Référence interne du dossier",
+          "type": "texte",
+          "exemple": "ESSAI-2026-001"
+        },
+        {
+          "id": "intitule",
+          "libelle": "Intitulé du document",
+          "type": "texte"
+        },
+        {
+          "id": "date_acte",
+          "libelle": "Date de l'acte",
+          "type": "date",
+          "exemple": "2026-10-05"
+        },
+        {
+          "id": "lieu_acte",
+          "libelle": "Lieu de l'acte",
+          "type": "texte",
+          "exemple": "Exempleville"
+        },
+        {
+          "id": "nombre_exemplaires",
+          "libelle": "Nombre d'exemplaires originaux",
+          "type": "entier",
+          "exemple": 2
+        },
+        {
+          "id": "date_reference",
+          "libelle": "Date de référence des calculs",
+          "type": "date",
+          "aide": "Date à laquelle sont calculés âges, anciennetés et durées écoulées, lorsque le modèle n'en fixe pas d'autre."
+        },
+        {
+          "id": "annexes",
+          "libelle": "Annexes",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "numero",
+              "libelle": "Numéro",
+              "type": "texte"
+            },
+            {
+              "id": "intitule",
+              "libelle": "Intitulé",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "evenements",
+          "libelle": "Chronologie des faits",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "date",
+              "libelle": "Date",
+              "type": "date"
+            },
+            {
+              "id": "lieu",
+              "libelle": "Lieu",
+              "type": "texte"
+            },
+            {
+              "id": "description",
+              "libelle": "Description",
+              "type": "texte_long"
+            }
+          ]
+        }
+      ],
+      "points_a_trancher": [
+        "Le document est-il daté de sa signature, de son établissement ou laissé en blanc pour la signature manuscrite ?"
+      ]
+    },
+    {
+      "id": "procedure_civile",
+      "libelle": "Procédure civile et contentieux",
+      "description": "Juridiction, parties à l'instance, conseils, numéros, audiences, décision attaquée, demandes, pièces.",
+      "roles": [
+        {
+          "id": "demandeur",
+          "libelles": {
+            "ms": "demandeur",
+            "fs": "demanderesse",
+            "mp": "demandeurs",
+            "fp": "demanderesses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "defendeur",
+          "libelles": {
+            "ms": "défendeur",
+            "fs": "défenderesse",
+            "mp": "défendeurs",
+            "fp": "défenderesses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "requerant",
+          "libelles": {
+            "ms": "requérant",
+            "fs": "requérante",
+            "mp": "requérants",
+            "fp": "requérantes"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "appelant",
+          "libelles": {
+            "ms": "appelant",
+            "fs": "appelante",
+            "mp": "appelants",
+            "fp": "appelantes"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "intime",
+          "libelles": {
+            "ms": "intimé",
+            "fs": "intimée",
+            "mp": "intimés",
+            "fp": "intimées"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "intervenant_volontaire",
+          "libelles": {
+            "ms": "intervenant volontaire",
+            "fs": "intervenante volontaire",
+            "mp": "intervenants volontaires",
+            "fp": "intervenantes volontaires"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "appele_en_cause",
+          "libelles": {
+            "ms": "appelé en cause",
+            "fs": "appelée en cause",
+            "mp": "appelés en cause",
+            "fp": "appelées en cause"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "creancier_poursuivant",
+          "libelles": {
+            "ms": "créancier poursuivant",
+            "fs": "créancière poursuivante",
+            "mp": "créanciers poursuivants",
+            "fp": "créancières poursuivantes"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "debiteur_saisi",
+          "libelles": {
+            "ms": "débiteur saisi",
+            "fs": "débitrice saisie",
+            "mp": "débiteurs saisis",
+            "fp": "débitrices saisies"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "tiers_saisi",
+          "libelles": {
+            "ms": "tiers saisi",
+            "fs": "tiers saisi",
+            "mp": "tiers saisis",
+            "fp": "tiers saisis"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ],
+          "aide": "Usage invariable en genre dans la pratique ; modifiable au balisage."
+        }
+      ],
+      "champs": [
+        {
+          "id": "juridiction",
+          "libelle": "Juridiction saisie",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "type",
+              "libelle": "Juridiction",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "tribunal_judiciaire",
+                  "libelle": "Tribunal judiciaire",
+                  "genre": "m"
+                },
+                {
+                  "id": "tribunal_de_commerce",
+                  "libelle": "Tribunal de commerce",
+                  "genre": "m"
+                },
+                {
+                  "id": "tribunal_activites_economiques",
+                  "libelle": "Tribunal des activités économiques",
+                  "genre": "m"
+                },
+                {
+                  "id": "conseil_de_prudhommes",
+                  "libelle": "Conseil de prud'hommes",
+                  "genre": "m"
+                },
+                {
+                  "id": "tribunal_paritaire_baux_ruraux",
+                  "libelle": "Tribunal paritaire des baux ruraux",
+                  "genre": "m"
+                },
+                {
+                  "id": "cour_d_appel",
+                  "libelle": "Cour d'appel",
+                  "genre": "f"
+                },
+                {
+                  "id": "cour_de_cassation",
+                  "libelle": "Cour de cassation",
+                  "genre": "f"
+                },
+                {
+                  "id": "tribunal_administratif",
+                  "libelle": "Tribunal administratif",
+                  "genre": "m"
+                },
+                {
+                  "id": "cour_administrative_d_appel",
+                  "libelle": "Cour administrative d'appel",
+                  "genre": "f"
+                },
+                {
+                  "id": "conseil_d_etat",
+                  "libelle": "Conseil d'État",
+                  "genre": "m"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "Autre"
+                }
+              ],
+              "exemple": "tribunal_judiciaire"
+            },
+            {
+              "id": "ville",
+              "libelle": "Siège",
+              "type": "texte",
+              "exemple": "Exempleville"
+            },
+            {
+              "id": "formation",
+              "libelle": "Formation ou fonction",
+              "type": "texte",
+              "aide": "Ex. : juge aux affaires familiales, juge de l'exécution, juge des contentieux de la protection, président statuant en référé, chambre sociale.",
+              "exemple": "président statuant en référé"
+            },
+            {
+              "id": "chambre",
+              "libelle": "Chambre, pôle ou section",
+              "type": "texte"
+            },
+            {
+              "id": "adresse",
+              "libelle": "Adresse de la juridiction",
+              "type": "adresse"
+            }
+          ]
+        },
+        {
+          "id": "nature_instance",
+          "libelle": "Nature de l'instance",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "fond",
+              "libelle": "Instance au fond"
+            },
+            {
+              "id": "refere",
+              "libelle": "Référé"
+            },
+            {
+              "id": "requete",
+              "libelle": "Requête"
+            },
+            {
+              "id": "procedure_accelere_fond",
+              "libelle": "Procédure accélérée au fond"
+            },
+            {
+              "id": "injonction_payer",
+              "libelle": "Injonction de payer"
+            },
+            {
+              "id": "appel",
+              "libelle": "Appel"
+            },
+            {
+              "id": "cassation",
+              "libelle": "Pourvoi en cassation"
+            },
+            {
+              "id": "execution",
+              "libelle": "Exécution"
+            },
+            {
+              "id": "autre",
+              "libelle": "Autre"
+            }
+          ],
+          "exemple": "refere"
+        },
+        {
+          "id": "representation_obligatoire",
+          "libelle": "Représentation par avocat obligatoire",
+          "type": "booleen",
+          "aide": "Renseigné par l'utilisateur ; le dictionnaire ne le déduit pas."
+        },
+        {
+          "id": "numero_rg",
+          "libelle": "Numéro de répertoire général",
+          "type": "texte"
+        },
+        {
+          "id": "numero_portalis",
+          "libelle": "Numéro Portalis",
+          "type": "texte"
+        },
+        {
+          "id": "date_introduction",
+          "libelle": "Date de l'acte introductif",
+          "type": "date"
+        },
+        {
+          "id": "date_signification",
+          "libelle": "Date de signification",
+          "type": "date"
+        },
+        {
+          "id": "audience",
+          "libelle": "Audience",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "date",
+              "libelle": "Date",
+              "type": "date",
+              "exemple": "2026-12-01"
+            },
+            {
+              "id": "heure",
+              "libelle": "Heure",
+              "type": "heure",
+              "exemple": "09:30"
+            },
+            {
+              "id": "salle",
+              "libelle": "Salle",
+              "type": "texte"
+            },
+            {
+              "id": "nature",
+              "libelle": "Nature de l'audience",
+              "type": "texte",
+              "aide": "Ex. : orientation, mise en état, plaidoiries."
+            }
+          ]
+        },
+        {
+          "id": "decision_attaquee",
+          "libelle": "Décision attaquée ou exécutée",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "juridiction",
+              "libelle": "Juridiction",
+              "type": "texte"
+            },
+            {
+              "id": "date",
+              "libelle": "Date",
+              "type": "date"
+            },
+            {
+              "id": "numero_rg",
+              "libelle": "Numéro RG",
+              "type": "texte"
+            },
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "jugement",
+                  "libelle": "Jugement",
+                  "genre": "m"
+                },
+                {
+                  "id": "ordonnance",
+                  "libelle": "Ordonnance",
+                  "genre": "f"
+                },
+                {
+                  "id": "arret",
+                  "libelle": "Arrêt",
+                  "genre": "m"
+                },
+                {
+                  "id": "sentence",
+                  "libelle": "Sentence arbitrale",
+                  "genre": "f"
+                }
+              ]
+            },
+            {
+              "id": "date_signification",
+              "libelle": "Date de signification",
+              "type": "date"
+            },
+            {
+              "id": "chefs_critiques",
+              "libelle": "Chefs de décision critiqués",
+              "type": "texte_long"
+            }
+          ]
+        },
+        {
+          "id": "conseils",
+          "libelle": "Conseils des parties",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "partie",
+              "libelle": "Partie",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "avocat_postulant",
+              "libelle": "Avocat postulant",
+              "type": "reference",
+              "cible": "personne",
+              "natures": [
+                "physique"
+              ]
+            },
+            {
+              "id": "avocat_plaidant",
+              "libelle": "Avocat plaidant",
+              "type": "reference",
+              "cible": "personne",
+              "natures": [
+                "physique"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "commissaire_de_justice",
+          "libelle": "Commissaire de justice instrumentaire",
+          "type": "reference",
+          "cible": "personne"
+        },
+        {
+          "id": "demandes",
+          "libelle": "Demandes chiffrées",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "intitule",
+              "libelle": "Intitulé",
+              "type": "texte"
+            },
+            {
+              "id": "montant",
+              "libelle": "Montant",
+              "type": "montant"
+            },
+            {
+              "id": "fondement",
+              "libelle": "Fondement invoqué (saisi par l'utilisateur)",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "frais_irrepetibles",
+          "libelle": "Frais irrépétibles demandés",
+          "type": "montant",
+          "aide": "Somme demandée au titre de l'article 700 du code de procédure civile."
+        },
+        {
+          "id": "distraction_depens",
+          "libelle": "Distraction des dépens demandée",
+          "type": "booleen"
+        },
+        {
+          "id": "bordereau_pieces",
+          "libelle": "Bordereau de pièces",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "numero",
+              "libelle": "Numéro",
+              "type": "texte",
+              "exemple": "1"
+            },
+            {
+              "id": "intitule",
+              "libelle": "Intitulé",
+              "type": "texte",
+              "exemple": "Contrat de bail"
+            },
+            {
+              "id": "date",
+              "libelle": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ],
+      "controles": [
+        "Chaque partie de la liste « conseils » est rattachée à un rôle du dossier.",
+        "Date d'audience postérieure à la date de l'acte introductif."
+      ],
+      "points_a_trancher": [
+        "Le modèle calcule-t-il un délai (comparution, appel, prescription) ? Si oui : point de départ, computation (jours francs ou non), report des samedis, dimanches et jours fériés : à arrêter avec l'utilisateur, avec la source.",
+        "Mentions de désignation des parties exigées par l'acte : ordre et contenu à confirmer au balisage."
+      ]
+    },
+    {
+      "id": "bail",
+      "libelle": "Baux",
+      "description": "Baux d'habitation, commerciaux, professionnels et dérogatoires : parties, bien, durée, loyer, charges, indexation, garanties.",
+      "roles": [
+        {
+          "id": "bailleur",
+          "libelles": {
+            "ms": "bailleur",
+            "fs": "bailleresse",
+            "mp": "bailleurs",
+            "fp": "bailleresses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "preneur",
+          "libelles": {
+            "ms": "preneur",
+            "fs": "preneuse",
+            "mp": "preneurs",
+            "fp": "preneuses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ],
+          "variantes": {
+            "locataire": {
+              "ms": "locataire",
+              "fs": "locataire",
+              "mp": "locataires",
+              "fp": "locataires"
+            }
+          }
+        },
+        {
+          "id": "caution",
+          "libelles": {
+            "ms": "caution",
+            "fs": "caution",
+            "mp": "cautions",
+            "fp": "cautions"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "mandataire_gestion",
+          "libelles": {
+            "ms": "mandataire",
+            "fs": "mandataire",
+            "mp": "mandataires",
+            "fp": "mandataires"
+          },
+          "cardinalite": "0..1",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        }
+      ],
+      "champs": [
+        {
+          "id": "type_bail",
+          "libelle": "Type de bail",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "habitation_vide",
+              "libelle": "Habitation, logement nu"
+            },
+            {
+              "id": "habitation_meublee",
+              "libelle": "Habitation, logement meublé"
+            },
+            {
+              "id": "mobilite",
+              "libelle": "Bail mobilité"
+            },
+            {
+              "id": "commercial",
+              "libelle": "Bail commercial"
+            },
+            {
+              "id": "derogatoire",
+              "libelle": "Bail dérogatoire"
+            },
+            {
+              "id": "professionnel",
+              "libelle": "Bail professionnel"
+            },
+            {
+              "id": "mixte",
+              "libelle": "Bail mixte"
+            },
+            {
+              "id": "autre",
+              "libelle": "Autre"
+            }
+          ],
+          "exemple": "habitation_vide"
+        },
+        {
+          "id": "bien",
+          "libelle": "Bien loué",
+          "type": "reference",
+          "cible": "bien_immobilier"
+        },
+        {
+          "id": "destination",
+          "libelle": "Destination des lieux",
+          "type": "texte",
+          "exemple": "habitation principale"
+        },
+        {
+          "id": "date_prise_effet",
+          "libelle": "Date de prise d'effet",
+          "type": "date",
+          "exemple": "2026-11-01"
+        },
+        {
+          "id": "duree",
+          "libelle": "Durée",
+          "type": "duree",
+          "exemple": {
+            "valeur": 3,
+            "unite": "annees"
+          }
+        },
+        {
+          "id": "loyer",
+          "libelle": "Loyer",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "montant",
+              "libelle": "Montant",
+              "type": "montant",
+              "exemple": {
+                "valeur": 850,
+                "devise": "EUR"
+              }
+            },
+            {
+              "id": "periodicite",
+              "libelle": "Périodicité",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "mensuel",
+                  "libelle": "mensuel"
+                },
+                {
+                  "id": "trimestriel",
+                  "libelle": "trimestriel"
+                },
+                {
+                  "id": "annuel",
+                  "libelle": "annuel"
+                }
+              ],
+              "exemple": "mensuel"
+            },
+            {
+              "id": "terme",
+              "libelle": "Terme",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "a_echoir",
+                  "libelle": "à échoir"
+                },
+                {
+                  "id": "echu",
+                  "libelle": "échu"
+                }
+              ],
+              "exemple": "a_echoir"
+            },
+            {
+              "id": "jour_exigibilite",
+              "libelle": "Jour d'exigibilité",
+              "type": "entier",
+              "exemple": 1
+            },
+            {
+              "id": "assujetti_tva",
+              "libelle": "Assujetti à la TVA",
+              "type": "booleen",
+              "exemple": false
+            }
+          ]
+        },
+        {
+          "id": "charges",
+          "libelle": "Charges",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "mode",
+              "libelle": "Mode",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "provision",
+                  "libelle": "provision avec régularisation"
+                },
+                {
+                  "id": "forfait",
+                  "libelle": "forfait"
+                },
+                {
+                  "id": "refacturation",
+                  "libelle": "refacturation au réel"
+                }
+              ],
+              "exemple": "provision"
+            },
+            {
+              "id": "montant",
+              "libelle": "Montant par période",
+              "type": "montant",
+              "exemple": {
+                "valeur": 60,
+                "devise": "EUR"
+              }
+            }
+          ]
+        },
+        {
+          "id": "depot_garantie",
+          "libelle": "Dépôt de garantie",
+          "type": "montant",
+          "exemple": {
+            "valeur": 850,
+            "devise": "EUR"
+          }
+        },
+        {
+          "id": "indexation",
+          "libelle": "Révision ou indexation",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "stipulee",
+              "libelle": "Clause stipulée",
+              "type": "booleen",
+              "exemple": true
+            },
+            {
+              "id": "indice",
+              "libelle": "Indice",
+              "type": "texte",
+              "aide": "Ex. : IRL, ILC, ILAT, ICC.",
+              "exemple": "IRL"
+            },
+            {
+              "id": "trimestre_reference",
+              "libelle": "Trimestre de référence",
+              "type": "texte",
+              "exemple": "2e trimestre 2026"
+            },
+            {
+              "id": "valeur_reference",
+              "libelle": "Valeur de l'indice de référence",
+              "type": "decimal",
+              "aide": "Donnée évolutive : saisie par l'utilisateur, jamais préremplie."
+            },
+            {
+              "id": "date_revision",
+              "libelle": "Date de révision",
+              "type": "texte",
+              "exemple": "chaque date anniversaire du bail"
+            }
+          ]
+        },
+        {
+          "id": "encadrement",
+          "libelle": "Encadrement des loyers",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "applicable",
+              "libelle": "Encadrement applicable",
+              "type": "booleen"
+            },
+            {
+              "id": "loyer_reference",
+              "libelle": "Loyer de référence (€/m²)",
+              "type": "decimal"
+            },
+            {
+              "id": "loyer_reference_majore",
+              "libelle": "Loyer de référence majoré (€/m²)",
+              "type": "decimal"
+            },
+            {
+              "id": "complement_loyer",
+              "libelle": "Complément de loyer",
+              "type": "montant"
+            },
+            {
+              "id": "justification_complement",
+              "libelle": "Justification du complément",
+              "type": "texte_long"
+            }
+          ]
+        },
+        {
+          "id": "franchise",
+          "libelle": "Franchise de loyer",
+          "type": "duree"
+        },
+        {
+          "id": "droit_entree",
+          "libelle": "Droit d'entrée ou pas-de-porte",
+          "type": "montant"
+        },
+        {
+          "id": "clause_resolutoire",
+          "libelle": "Clause résolutoire",
+          "type": "booleen",
+          "exemple": true
+        },
+        {
+          "id": "solidarite_preneurs",
+          "libelle": "Solidarité entre preneurs",
+          "type": "booleen",
+          "exemple": true
+        },
+        {
+          "id": "garantie",
+          "libelle": "Garantie",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "caution_simple",
+                  "libelle": "cautionnement simple"
+                },
+                {
+                  "id": "caution_solidaire",
+                  "libelle": "cautionnement solidaire"
+                },
+                {
+                  "id": "garantie_autonome",
+                  "libelle": "garantie autonome"
+                },
+                {
+                  "id": "dispositif_public",
+                  "libelle": "dispositif public ou paritaire"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "autre"
+                }
+              ]
+            },
+            {
+              "id": "montant_maximal",
+              "libelle": "Montant maximal garanti",
+              "type": "montant"
+            },
+            {
+              "id": "duree",
+              "libelle": "Durée de l'engagement",
+              "type": "duree"
+            }
+          ]
+        },
+        {
+          "id": "date_etat_des_lieux",
+          "libelle": "Date de l'état des lieux d'entrée",
+          "type": "date"
+        },
+        {
+          "id": "diagnostics",
+          "libelle": "Diagnostics annexés",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "texte"
+            },
+            {
+              "id": "date",
+              "libelle": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ],
+      "controles": [
+        "Le bien loué est une entité du dossier ; sa désignation n'est jamais recopiée dans le module."
+      ],
+      "points_a_trancher": [
+        "Date de fin calculée à partir de la prise d'effet : terme au jour anniversaire ou à la veille ?",
+        "Prorata du premier loyer : par jours calendaires du mois, sur trente jours, ou absent ?",
+        "Montant maximal du dépôt de garantie : le modèle doit-il le contrôler ? Si oui, règle et source à confirmer avec l'utilisateur."
+      ]
+    },
+    {
+      "id": "travail",
+      "libelle": "Droit du travail",
+      "description": "Contrat de travail, temps de travail, rémunération, clauses, rupture.",
+      "roles": [
+        {
+          "id": "employeur",
+          "libelles": {
+            "ms": "employeur",
+            "fs": "employeur",
+            "mp": "employeurs",
+            "fp": "employeurs"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ],
+          "aide": "La pratique emploie « l'employeur » quel que soit le genre ; modifiable au balisage."
+        },
+        {
+          "id": "salarie",
+          "libelles": {
+            "ms": "salarié",
+            "fs": "salariée",
+            "mp": "salariés",
+            "fp": "salariées"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique"
+          ]
+        }
+      ],
+      "champs": [
+        {
+          "id": "contrat",
+          "libelle": "Contrat",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "cdi",
+                  "libelle": "Contrat à durée indéterminée"
+                },
+                {
+                  "id": "cdd",
+                  "libelle": "Contrat à durée déterminée"
+                },
+                {
+                  "id": "apprentissage",
+                  "libelle": "Contrat d'apprentissage"
+                },
+                {
+                  "id": "professionnalisation",
+                  "libelle": "Contrat de professionnalisation"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "Autre"
+                }
+              ],
+              "exemple": "cdi"
+            },
+            {
+              "id": "motif_recours",
+              "libelle": "Motif de recours (CDD)",
+              "type": "texte_long"
+            },
+            {
+              "id": "personne_remplacee",
+              "libelle": "Personne remplacée (CDD de remplacement)",
+              "type": "texte"
+            },
+            {
+              "id": "date_debut",
+              "libelle": "Date d'entrée en fonctions",
+              "type": "date",
+              "exemple": "2026-11-02"
+            },
+            {
+              "id": "date_terme",
+              "libelle": "Terme précis (CDD)",
+              "type": "date"
+            },
+            {
+              "id": "duree_minimale",
+              "libelle": "Durée minimale (CDD sans terme précis)",
+              "type": "duree"
+            },
+            {
+              "id": "periode_essai",
+              "libelle": "Période d'essai",
+              "type": "groupe",
+              "champs": [
+                {
+                  "id": "duree",
+                  "libelle": "Durée",
+                  "type": "duree",
+                  "exemple": {
+                    "valeur": 2,
+                    "unite": "mois"
+                  }
+                },
+                {
+                  "id": "renouvelable",
+                  "libelle": "Renouvelable",
+                  "type": "booleen",
+                  "exemple": false
+                },
+                {
+                  "id": "duree_renouvellement",
+                  "libelle": "Durée du renouvellement",
+                  "type": "duree"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "emploi",
+          "libelle": "Emploi",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "intitule",
+              "libelle": "Intitulé du poste",
+              "type": "texte",
+              "exemple": "assistant juridique"
+            },
+            {
+              "id": "fonctions",
+              "libelle": "Fonctions",
+              "type": "texte_long"
+            },
+            {
+              "id": "statut",
+              "libelle": "Statut",
+              "type": "texte",
+              "aide": "Ex. : employé, agent de maîtrise, cadre."
+            },
+            {
+              "id": "classification",
+              "libelle": "Classification (niveau, échelon, coefficient)",
+              "type": "texte"
+            },
+            {
+              "id": "convention_collective",
+              "libelle": "Convention collective (intitulé)",
+              "type": "texte"
+            },
+            {
+              "id": "idcc",
+              "libelle": "IDCC",
+              "type": "texte"
+            },
+            {
+              "id": "lieu_travail",
+              "libelle": "Lieu de travail",
+              "type": "adresse"
+            }
+          ]
+        },
+        {
+          "id": "temps_travail",
+          "libelle": "Temps de travail",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "regime",
+              "libelle": "Régime",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "temps_plein",
+                  "libelle": "Temps plein"
+                },
+                {
+                  "id": "temps_partiel",
+                  "libelle": "Temps partiel"
+                },
+                {
+                  "id": "forfait_heures",
+                  "libelle": "Forfait en heures"
+                },
+                {
+                  "id": "forfait_jours",
+                  "libelle": "Forfait en jours"
+                }
+              ],
+              "exemple": "temps_plein"
+            },
+            {
+              "id": "duree_hebdomadaire",
+              "libelle": "Durée hebdomadaire (heures)",
+              "type": "decimal",
+              "exemple": 35
+            },
+            {
+              "id": "jours_forfait",
+              "libelle": "Nombre de jours du forfait annuel",
+              "type": "entier"
+            },
+            {
+              "id": "repartition",
+              "libelle": "Répartition des horaires",
+              "type": "texte_long"
+            }
+          ]
+        },
+        {
+          "id": "remuneration",
+          "libelle": "Rémunération",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "brut_mensuel",
+              "libelle": "Salaire brut mensuel",
+              "type": "montant",
+              "exemple": {
+                "valeur": 2500,
+                "devise": "EUR"
+              }
+            },
+            {
+              "id": "brut_annuel",
+              "libelle": "Rémunération brute annuelle",
+              "type": "montant"
+            },
+            {
+              "id": "variable",
+              "libelle": "Rémunération variable (modalités)",
+              "type": "texte_long"
+            },
+            {
+              "id": "primes",
+              "libelle": "Primes et avantages",
+              "type": "liste",
+              "champs": [
+                {
+                  "id": "intitule",
+                  "libelle": "Intitulé",
+                  "type": "texte"
+                },
+                {
+                  "id": "montant",
+                  "libelle": "Montant",
+                  "type": "montant"
+                },
+                {
+                  "id": "modalites",
+                  "libelle": "Modalités",
+                  "type": "texte"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "non_concurrence",
+          "libelle": "Clause de non-concurrence",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "stipulee",
+              "libelle": "Stipulée",
+              "type": "booleen",
+              "exemple": false
+            },
+            {
+              "id": "duree",
+              "libelle": "Durée",
+              "type": "duree"
+            },
+            {
+              "id": "perimetre",
+              "libelle": "Périmètre géographique",
+              "type": "texte"
+            },
+            {
+              "id": "activites",
+              "libelle": "Activités visées",
+              "type": "texte"
+            },
+            {
+              "id": "contrepartie",
+              "libelle": "Contrepartie financière (expression)",
+              "type": "texte",
+              "aide": "Ex. : « 30 % de la rémunération mensuelle moyenne » : expression saisie, pas de calcul implicite."
+            }
+          ]
+        },
+        {
+          "id": "mobilite",
+          "libelle": "Clause de mobilité",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "stipulee",
+              "libelle": "Stipulée",
+              "type": "booleen",
+              "exemple": false
+            },
+            {
+              "id": "zone",
+              "libelle": "Zone géographique",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "rupture",
+          "libelle": "Rupture du contrat",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "mode",
+              "libelle": "Mode de rupture",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "licenciement_personnel",
+                  "libelle": "Licenciement pour motif personnel"
+                },
+                {
+                  "id": "licenciement_economique",
+                  "libelle": "Licenciement pour motif économique"
+                },
+                {
+                  "id": "rupture_conventionnelle",
+                  "libelle": "Rupture conventionnelle"
+                },
+                {
+                  "id": "demission",
+                  "libelle": "Démission"
+                },
+                {
+                  "id": "prise_d_acte",
+                  "libelle": "Prise d'acte"
+                },
+                {
+                  "id": "resiliation_judiciaire",
+                  "libelle": "Résiliation judiciaire"
+                },
+                {
+                  "id": "fin_cdd",
+                  "libelle": "Arrivée du terme du CDD"
+                },
+                {
+                  "id": "rupture_periode_essai",
+                  "libelle": "Rupture de la période d'essai"
+                },
+                {
+                  "id": "depart_retraite",
+                  "libelle": "Départ à la retraite"
+                },
+                {
+                  "id": "mise_retraite",
+                  "libelle": "Mise à la retraite"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "Autre"
+                }
+              ]
+            },
+            {
+              "id": "date_convocation",
+              "libelle": "Date de la convocation à l'entretien préalable",
+              "type": "date"
+            },
+            {
+              "id": "date_entretien",
+              "libelle": "Date de l'entretien préalable",
+              "type": "date"
+            },
+            {
+              "id": "date_notification",
+              "libelle": "Date de notification de la rupture",
+              "type": "date"
+            },
+            {
+              "id": "date_fin_contrat",
+              "libelle": "Date de fin du contrat",
+              "type": "date"
+            },
+            {
+              "id": "preavis",
+              "libelle": "Préavis",
+              "type": "groupe",
+              "champs": [
+                {
+                  "id": "duree",
+                  "libelle": "Durée",
+                  "type": "duree"
+                },
+                {
+                  "id": "execution",
+                  "libelle": "Exécution",
+                  "type": "choix",
+                  "valeurs": [
+                    {
+                      "id": "execute",
+                      "libelle": "exécuté"
+                    },
+                    {
+                      "id": "dispense",
+                      "libelle": "dispensé par l'employeur"
+                    },
+                    {
+                      "id": "non_execute",
+                      "libelle": "non exécuté à la demande du salarié"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "motifs",
+              "libelle": "Énoncé des motifs",
+              "type": "texte_long"
+            },
+            {
+              "id": "salaire_reference",
+              "libelle": "Salaire de référence (saisi)",
+              "type": "montant",
+              "aide": "Saisi par l'utilisateur, ou calculé selon une formule arrêtée au balisage."
+            },
+            {
+              "id": "sommes",
+              "libelle": "Sommes dues ou versées",
+              "type": "liste",
+              "champs": [
+                {
+                  "id": "intitule",
+                  "libelle": "Intitulé",
+                  "type": "texte"
+                },
+                {
+                  "id": "montant",
+                  "libelle": "Montant",
+                  "type": "montant"
+                },
+                {
+                  "id": "base_calcul",
+                  "libelle": "Base de calcul affichée",
+                  "type": "texte"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "points_a_trancher": [
+        "Ancienneté : arrêtée à la notification, à la fin du préavis exécuté ou non ? Périodes de suspension prises en compte ?",
+        "Salaire de référence : quelle formule, et laquelle retenir si plusieurs sont applicables ?",
+        "Toute indemnité légale ou conventionnelle calculée par le modèle : règle, source, version datée."
+      ]
+    },
+    {
+      "id": "societes",
+      "libelle": "Droit des sociétés",
+      "description": "Constitution, capital et titres, apports, associés, dirigeants, décisions collectives, cessions de titres. La société elle-même est une personne morale du dossier.",
+      "roles": [
+        {
+          "id": "societe",
+          "libelles": {
+            "ms": "société",
+            "fs": "société",
+            "mp": "sociétés",
+            "fp": "sociétés"
+          },
+          "cardinalite": "1",
+          "natures": [
+            "morale"
+          ],
+          "aide": "Désignation par le nom générique de la forme."
+        },
+        {
+          "id": "associe",
+          "libelles": {
+            "ms": "associé",
+            "fs": "associée",
+            "mp": "associés",
+            "fp": "associées"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "dirigeant",
+          "libelles": {
+            "ms": "dirigeant",
+            "fs": "dirigeante",
+            "mp": "dirigeants",
+            "fp": "dirigeantes"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "commissaire_aux_comptes",
+          "libelles": {
+            "ms": "commissaire aux comptes",
+            "fs": "commissaire aux comptes",
+            "mp": "commissaires aux comptes",
+            "fp": "commissaires aux comptes"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "cedant",
+          "libelles": {
+            "ms": "cédant",
+            "fs": "cédante",
+            "mp": "cédants",
+            "fp": "cédantes"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "cessionnaire",
+          "libelles": {
+            "ms": "cessionnaire",
+            "fs": "cessionnaire",
+            "mp": "cessionnaires",
+            "fp": "cessionnaires"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        }
+      ],
+      "champs": [
+        {
+          "id": "objet_social",
+          "libelle": "Objet social",
+          "type": "texte_long"
+        },
+        {
+          "id": "duree_societe",
+          "libelle": "Durée de la société",
+          "type": "duree",
+          "exemple": {
+            "valeur": 99,
+            "unite": "annees"
+          }
+        },
+        {
+          "id": "date_constitution",
+          "libelle": "Date de signature des statuts",
+          "type": "date"
+        },
+        {
+          "id": "date_immatriculation",
+          "libelle": "Date d'immatriculation",
+          "type": "date"
+        },
+        {
+          "id": "exercice",
+          "libelle": "Exercice social",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "ouverture",
+              "libelle": "Date d'ouverture (jour et mois)",
+              "type": "texte",
+              "exemple": "1er janvier"
+            },
+            {
+              "id": "cloture",
+              "libelle": "Date de clôture (jour et mois)",
+              "type": "texte",
+              "exemple": "31 décembre"
+            },
+            {
+              "id": "cloture_premier_exercice",
+              "libelle": "Clôture du premier exercice",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "id": "titres",
+          "libelle": "Titres",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "actions",
+                  "libelle": "actions",
+                  "genre": "f"
+                },
+                {
+                  "id": "parts_sociales",
+                  "libelle": "parts sociales",
+                  "genre": "f"
+                }
+              ],
+              "exemple": "actions"
+            },
+            {
+              "id": "nombre",
+              "libelle": "Nombre total de titres",
+              "type": "entier",
+              "exemple": 1000
+            },
+            {
+              "id": "valeur_nominale",
+              "libelle": "Valeur nominale",
+              "type": "montant",
+              "exemple": {
+                "valeur": 10,
+                "devise": "EUR"
+              }
+            }
+          ]
+        },
+        {
+          "id": "apports",
+          "libelle": "Apports",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "apporteur",
+              "libelle": "Apporteur",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "numeraire",
+                  "libelle": "en numéraire"
+                },
+                {
+                  "id": "nature",
+                  "libelle": "en nature"
+                },
+                {
+                  "id": "industrie",
+                  "libelle": "en industrie"
+                }
+              ]
+            },
+            {
+              "id": "description",
+              "libelle": "Description (apport en nature)",
+              "type": "texte_long"
+            },
+            {
+              "id": "montant",
+              "libelle": "Montant ou valeur",
+              "type": "montant"
+            },
+            {
+              "id": "titres_attribues",
+              "libelle": "Titres attribués",
+              "type": "entier"
+            },
+            {
+              "id": "liberation",
+              "libelle": "Fraction libérée (%)",
+              "type": "pourcentage"
+            }
+          ]
+        },
+        {
+          "id": "repartition",
+          "libelle": "Répartition du capital",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "titulaire",
+              "libelle": "Titulaire",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "nombre_titres",
+              "libelle": "Nombre de titres",
+              "type": "entier"
+            }
+          ]
+        },
+        {
+          "id": "mandats",
+          "libelle": "Mandats sociaux",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "personne",
+              "libelle": "Personne",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "fonction",
+              "libelle": "Fonction",
+              "type": "texte",
+              "exemple": "président"
+            },
+            {
+              "id": "date_nomination",
+              "libelle": "Date de nomination",
+              "type": "date"
+            },
+            {
+              "id": "duree_mandat",
+              "libelle": "Durée du mandat",
+              "type": "texte"
+            },
+            {
+              "id": "remuneration",
+              "libelle": "Rémunération (modalités)",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "decision_collective",
+          "libelle": "Décision collective",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "ago",
+                  "libelle": "assemblée générale ordinaire",
+                  "genre": "f"
+                },
+                {
+                  "id": "age",
+                  "libelle": "assemblée générale extraordinaire",
+                  "genre": "f"
+                },
+                {
+                  "id": "agm",
+                  "libelle": "assemblée générale mixte",
+                  "genre": "f"
+                },
+                {
+                  "id": "unanime_acte",
+                  "libelle": "décision unanime constatée dans un acte",
+                  "genre": "f"
+                },
+                {
+                  "id": "associe_unique",
+                  "libelle": "décision de l'associé unique",
+                  "genre": "f"
+                },
+                {
+                  "id": "consultation_ecrite",
+                  "libelle": "consultation écrite",
+                  "genre": "f"
+                }
+              ]
+            },
+            {
+              "id": "date",
+              "libelle": "Date",
+              "type": "date"
+            },
+            {
+              "id": "heure",
+              "libelle": "Heure",
+              "type": "heure"
+            },
+            {
+              "id": "lieu",
+              "libelle": "Lieu",
+              "type": "texte"
+            },
+            {
+              "id": "mode_convocation",
+              "libelle": "Mode de convocation",
+              "type": "texte"
+            },
+            {
+              "id": "date_convocation",
+              "libelle": "Date de la convocation",
+              "type": "date"
+            },
+            {
+              "id": "president_seance",
+              "libelle": "Président de séance",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "secretaire",
+              "libelle": "Secrétaire",
+              "type": "reference",
+              "cible": "personne"
+            },
+            {
+              "id": "titres_presents",
+              "libelle": "Titres présents ou représentés",
+              "type": "entier"
+            },
+            {
+              "id": "ordre_du_jour",
+              "libelle": "Ordre du jour",
+              "type": "liste",
+              "element": "texte"
+            },
+            {
+              "id": "resolutions",
+              "libelle": "Résolutions",
+              "type": "liste",
+              "champs": [
+                {
+                  "id": "numero",
+                  "libelle": "Numéro",
+                  "type": "entier"
+                },
+                {
+                  "id": "intitule",
+                  "libelle": "Intitulé",
+                  "type": "texte"
+                },
+                {
+                  "id": "texte",
+                  "libelle": "Texte",
+                  "type": "texte_long"
+                },
+                {
+                  "id": "resultat",
+                  "libelle": "Résultat",
+                  "type": "choix",
+                  "valeurs": [
+                    {
+                      "id": "adoptee",
+                      "libelle": "adoptée",
+                      "genre": "f"
+                    },
+                    {
+                      "id": "rejetee",
+                      "libelle": "rejetée",
+                      "genre": "f"
+                    }
+                  ]
+                },
+                {
+                  "id": "voix_pour",
+                  "libelle": "Voix pour",
+                  "type": "entier"
+                },
+                {
+                  "id": "voix_contre",
+                  "libelle": "Voix contre",
+                  "type": "entier"
+                },
+                {
+                  "id": "abstentions",
+                  "libelle": "Abstentions",
+                  "type": "entier"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cession_titres",
+          "libelle": "Cession de titres",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "nombre",
+              "libelle": "Nombre de titres cédés",
+              "type": "entier"
+            },
+            {
+              "id": "prix_unitaire",
+              "libelle": "Prix unitaire",
+              "type": "montant"
+            },
+            {
+              "id": "prix_total",
+              "libelle": "Prix total",
+              "type": "montant"
+            },
+            {
+              "id": "date_jouissance",
+              "libelle": "Date de jouissance",
+              "type": "date"
+            },
+            {
+              "id": "agrement_requis",
+              "libelle": "Agrément requis",
+              "type": "booleen"
+            }
+          ]
+        }
+      ],
+      "controles": [
+        "Somme des titres de la répartition = nombre total de titres.",
+        "Nombre de titres × valeur nominale = capital de la société.",
+        "Somme des apports (hors industrie) = capital.",
+        "Prix total = nombre × prix unitaire, si les deux sont saisis.",
+        "Voix pour + contre + abstentions ≤ titres présents ou représentés."
+      ],
+      "points_a_trancher": [
+        "Règles de quorum et de majorité appliquées par le modèle : légales ou statutaires, et lesquelles ?"
+      ]
+    },
+    {
+      "id": "famille",
+      "libelle": "Droit de la famille",
+      "description": "Union, régime matrimonial, enfants, autorité parentale, résidence, contribution à l'entretien, prestation compensatoire, patrimoine.",
+      "roles": [
+        {
+          "id": "conjoint_1",
+          "libelles": {
+            "ms": "époux",
+            "fs": "épouse",
+            "mp": "époux",
+            "fp": "épouses"
+          },
+          "cardinalite": "1",
+          "natures": [
+            "physique"
+          ],
+          "variantes": {
+            "partenaire": {
+              "ms": "partenaire",
+              "fs": "partenaire",
+              "mp": "partenaires",
+              "fp": "partenaires"
+            },
+            "concubin": {
+              "ms": "concubin",
+              "fs": "concubine",
+              "mp": "concubins",
+              "fp": "concubines"
+            }
+          }
+        },
+        {
+          "id": "conjoint_2",
+          "libelles": {
+            "ms": "époux",
+            "fs": "épouse",
+            "mp": "époux",
+            "fp": "épouses"
+          },
+          "cardinalite": "1",
+          "natures": [
+            "physique"
+          ],
+          "variantes": {
+            "partenaire": {
+              "ms": "partenaire",
+              "fs": "partenaire",
+              "mp": "partenaires",
+              "fp": "partenaires"
+            },
+            "concubin": {
+              "ms": "concubin",
+              "fs": "concubine",
+              "mp": "concubins",
+              "fp": "concubines"
+            }
+          }
+        },
+        {
+          "id": "enfant",
+          "libelles": {
+            "ms": "enfant",
+            "fs": "enfant",
+            "mp": "enfants",
+            "fp": "enfants"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique"
+          ]
+        }
+      ],
+      "champs": [
+        {
+          "id": "union",
+          "libelle": "Union",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "mariage",
+                  "libelle": "mariage"
+                },
+                {
+                  "id": "pacs",
+                  "libelle": "pacte civil de solidarité"
+                },
+                {
+                  "id": "concubinage",
+                  "libelle": "concubinage"
+                }
+              ],
+              "exemple": "mariage"
+            },
+            {
+              "id": "date",
+              "libelle": "Date",
+              "type": "date"
+            },
+            {
+              "id": "lieu",
+              "libelle": "Lieu (commune)",
+              "type": "texte"
+            },
+            {
+              "id": "regime",
+              "libelle": "Régime matrimonial ou patrimonial",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "communaute_legale",
+                  "libelle": "communauté réduite aux acquêts"
+                },
+                {
+                  "id": "separation_biens",
+                  "libelle": "séparation de biens"
+                },
+                {
+                  "id": "participation_acquets",
+                  "libelle": "participation aux acquêts"
+                },
+                {
+                  "id": "communaute_universelle",
+                  "libelle": "communauté universelle"
+                },
+                {
+                  "id": "pacs_separation",
+                  "libelle": "séparation des patrimoines (pacs)"
+                },
+                {
+                  "id": "pacs_indivision",
+                  "libelle": "indivision (pacs)"
+                },
+                {
+                  "id": "etranger",
+                  "libelle": "régime étranger"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "autre"
+                }
+              ]
+            },
+            {
+              "id": "contrat_mariage",
+              "libelle": "Contrat de mariage",
+              "type": "groupe",
+              "champs": [
+                {
+                  "id": "notaire",
+                  "libelle": "Notaire",
+                  "type": "reference",
+                  "cible": "personne",
+                  "natures": [
+                    "physique"
+                  ]
+                },
+                {
+                  "id": "date",
+                  "libelle": "Date",
+                  "type": "date"
+                }
+              ]
+            },
+            {
+              "id": "date_separation",
+              "libelle": "Date de la séparation de fait",
+              "type": "date"
+            },
+            {
+              "id": "date_mesures_provisoires",
+              "libelle": "Date de la décision sur les mesures provisoires",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "id": "cas_divorce",
+          "libelle": "Cas de divorce",
+          "type": "choix",
+          "valeurs": [
+            {
+              "id": "consentement_mutuel_conventionnel",
+              "libelle": "consentement mutuel par acte sous signature privée"
+            },
+            {
+              "id": "consentement_mutuel_judiciaire",
+              "libelle": "consentement mutuel judiciaire"
+            },
+            {
+              "id": "acceptation",
+              "libelle": "acceptation du principe de la rupture"
+            },
+            {
+              "id": "alteration_definitive",
+              "libelle": "altération définitive du lien conjugal"
+            },
+            {
+              "id": "faute",
+              "libelle": "faute"
+            }
+          ]
+        },
+        {
+          "id": "enfants",
+          "libelle": "Situation des enfants",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "enfant",
+              "libelle": "Enfant",
+              "type": "reference",
+              "cible": "personne",
+              "natures": [
+                "physique"
+              ]
+            },
+            {
+              "id": "autorite_parentale",
+              "libelle": "Autorité parentale",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "conjointe",
+                  "libelle": "exercée en commun"
+                },
+                {
+                  "id": "exclusive_conjoint_1",
+                  "libelle": "exclusive (conjoint 1)"
+                },
+                {
+                  "id": "exclusive_conjoint_2",
+                  "libelle": "exclusive (conjoint 2)"
+                }
+              ]
+            },
+            {
+              "id": "residence",
+              "libelle": "Résidence",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "conjoint_1",
+                  "libelle": "chez le conjoint 1"
+                },
+                {
+                  "id": "conjoint_2",
+                  "libelle": "chez le conjoint 2"
+                },
+                {
+                  "id": "alternee",
+                  "libelle": "en alternance"
+                },
+                {
+                  "id": "tiers",
+                  "libelle": "chez un tiers"
+                }
+              ]
+            },
+            {
+              "id": "droit_visite",
+              "libelle": "Droit de visite et d'hébergement",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "classique",
+                  "libelle": "classique"
+                },
+                {
+                  "id": "elargi",
+                  "libelle": "élargi"
+                },
+                {
+                  "id": "reduit",
+                  "libelle": "réduit"
+                },
+                {
+                  "id": "libre",
+                  "libelle": "libre"
+                },
+                {
+                  "id": "espace_rencontre",
+                  "libelle": "en espace de rencontre"
+                },
+                {
+                  "id": "aucun",
+                  "libelle": "aucun"
+                }
+              ]
+            },
+            {
+              "id": "modalites",
+              "libelle": "Modalités détaillées",
+              "type": "texte_long"
+            },
+            {
+              "id": "contribution",
+              "libelle": "Contribution à l'entretien et à l'éducation",
+              "type": "groupe",
+              "champs": [
+                {
+                  "id": "montant",
+                  "libelle": "Montant",
+                  "type": "montant"
+                },
+                {
+                  "id": "periodicite",
+                  "libelle": "Périodicité",
+                  "type": "choix",
+                  "valeurs": [
+                    {
+                      "id": "mensuelle",
+                      "libelle": "mensuelle"
+                    },
+                    {
+                      "id": "annuelle",
+                      "libelle": "annuelle"
+                    }
+                  ]
+                },
+                {
+                  "id": "debiteur",
+                  "libelle": "Débiteur",
+                  "type": "choix",
+                  "valeurs": [
+                    {
+                      "id": "conjoint_1",
+                      "libelle": "conjoint 1"
+                    },
+                    {
+                      "id": "conjoint_2",
+                      "libelle": "conjoint 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "intermediation",
+                  "libelle": "Versement par intermédiation financière",
+                  "type": "booleen"
+                },
+                {
+                  "id": "indexation",
+                  "libelle": "Modalités d'indexation",
+                  "type": "texte"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prestation_compensatoire",
+          "libelle": "Prestation compensatoire",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "forme",
+              "libelle": "Forme",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "capital",
+                  "libelle": "capital"
+                },
+                {
+                  "id": "rente",
+                  "libelle": "rente"
+                },
+                {
+                  "id": "mixte",
+                  "libelle": "mixte"
+                }
+              ]
+            },
+            {
+              "id": "creancier",
+              "libelle": "Créancier",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "conjoint_1",
+                  "libelle": "conjoint 1"
+                },
+                {
+                  "id": "conjoint_2",
+                  "libelle": "conjoint 2"
+                }
+              ]
+            },
+            {
+              "id": "montant",
+              "libelle": "Montant",
+              "type": "montant"
+            },
+            {
+              "id": "modalites",
+              "libelle": "Modalités de versement",
+              "type": "texte_long"
+            }
+          ]
+        },
+        {
+          "id": "patrimoine",
+          "libelle": "Éléments du patrimoine",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "designation",
+              "libelle": "Désignation",
+              "type": "texte"
+            },
+            {
+              "id": "bien",
+              "libelle": "Bien du dossier, le cas échéant",
+              "type": "reference",
+              "cible": "bien_immobilier"
+            },
+            {
+              "id": "qualification",
+              "libelle": "Qualification",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "commun",
+                  "libelle": "commun"
+                },
+                {
+                  "id": "propre_conjoint_1",
+                  "libelle": "propre (conjoint 1)"
+                },
+                {
+                  "id": "propre_conjoint_2",
+                  "libelle": "propre (conjoint 2)"
+                },
+                {
+                  "id": "indivis",
+                  "libelle": "indivis"
+                }
+              ]
+            },
+            {
+              "id": "valeur",
+              "libelle": "Valeur",
+              "type": "montant"
+            },
+            {
+              "id": "attribution",
+              "libelle": "Attribution proposée",
+              "type": "texte"
+            }
+          ]
+        }
+      ],
+      "controles": [
+        "Les références « enfant » de la liste visent des personnes rattachées au rôle enfant.",
+        "Débiteur et créancier désignent l'un des deux conjoints."
+      ],
+      "points_a_trancher": [
+        "Définition des fins de semaine (« premier week-end du mois ») et des vacances (zone, découpage, années paires ou impaires) : à fixer au balisage.",
+        "Minorité des enfants : appréciée à quelle date de référence ?"
+      ]
+    },
+    {
+      "id": "contrats_affaires",
+      "libelle": "Contrats d'affaires",
+      "description": "Prestation, vente, distribution, licence, franchise, mandat, agence, cession de fonds de commerce, prêt, garanties ; prix, durée, paiement, responsabilité, litiges.",
+      "roles": [
+        {
+          "id": "prestataire",
+          "libelles": {
+            "ms": "prestataire",
+            "fs": "prestataire",
+            "mp": "prestataires",
+            "fp": "prestataires"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "client",
+          "libelles": {
+            "ms": "client",
+            "fs": "cliente",
+            "mp": "clients",
+            "fp": "clientes"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "vendeur",
+          "libelles": {
+            "ms": "vendeur",
+            "fs": "venderesse",
+            "mp": "vendeurs",
+            "fp": "venderesses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "acquereur",
+          "libelles": {
+            "ms": "acquéreur",
+            "fs": "acquéreuse",
+            "mp": "acquéreurs",
+            "fp": "acquéreuses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "fournisseur",
+          "libelles": {
+            "ms": "fournisseur",
+            "fs": "fournisseuse",
+            "mp": "fournisseurs",
+            "fp": "fournisseuses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "distributeur",
+          "libelles": {
+            "ms": "distributeur",
+            "fs": "distributrice",
+            "mp": "distributeurs",
+            "fp": "distributrices"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "concedant",
+          "libelles": {
+            "ms": "concédant",
+            "fs": "concédante",
+            "mp": "concédants",
+            "fp": "concédantes"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "licencie",
+          "libelles": {
+            "ms": "licencié",
+            "fs": "licenciée",
+            "mp": "licenciés",
+            "fp": "licenciées"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "franchiseur",
+          "libelles": {
+            "ms": "franchiseur",
+            "fs": "franchiseur",
+            "mp": "franchiseurs",
+            "fp": "franchiseurs"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "franchise",
+          "libelles": {
+            "ms": "franchisé",
+            "fs": "franchisée",
+            "mp": "franchisés",
+            "fp": "franchisées"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "mandant",
+          "libelles": {
+            "ms": "mandant",
+            "fs": "mandante",
+            "mp": "mandants",
+            "fp": "mandantes"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "mandataire",
+          "libelles": {
+            "ms": "mandataire",
+            "fs": "mandataire",
+            "mp": "mandataires",
+            "fp": "mandataires"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "agent_commercial",
+          "libelles": {
+            "ms": "agent commercial",
+            "fs": "agente commerciale",
+            "mp": "agents commerciaux",
+            "fp": "agentes commerciales"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "cedant",
+          "libelles": {
+            "ms": "cédant",
+            "fs": "cédante",
+            "mp": "cédants",
+            "fp": "cédantes"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "cessionnaire",
+          "libelles": {
+            "ms": "cessionnaire",
+            "fs": "cessionnaire",
+            "mp": "cessionnaires",
+            "fp": "cessionnaires"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "preteur",
+          "libelles": {
+            "ms": "prêteur",
+            "fs": "prêteuse",
+            "mp": "prêteurs",
+            "fp": "prêteuses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "emprunteur",
+          "libelles": {
+            "ms": "emprunteur",
+            "fs": "emprunteuse",
+            "mp": "emprunteurs",
+            "fp": "emprunteuses"
+          },
+          "cardinalite": "1..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        },
+        {
+          "id": "garant",
+          "libelles": {
+            "ms": "garant",
+            "fs": "garante",
+            "mp": "garants",
+            "fp": "garantes"
+          },
+          "cardinalite": "0..n",
+          "natures": [
+            "physique",
+            "morale"
+          ]
+        }
+      ],
+      "champs": [
+        {
+          "id": "objet",
+          "libelle": "Objet du contrat",
+          "type": "texte_long"
+        },
+        {
+          "id": "date_effet",
+          "libelle": "Date d'effet",
+          "type": "date"
+        },
+        {
+          "id": "duree",
+          "libelle": "Durée",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "duree",
+              "libelle": "Durée initiale",
+              "type": "duree"
+            },
+            {
+              "id": "reconduction",
+              "libelle": "Reconduction",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "aucune",
+                  "libelle": "aucune"
+                },
+                {
+                  "id": "tacite",
+                  "libelle": "tacite"
+                },
+                {
+                  "id": "expresse",
+                  "libelle": "expresse"
+                }
+              ]
+            },
+            {
+              "id": "duree_reconduction",
+              "libelle": "Durée de chaque reconduction",
+              "type": "duree"
+            },
+            {
+              "id": "preavis",
+              "libelle": "Préavis de non-reconduction ou de résiliation",
+              "type": "duree"
+            }
+          ]
+        },
+        {
+          "id": "prix",
+          "libelle": "Prix",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "montant",
+              "libelle": "Montant",
+              "type": "montant"
+            },
+            {
+              "id": "base",
+              "libelle": "Base",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "ht",
+                  "libelle": "hors taxes"
+                },
+                {
+                  "id": "ttc",
+                  "libelle": "toutes taxes comprises"
+                }
+              ]
+            },
+            {
+              "id": "taux_tva",
+              "libelle": "Taux de TVA",
+              "type": "pourcentage"
+            },
+            {
+              "id": "modalites",
+              "libelle": "Modalités de détermination",
+              "type": "texte_long"
+            },
+            {
+              "id": "paiement",
+              "libelle": "Paiement",
+              "type": "groupe",
+              "champs": [
+                {
+                  "id": "delai",
+                  "libelle": "Délai",
+                  "type": "duree"
+                },
+                {
+                  "id": "point_depart",
+                  "libelle": "Point de départ",
+                  "type": "choix",
+                  "valeurs": [
+                    {
+                      "id": "facture",
+                      "libelle": "date d'émission de la facture"
+                    },
+                    {
+                      "id": "fin_de_mois",
+                      "libelle": "fin de mois"
+                    },
+                    {
+                      "id": "livraison",
+                      "libelle": "livraison ou exécution"
+                    }
+                  ]
+                },
+                {
+                  "id": "moyen",
+                  "libelle": "Moyen de paiement",
+                  "type": "texte"
+                },
+                {
+                  "id": "penalites_retard",
+                  "libelle": "Pénalités de retard (expression)",
+                  "type": "texte",
+                  "aide": "Saisie telle que stipulée ; aucun taux légal n'est prérempli."
+                },
+                {
+                  "id": "indemnite_recouvrement",
+                  "libelle": "Indemnité forfaitaire de recouvrement",
+                  "type": "montant",
+                  "aide": "Saisie par l'utilisateur ; aucun montant légal n'est prérempli."
+                },
+                {
+                  "id": "escompte",
+                  "libelle": "Escompte pour paiement anticipé",
+                  "type": "texte"
+                }
+              ]
+            },
+            {
+              "id": "revision",
+              "libelle": "Révision du prix",
+              "type": "groupe",
+              "champs": [
+                {
+                  "id": "indice",
+                  "libelle": "Indice",
+                  "type": "texte"
+                },
+                {
+                  "id": "formule",
+                  "libelle": "Formule",
+                  "type": "texte_long"
+                },
+                {
+                  "id": "periodicite",
+                  "libelle": "Périodicité",
+                  "type": "texte"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exclusivite",
+          "libelle": "Exclusivité",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "stipulee",
+              "libelle": "Stipulée",
+              "type": "booleen"
+            },
+            {
+              "id": "territoire",
+              "libelle": "Territoire",
+              "type": "texte"
+            },
+            {
+              "id": "perimetre",
+              "libelle": "Produits ou services",
+              "type": "texte"
+            },
+            {
+              "id": "beneficiaire",
+              "libelle": "Bénéficiaire (rôle)",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "objectifs",
+          "libelle": "Objectifs",
+          "type": "liste",
+          "champs": [
+            {
+              "id": "periode",
+              "libelle": "Période",
+              "type": "texte"
+            },
+            {
+              "id": "montant",
+              "libelle": "Montant",
+              "type": "montant"
+            }
+          ]
+        },
+        {
+          "id": "duree_confidentialite",
+          "libelle": "Durée de l'obligation de confidentialité",
+          "type": "duree"
+        },
+        {
+          "id": "non_concurrence",
+          "libelle": "Non-concurrence",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "stipulee",
+              "libelle": "Stipulée",
+              "type": "booleen"
+            },
+            {
+              "id": "duree",
+              "libelle": "Durée",
+              "type": "duree"
+            },
+            {
+              "id": "territoire",
+              "libelle": "Territoire",
+              "type": "texte"
+            },
+            {
+              "id": "activites",
+              "libelle": "Activités",
+              "type": "texte"
+            },
+            {
+              "id": "contrepartie",
+              "libelle": "Contrepartie",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "responsabilite",
+          "libelle": "Responsabilité et assurance",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "plafond",
+              "libelle": "Plafond de responsabilité",
+              "type": "montant"
+            },
+            {
+              "id": "base_plafond",
+              "libelle": "Base du plafond (expression)",
+              "type": "texte"
+            },
+            {
+              "id": "assureur",
+              "libelle": "Assureur",
+              "type": "texte"
+            },
+            {
+              "id": "police",
+              "libelle": "Numéro de police",
+              "type": "texte"
+            },
+            {
+              "id": "garantie_assurance",
+              "libelle": "Montant de garantie",
+              "type": "montant"
+            }
+          ]
+        },
+        {
+          "id": "livraison",
+          "libelle": "Livraison",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "incoterm",
+              "libelle": "Incoterm",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "EXW",
+                  "libelle": "EXW"
+                },
+                {
+                  "id": "FCA",
+                  "libelle": "FCA"
+                },
+                {
+                  "id": "CPT",
+                  "libelle": "CPT"
+                },
+                {
+                  "id": "CIP",
+                  "libelle": "CIP"
+                },
+                {
+                  "id": "DAP",
+                  "libelle": "DAP"
+                },
+                {
+                  "id": "DPU",
+                  "libelle": "DPU"
+                },
+                {
+                  "id": "DDP",
+                  "libelle": "DDP"
+                },
+                {
+                  "id": "FAS",
+                  "libelle": "FAS"
+                },
+                {
+                  "id": "FOB",
+                  "libelle": "FOB"
+                },
+                {
+                  "id": "CFR",
+                  "libelle": "CFR"
+                },
+                {
+                  "id": "CIF",
+                  "libelle": "CIF"
+                }
+              ]
+            },
+            {
+              "id": "version_incoterms",
+              "libelle": "Version des Incoterms",
+              "type": "texte",
+              "exemple": "2020"
+            },
+            {
+              "id": "lieu",
+              "libelle": "Lieu",
+              "type": "texte"
+            },
+            {
+              "id": "delai",
+              "libelle": "Délai",
+              "type": "duree"
+            }
+          ]
+        },
+        {
+          "id": "propriete_intellectuelle",
+          "libelle": "Propriété intellectuelle",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "droits",
+              "libelle": "Droits cédés ou concédés",
+              "type": "texte_long"
+            },
+            {
+              "id": "territoire",
+              "libelle": "Territoire",
+              "type": "texte"
+            },
+            {
+              "id": "duree",
+              "libelle": "Durée",
+              "type": "duree"
+            },
+            {
+              "id": "remuneration",
+              "libelle": "Rémunération",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "fonds_de_commerce",
+          "libelle": "Fonds de commerce cédé",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "designation",
+              "libelle": "Désignation et activité",
+              "type": "texte_long"
+            },
+            {
+              "id": "adresse",
+              "libelle": "Adresse d'exploitation",
+              "type": "adresse"
+            },
+            {
+              "id": "elements",
+              "libelle": "Éléments compris dans la cession",
+              "type": "liste",
+              "element": "texte"
+            },
+            {
+              "id": "prix_incorporels",
+              "libelle": "Prix des éléments incorporels",
+              "type": "montant"
+            },
+            {
+              "id": "prix_corporels",
+              "libelle": "Prix du matériel et des éléments corporels",
+              "type": "montant"
+            },
+            {
+              "id": "prix_marchandises",
+              "libelle": "Prix des marchandises",
+              "type": "montant"
+            },
+            {
+              "id": "chiffres",
+              "libelle": "Chiffres d'affaires et résultats",
+              "type": "liste",
+              "champs": [
+                {
+                  "id": "exercice",
+                  "libelle": "Exercice",
+                  "type": "texte"
+                },
+                {
+                  "id": "chiffre_affaires",
+                  "libelle": "Chiffre d'affaires",
+                  "type": "montant"
+                },
+                {
+                  "id": "resultat",
+                  "libelle": "Résultat",
+                  "type": "montant"
+                }
+              ]
+            },
+            {
+              "id": "sequestre",
+              "libelle": "Séquestre",
+              "type": "reference",
+              "cible": "personne"
+            }
+          ]
+        },
+        {
+          "id": "pret",
+          "libelle": "Prêt",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "capital",
+              "libelle": "Capital prêté",
+              "type": "montant"
+            },
+            {
+              "id": "taux",
+              "libelle": "Taux d'intérêt (expression)",
+              "type": "texte"
+            },
+            {
+              "id": "duree",
+              "libelle": "Durée",
+              "type": "duree"
+            },
+            {
+              "id": "echeancier",
+              "libelle": "Modalités de remboursement",
+              "type": "texte_long"
+            }
+          ]
+        },
+        {
+          "id": "garantie",
+          "libelle": "Garantie",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "nature",
+              "libelle": "Nature",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "cautionnement",
+                  "libelle": "cautionnement"
+                },
+                {
+                  "id": "garantie_autonome",
+                  "libelle": "garantie autonome"
+                },
+                {
+                  "id": "lettre_intention",
+                  "libelle": "lettre d'intention"
+                },
+                {
+                  "id": "autre",
+                  "libelle": "autre"
+                }
+              ]
+            },
+            {
+              "id": "montant_maximal",
+              "libelle": "Montant maximal",
+              "type": "montant"
+            },
+            {
+              "id": "duree",
+              "libelle": "Durée",
+              "type": "duree"
+            }
+          ]
+        },
+        {
+          "id": "litiges",
+          "libelle": "Règlement des litiges",
+          "type": "groupe",
+          "champs": [
+            {
+              "id": "mode",
+              "libelle": "Mode",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "juridictions",
+                  "libelle": "juridictions étatiques"
+                },
+                {
+                  "id": "arbitrage",
+                  "libelle": "arbitrage"
+                },
+                {
+                  "id": "mediation_prealable",
+                  "libelle": "médiation ou conciliation préalable puis juridictions"
+                }
+              ]
+            },
+            {
+              "id": "juridiction_competente",
+              "libelle": "Juridiction désignée",
+              "type": "texte"
+            },
+            {
+              "id": "institution_arbitrale",
+              "libelle": "Institution arbitrale ou règlement",
+              "type": "texte"
+            },
+            {
+              "id": "siege_arbitrage",
+              "libelle": "Siège de l'arbitrage",
+              "type": "texte"
+            },
+            {
+              "id": "nombre_arbitres",
+              "libelle": "Nombre d'arbitres",
+              "type": "choix",
+              "valeurs": [
+                {
+                  "id": "1",
+                  "libelle": "un"
+                },
+                {
+                  "id": "3",
+                  "libelle": "trois"
+                }
+              ]
+            },
+            {
+              "id": "langue_arbitrage",
+              "libelle": "Langue de l'arbitrage",
+              "type": "texte"
+            },
+            {
+              "id": "loi_applicable",
+              "libelle": "Loi applicable",
+              "type": "texte"
+            }
+          ]
+        },
+        {
+          "id": "langue_contrat",
+          "libelle": "Langue du contrat",
+          "type": "texte"
+        }
+      ],
+      "controles": [
+        "Prix total de cession du fonds = somme des prix ventilés, si le modèle les additionne.",
+        "Montant TTC = montant HT × (1 + taux de TVA), arrondi au centime : règle d'arrondi à confirmer au balisage."
+      ],
+      "points_a_trancher": [
+        "Toute valeur légale (taux de pénalités, indemnité forfaitaire, plafonds de délais de paiement) : le modèle la reprend-il telle quelle ou la fait-il saisir ? Si elle est intégrée, source et date de gel à arrêter."
+      ]
+    }
+  ],
+  "modules_prevus": [
+    "dommage_corporel",
+    "assurance",
+    "consommation",
+    "construction",
+    "vente_immobiliere",
+    "successions_liberalites",
+    "procedures_collectives",
+    "voies_execution (au-delà du module procédure)",
+    "droit_penal",
+    "contentieux_administratif",
+    "propriete_intellectuelle",
+    "baux_ruraux",
+    "securite_sociale"
+  ]
+}

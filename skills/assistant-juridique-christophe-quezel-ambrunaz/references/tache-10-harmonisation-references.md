@@ -1,6 +1,6 @@
 # Tâche 10 — Harmonisation des références
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU **obligatoire** — cette tâche produit un document miroir annoté par édition XML. En mode CHAT, **interrompre immédiatement** et demander d'activer computer use ou de basculer sur Cowork. Recommander COWORK si le document dépasse 15 pages (même logique que la tâche 9).
+> **Environnement** : espace de travail requis (document miroir annoté par édition XML du .docx). Lorsqu'un dossier connecté existe, y écrire le miroir au fur et à mesure (reprise). Sans espace de travail (cas résiduel) : indiquer que l'activation de « Exécution de code et création de fichiers » permettrait la tâche, et proposer une liste d'harmonisation dans la conversation.
 
 ## Objectif
 

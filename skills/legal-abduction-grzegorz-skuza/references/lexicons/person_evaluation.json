@@ -1,0 +1,11 @@
+{
+  "version": "1",
+  "curation": {"status": "unreviewed", "needs_legal_review": true, "question": "Q13"},
+  "labels": ["winny", "winna", "winni", "kłamca", "kłamie", "kłamstwo", "nieuczciwy", "nieuczciwa", "wiarygodny", "wiarygodna",
+             "niewiarygodny", "niewiarygodna", "podejrzany", "podejrzana", "przestępca", "leniwy", "agresywny", "agresywna",
+             "guilty", "liar", "lying", "dishonest", "untrustworthy", "credible", "incredible", "suspect", "culprit",
+             "criminal", "lazy", "aggressive", "malicious"],
+  "rank_markers": ["ranking", "ranked", "top suspect", "najbardziej podejrzany", "most likely culprit", "most likely guilty",
+                   "najbardziej prawdopodobny sprawca", "score", "scoring", "punktów", "punkty", "points"],
+  "number_patterns": ["\\d+\\s?%", "\\b\\d+\\s?/\\s?10\\b", "\\b\\d+\\s?/\\s?100\\b", "\\bprawdopodobieństwo\\s+\\d", "\\bprobability\\s+\\d"]
+}

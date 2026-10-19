@@ -1,0 +1,3 @@
+# Overview
+
+Expertise complète pour produire une fiche d'arrêt ou un commentaire de décision en droit administratif français (méthode Faouzi El Ouertani, 7 rubriques + plan binaire critique). Vérification systématique des décisions et textes cités via le MCP LibreJustice (https://librejustice.fr/mcp/) et les connecteurs Légifrance. Déclenché par « fiche d'arrêt », « commentaire d'arrêt », « commentaire de décision », « analyse de décision » en droit administratif.

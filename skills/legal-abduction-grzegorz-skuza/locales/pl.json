@@ -1,0 +1,10 @@
+{
+  "E_LANG_REQUIRED": "Nie ustawiono języka raportu. Podaj --lang pl|en lub ustaw lang w profilu; bez tego działa tylko doctor.",
+  "E_CASE_EXISTS": "W tym katalogu istnieje już sprawa; init nigdy jej nie nadpisuje. Użyj nowego katalogu lub zmień profil przez audytowaną aktualizację.",
+  "E_PROFILE_MISSING": "Nie znaleziono case.json w katalogu sprawy. Najpierw uruchom init.",
+  "E_PROFILE_INCOMPLETE": "Brak pola profilu: {field}.",
+  "E_PROFILE_INVALID": "Nieprawidłowe lub niedozwolone pole profilu: {field}.",
+  "E_CONTEXT_UNSUPPORTED": "Kontekst wdrożenia 'judicial' (sąd, sąd polubowny, ADR) nie jest obsługiwany w v1.",
+  "E_HIGH_RISK_ACK": "Kontekst wysokiego ryzyka wymaga pola deployer_ack w profilu.",
+  "E_LEVEL_C_REQUIRED": "Przetwarzanie modelowe nie jest dozwolone dla tej sprawy. Na poziomie A/B akta są już w środowisku agenta, więc analiza musi biec na poziomie C, poza sesją agenta."
+}

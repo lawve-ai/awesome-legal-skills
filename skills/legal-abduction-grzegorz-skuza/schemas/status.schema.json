@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/status/v1",
+  "title": "Status",
+  "type": "object",
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "command": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "step_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "progress": {
+      "type": "object",
+      "properties": {
+        "done": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "ok",
+    "command"
+  ],
+  "additionalProperties": false
+}

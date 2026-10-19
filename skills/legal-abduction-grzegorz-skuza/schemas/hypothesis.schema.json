@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/hypothesis/v1",
+  "title": "Hypothesis",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^hyp:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "mechanism": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^set:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "kind": {
+      "enum": [
+        "substantive",
+        "process",
+        "data_error",
+        "mixed",
+        "other_unrecognized"
+      ]
+    },
+    "burdens": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^per:[A-Za-z0-9._-]{1,128}$",
+        "maxLength": 140
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "attributes_intent": {
+      "type": "boolean"
+    },
+    "concerns_natural_person": {
+      "type": "boolean"
+    },
+    "status": {
+      "const": "hypothesis"
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "mechanism",
+    "scope_id",
+    "kind",
+    "burdens",
+    "attributes_intent",
+    "concerns_natural_person",
+    "status"
+  ],
+  "additionalProperties": false
+}

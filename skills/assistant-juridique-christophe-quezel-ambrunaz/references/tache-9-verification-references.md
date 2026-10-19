@@ -1,6 +1,6 @@
 # Tâche 9 — Vérification des références
 
-> **Pré-requis environnement** : COWORK ou CHAT_CU **obligatoire** — cette tâche produit un document miroir annoté par édition XML, ce qui est impossible sans filesystem. En mode CHAT, **interrompre immédiatement** et demander d'activer computer use ou de basculer sur Cowork. Recommander COWORK si le document dépasse 15 pages ou contient plus de 15 références (risque de saturation de la fenêtre de contexte et nécessité de reprise inter-session).
+> **Environnement** : espace de travail requis (document miroir annoté par édition XML du .docx). Lorsqu'un dossier connecté existe, y écrire le miroir au fur et à mesure (reprise dans une autre conversation) ; à défaut, remettre le miroir en fin de tâche et, pour un document long, des versions intermédiaires. Pour plus de 15 références, répartir le contrôle de concordance entre vérificateurs indépendants (sous-agents) lorsque l'outil existe. Sans espace de travail (cas résiduel) : indiquer que l'activation de « Exécution de code et création de fichiers » permettrait la tâche, et proposer une vérification en tableau dans la conversation.
 
 ## Objectif
 
@@ -52,26 +52,36 @@ Vérifier chaque référence unique (après déduplication), par ordre de priori
 |---|---|---|---|
 | JURIS_CASS | `rechercher_jurisprudence_judiciaire` | Numéro de pourvoi, champ NUM_AFFAIRE, EXACTE | web_search |
 | JURIS_CE | `rechercher_jurisprudence_administrative` | Numéro de requête, champ NUM_AFFAIRE, EXACTE | web_search |
-| JURIS_CA_TJ | `rechercher_jurisprudence_judiciaire` | Juridiction filtrée + n° RG | web_search |
-| JURIS_TA_CAA | `rechercher_jurisprudence_administrative` | Juridiction filtrée + n° requête | web_search |
-| JURIS_CONST | `rechercher_decisions_constitutionnelles` | Numéro de décision | web_search |
+| JURIS_CA_TJ | `LibreJustice:search_decisions` (`seat`, ou `mode: "reference"` sur le numéro) puis `get_decision` | Juridiction + n° RG, ou objet de la décision | `OpenLegi:rechercher_jurisprudence_judiciaire` puis web_search |
+| JURIS_TA_CAA | `LibreJustice:search_decisions` (`seat: ["TA","CAA"]`) puis `get_decision` | Juridiction + n° requête, ou objet | `OpenLegi:rechercher_jurisprudence_administrative` puis web_search |
+| JURIS_CONST | `OpenLegi:rechercher_decisions_constitutionnelles` | Numéro de décision | `LibreJustice` (`seat: ["CONSTIT"]`) puis web_search |
+| JURIS_CEDH_CJUE | `LibreJustice:search_decisions` (`seat: ["CEDH"]` / `["CJUE"]`) | N° de requête ou d'affaire, ou objet | `LegalDataHunter:search` puis web_search |
 | CODE_ARTICLE | `rechercher_code` | Code exact + numéro article, champ NUM_ARTICLE, EXACTE | web_search |
 | LOI_DECRET | `rechercher_dans_texte_legal` | Numéro du texte | web_search |
 | DOCTRINE | `doctrine_search.py` (HAL + OpenAlex + Isidore) puis web_search | Auteur + titre court, ou DOI ; identifiant vérifiable attendu | web_search |
 | SOURCE_ETRANGERE | web_search | Recherche par identifiant disponible | — |
 
-**Séquence de fallback** : OpenLegi (reformuler la requête si échec) → web_search → si toujours négatif : statut NON_TROUVEE.
+**Séquence de fallback** : OpenLegi (reformuler la requête si échec) → **LibreJustice** (`search_decisions` en régime lexical, citation ou intitulé entre guillemets ; `search_norms` pour un article dont le numéro paraît erroné) → web_search → si toujours négatif : statut NON_TROUVEE.
+
+**Apport propre de LibreJustice à la vérification** :
+
+- il retrouve des décisions **non diffusées sur Légifrance** (juridictions du fond, CNDA), ce qui évite de classer NON_TROUVEE une référence réelle mais non légifrancisée — le lien `librejustice.fr` est alors porté, source mentionnée ;
+- la recherche sémantique retrouve une décision dont **le numéro cité est erroné** mais dont l'objet est décrit ;
+- `get_decision` fournit `appellateFate` et `caseChronology` : une décision réellement existante mais **infirmée ou cassée**, invoquée comme état du droit, relève d'ERREUR_CITATION et non de la conformité ;
+- `get_norm` avec `date` établit si la **rédaction citée** correspond à celle applicable à la date pertinente.
+
+Réserve : la vérification se fait sur le texte intégral retourné par `get_decision` / `get_norm`, jamais sur un `aiSummary` ni sur un `snippet`.
 
 **Pour chaque référence vérifiée, déterminer le statut :**
 
 | Emoji | Statut | Signification |
 |---|---|---|
-| ✅ | SOURCE_DIRECTE_CONFORME | Trouvée via OpenLegi ou site officiel, métadonnées concordantes |
+| ✅ | SOURCE_DIRECTE_CONFORME | Trouvée via OpenLegi, LibreJustice ou site officiel, métadonnées concordantes et contenu concordant |
 | 🔵 | SOURCE_INDIRECTE_CONFORME | Trouvée via base doctrinale ou source secondaire |
 | ⚠️ | ERREUR_CITATION | Trouvée mais divergence notable (date, numéro, juridiction, contenu) |
 | ❌ | NON_TROUVEE | Non localisée après recherches (≠ fausse) |
 
-**Validation des métadonnées** (jurisprudence OpenLegi) :
+**Validation des métadonnées** (jurisprudence OpenLegi / LibreJustice) :
 - Juridiction : correspondance exacte
 - Date : tolérance ±1 jour
 - Numéro de pourvoi/requête : correspondance stricte
@@ -165,9 +175,9 @@ Statistiques en fin de tableau :
 - Répartition par statut (✅ / 🔵 / ⚠️ / ❌)
 - Répartition par type (jurisprudence / textes / doctrine)
 
-### Persistance inter-session (COWORK uniquement)
+### Persistance d'une conversation à l'autre (dossier connecté)
 
-En mode COWORK, le document miroir est écrit dans le dossier de travail au fur et à mesure. Si la session s'interrompt :
+Lorsqu'un dossier connecté existe, le document miroir y est écrit au fur et à mesure. Si la session s'interrompt :
 - Le document miroir partiel persiste dans le dossier du Project
 - À la reprise, détecter le document miroir existant (préfixe `miroir-verif-`)
 - Identifier les références déjà annotées (commentaires présents) et celles restant à traiter

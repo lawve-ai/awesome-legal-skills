@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/observation_set/v1",
+  "title": "ObservationSet",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^set:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "observation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^obs:[A-Za-z0-9._-]{1,128}$",
+        "maxLength": 140
+      },
+      "minItems": 1,
+      "maxItems": 10000
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "observation_ids",
+    "rationale"
+  ],
+  "additionalProperties": false
+}

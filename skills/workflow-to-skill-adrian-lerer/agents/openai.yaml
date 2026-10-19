@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow to Skill by Ignacio Lerer"
+  short_description: "Turn proven workflows into portable Skills"
+  default_prompt: "Use $workflow-to-skill to turn this proven workflow into a portable, reviewable Skill."

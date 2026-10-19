@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/step/v1",
+  "title": "Step",
+  "type": "object",
+  "properties": {
+    "case_id": {"type": "string", "minLength": 1, "maxLength": 200},
+    "id": {"type": "string", "minLength": 1, "maxLength": 200},
+    "run_id": {"type": "string", "pattern": "^run:[A-Za-z0-9._-]{1,128}$", "maxLength": 140},
+    "name": {"type": "string", "minLength": 1, "maxLength": 200},
+    "agent": {"type": "string", "pattern": "^((software|model|human):.+|none)$", "maxLength": 200}
+  },
+  "required": ["case_id", "id", "run_id", "name", "agent"],
+  "additionalProperties": false
+}

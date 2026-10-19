@@ -1,0 +1,10 @@
+{
+  "version": "1",
+  "status": "interim_pending_T-ENUM",
+  "note": "Vocabulary for guard checks only; the closed enums of the missing Report (section 5.4) are not reconstructed here.",
+  "polarity": {"affirmed": "affirmed", "negated": "negated"},
+  "modality_asserted": "asserted",
+  "party_subject_roles": ["party", "subject"],
+  "party_subject_allowed_status": ["unverified", "alleged", "reported"],
+  "ocr_flag": "ocr_unverified"
+}

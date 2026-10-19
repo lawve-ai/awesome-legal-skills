@@ -1,6 +1,6 @@
 # Tâche 0 — Playbook juridique
 
-> **Pré-requis environnement** : aucun — exécutable en tout mode (COWORK, CHAT_CU, CHAT).
+> **Environnement** : aucun prérequis.
 
 ## Nature
 
@@ -18,7 +18,7 @@ Si ces deux conditions sont réunies, le playbook est exécuté silencieusement 
 
 ### Étape 1 — Identification des questions juridiques
 
-À partir de la demande de l'utilisateur et des documents présents dans le dossier de travail (cf. §4 du SKILL.md), identifier **1 à 6 questions juridiques principales**.
+À partir de la demande de l'utilisateur et des documents présents dans le dossier de travail (cf. `references/environnement-et-livrables.md` § 2), identifier **1 à 6 questions juridiques principales**.
 
 Chaque question est formulée comme une interrogation juridique précise :
 - ❌ Vague : « le problème du contrat »
@@ -28,7 +28,7 @@ Si le nombre de questions identifiées dépasse 6, regrouper les questions conne
 
 ### Étape 2 — Recherche du droit applicable (séquence descendante)
 
-Pour chaque question identifiée, appliquer la séquence de recherche du §3 du SKILL.md :
+Pour chaque question identifiée, appliquer la séquence de recherche du § 4 du SKILL.md :
 
 **2a. Textes normatifs** :
 - Rechercher les articles de code, lois, décrets applicables via OpenLegi

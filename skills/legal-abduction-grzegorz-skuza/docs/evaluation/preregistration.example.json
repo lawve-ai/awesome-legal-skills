@@ -1,0 +1,15 @@
+{
+  "protocol": "la:quality-paired/v1",
+  "status": "proposed",
+  "frozen_by": null,
+  "frozen_at": null,
+  "artifact_hashes": {},
+  "case_count": 30,
+  "cases_per_class": 10,
+  "repeats": 5,
+  "bootstrap_draws": 10000,
+  "seed": 20261009,
+  "noninferiority_margin": 0.05,
+  "audit_improvement_margin": 0.0,
+  "notes": "Proposed quality thresholds, not PRD thresholds. A human must freeze this and the referenced corpus/rubric/randomization/model/host/skill hashes before runs."
+}

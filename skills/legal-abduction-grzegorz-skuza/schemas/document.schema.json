@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/document/v1",
+  "title": "Document",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^doc:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "kind": {
+      "enum": [
+        "original",
+        "derived"
+      ]
+    },
+    "derived_from": {
+      "type": "string",
+      "pattern": "^doc:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "mime": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "size_bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "origin": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "sha256",
+    "kind",
+    "mime",
+    "size_bytes",
+    "origin"
+  ],
+  "additionalProperties": false
+}

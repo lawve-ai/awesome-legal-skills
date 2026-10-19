@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/task_hypotheses/v1",
+  "title": "Hypotheses proposal",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mechanism": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "scope_id": {
+            "type": "string",
+            "pattern": "^set:[A-Za-z0-9._-]{1,128}$",
+            "maxLength": 140
+          },
+          "kind": {
+            "enum": [
+              "substantive",
+              "process",
+              "data_error",
+              "mixed",
+              "other_unrecognized"
+            ]
+          },
+          "burdens": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^per:[A-Za-z0-9._-]{1,128}$",
+              "maxLength": 140
+            },
+            "maxItems": 1000
+          },
+          "attributes_intent": {
+            "type": "boolean"
+          },
+          "concerns_natural_person": {
+            "type": "boolean"
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "statement": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 4000
+                },
+                "basis": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 4000
+                },
+                "kind": {
+                  "enum": [
+                    "bridge_rule",
+                    "background",
+                    "model_assumed"
+                  ]
+                }
+              },
+              "required": [
+                "statement",
+                "kind"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 1000
+          }
+        },
+        "required": [
+          "mechanism",
+          "scope_id",
+          "kind",
+          "burdens",
+          "attributes_intent",
+          "concerns_natural_person"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

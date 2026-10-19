@@ -1,0 +1,6 @@
+interface:
+  display_name: "Recherche jurisprudence"
+  short_description: "Trouver, vérifier et citer les décisions françaises"
+  default_prompt: "Utilise $recherche-jurisprudence pour trouver les décisions pertinentes et les citer avec leur lien."
+policy:
+  allow_implicit_invocation: true

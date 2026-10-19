@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/metrics/v1",
+  "title": "Metrics",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^run:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "step_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "counters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      }
+    }
+  },
+  "required": [
+    "case_id",
+    "run_id",
+    "counters"
+  ],
+  "additionalProperties": false
+}

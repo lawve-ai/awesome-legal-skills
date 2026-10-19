@@ -1,10 +1,11 @@
 # Guide LegalDataHunter — Droit de l'UE, CEDH et droit étranger/comparé
 
+<!-- NOYAU v4 — synchronisé mandarinat 2.0.0 / assistant-juridique-fr 8.0.0. Fichier commun aux deux skills (script sync-noyau.sh). -->
+
 ## ⚠️ Vérification de disponibilité obligatoire
 
-**Avant tout usage**, vérifier que le MCP est activé. Si les outils `LegalDataHunter:*` ne sont pas disponibles dans la session :
-- **Cowork** : menu Plugins → vérifier que LegalDataHunter est installé et activé
-- **Chat** : contacter Christophe Quézel-Ambrunaz pour l'activer
+**Avant tout usage**, vérifier que le connecteur est présent. Son nom de serveur varie selon les comptes (par exemple « Droit_compar ») : l'identifier par ses outils (`search`, `resolve_reference`, `discover_countries`, `discover_sources`, `get_filters`, `get_document`, `report_source_issue`), après une recherche d'outils différés. Dans ce guide, `LegalDataHunter:` désigne ce serveur, quel que soit son nom affiché.
+- S'il est absent : il s'ajoute depuis les connecteurs de Claude (paramètres) ; à défaut, contacter Christophe Quézel-Ambrunaz.
 - En cas d'indisponibilité : informer l'utilisateur, basculer sur web_search avec les sites officiels (curia.europa.eu, hudoc.echr.coe.int, sites officiels des juridictions étrangères). Signaler la limitation dans le livrable.
 
 **Ne jamais bloquer l'exécution** pour indisponibilité du MCP — utiliser le fallback web_search.
@@ -136,7 +137,7 @@ LegalDataHunter:search
 2. Si échec : `search` avec les éléments identifiables
 3. Si toujours négatif : web_search, puis signaler que la référence n'a pu être résolue
 
-## Intégration avec la séquence de recherche (§3 du SKILL.md)
+## Intégration avec la séquence de recherche (§ 4 du SKILL.md)
 
 - **Étape 2 (jurisprudence suprême)** : LegalDataHunter pour CJUE (`EU`) et CEDH (`CoE`)
 - **Étape 5 (droit étranger/comparé)** : LegalDataHunter pour les pays tiers

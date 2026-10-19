@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/passage/v1",
+  "title": "Passage",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^psg:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "document_id": {
+      "type": "string",
+      "pattern": "^doc:[A-Za-z0-9._-]{1,128}$",
+      "maxLength": 140
+    },
+    "locator": {
+      "type": "object",
+      "properties": {
+        "locator_version": {
+          "const": 1
+        },
+        "page_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "printed_page": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "paragraph": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "message": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "row": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "locator_version"
+      ],
+      "additionalProperties": false
+    },
+    "text": {
+      "type": "string",
+      "maxLength": 100000
+    },
+    "text_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "extraction_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "quality_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    }
+  },
+  "required": [
+    "case_id",
+    "id",
+    "document_id",
+    "locator",
+    "text",
+    "text_sha256",
+    "extraction_version",
+    "quality_flags"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/task_claims/v1",
+  "title": "Claims proposal",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "passage_id": {
+            "type": "string",
+            "pattern": "^psg:[A-Za-z0-9._-]{1,128}$",
+            "maxLength": 140
+          },
+          "speaker": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "speaker_role": {
+            "enum": [
+              "party",
+              "subject",
+              "witness",
+              "third",
+              "system"
+            ]
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "polarity": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "modality": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "epistemic_status": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "not": {
+              "const": "established"
+            }
+          },
+          "source_lang": {
+            "enum": [
+              "pl",
+              "en",
+              "other"
+            ]
+          },
+          "guard_flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            },
+            "maxItems": 50
+          }
+        },
+        "required": [
+          "passage_id",
+          "speaker",
+          "speaker_role",
+          "proposition",
+          "polarity",
+          "modality",
+          "quote",
+          "start",
+          "end",
+          "epistemic_status",
+          "source_lang"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "la:schema/task_event_time/v1",
+  "title": "Event-time proposal",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "observation_id": {
+            "type": "string",
+            "pattern": "^obs:[A-Za-z0-9._-]{1,128}$",
+            "maxLength": 140
+          },
+          "earliest": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "latest": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "time_basis": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "ambiguous": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "observation_id",
+          "time_basis",
+          "ambiguous"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}
